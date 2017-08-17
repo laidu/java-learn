@@ -1,0 +1,67 @@
+<configuration>
+    <!--<statusListener class="ch.qos.logback.core.status.NopStatusListener" />-->
+    <jmxConfigurator/>
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-36.36thread] [%-5level] [%-36.36logger{36}:%-4.4line] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <!-- 按照每天生成日志文件 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/${app.name}/sys.log</file>
+        <!--拒绝ERROR日志-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>DENY</onMatch>
+            <onMisMatch>NEUTRAL</onMisMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${log.lowest.level}</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${log.path}/${app.name}/sys-%d{yyyy-MM-dd}-%i.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>10MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-36.36thread] [%-5level] [%-36.36logger{36}:%-4.4line] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE-ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/${app.name}/sys-err.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${log.path}/${app.name}/sys-err-%d{yyyy-MM-dd}-%i.log</FileNamePattern>
+            <MaxHistory>90</MaxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>10MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-36.36thread] [%-5level] [%-36.36logger{36}:%-4.4line] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- 日志输出级别 -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="FILE-ERROR"/>
+    </root>
+
+</configuration>
