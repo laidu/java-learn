@@ -10,4 +10,7 @@ public interface InterfaceB {
     default void sayHello(){
         System.out.println("InterfaceB");
     }
+    void sayBye();
+
+    void sayGood();
 }

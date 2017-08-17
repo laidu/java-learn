@@ -8,6 +8,12 @@ package org.laidu.learn.language.feature.default_.method;
 public interface InterfaceA {
 
     default void sayHello(){
-        System.out.println("InterfaceA");
+        System.out.println("InterfaceA ： hello");
     }
+
+    default void sayBye(){
+        System.out.println("InterfaceA ： bye");
+    }
+
+    void sayGood();
 }

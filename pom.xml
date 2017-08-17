@@ -8,11 +8,14 @@
     <artifactId>java-learn</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>language-feature</module>
         <module>framework</module>
         <module>design-pattern</module>
         <module>convenient-util</module>
+        <module>data-structure</module>
+        <module>algorithm</module>
     </modules>
 
     <properties>
