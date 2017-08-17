@@ -16,6 +16,7 @@
         <module>convenient-util</module>
         <module>data-structure</module>
         <module>algorithm</module>
+        <module>production-component</module>
     </modules>
 
     <properties>
