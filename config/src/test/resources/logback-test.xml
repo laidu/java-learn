@@ -75,14 +75,15 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
 
     <!--日志打印的包的范围，及分类日志文件存储 -->
     <logger name="com.learn" additivity="false">
-        <level value="debug" />
+        <level value="DEBUG" />
         <appender-ref ref="console"/>
         <appender-ref ref="error-file"/>
         <appender-ref ref="debug-file"/>
         <appender-ref ref="file" />
     </logger>
 
-    <root level="debug">
+
+    <root level="info">
         <appender-ref ref="console"/>
         <appender-ref ref="file" />
     </root>
