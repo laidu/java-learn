@@ -12,10 +12,10 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/learn.log</file>
+        <file>./logs/learn.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>logs/learn.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>./logs/learn.log.%d{yyyy-MM-dd}.log</fileNamePattern>
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
@@ -27,10 +27,10 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </appender>
 
     <appender name="error-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/learn.error.log</file>
+        <file>./logs/learn.error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>logs/learn.error.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>./logs/learn.error.log.%d{yyyy-MM-dd}.log</fileNamePattern>
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
@@ -48,10 +48,10 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </appender>
 
     <appender name="debug-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/learn.debug.log</file>
+        <file>./logs/learn.debug.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>logs/learn.debug.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>./logs/learn.debug.log.%d{yyyy-MM-dd}.log</fileNamePattern>
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
@@ -75,7 +75,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
 
     <!--日志打印的包的范围，及分类日志文件存储 -->
     <logger name="com.learn" additivity="false">
-        <level value="info" />
+        <level value="DEBUG" />
         <appender-ref ref="console"/>
         <appender-ref ref="error-file"/>
         <appender-ref ref="debug-file"/>
@@ -83,7 +83,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </logger>
 
 
-    <root level="debug">
+    <root level="info">
         <appender-ref ref="console"/>
         <appender-ref ref="file" />
     </root>

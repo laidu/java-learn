@@ -19,7 +19,6 @@ public class ExtendClass implements InterfaceA,InterfaceB{
     @Override
     public void sayHello() {
         log.debug("-*--*--*--*--*--*--*--*--*-- sayHello --*--*--*--*--*--*--*--*--*-: {}","123");
-        System.out.println("123123");
     }
 
     /**
