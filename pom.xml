@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>language-feature</module>
+        <!--<module>language-feature</module>-->
         <module>framework</module>
         <module>design-pattern</module>
         <module>convenient-util</module>
@@ -96,23 +96,23 @@
                </configuration>
            </plugin>
 
-           <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-remote-resources-plugin</artifactId>
-               <version>1.5</version>
-               <configuration>
-                   <resourceBundles>
-                       <resourceBundle>org.laidu.learn:shared-resource:${project.version}</resourceBundle>
-                   </resourceBundles>
-               </configuration>
-               <executions>
-                   <execution>
-                       <goals>
-                           <goal>process</goal>
-                       </goals>
-                   </execution>
-               </executions>
-           </plugin>
+           <!--<plugin>-->
+               <!--<groupId>org.apache.maven.plugins</groupId>-->
+               <!--<artifactId>maven-remote-resources-plugin</artifactId>-->
+               <!--<version>1.5</version>-->
+               <!--<configuration>-->
+                   <!--<resourceBundles>-->
+                       <!--<resourceBundle>org.laidu.learn:shared-resource:${project.version}</resourceBundle>-->
+                   <!--</resourceBundles>-->
+               <!--</configuration>-->
+               <!--<executions>-->
+                   <!--<execution>-->
+                       <!--<goals>-->
+                           <!--<goal>process</goal>-->
+                       <!--</goals>-->
+                   <!--</execution>-->
+               <!--</executions>-->
+           <!--</plugin>-->
 
            <plugin>
                <artifactId>maven-surefire-plugin</artifactId>
