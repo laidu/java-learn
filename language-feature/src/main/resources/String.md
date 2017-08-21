@@ -1,4 +1,4 @@
-# java String 处理
+# java String 相关源码学习
 
 ## 1、相关类
 
@@ -12,7 +12,6 @@ java.lang.StringBuffer | 线程安全，可变的字符序列。 字符串缓冲
 ## 2、对比
 
 
-
 ## 3、String
 
 >String 类代表字符串。Java 程序中的所有字符串字面值（如 "abc" ）都作为此类的实例实现。
@@ -23,16 +22,16 @@ java.lang.StringBuffer | 线程安全，可变的字符序列。 字符串缓冲
  
 >等效于：
 
-     char data[] = {'a', 'b', 'c'};
-     String str = new String(data);
+    char data[] = {'a', 'b', 'c'};
+    String str = new String(data);
  
 >下面给出了一些如何使用字符串的更多示例：
 
-     System.out.println("abc");
-     String cde = "cde";
-     System.out.println("abc" + cde);
-     String c = "abc".substring(2,3);
-     String d = cde.substring(1, 2);
+    System.out.println("abc");
+    String cde = "cde";
+    System.out.println("abc" + cde);
+    String c = "abc".substring(2,3);
+    String d = cde.substring(1, 2);
  
 >String 类包括的方法可用于检查序列的单个字符、比较字符串、搜索字符串、提取子字符串、创建字符串副本并将所有字符全部转换为大写或小写。
 大小写映射基于 Character 类指定的 Unicode 标准版。
@@ -49,7 +48,48 @@ java.lang.StringBuffer | 线程安全，可变的字符序列。 字符串缓冲
 
 >String 类提供处理 Unicode 代码点（即字符）和 Unicode 代码单元（即 char 值）的方法
 
-### 3.1 String 常用方法
+### 3.1 String java 8 新增方法
+
+#### 3.1.1  String join(CharSequence delimiter, CharSequence... elements)
+
+    public static String join(CharSequence delimiter, CharSequence... elements) {
+            Objects.requireNonNull(delimiter);
+            Objects.requireNonNull(elements);
+            // Number of elements not likely worth Arrays.stream overhead.
+            StringJoiner joiner = new StringJoiner(delimiter);
+            for (CharSequence cs: elements) {
+                joiner.add(cs);
+            }
+            return joiner.toString();
+        }
+        
+> java 8 中 同时还在java.util包中新增加了StringJoiner类，该类用于构造由分隔符分隔的字符序列，并且可选的从提供的前缀开始，并以提供的后缀结尾。
+在向StringJoiner添加内容之前，它的sj.toString() 方法默认情况下返回 prefix + suffix 。 
+但是，如果调用了setEmptyValue方法，则将返回提供的emptyValue。 
+例如，当使用设置符号创建字符串以指示空集（即“{}”）时，可以使用此字符串，
+其中前缀为“{”，后缀为“}”，并且没有添加到StringJoiner。
+
+    public final class StringJoiner
+    extends Object
+
+
+
+#### 3.1.2  String join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
+
+    public static String join(CharSequence delimiter,
+                                  Iterable<? extends CharSequence> elements) {
+            Objects.requireNonNull(delimiter);
+            Objects.requireNonNull(elements);
+            StringJoiner joiner = new StringJoiner(delimiter);
+            for (CharSequence cs: elements) {
+                joiner.add(cs);
+            }
+            return joiner.toString();
+        }
+
+
+### 3.2 String 常用方法
+
 
 
 ## 4、StringBuilder
