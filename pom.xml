@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <!--<module>language-feature</module>-->
+        <module>language-feature</module>
         <module>framework</module>
         <module>design-pattern</module>
         <module>convenient-util</module>
@@ -85,7 +85,47 @@
 
     <build>
 
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.2</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+
+                <!--<plugin>-->
+                    <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                    <!--<version>2.19.1</version>-->
+                    <!--<configuration>-->
+                        <!--<includes>-->
+                            <!--<include>**/Test*.java</include>-->
+                            <!--<include>**/*Test.java</include>-->
+                            <!--<include>**/*Tests.java</include>-->
+                            <!--<include>**/*TestCase.java</include>-->
+                        <!--</includes>-->
+                        <!--<properties>-->
+                            <!--&lt;!&ndash; <includeTags>fast</includeTags> &ndash;&gt;-->
+                            <!--<excludeTags>slow</excludeTags>-->
+                        <!--</properties>-->
+                    <!--</configuration>-->
+                    <!--<dependencies>-->
+                        <!--<dependency>-->
+                            <!--<groupId>org.junit.platform</groupId>-->
+                            <!--<artifactId>junit-platform-surefire-provider</artifactId>-->
+                            <!--<version>${junit.platform.version}</version>-->
+                        <!--</dependency>-->
+                    <!--</dependencies>-->
+                <!--</plugin>-->
+
+            </plugins>
+        </pluginManagement>
+
        <plugins>
+
            <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-compiler-plugin</artifactId>
@@ -94,48 +134,6 @@
                    <source>${maven.compiler.source}</source>
                    <target>${maven.compiler.target}</target>
                </configuration>
-           </plugin>
-
-           <!--<plugin>-->
-               <!--<groupId>org.apache.maven.plugins</groupId>-->
-               <!--<artifactId>maven-remote-resources-plugin</artifactId>-->
-               <!--<version>1.5</version>-->
-               <!--<configuration>-->
-                   <!--<resourceBundles>-->
-                       <!--<resourceBundle>org.laidu.learn:shared-resource:${project.version}</resourceBundle>-->
-                   <!--</resourceBundles>-->
-               <!--</configuration>-->
-               <!--<executions>-->
-                   <!--<execution>-->
-                       <!--<goals>-->
-                           <!--<goal>process</goal>-->
-                       <!--</goals>-->
-                   <!--</execution>-->
-               <!--</executions>-->
-           <!--</plugin>-->
-
-           <plugin>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <version>2.19.1</version>
-               <configuration>
-                   <includes>
-                       <include>**/Test*.java</include>
-                       <include>**/*Test.java</include>
-                       <include>**/*Tests.java</include>
-                       <include>**/*TestCase.java</include>
-                   </includes>
-                   <properties>
-                       <!-- <includeTags>fast</includeTags> -->
-                       <excludeTags>slow</excludeTags>
-                   </properties>
-               </configuration>
-               <dependencies>
-                   <dependency>
-                       <groupId>org.junit.platform</groupId>
-                       <artifactId>junit-platform-surefire-provider</artifactId>
-                       <version>${junit.platform.version}</version>
-                   </dependency>
-               </dependencies>
            </plugin>
 
        </plugins>
