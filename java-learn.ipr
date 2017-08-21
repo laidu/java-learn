@@ -99,12 +99,18 @@ under the License.
     <modules> 
       <!-- module filepath="$$PROJECT_DIR$$/${pom.artifactId}.iml"/ -->  
       <module filepath="$PROJECT_DIR$/java-learn.iml"/>
+      <module filepath="$PROJECT_DIR$/language-feature/language-feature.iml"/>
+      <module filepath="$PROJECT_DIR$/framework/apache/commons-lang3/commons-lang3.iml"/>
+      <module filepath="$PROJECT_DIR$/framework/apache/httpclient/httpclient.iml"/>
+      <module filepath="$PROJECT_DIR$/framework/apache/commons-text/common-text.iml"/>
+      <module filepath="$PROJECT_DIR$/framework/apache/apache.iml"/>
       <module filepath="$PROJECT_DIR$/framework/framework.iml"/>
       <module filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml"/>
       <module filepath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml"/>
       <module filepath="$PROJECT_DIR$/convenient-util/convenient-util.iml"/>
       <module filepath="$PROJECT_DIR$/data-structure/data-structure.iml"/>
       <module filepath="$PROJECT_DIR$/algorithm/algorithm.iml"/>
+      <module filepath="$PROJECT_DIR$/production-component/common-util/common-util.iml"/>
       <module filepath="$PROJECT_DIR$/production-component/production-component.iml"/>
       <module filepath="$PROJECT_DIR$/shared-resource/shared-resource.iml"/>
     </modules> 

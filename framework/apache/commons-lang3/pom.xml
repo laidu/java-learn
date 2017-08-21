@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>common-lang3</artifactId>
+    <artifactId>commons-lang3</artifactId>
 
     <properties>
         <apache-commons-lang3.version>3.6</apache-commons-lang3.version>

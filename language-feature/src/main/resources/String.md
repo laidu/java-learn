@@ -72,6 +72,21 @@ java.lang.StringBuffer | 线程安全，可变的字符序列。 字符串缓冲
     public final class StringJoiner
     extends Object
 
+>API注：
+"[George:Sally:Fred]" 的构造方法可能是：
+
+    StringJoiner sj = new StringJoiner(":", "[", "]");
+    sj.add("George").add("Sally").add("Fred");
+    String desiredString = sj.toString();
+
+>可以使用StringJoiner来使用Collectors.joining（CharSequence）从Stream创建格式化的输出。例如：
+
+     List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
+     String commaSeparatedNumbers = numbers.stream()
+         .map(i -> i.toString())
+         .collect(Collectors.joining(", "));
+         
+
 
 
 #### 3.1.2  String join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
@@ -86,6 +101,8 @@ java.lang.StringBuffer | 线程安全，可变的字符序列。 字符串缓冲
             }
             return joiner.toString();
         }
+
+
 
 
 ### 3.2 String 常用方法
