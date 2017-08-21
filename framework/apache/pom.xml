@@ -12,8 +12,9 @@
     <artifactId>apache</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>common-lang3</module>
+        <module>commons-lang3</module>
         <module>httpclient</module>
+        <module>commons-text</module>
     </modules>
 
 
