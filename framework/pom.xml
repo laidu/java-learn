@@ -16,5 +16,11 @@
         <module>test</module>
     </modules>
 
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+
 
 </project>
