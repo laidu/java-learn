@@ -22,14 +22,21 @@
 
     <properties>
 
-
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
+
+        <!--mvn site-->
+        <github.global.server>github</github.global.server>
+        <apache.maven-site-plugin.version>3.6</apache.maven-site-plugin.version>
+        <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
+        <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
 
         <!--项目基础依赖配置-->
         <lombok.version>1.16.16</lombok.version>
         <logback.version>1.2.3</logback.version>
 
+        <!--test-->
         <junit.version>4.12</junit.version>
         <junit.jupiter.version>5.0.0-RC2</junit.jupiter.version>
         <junit.vintage.version>${junit.version}.0-RC2</junit.vintage.version>
@@ -83,60 +90,145 @@
 
     </dependencies>
 
+    <distributionManagement>
+        <site>
+            <id>github-pages-site</id>
+            <name>Deployment through GitHub's site deployment plugin</name>
+            <url>scm:git:git@github.com:laidu/java-learn-site.git</url>
+        </site>
+    </distributionManagement>
+
     <build>
 
         <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.6.2</version>
-                    <configuration>
-                        <source>${maven.compiler.source}</source>
-                        <target>${maven.compiler.target}</target>
-                    </configuration>
-                </plugin>
 
-                <!--<plugin>-->
-                    <!--<artifactId>maven-surefire-plugin</artifactId>-->
-                    <!--<version>2.19.1</version>-->
-                    <!--<configuration>-->
-                        <!--<includes>-->
-                            <!--<include>**/Test*.java</include>-->
-                            <!--<include>**/*Test.java</include>-->
-                            <!--<include>**/*Tests.java</include>-->
-                            <!--<include>**/*TestCase.java</include>-->
-                        <!--</includes>-->
-                        <!--<properties>-->
-                            <!--&lt;!&ndash; <includeTags>fast</includeTags> &ndash;&gt;-->
-                            <!--<excludeTags>slow</excludeTags>-->
-                        <!--</properties>-->
-                    <!--</configuration>-->
-                    <!--<dependencies>-->
-                        <!--<dependency>-->
-                            <!--<groupId>org.junit.platform</groupId>-->
-                            <!--<artifactId>junit-platform-surefire-provider</artifactId>-->
-                            <!--<version>${junit.platform.version}</version>-->
-                        <!--</dependency>-->
-                    <!--</dependencies>-->
-                <!--</plugin>-->
-
-            </plugins>
         </pluginManagement>
 
-       <plugins>
+        <plugins>
 
-           <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-compiler-plugin</artifactId>
-               <version>3.6.2</version>
-               <configuration>
-                   <source>${maven.compiler.source}</source>
-                   <target>${maven.compiler.target}</target>
-               </configuration>
-           </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
 
-       </plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <includes>
+                        <include>**/Test*.java</include>
+                        <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
+                        <include>**/*TestCase.java</include>
+                    </includes>
+                    <properties>
+                        <excludeTags>slow</excludeTags>
+                    </properties>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.platform</groupId>
+                        <artifactId>junit-platform-surefire-provider</artifactId>
+                        <version>${junit.platform.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-engine</artifactId>
+                        <version>${junit.jupiter.version}</version>
+                        <!--<scope>test</scope>-->
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>${apache.maven-site-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-module-markdown</artifactId>
+                        <version>${doxia-module-markdown.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <port>9000</port>
+                    <tempWebappDirectory>${basedir}/target/staging</tempWebappDirectory>
+                    <skipDeploy>true</skipDeploy>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>${github.maven-site-plugin.version}</version>
+                <configuration>
+                    <message>Creating site for ${project.artifactId}, ${project.version}</message>
+                    <!-- this does the trick to place every module in the correct subfolder -->
+                    <path>${project.distributionManagement.site.url}</path>
+                    <merge>true</merge>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>github-site</id>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>site-deploy</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
     </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.5</version>
+                <reportSets>
+                    <reportSet>
+                        <id>aggregate</id>
+                        <inherited>false</inherited>
+                        <reports>
+                            <report>aggregate</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <profiles>
+        <profile>
+            <id>gh-pages</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.github</groupId>
+                        <artifactId>site-maven-plugin</artifactId>
+                        <configuration>
+                            <message>Creating site for ${project.version}</message>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>site</goal>
+                                </goals>
+                                <phase>site</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

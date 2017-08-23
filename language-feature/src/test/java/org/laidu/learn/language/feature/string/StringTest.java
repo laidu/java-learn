@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 /**
  * Created by 臧天才 on 2017/8/21.
  */
@@ -24,9 +26,6 @@ class StringTest {
 
         log.info("-*--*--*--*--*--*--*--*--*-- {} isEmpty --*--*--*--*--*--*--*--*--*-: {}",VAR, VAR.isEmpty()); //false
         log.info("-*--*--*--*--*--*--*--*--*-- {} isEmpty --*--*--*--*--*--*--*--*--*-: {}","", "".isEmpty()); //true
-
-        final String var2 = null;
-        log.info("-*--*--*--*--*--*--*--*--*-- {} isEmpty --*--*--*--*--*--*--*--*--*-: {}",null, var2.isEmpty()); // java.lang.NullPointerException
 
     }
 

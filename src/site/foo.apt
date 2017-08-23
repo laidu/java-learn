@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/DECORATION/1.7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd"
+  name=.. combine.self=.. >
+  <bannerLeft>
+    <name/>
+    <src/>
+    <alt/>
+    <href/>
+    <border/>
+    <width/>
+    <height/>
+    <title/>
+  </bannerLeft>
+  <bannerRight>
+    <name/>
+    <src/>
+    <alt/>
+    <href/>
+    <border/>
+    <width/>
+    <height/>
+    <title/>
+  </bannerRight>
+  <googleAdSenseClient/>
+  <googleAdSenseSlot/>
+  <googleAnalyticsAccountId/>
+
+  <publishDate position=.. format=.. />
+  <version position=.. />
+  <poweredBy>
+    <logo name=.. href=.. img=.. position=.. alt=.. border=.. width=.. height=.. target=.. title=.. />
+  </poweredBy>
+
+  <skin>
+    <groupId/>
+    <artifactId/>
+    <version/>
+  </skin>
+
+  <body>
+    <head/>
+    <links>
+      <item name=.. href=.. img=.. position=.. alt=.. border=.. width=.. height=.. target=.. title=.. />
+    </links>
+    <breadcrumbs>
+      <item name=.. href=.. img=.. position=.. alt=.. border=.. width=.. height=.. target=.. title=.. />
+    </breadcrumbs>
+
+    <menu name=.. inherit=.. inheritAsRef=.. ref=.. img=.. alt=.. position=.. border=.. width=.. height=.. title=.. >
+      <item collapse=.. ref=.. name=.. href=.. img=.. position=.. alt=.. border=.. width=.. height=.. target=.. title=.. >
+        <description/>
+        <item>...recursion...<item>
+      </item>
+    </menu>
+    <footer/>
+  </body>
+
+  <custom/>
+</project>
