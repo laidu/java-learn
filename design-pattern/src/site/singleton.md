@@ -57,7 +57,7 @@
 
 > 代码实现：
 
-    private static ThreadUnSafeLazyLoadSingleton ourInstance;
+    private static volatile ThreadUnSafeLazyLoadSingleton ourInstance;
 
     private static AtomicInteger initCount = new AtomicInteger(0);
 
@@ -85,8 +85,95 @@
 
     }
     
-> 执行结果：
+> 测试结果：
 
 ![](image/ThreadUnSafeLazyLoadSingletonTest.png)
 
 ### 3.1.2 在getInstance方法上加同步
+
+> 代码实现:
+
+    private static AtomicInteger initCount = new AtomicInteger(0);
+
+    public static synchronized ThreadSafeLazyLoadSyncSingleton getInstance() {
+        if (ourInstance == null) {
+            ourInstance = new ThreadSafeLazyLoadSyncSingleton();
+        }
+        return ourInstance;
+    }
+
+    private ThreadSafeLazyLoadSyncSingleton() {
+        int count = initCount.incrementAndGet();
+        log.info("-*--*--*--*- instance 初始化 第 {} 次-*--*--*--*--", count);
+    }
+    
+> 测试代码：
+
+    public static void main(String[] args) {
+        for (int i=0; i<1000; i++){
+            new Thread(ThreadSafeLazyLoadSyncSingleton.getInstance()::doWork).start();
+        }
+    }
+
+> 测试结果：
+
+![](image/ThreadSafeLazyLoadSyncSingletonTest.png)
+
+### 3.1.3 使用双重校验锁
+
+> 双重校验锁是在3.1.2基础上改进而来，
+
+> 代码实现:
+
+    public static ThreadSafeDoubleCheckLocking getInstance() {
+    
+            if (ourInstance == null){                       //  第一次 null值 校验
+                synchronized (ThreadSafeDoubleCheckLocking.class){
+                    if (ourInstance == null) {              //  第二次 null值 校验
+                        ourInstance = new ThreadSafeDoubleCheckLocking();
+                    }
+                }
+            }
+            return ourInstance;
+     }
+
+### 3.1.4 使用静态内部类
+
+> 使用jvm的类加载机制保证程序只创建一份实例的同事有保证了使用懒加载的方式实例化。
+
+> 代码实现:
+
+    public static InitializingOnDemandHolderIdiom getInstance() {
+        return HelperHolder.INSTANCE;
+    }
+
+    private InitializingOnDemandHolderIdiom() {
+        int count = initCount.incrementAndGet();
+        log.info("-*--*--*--*- instance 初始化 第 {} 次-*--*--*--*--", count);
+    }
+
+    public static class HelperHolder{
+        private static  final InitializingOnDemandHolderIdiom INSTANCE = new InitializingOnDemandHolderIdiom();
+    }
+
+## 3.2 饿汉式单例实现
+
+> 饿汉式单例实现是天生的线程安全，实现起来也比较简单。
+
+> 代码实现：
+    
+    private static final Singleton ourInstance = new Singleton();
+
+
+## 3.3 枚举单例实现
+
+> 这种方式是Effective Java作者Josh Bloch 提倡的方式，它不仅能避免多线程同步问题，而且还能防止反序列化重新创建新的对象。
+
+    public enum  EnumSingleton {
+
+        INSTANCE;
+    
+        public void doWork(){
+            log.info("-*--*--*--*- doWork -*--*--*--*--");
+        }
+    }

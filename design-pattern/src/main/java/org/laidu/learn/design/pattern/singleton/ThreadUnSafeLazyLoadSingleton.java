@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Slf4j
 public class ThreadUnSafeLazyLoadSingleton {
 
-    private static ThreadUnSafeLazyLoadSingleton ourInstance;
+    private static volatile ThreadUnSafeLazyLoadSingleton ourInstance;
 
     private static AtomicInteger initCount = new AtomicInteger(0);
 

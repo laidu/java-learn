@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Singleton {
 
-    private static Singleton ourInstance = new Singleton();
+    private static final Singleton ourInstance = new Singleton();
 
     private Class_A class_a;
 

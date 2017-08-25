@@ -13,16 +13,20 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Slf4j
 public class ThreadSafeLazyLoadSyncSingleton {
 
-    private static ThreadSafeLazyLoadSyncSingleton ourInstance;
+    private static volatile ThreadSafeLazyLoadSyncSingleton ourInstance;
+
+    private static AtomicInteger initCount = new AtomicInteger(0);
 
     public static synchronized ThreadSafeLazyLoadSyncSingleton getInstance() {
         if (ourInstance == null) {
-            ourInstance = new ThreadSafeLazyLoadSyncSingleton();
+            ourInstance = new ThreadSafeLazyLoadSyncSingleton();  // 非原子操作， 故需要volatile修饰
         }
         return ourInstance;
     }
 
     private ThreadSafeLazyLoadSyncSingleton() {
+        int count = initCount.incrementAndGet();
+        log.info("-*--*--*--*- instance 初始化 第 {} 次-*--*--*--*--", count);
     }
 
     public void doWork(){
@@ -37,7 +41,7 @@ public class ThreadSafeLazyLoadSyncSingleton {
     public static void main(String[] args) {
 
         for (int i=0; i<1000; i++){
-            new Thread(ThreadSafeLazyLoadSyncSingleton.getInstance()::doWork).start();
+            new Thread(ThreadSafeLazyLoadSyncSingleton::getInstance).start();
         }
 
     }
