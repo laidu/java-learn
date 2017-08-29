@@ -3,7 +3,7 @@ package org.laidu.learn.language.feature.boxed;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * ${DESCRIPTION}
+ * java 基础类型
  * User: zangtiancai
  * Date: 2017/8/25
  * Time: 上午11:31
@@ -34,6 +34,7 @@ public class BasicDataType {
 
         // int
         System.out.println("基本类型：int 二进制位数：" + Integer.SIZE);
+        System.out.println("基本类型：int 字节数：" + Integer.BYTES);
         System.out.println("包装类：java.lang.Integer");
         System.out.println("最小值：Integer.MIN_VALUE=" + Integer.MIN_VALUE);
         System.out.println("最大值：Integer.MAX_VALUE=" + Integer.MAX_VALUE);
@@ -41,6 +42,7 @@ public class BasicDataType {
 
         // long
         System.out.println("基本类型：long 二进制位数：" + Long.SIZE);
+        System.out.println("基本类型：long 字节数：" + Long.BYTES);
         System.out.println("包装类：java.lang.Long");
         System.out.println("最小值：Long.MIN_VALUE=" + Long.MIN_VALUE);
         System.out.println("最大值：Long.MAX_VALUE=" + Long.MAX_VALUE);
@@ -67,6 +69,5 @@ public class BasicDataType {
                 + (int) Character.MIN_VALUE);       // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台
         System.out.println("最大值：Character.MAX_VALUE="
                 + (int) Character.MAX_VALUE);       // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台
-
     }
 }
