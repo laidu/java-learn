@@ -1,0 +1,46 @@
+@startuml
+
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+
+skinparam sequence {
+	ArrowColor DeepSkyBlue
+	ActorBorderColor DeepSkyBlue
+	LifeLineBorderColor blue
+	LifeLineBackgroundColor #A9DCDF
+
+	ParticipantBorderColor DeepSkyBlue
+	ParticipantBackgroundColor DodgerBlue
+	ParticipantFontName Impact
+	ParticipantFontSize 17
+	ParticipantFontColor #A9DCDF
+
+	ActorBackgroundColor aqua
+	ActorFontColor DeepSkyBlue
+	ActorFontSize 17
+	ActorFontName Aapex
+}
+
+Client -> ProxySubject: request
+activate Client
+activate ProxySubject
+
+ProxySubject --> ConcreteSubject: create
+deactivate ProxySubject
+
+ProxySubject -> ProxySubject: preRequest
+activate ProxySubject
+
+ProxySubject --> ConcreteSubject: request
+activate ConcreteSubject
+
+ConcreteSubject -> ProxySubject: request_result
+deactivate ConcreteSubject
+ProxySubject --> ProxySubject: postRequest
+
+ProxySubject -> Client : request_result
+deactivate ProxySubject
+
+deactivate Client
+
+@enduml

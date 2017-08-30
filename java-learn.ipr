@@ -100,15 +100,6 @@ under the License.
       <!-- module filepath="$$PROJECT_DIR$$/${pom.artifactId}.iml"/ -->  
       <module filepath="$PROJECT_DIR$/java-learn.iml"/>
       <module filepath="$PROJECT_DIR$/language-feature/language-feature.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/apache/commons-lang3/commons-lang3.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/apache/httpclient/httpclient.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/apache/commons-text/commons-text.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/apache/apache.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/junit5/junit5.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/mockito/mockito.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/google/auto-value/auto-value.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/google/google.iml"/>
-      <module filepath="$PROJECT_DIR$/framework/framework.iml"/>
       <module filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml"/>
       <module filepath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml"/>
       <module filepath="$PROJECT_DIR$/convenient-util/convenient-util.iml"/>

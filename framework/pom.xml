@@ -18,11 +18,11 @@
         <module>google</module>
     </modules>
 
-    <build>
-        <plugins>
+    <!--<build>-->
+        <!--<plugins>-->
 
-        </plugins>
-    </build>
+        <!--</plugins>-->
+    <!--</build>-->
 
 
 </project>

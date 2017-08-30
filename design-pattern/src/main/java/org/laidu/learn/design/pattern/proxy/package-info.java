@@ -1,5 +1,5 @@
 /**
- * ${DESCRIPTION}
+ * 代理模式
  * User: zangtiancai
  * Date: 2017/8/24
  * Time: 上午11:51
