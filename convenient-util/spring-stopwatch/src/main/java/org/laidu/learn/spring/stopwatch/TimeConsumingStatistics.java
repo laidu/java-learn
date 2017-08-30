@@ -24,7 +24,7 @@ public class TimeConsumingStatistics {
 
     public static void main(String[] args) {
 
-        // todo 实现自定义注解 统计方法调用计时 --- 多线程的情况？
+//          实现自定义注解 统计方法调用计时 --- 多线程的情况？
         StopWatch stopWacth = new StopWatch("MockServiceClient");
 
         MockServiceClient client = new MockServiceClient();
