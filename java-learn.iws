@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bc2438-a72a-42f3-b6d7-df577cf77477" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/ServiceA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/ServiceB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/ServiceC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/mockito/src/site/markdown/mockito.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/MockitoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/ServiceATest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm/algorithm.iml" afterPath="$PROJECT_DIR$/algorithm/algorithm.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/convenient-util/convenient-util.iml" afterPath="$PROJECT_DIR$/convenient-util/convenient-util.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" afterPath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data-structure/data-structure.iml" afterPath="$PROJECT_DIR$/data-structure/data-structure.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-pattern/design-pattern.iml" afterPath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/mockito/pom.xml" afterPath="$PROJECT_DIR$/framework/mockito/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-learn.iml" afterPath="$PROJECT_DIR$/java-learn.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-learn.ipr" afterPath="$PROJECT_DIR$/java-learn.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-learn.iws" afterPath="$PROJECT_DIR$/java-learn.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language-feature/language-feature.iml" afterPath="$PROJECT_DIR$/language-feature/language-feature.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/production-component/common-util/common-util.iml" afterPath="$PROJECT_DIR$/production-component/common-util/common-util.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/production-component/production-component.iml" afterPath="$PROJECT_DIR$/production-component/production-component.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared-resource/shared-resource.iml" afterPath="$PROJECT_DIR$/shared-resource/shared-resource.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/package-info.java" afterPath="$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/package-info.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/design-pattern/target/" />
@@ -204,40 +186,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServiceATest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/ServiceATest.java">
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            <state relative-caret-position="17">
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MockitoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/MockitoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2094">
-              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mockito.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/framework/mockito/src/site/markdown/mockito.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="472">
-                <caret line="134" column="2" lean-forward="false" selection-start-line="134" selection-start-column="2" selection-end-line="134" selection-end-column="2" />
-                <folding>
-                  <marker date="1504161493000" expanded="true" signature="1394:1474" ph="/.../" />
-                  <marker date="1504161493000" expanded="true" signature="2777:2855" ph="/.../" />
-                </folding>
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -286,6 +240,7 @@
         <option value="$PROJECT_DIR$/framework/mockito/src/test/resources/logback-test.xml" />
         <option value="$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/MockitoTest.java" />
         <option value="$PROJECT_DIR$/framework/mockito/src/site/markdown/mockito.md" />
+        <option value="$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/package-info.java" />
       </list>
     </option>
   </component>
@@ -407,6 +362,25 @@
               <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="mockito" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -473,6 +447,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -727,7 +704,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504147995297</updated>
-      <workItem from="1504148000246" duration="7384000" />
+      <workItem from="1504148000246" duration="7465000" />
     </task>
     <servers />
   </component>
@@ -764,7 +741,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7384000" />
+    <option name="totallyTimeSpent" value="7465000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -904,14 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/ServiceB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1008,19 +977,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/ServiceATest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="474" column="13" lean-forward="false" selection-start-line="474" selection-start-column="13" selection-end-line="474" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/mockito/src/site/markdown/mockito.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="449">
+            <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <folding>
+              <marker date="1504161493000" expanded="true" signature="1394:1474" ph="/.../" />
+              <marker date="1504161493000" expanded="true" signature="2777:2855" ph="/.../" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1034,19 +1009,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/mockito/src/site/markdown/mockito.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="472">
-            <caret line="134" column="2" lean-forward="false" selection-start-line="134" selection-start-column="2" selection-end-line="134" selection-end-column="2" />
-            <folding>
-              <marker date="1504161493000" expanded="true" signature="1394:1474" ph="/.../" />
-              <marker date="1504161493000" expanded="true" signature="2777:2855" ph="/.../" />
-            </folding>
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/framework/mockito/src/test/java/org/laidu/learn/test/mockito/ServiceATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/framework/mockito/src/main/java/org/laidu/learn/test/mockito/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mockito</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3478261" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-access:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
