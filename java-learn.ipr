@@ -38,6 +38,8 @@
         <module name="language-feature" />
         <module name="mockito" />
         <module name="shared-resource" />
+        <module name="spring-boot" />
+        <module name="spring-data" />
         <module name="spring-stopwatch" />
       </profile>
     </annotationProcessing>
@@ -60,11 +62,11 @@
       <module name="mockito" target="1.8" />
       <module name="production-component" target="1.8" />
       <module name="shared-resource" target="1.8" />
+      <module name="spring" target="1.8" />
+      <module name="spring-boot" target="1.8" />
+      <module name="spring-data" target="1.8" />
       <module name="spring-stopwatch" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="EntryPointsManager">
-    <entry_points />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="PRINT_LINE_NUMBERS" value="false" />
@@ -141,6 +143,9 @@
       <module fileurl="file://$PROJECT_DIR$/framework/mockito/mockito.iml" filepath="$PROJECT_DIR$/framework/mockito/mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/production-component/production-component.iml" filepath="$PROJECT_DIR$/production-component/production-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared-resource/shared-resource.iml" filepath="$PROJECT_DIR$/shared-resource/shared-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/spring/spring.iml" filepath="$PROJECT_DIR$/framework/spring/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/framework/spring/spring-boot/spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-data/spring-data.iml" filepath="$PROJECT_DIR$/framework/spring/spring-data/spring-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" filepath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" />
     </modules>
   </component>
