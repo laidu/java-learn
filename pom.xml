@@ -21,6 +21,16 @@
         <module>language-advance</module>
     </modules>
 
+    <url>https://laidu.github.io/java-learn-site</url>
+
+    <distributionManagement>
+        <site>
+            <id>github-pages-site</id>
+            <name>Deployment through GitHub's site deployment plugin</name>
+            <url>scm:git:git@github.com:laidu/java-learn-site.git</url>
+        </site>
+    </distributionManagement>
+
     <properties>
 
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -91,20 +101,6 @@
 
     </dependencies>
 
-    <distributionManagement>
-        <site>
-            <id>github-pages-site</id>
-            <name>Deployment through GitHub's site deployment plugin</name>
-            <url>scm:git:git@github.com:laidu/java-learn-site.git</url>
-        </site>
-    </distributionManagement>
-
-    <scm>
-        <url>https://laidu.github.io/java-learn-site</url>
-        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
-        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
-    </scm>
-
     <build>
 
         <plugins>
@@ -165,28 +161,34 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>${github.maven-site-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>site</phase>
-                        <configuration>
-                            <!-- Make sure you have authentication for this server on .m2/settings.xml -->
-                            <server>github</server>
-                            <message>Building site for java-learn </message>
-                            <merge>true</merge>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>com.github.github</groupId>-->
+                <!--<artifactId>site-maven-plugin</artifactId>-->
+                <!--<version>${github.maven-site-plugin.version}</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>site</goal>-->
+                        <!--</goals>-->
+                        <!--<phase>site</phase>-->
+                        <!--<configuration>-->
+                            <!--&lt;!&ndash; Make sure you have authentication for this server on .m2/settings.xml &ndash;&gt;-->
+                            <!--<server>github</server>-->
+                            <!--<message>Building site for java-learn </message>-->
+                            <!--<merge>true</merge>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
 
         </plugins>
     </build>
+
+    <scm>
+        <url>https://laidu.github.io/java-learn-site</url>
+        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
+        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
+    </scm>
 
     <reporting>
         <plugins>
@@ -221,30 +223,30 @@
         </plugins>
     </reporting>
 
-    <profiles>
-        <profile>
-            <id>gh-pages</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.github.github</groupId>
-                        <artifactId>site-maven-plugin</artifactId>
-                        <configuration>
-                            <message>Creating site for ${project.version}</message>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>site</goal>
-                                </goals>
-                                <phase>site</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
+    <!--<profiles>-->
+        <!--<profile>-->
+            <!--<id>gh-pages</id>-->
+            <!--<build>-->
+                <!--<plugins>-->
+                    <!--<plugin>-->
+                        <!--<groupId>com.github.github</groupId>-->
+                        <!--<artifactId>site-maven-plugin</artifactId>-->
+                        <!--<configuration>-->
+                            <!--<message>Creating site for ${project.version}</message>-->
+                        <!--</configuration>-->
+                        <!--<executions>-->
+                            <!--<execution>-->
+                                <!--<goals>-->
+                                    <!--<goal>site</goal>-->
+                                <!--</goals>-->
+                                <!--<phase>site</phase>-->
+                            <!--</execution>-->
+                        <!--</executions>-->
+                    <!--</plugin>-->
+                <!--</plugins>-->
+            <!--</build>-->
+        <!--</profile>-->
 
-    </profiles>
+    <!--</profiles>-->
 
 </project>
