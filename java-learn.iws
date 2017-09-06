@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bc2438-a72a-42f3-b6d7-df577cf77477" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/site/markdown/abstract-factory.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-learn.iws" afterPath="$PROJECT_DIR$/java-learn.iws" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -130,8 +129,8 @@
         <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/abstract-factory.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2227">
-                <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+              <first_editor relative-caret-position="236">
+                <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -883,7 +882,7 @@
       <updated>1504147995297</updated>
       <workItem from="1504148000246" duration="18327000" />
       <workItem from="1504230299906" duration="21949000" />
-      <workItem from="1504663730845" duration="6172000" />
+      <workItem from="1504663730845" duration="6411000" />
     </task>
     <servers />
   </component>
@@ -920,7 +919,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46448000" />
+    <option name="totallyTimeSpent" value="46687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1783,8 +1782,8 @@
     <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/abstract-factory.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2227">
-            <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+          <first_editor relative-caret-position="236">
+            <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
