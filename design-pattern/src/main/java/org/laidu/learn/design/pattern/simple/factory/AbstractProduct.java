@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * Created by 臧天才 on 2017-09-01 18:10.
  */
 @Slf4j
-// TODO : 2017-09-01 18:10  抽象产品
+//  : 2017-09-01 18:10  抽象产品
 public abstract class AbstractProduct {
 
     protected ColorType color;

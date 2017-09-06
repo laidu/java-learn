@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * Created by 臧天才 on 2017-09-01 18:23.
  */
 @Slf4j
-// TODO : 2017-09-01 18:23  简单工厂类
+//  2017-09-01 18:23  简单工厂类
 public class Factory {
 
     public static AbstractProduct createProduct(AbstractProduct.ColorType colorType) {

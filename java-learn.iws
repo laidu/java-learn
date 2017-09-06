@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bc2438-a72a-42f3-b6d7-df577cf77477" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Client.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteBlueProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteYellowProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/site/markdown/factory.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-pattern/src/site/markdown/simple-factory.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java" afterPath="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-pattern/src/site/markdown/simple-factory.md" afterPath="$PROJECT_DIR$/design-pattern/src/site/markdown/simple-factory.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-learn.iws" afterPath="$PROJECT_DIR$/java-learn.iws" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -138,8 +133,8 @@
         <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/simple-factory.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="350">
-                <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
+              <first_editor relative-caret-position="-1837">
+                <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -150,12 +145,132 @@
       <file leaf-file-name="AbstractProduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/org.laidu.learn.design.pattern.simple.factory.AbstractProduct" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.laidu.learn.design.pattern.simple.factory.AbstractProduct</OriginalElement>
+              <nodes>
+                <node x="10.499999999999943" y="332.0">org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct</node>
+                <node x="509.5" y="332.0">org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct</node>
+                <node x="315.875" y="0.0">org.laidu.learn.design.pattern.simple.factory.AbstractProduct</node>
+                <node x="425.875" y="160.0">org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType</node>
+                <node x="196.99999999999994" y="459.0">org.laidu.learn.design.pattern.simple.factory.Factory</node>
+                <node x="250.49999999999997" y="332.0">org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+                  <point x="-59.5" y="-38.5" />
+                  <point x="310.0" y="140.0" />
+                  <point x="408.375" y="140.0" />
+                  <point x="-37.0" y="50.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+                  <point x="-39.0" y="-61.0" />
+                  <point x="0.0" y="50.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct">
+                  <point x="5.6843418860808015E-14" y="-38.5" />
+                  <point x="373.5" y="439.0" />
+                  <point x="369.5" y="439.0" />
+                  <point x="0.0" y="38.5" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+                  <point x="-141.19999999999993" y="-38.5" />
+                  <point x="232.3" y="439.0" />
+                  <point x="0.0" y="439.0" />
+                  <point x="0.0" y="120.0" />
+                  <point x="334.375" y="120.0" />
+                  <point x="-111.0" y="50.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+                  <point x="-55.0" y="-38.5" />
+                  <point x="65.5" y="130.0" />
+                  <point x="371.375" y="130.0" />
+                  <point x="-74.0" y="50.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+                  <point x="-55.75" y="-38.5" />
+                  <point x="565.25" y="312.0" />
+                  <point x="528.25" y="312.0" />
+                  <point x="43.875" y="61.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct">
+                  <point x="-70.59999999999997" y="-38.5" />
+                  <point x="302.9" y="429.0" />
+                  <point x="120.49999999999994" y="429.0" />
+                  <point x="0.0" y="38.5" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+                  <point x="70.60000000000008" y="-38.5" />
+                  <point x="444.1" y="439.0" />
+                  <point x="499.0" y="439.0" />
+                  <point x="14.625" y="61.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+                  <point x="59.5" y="-38.5" />
+                  <point x="429.0" y="312.0" />
+                  <point x="469.75" y="312.0" />
+                  <point x="-14.625" y="61.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.AbstractProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+                  <point x="37.0" y="50.0" />
+                  <point x="482.375" y="140.0" />
+                  <point x="484.375" y="140.0" />
+                  <point x="0.0" y="-61.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct">
+                  <point x="141.2000000000001" y="-38.5" />
+                  <point x="514.7" y="439.0" />
+                  <point x="621.0" y="439.0" />
+                  <point x="0.0" y="38.5" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+                  <point x="55.0" y="-38.5" />
+                  <point x="175.49999999999994" y="302.0" />
+                  <point x="440.5" y="302.0" />
+                  <point x="-43.875" y="61.0" />
+                </edge>
+                <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+                  <point x="55.75" y="-38.5" />
+                  <point x="676.75" y="140.0" />
+                  <point x="556.375" y="140.0" />
+                  <point x="111.0" y="50.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-174.0" y="197.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -163,8 +278,8 @@
       <file leaf-file-name="ConcreteRedProduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -173,18 +288,18 @@
       <file leaf-file-name="Factory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -194,7 +309,7 @@
         <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteBlueProduct.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -204,8 +319,8 @@
         <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/factory.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="318">
-                <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+              <first_editor relative-caret-position="130">
+                <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -213,25 +328,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proxy.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/proxy.md">
+      <file leaf-file-name="singleton.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/singleton.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="25">
-                <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/template.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="323">
-                <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="5" />
+              <first_editor relative-caret-position="-814">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -319,11 +421,12 @@
         <option value="$PROJECT_DIR$/language-feature/src/main/java/org/laidu/learn/language/feature/thread/local/package-info.java" />
         <option value="$PROJECT_DIR$/design-pattern/src/site/markdown/template.md" />
         <option value="$PROJECT_DIR$/design-pattern/src/site/markdown/factory.md" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Client.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java" />
         <option value="$PROJECT_DIR$/design-pattern/src/site/markdown/simple-factory.md" />
         <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java" />
-        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java" />
-        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java" />
-        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Client.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java" />
       </list>
     </option>
   </component>
@@ -448,8 +551,8 @@
     <panes>
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -516,6 +619,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-learn" type="b2602c69:ProjectViewProjectNode" />
@@ -599,7 +711,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
-    <property name="SearchEverywhereHistoryKey" value="ThreadLocal&#9;PSI&#9;JAVA://java.lang.ThreadLocal" />
+    <property name="SearchEverywhereHistoryKey" value="factory&#9;FILE&#9;file:///Users/laidu/IdeaProjects/java-learn/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java&#10;ThreadLocal&#9;PSI&#9;JAVA://java.lang.ThreadLocal" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -839,7 +951,8 @@
       <option name="presentableId" value="Default" />
       <updated>1504147995297</updated>
       <workItem from="1504148000246" duration="18327000" />
-      <workItem from="1504230299906" duration="21773000" />
+      <workItem from="1504230299906" duration="21949000" />
+      <workItem from="1504663730845" duration="1534000" />
     </task>
     <servers />
   </component>
@@ -876,7 +989,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40100000" />
+    <option name="totallyTimeSpent" value="41810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -889,6 +1002,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-125" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -902,16 +1016,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28500497" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.49573562" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1663113" sideWeight="0.4948148" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.49573562" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.4948148" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5051852" order="3" side_tool="true" content_ui="tabs" />
@@ -996,27 +1110,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/language-feature/src/main/java/org/laidu/learn/language/feature/date/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/language-feature/src/main/java/org/laidu/learn/language/feature/default_/method/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/language-feature/src/main/java/org/laidu/learn/language/feature/regex/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,7 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,7 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,9 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#177#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,7 +1185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,23 +1192,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convenient-util/thread-local/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/convenient-util/thread-local/pom.xml" />
     <entry file="file://$PROJECT_DIR$/convenient-util/spring-stopwatch/src/main/java/org/laidu/learn/spring/stopwatch/source/StopWatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,42 +1214,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convenient-util/thread-local/src/site/markdown/thread-local.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="16" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/convenient-util/thread-local/src/site/markdown/thread-local.md" />
     <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/uml/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convenient-util/thread-local/src/main/java/org/laidu/learn/thread/local/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/convenient-util/thread-local/src/main/java/org/laidu/learn/thread/local/package-info.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="136" column="17" lean-forward="false" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,7 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="318" column="31" lean-forward="false" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1315">
           <caret line="324" column="20" lean-forward="false" selection-start-line="324" selection-start-column="20" selection-end-line="324" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1267,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1224,10 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="245" column="7" lean-forward="true" selection-start-line="245" selection-start-column="7" selection-end-line="245" selection-end-column="7" />
-          <folding>
-            <marker date="1504244956000" expanded="false" signature="6015:6045" ph="/unchecked/" />
-            <marker date="1504244956000" expanded="false" signature="13830:13860" ph="/unchecked/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,7 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="181" column="51" lean-forward="true" selection-start-line="179" selection-start-column="4" selection-end-line="181" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,27 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="286" column="0" lean-forward="true" selection-start-line="273" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3276#3277#0" expanded="true" />
-            <element signature="e#3337#3338#0" expanded="true" />
-            <element signature="e#4309#4310#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
-            <element signature="e#5646#5676#1" expanded="true" />
-            <element signature="e#7765#7766#0" expanded="true" />
-            <element signature="e#7802#7803#0" expanded="true" />
-            <element signature="e#8068#8069#0" expanded="true" />
-            <element signature="e#8137#8138#0" expanded="true" />
-            <element signature="e#8486#8487#0" expanded="true" />
-            <element signature="e#8538#8539#0" expanded="true" />
-            <element signature="e#8954#8955#0" expanded="true" />
-            <element signature="e#9011#9012#0" expanded="true" />
-            <element signature="e#9327#9328#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9500#9501#0" expanded="true" />
-            <element signature="class#ThreadLocalMap#0;class#ThreadLocal#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,7 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1280,7 +1305,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2822">
             <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1290,13 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,11 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,7 +1344,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="170">
             <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1343,9 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#175#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,31 +1373,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/factory/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/proxy.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="25">
-            <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <first_editor relative-caret-position="935">
+            <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1402,29 +1395,180 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="323">
-            <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="5" />
+            <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.laidu.learn.design.pattern.simple.factory.AbstractProduct</OriginalElement>
+          <nodes>
+            <node x="10.499999999999943" y="332.0">org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct</node>
+            <node x="509.5" y="332.0">org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct</node>
+            <node x="315.875" y="0.0">org.laidu.learn.design.pattern.simple.factory.AbstractProduct</node>
+            <node x="425.875" y="160.0">org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType</node>
+            <node x="196.99999999999994" y="459.0">org.laidu.learn.design.pattern.simple.factory.Factory</node>
+            <node x="250.49999999999997" y="332.0">org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+              <point x="-59.5" y="-38.5" />
+              <point x="310.0" y="140.0" />
+              <point x="408.375" y="140.0" />
+              <point x="-37.0" y="50.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+              <point x="-39.0" y="-61.0" />
+              <point x="0.0" y="50.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct">
+              <point x="5.6843418860808015E-14" y="-38.5" />
+              <point x="373.5" y="439.0" />
+              <point x="369.5" y="439.0" />
+              <point x="0.0" y="38.5" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+              <point x="-141.19999999999993" y="-38.5" />
+              <point x="232.3" y="439.0" />
+              <point x="0.0" y="439.0" />
+              <point x="0.0" y="120.0" />
+              <point x="334.375" y="120.0" />
+              <point x="-111.0" y="50.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+              <point x="-55.0" y="-38.5" />
+              <point x="65.5" y="130.0" />
+              <point x="371.375" y="130.0" />
+              <point x="-74.0" y="50.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+              <point x="-55.75" y="-38.5" />
+              <point x="565.25" y="312.0" />
+              <point x="528.25" y="312.0" />
+              <point x="43.875" y="61.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct">
+              <point x="-70.59999999999997" y="-38.5" />
+              <point x="302.9" y="429.0" />
+              <point x="120.49999999999994" y="429.0" />
+              <point x="0.0" y="38.5" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+              <point x="70.60000000000008" y="-38.5" />
+              <point x="444.1" y="439.0" />
+              <point x="499.0" y="439.0" />
+              <point x="14.625" y="61.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+              <point x="59.5" y="-38.5" />
+              <point x="429.0" y="312.0" />
+              <point x="469.75" y="312.0" />
+              <point x="-14.625" y="61.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.AbstractProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+              <point x="37.0" y="50.0" />
+              <point x="482.375" y="140.0" />
+              <point x="484.375" y="140.0" />
+              <point x="0.0" y="-61.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.Factory" target="org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct">
+              <point x="141.2000000000001" y="-38.5" />
+              <point x="514.7" y="439.0" />
+              <point x="621.0" y="439.0" />
+              <point x="0.0" y="38.5" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct.ColorType">
+              <point x="55.0" y="-38.5" />
+              <point x="175.49999999999994" y="302.0" />
+              <point x="440.5" y="302.0" />
+              <point x="-43.875" y="61.0" />
+            </edge>
+            <edge source="org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct" target="org.laidu.learn.design.pattern.simple.factory.AbstractProduct">
+              <point x="55.75" y="-38.5" />
+              <point x="676.75" y="140.0" />
+              <point x="556.375" y="140.0" />
+              <point x="111.0" y="50.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-174.0" y="197.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/factory.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="318">
-            <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <first_editor relative-caret-position="130">
+            <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/singleton.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-814">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteBlueProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/design-pattern/src/site/markdown/simple-factory.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="350">
-            <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
+          <first_editor relative-caret-position="-1837">
+            <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1433,43 +1577,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteBlueProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/org/laidu/learn/design/pattern/simple/factory/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
