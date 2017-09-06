@@ -31,10 +31,12 @@
         <module name="common-util" />
         <module name="commons-lang3" />
         <module name="commons-text" />
+        <module name="concurrent" />
         <module name="data-structure" />
         <module name="design-pattern" />
         <module name="httpclient" />
         <module name="junit5" />
+        <module name="jvm" />
         <module name="language-feature" />
         <module name="mockito" />
         <module name="shared-resource" />
@@ -50,6 +52,7 @@
       <module name="common-util" target="1.8" />
       <module name="commons-lang3" target="1.8" />
       <module name="commons-text" target="1.8" />
+      <module name="concurrent" target="1.8" />
       <module name="convenient-util" target="1.8" />
       <module name="data-structure" target="1.8" />
       <module name="design-pattern" target="1.8" />
@@ -58,6 +61,8 @@
       <module name="httpclient" target="1.8" />
       <module name="java-learn" target="1.8" />
       <module name="junit5" target="1.8" />
+      <module name="jvm" target="1.8" />
+      <module name="language-advance" target="1.8" />
       <module name="language-feature" target="1.8" />
       <module name="mockito" target="1.8" />
       <module name="production-component" target="1.8" />
@@ -258,6 +263,7 @@
       <module fileurl="file://$PROJECT_DIR$/production-component/common-util/common-util.iml" filepath="$PROJECT_DIR$/production-component/common-util/common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/apache/commons-lang3/commons-lang3.iml" filepath="$PROJECT_DIR$/framework/apache/commons-lang3/commons-lang3.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/apache/commons-text/commons-text.iml" filepath="$PROJECT_DIR$/framework/apache/commons-text/commons-text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/language-advance/concurrent/concurrent.iml" filepath="$PROJECT_DIR$/language-advance/concurrent/concurrent.iml" />
       <module fileurl="file://$PROJECT_DIR$/convenient-util/convenient-util.iml" filepath="$PROJECT_DIR$/convenient-util/convenient-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structure/data-structure.iml" filepath="$PROJECT_DIR$/data-structure/data-structure.iml" />
       <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
@@ -266,6 +272,8 @@
       <module fileurl="file://$PROJECT_DIR$/framework/apache/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/framework/apache/httpclient/httpclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-learn.iml" filepath="$PROJECT_DIR$/java-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/junit5/junit5.iml" filepath="$PROJECT_DIR$/framework/junit5/junit5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/language-advance/jvm/jvm.iml" filepath="$PROJECT_DIR$/language-advance/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/language-advance/language-advance.iml" filepath="$PROJECT_DIR$/language-advance/language-advance.iml" />
       <module fileurl="file://$PROJECT_DIR$/language-feature/language-feature.iml" filepath="$PROJECT_DIR$/language-feature/language-feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/mockito/mockito.iml" filepath="$PROJECT_DIR$/framework/mockito/mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/production-component/production-component.iml" filepath="$PROJECT_DIR$/production-component/production-component.iml" />

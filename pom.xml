@@ -99,14 +99,15 @@
         </site>
     </distributionManagement>
 
+    <scm>
+        <url>https://laidu.github.io/java-learn-site</url>
+        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
+        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
+    </scm>
+
     <build>
 
-        <pluginManagement>
-
-        </pluginManagement>
-
         <plugins>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -168,19 +169,18 @@
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>${github.maven-site-plugin.version}</version>
-                <configuration>
-                    <message>Creating site for ${project.artifactId}, ${project.version}</message>
-                    <!-- this does the trick to place every module in the correct subfolder -->
-                    <path>${project.distributionManagement.site.url}</path>
-                    <merge>true</merge>
-                </configuration>
                 <executions>
                     <execution>
-                        <id>github-site</id>
                         <goals>
                             <goal>site</goal>
                         </goals>
-                        <phase>site-deploy</phase>
+                        <phase>site</phase>
+                        <configuration>
+                            <!-- Make sure you have authentication for this server on .m2/settings.xml -->
+                            <server>github</server>
+                            <message>Building site for java-learn </message>
+                            <merge>true</merge>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -244,6 +244,7 @@
                 </plugins>
             </build>
         </profile>
+
     </profiles>
 
 </project>
