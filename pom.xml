@@ -18,6 +18,7 @@
         <module>algorithm</module>
         <module>production-component</module>
         <module>shared-resource</module>
+        <module>language-advance</module>
     </modules>
 
     <properties>
