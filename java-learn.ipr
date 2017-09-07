@@ -28,6 +28,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm" />
         <module name="auto-value" />
+        <module name="BTrace" />
         <module name="common-util" />
         <module name="commons-lang3" />
         <module name="commons-text" />
@@ -49,6 +50,7 @@
       <module name="algorithm" target="1.8" />
       <module name="apache" target="1.8" />
       <module name="auto-value" target="1.8" />
+      <module name="BTrace" target="1.8" />
       <module name="common-util" target="1.8" />
       <module name="commons-lang3" target="1.8" />
       <module name="commons-text" target="1.8" />
@@ -257,6 +259,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/convenient-util/BTrace/BTrace.iml" filepath="$PROJECT_DIR$/convenient-util/BTrace/BTrace.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/apache/apache.iml" filepath="$PROJECT_DIR$/framework/apache/apache.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/google/auto-value/auto-value.iml" filepath="$PROJECT_DIR$/framework/google/auto-value/auto-value.iml" />
