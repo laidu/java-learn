@@ -17,6 +17,7 @@
         <module>mockito</module>
         <module>google</module>
         <module>spring</module>
+        <module>netty</module>
     </modules>
 
     <!--<build>-->
