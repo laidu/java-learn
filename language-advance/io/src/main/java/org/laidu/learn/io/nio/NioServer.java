@@ -1,4 +1,4 @@
-package org.laidu.learn.io.bio;
+package org.laidu.learn.io.nio;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,7 @@ import java.util.Iterator;
  */
 @Slf4j
 //  : 2017-09-11 15:25  server
-public class BioServer {
+public class NioServer {
 
     // 通道管理器
     private Selector selector;
@@ -93,7 +93,7 @@ public class BioServer {
 
 
     public static void main(String[] args) throws Throwable {
-        BioServer server = new BioServer();
+        NioServer server = new NioServer();
         server.initServer(8080);
         server.listen();
     }

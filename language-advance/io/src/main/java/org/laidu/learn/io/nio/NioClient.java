@@ -1,4 +1,4 @@
-package org.laidu.learn.io.bio;
+package org.laidu.learn.io.nio;
 
 
 import java.io.IOException;
@@ -16,7 +16,7 @@ import java.util.Iterator;
  */
 
 //  : 2017-09-11 18:31  NIOClient
-public class BioClient {
+public class NioClient {
 
     private Selector selector;
 
@@ -78,7 +78,7 @@ public class BioClient {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        BioClient client = new BioClient();
+        NioClient client = new NioClient();
         client.initClient("localhost", 8080);
         client.listen();
     }
