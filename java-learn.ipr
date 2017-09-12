@@ -62,6 +62,7 @@
       <module name="convenient-util" target="1.8" />
       <module name="data-structure" target="1.8" />
       <module name="design-pattern" target="1.8" />
+      <module name="dev-ops" target="1.8" />
       <module name="framework" target="1.8" />
       <module name="google" target="1.8" />
       <module name="httpclient" target="1.8" />
@@ -73,6 +74,7 @@
       <module name="language-feature" target="1.8" />
       <module name="mockito" target="1.8" />
       <module name="netty" target="1.8" />
+      <module name="nginx" target="1.8" />
       <module name="production-component" target="1.8" />
       <module name="shared-resource" target="1.8" />
       <module name="spring" target="1.8" />
@@ -140,6 +142,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/convenient-util/thread-local/pom.xml" />
+        <option value="$PROJECT_DIR$/dev-ops/pom.xml" />
       </set>
     </option>
   </component>
