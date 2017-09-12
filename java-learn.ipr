@@ -134,6 +134,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/async-http-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
