@@ -18,6 +18,7 @@
         <module>google</module>
         <module>spring</module>
         <module>netty</module>
+        <module>async-http-client</module>
     </modules>
 
     <!--<build>-->
