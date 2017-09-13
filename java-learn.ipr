@@ -44,6 +44,7 @@
         <module name="mockito" />
         <module name="netty" />
         <module name="shared-resource" />
+        <module name="spring-amqp" />
         <module name="spring-boot" />
         <module name="spring-data" />
         <module name="spring-stopwatch" />
@@ -78,6 +79,7 @@
       <module name="production-component" target="1.8" />
       <module name="shared-resource" target="1.8" />
       <module name="spring" target="1.8" />
+      <module name="spring-amqp" target="1.8" />
       <module name="spring-boot" target="1.8" />
       <module name="spring-data" target="1.8" />
       <module name="spring-stopwatch" target="1.8" />
@@ -295,6 +297,7 @@
       <module fileurl="file://$PROJECT_DIR$/production-component/production-component.iml" filepath="$PROJECT_DIR$/production-component/production-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared-resource/shared-resource.iml" filepath="$PROJECT_DIR$/shared-resource/shared-resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/spring/spring.iml" filepath="$PROJECT_DIR$/framework/spring/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-amqp/spring-amqp.iml" filepath="$PROJECT_DIR$/framework/spring/spring-amqp/spring-amqp.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/framework/spring/spring-boot/spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-data/spring-data.iml" filepath="$PROJECT_DIR$/framework/spring/spring-data/spring-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" filepath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" />
@@ -347,6 +350,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/google/auto/value/auto-value/1.5/auto-value-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.rabbitmq:amqp-client:4.2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.2.0/amqp-client-4.2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.2.0/amqp-client-4.2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.2.0/amqp-client-4.2.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.typesafe.netty:netty-reactive-streams:2.0.0">
@@ -666,6 +680,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:slf4j-api:1.7.25">
