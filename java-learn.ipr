@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AntConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="CheckStyle-IDEA">
     <option name="configuration">
       <map>
-        <entry key="checkstyle-version" value="8.1" />
+        <entry key="checkstyle-version" value="8.2" />
         <entry key="location-0" value="BUNDLED:(bundled):Sun Checks" />
         <entry key="location-1" value="BUNDLED:(bundled):Google Checks" />
         <entry key="scan-before-checkin" value="false" />
@@ -27,7 +31,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm" />
-        <module name="async-http-client" />
         <module name="auto-value" />
         <module name="BTrace" />
         <module name="common-util" />
@@ -44,6 +47,7 @@
         <module name="mockito" />
         <module name="netty" />
         <module name="shared-resource" />
+        <module name="spring-amqp" />
         <module name="spring-boot" />
         <module name="spring-data" />
         <module name="spring-stopwatch" />
@@ -52,7 +56,6 @@
     <bytecodeTargetLevel>
       <module name="algorithm" target="1.8" />
       <module name="apache" target="1.8" />
-      <module name="async-http-client" target="1.8" />
       <module name="auto-value" target="1.8" />
       <module name="BTrace" target="1.8" />
       <module name="common-util" target="1.8" />
@@ -62,7 +65,6 @@
       <module name="convenient-util" target="1.8" />
       <module name="data-structure" target="1.8" />
       <module name="design-pattern" target="1.8" />
-      <module name="dev-ops" target="1.8" />
       <module name="framework" target="1.8" />
       <module name="google" target="1.8" />
       <module name="httpclient" target="1.8" />
@@ -74,15 +76,17 @@
       <module name="language-feature" target="1.8" />
       <module name="mockito" target="1.8" />
       <module name="netty" target="1.8" />
-      <module name="nginx" target="1.8" />
       <module name="production-component" target="1.8" />
       <module name="shared-resource" target="1.8" />
       <module name="spring" target="1.8" />
+      <module name="spring-amqp" target="1.8" />
       <module name="spring-boot" target="1.8" />
       <module name="spring-data" target="1.8" />
       <module name="spring-stopwatch" target="1.8" />
-      <module name="thread-local" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="PRINT_LINE_NUMBERS" value="false" />
@@ -136,143 +140,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/framework/async-http-client/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/convenient-util/thread-local/pom.xml" />
-        <option value="$PROJECT_DIR$/dev-ops/pom.xml" />
-      </set>
-    </option>
-  </component>
-  <component name="Palette2">
-    <group name="Swing">
-      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
-      </item>
-      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
-      </item>
-      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
-      </item>
-      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
-        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
-      </item>
-      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
-        <initial-values>
-          <property name="text" value="Button" />
-        </initial-values>
-      </item>
-      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
-        <initial-values>
-          <property name="text" value="RadioButton" />
-        </initial-values>
-      </item>
-      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
-        <initial-values>
-          <property name="text" value="CheckBox" />
-        </initial-values>
-      </item>
-      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
-        <initial-values>
-          <property name="text" value="Label" />
-        </initial-values>
-      </item>
-      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
-          <preferred-size width="150" height="-1" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
-          <preferred-size width="150" height="-1" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
-          <preferred-size width="150" height="-1" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
-      </item>
-      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
-          <preferred-size width="200" height="200" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
-          <preferred-size width="200" height="200" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
-      </item>
-      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
-      </item>
-      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
-      </item>
-      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
-      </item>
-      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
-          <preferred-size width="-1" height="20" />
-        </default-constraints>
-      </item>
-      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
-      </item>
-      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
-      </item>
-    </group>
   </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/convenient-util/BTrace/BTrace.iml" filepath="$PROJECT_DIR$/convenient-util/BTrace/BTrace.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/apache/apache.iml" filepath="$PROJECT_DIR$/framework/apache/apache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/framework/async-http-client/async-http-client.iml" filepath="$PROJECT_DIR$/framework/async-http-client/async-http-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/google/auto-value/auto-value.iml" filepath="$PROJECT_DIR$/framework/google/auto-value/auto-value.iml" />
       <module fileurl="file://$PROJECT_DIR$/production-component/common-util/common-util.iml" filepath="$PROJECT_DIR$/production-component/common-util/common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/apache/commons-lang3/commons-lang3.iml" filepath="$PROJECT_DIR$/framework/apache/commons-lang3/commons-lang3.iml" />
@@ -295,6 +170,7 @@
       <module fileurl="file://$PROJECT_DIR$/production-component/production-component.iml" filepath="$PROJECT_DIR$/production-component/production-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared-resource/shared-resource.iml" filepath="$PROJECT_DIR$/shared-resource/shared-resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/spring/spring.iml" filepath="$PROJECT_DIR$/framework/spring/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-amqp/spring-amqp.iml" filepath="$PROJECT_DIR$/framework/spring/spring-amqp/spring-amqp.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/framework/spring/spring-boot/spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/spring/spring-data/spring-data.iml" filepath="$PROJECT_DIR$/framework/spring/spring-data/spring-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" filepath="$PROJECT_DIR$/convenient-util/spring-stopwatch/spring-stopwatch.iml" />
@@ -349,15 +225,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/google/auto/value/auto-value/1.5/auto-value-1.5-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.typesafe.netty:netty-reactive-streams:2.0.0">
+    <library name="Maven: com.rabbitmq:amqp-client:4.2.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/netty/netty-reactive-streams/2.0.0/netty-reactive-streams-2.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.2.0/amqp-client-4.2.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/netty/netty-reactive-streams/2.0.0/netty-reactive-streams-2.0.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.2.0/amqp-client-4.2.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/netty/netty-reactive-streams/2.0.0/netty-reactive-streams-2.0.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.2.0/amqp-client-4.2.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-logging:commons-logging:1.2">
@@ -369,127 +245,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-buffer:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.15.Final/netty-buffer-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.15.Final/netty-buffer-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.15.Final/netty-buffer-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-codec-dns:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-dns/4.1.15.Final/netty-codec-dns-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-dns/4.1.15.Final/netty-codec-dns-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-dns/4.1.15.Final/netty-codec-dns-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-codec-http:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.1.15.Final/netty-codec-http-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.1.15.Final/netty-codec-http-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.1.15.Final/netty-codec-http-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-codec:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.15.Final/netty-codec-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.15.Final/netty-codec-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.15.Final/netty-codec-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-common:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.15.Final/netty-common-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.15.Final/netty-common-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.15.Final/netty-common-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-handler:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-handler/4.1.15.Final/netty-handler-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-handler/4.1.15.Final/netty-handler-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-handler/4.1.15.Final/netty-handler-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-resolver-dns:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver-dns/4.1.15.Final/netty-resolver-dns-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver-dns/4.1.15.Final/netty-resolver-dns-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver-dns/4.1.15.Final/netty-resolver-dns-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-resolver:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.15.Final/netty-resolver-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.15.Final/netty-resolver-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.15.Final/netty-resolver-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-epoll/4.1.15.Final/netty-transport-native-epoll-4.1.15.Final-linux-x86_64.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-epoll/4.1.15.Final/netty-transport-native-epoll-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-epoll/4.1.15.Final/netty-transport-native-epoll-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-transport-native-unix-common:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-unix-common/4.1.15.Final/netty-transport-native-unix-common-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-unix-common/4.1.15.Final/netty-transport-native-unix-common-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-unix-common/4.1.15.Final/netty-transport-native-unix-common-4.1.15.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty-transport:4.1.15.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.15.Final/netty-transport-4.1.15.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.15.Final/netty-transport-4.1.15.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.15.Final/netty-transport-4.1.15.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: junit:junit:4.12">
@@ -556,28 +311,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-text/1.1/commons-text-1.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.asynchttpclient:async-http-client-netty-utils:2.1.0-alpha24">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/asynchttpclient/async-http-client-netty-utils/2.1.0-alpha24/async-http-client-netty-utils-2.1.0-alpha24.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/asynchttpclient/async-http-client-netty-utils/2.1.0-alpha24/async-http-client-netty-utils-2.1.0-alpha24-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/asynchttpclient/async-http-client-netty-utils/2.1.0-alpha24/async-http-client-netty-utils-2.1.0-alpha24-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.asynchttpclient:async-http-client:2.1.0-alpha24">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/asynchttpclient/async-http-client/2.1.0-alpha24/async-http-client-2.1.0-alpha24.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/asynchttpclient/async-http-client/2.1.0-alpha24/async-http-client-2.1.0-alpha24-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/asynchttpclient/async-http-client/2.1.0-alpha24/async-http-client-2.1.0-alpha24-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hamcrest:hamcrest-core:1.3">
@@ -657,15 +390,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.16/lombok-1.16.16-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.reactivestreams:reactive-streams:1.0.0">
+    <library name="Maven: org.slf4j:slf4j-api:1.7.21">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:slf4j-api:1.7.25">
