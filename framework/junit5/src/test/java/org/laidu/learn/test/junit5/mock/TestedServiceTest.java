@@ -18,8 +18,7 @@ class TestedServiceTest {
     @DisplayName("BeforeAll")
     static void initAll(){
 
-        log.info("-*--*--*--*--*--*--*--*--*--  --*--*--*--*--*--*--*--*--*-: {}",
-                "BeforeAll");
+        log.info("-*--*--*--*--*--*--*--*--*--  --*--*--*--*--*--*--*--*--*-: {}", "BeforeAll");
     }
 
     @BeforeEach
