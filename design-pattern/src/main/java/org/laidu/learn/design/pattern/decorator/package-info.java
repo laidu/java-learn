@@ -1,7 +1,7 @@
 /**
- * ${DESCRIPTION}
- * User: zangtiancai
- * Date: 2017/8/24
- * Time: 上午11:51
+ * 装饰器模式
+ * <p>
+ * Created by Intellij idea on 2017-09-01 10:49.
  */
+// TODO : 2017-09-01 10:49  装饰器模式
 package org.laidu.learn.design.pattern.decorator;

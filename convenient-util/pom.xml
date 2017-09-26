@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-stopwatch</module>
+        <module>BTrace</module>
     </modules>
 
 
