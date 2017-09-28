@@ -183,25 +183,37 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-                <!--<groupId>com.github.github</groupId>-->
-                <!--<artifactId>site-maven-plugin</artifactId>-->
-                <!--<version>${github.maven-site-plugin.version}</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<goals>-->
-                            <!--<goal>site</goal>-->
-                        <!--</goals>-->
-                        <!--<phase>site</phase>-->
-                        <!--<configuration>-->
-                            <!--&lt;!&ndash; Make sure you have authentication for this server on .m2/settings.xml &ndash;&gt;-->
-                            <!--<server>github</server>-->
-                            <!--<message>Building site for java-learn </message>-->
-                            <!--<merge>true</merge>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>${github.maven-site-plugin.version}</version>
+
+                <configuration>
+                    <message>Creating site for ${project.artifactId}, ${project.version}</message>
+                    <!-- this does the trick to place every module in the correct subfolder -->
+                    <path>${project.distributionManagement.site.url}</path>
+                    <merge>true</merge>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>github-site</id>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>site</phase>
+                        <configuration>
+                            <!-- Plugin configuration ges here -->
+                            <server>github</server>
+                            <!-- The commit message -->
+                            <message>Building site for my project</message>
+                            <!-- The location where the site is uploaded -->
+                            <path>${project.distributionManagement.site.url}</path>
+                            <!-- Use merge or override the content -->
+                            <merge>true</merge>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
         </plugins>
     </build>
