@@ -29,6 +29,7 @@
             <id>github-pages-site</id>
             <name>Deployment through GitHub's site deployment plugin</name>
             <url>scm:git:git@github.com:laidu/java-learn-site.git</url>
+            <!--<url>site/${project.version}</url>-->
         </site>
     </distributionManagement>
 
