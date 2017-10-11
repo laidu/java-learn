@@ -1,4 +1,4 @@
-package oeg.laidu.learn.amqp.rabbitmq.rpc;
+package org.laidu.learn.amqp.rabbitmq.rpc;
 
 
 import lombok.extern.slf4j.Slf4j;

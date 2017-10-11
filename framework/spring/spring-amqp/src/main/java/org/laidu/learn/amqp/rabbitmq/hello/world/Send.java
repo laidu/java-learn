@@ -1,4 +1,4 @@
-package oeg.laidu.learn.amqp.rabbitmq.hello.world;
+package org.laidu.learn.amqp.rabbitmq.hello.world;
 
 
 import com.rabbitmq.client.Channel;
