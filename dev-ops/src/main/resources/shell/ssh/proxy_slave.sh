@@ -7,13 +7,14 @@
     Usage :
             1. alias proxy_slave="sh ~/bin/proxy_slave.sh root 123123"
             2. proxy_slave 10.10.10.101:22 root 123123
-';
+'
 
-ARGS=$1
-LOGIN_NAME=$2
-PASSWORD=$3
+LOGIN_NAME=$1
+PASSWORD=$2
+ARGS=$3
 
-ip_address= echo ${ARGS} | cut -d ':' -f1
-ip_port= echo ${ARGS} | cut -d ':' -f2
+ip_address=$(cut -d ':' -f1 <<< ${ARGS})
+ip_port=$(cut -d ':' -f2 <<< ${ARGS})
 
-sshpass -p "${PASSWORD}" ssh ${LOGIN_NAME}@${ip_address} -p ${ip_port}
+echo "sshpass -p ${PASSWORD} ssh ${LOGIN_NAME}@${ip_address} -p ${ip_port}"
+sshpass -p ${PASSWORD} ssh ${LOGIN_NAME}@${ip_address} -p ${ip_port}
