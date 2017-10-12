@@ -17,7 +17,6 @@
         <module>data-structure</module>
         <module>algorithm</module>
         <module>production-component</module>
-        <module>shared-resource</module>
         <module>language-advance</module>
         <module>dev-ops</module>
     </modules>
