@@ -7,4 +7,5 @@ package org.laidu.commom.util.http;
  */
 public interface HttpClientService {
 
+    <T> T download();
 }
