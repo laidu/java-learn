@@ -4,15 +4,16 @@
 # Command format: Instruction [arguments / command] ..
 
 # Base image to use, this must be set as the first line
-FROM ubuntu
+FROM ubuntu:16.04
 
 # Maintainer: docker_user <docker_user at email.com> (@docker_user)
-MAINTAINER docker_user docker_user@email.com
+MAINTAINER laidu laidu823@email.com
 
 # Commands to update the image
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ raring main universe" >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y nginx
-RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
+# Set aliyun mirror
+
+RUN echo "" > /etc/apt/sources.list
+RUN apt update && apt upgrade -y
 
 # Commands when creating a new container
 CMD /usr/sbin/nginx

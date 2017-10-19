@@ -19,6 +19,7 @@
         <module>production-component</module>
         <module>language-advance</module>
         <module>dev-ops</module>
+        <module>big-data</module>
     </modules>
 
     <url>https://laidu.github.io/java-learn-site</url>
