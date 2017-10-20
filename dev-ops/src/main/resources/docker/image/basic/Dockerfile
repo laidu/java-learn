@@ -25,13 +25,11 @@ RUN wget --no-check-certificate -c \
     http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz && \
     tar -xvf jdk-8u151-linux-x64.tar.gz -C /opt/
 ENV JAVA_HOME /opt/jdk1.8.0_151
-RUN echo "export JAVA_HOME=$JAVA_HOME" >> /home/user/.bashrc
+RUN echo "export JAVA_HOME=$JAVA_HOME" >> ~/.bashrc
 ENV CLASSPATH .:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
-RUN echo "export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib" >> /home/user/.bashrc
+RUN echo "export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib" >> ~/.bashrc
 ENV PATH $JAVA_HOME/bin:$PATH
-RUN echo "export PATH=$PATH" >> /home/user/.bashrc
-
-
+RUN echo "export PATH=$PATH" >> ~/.bashrc
 
 # create data dir
 RUN mkdir -p /data/upload
