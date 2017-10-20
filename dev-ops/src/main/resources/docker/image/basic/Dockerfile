@@ -19,9 +19,10 @@ ENV LC_ALL en_US.UTF-8
 RUN apt update && apt upgrade -y
 
 # install jdk 8
+apt install wget -y
 RUN  wget --no-check-certificate -c \
     --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-    http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz | sudo tar -zx -C /opt/\
+    http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz | tar -zx -C /opt/
 ENV JAVA_HOME /opt/jdk1.8.0_151
 RUN echo "export JAVA_HOME=$JAVA_HOME" >> /home/user/.bashrc
 ENV CLASSPATH .:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
