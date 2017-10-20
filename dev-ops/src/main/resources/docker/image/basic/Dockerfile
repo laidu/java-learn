@@ -14,7 +14,6 @@ ENV LANG C.UTF-8
 
 # Commands to update the image
 # Set aliyun mirror & upgrade
-COPY sources.list /etc/apt/
 RUN apt update && apt upgrade -y
 
 # install jdk 8
