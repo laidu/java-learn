@@ -4,7 +4,7 @@
 # Command format: Instruction [arguments / command] ..
 
 # Base image to use, this must be set as the first line
-FROM ubuntu:16.04.3
+FROM ubuntu:16.04
 
 # Maintainer: docker_user <docker_user at email.com> (@docker_user)
 MAINTAINER laidu laidu823@email.com
