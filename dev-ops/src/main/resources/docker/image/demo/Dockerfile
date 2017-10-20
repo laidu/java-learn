@@ -16,4 +16,5 @@ RUN echo "" > /etc/apt/sources.list
 RUN apt update && apt upgrade -y
 
 # Commands when creating a new container
+
 CMD /usr/sbin/nginx

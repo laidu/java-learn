@@ -11,5 +11,14 @@
 
     <artifactId>design-pattern</artifactId>
 
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>

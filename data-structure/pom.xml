@@ -11,5 +11,14 @@
 
     <artifactId>data-structure</artifactId>
 
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>

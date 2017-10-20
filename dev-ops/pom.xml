@@ -12,4 +12,14 @@
     <artifactId>dev-ops</artifactId>
 
 
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+
 </project>

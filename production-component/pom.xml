@@ -16,5 +16,15 @@
         <module>crawler-helper</module>
     </modules>
 
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+
 
 </project>
