@@ -3,28 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>java-learn</artifactId>
+        <artifactId>framework</artifactId>
         <groupId>org.laidu.learn</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>production-component</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>common-util</module>
-        <!--<module>crawler-helper</module>-->
-    </modules>
+    <artifactId>play</artifactId>
 
-    <properties>
-
-    </properties>
-
-    <dependencyManagement>
-        <dependencies>
-
-        </dependencies>
-    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play_2.11</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -19,6 +19,7 @@
         <module>spring</module>
         <module>netty</module>
         <module>async-http-client</module>
+        <module>play</module>
     </modules>
 
     <properties>
@@ -35,6 +36,8 @@
         <!--test-->
         <mockito.version>2.9.0</mockito.version>
 
+        <!--play-->
+        <play.version>2.6.6</play.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +73,12 @@
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.typesafe.play</groupId>
+                <artifactId>play_2.11</artifactId>
+                <version>${play.version}</version>
             </dependency>
 
         </dependencies>
