@@ -71,6 +71,7 @@
 
         <!--mvn site-->
         <github.global.server>github</github.global.server>
+        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token>
         <apache.maven-site-plugin.version>3.6</apache.maven-site-plugin.version>
         <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
         <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
@@ -94,6 +95,13 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <servers>
+        <server>
+            <github.global.server>github</github.global.server>
+            <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token>
+        </server>
+    </servers>
 
     <dependencies>
 
