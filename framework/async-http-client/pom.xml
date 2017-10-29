@@ -12,14 +12,13 @@
     <artifactId>async-http-client</artifactId>
 
     <properties>
-        <async-http-client.version>2.1.0-alpha24</async-http-client.version>
+
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.asynchttpclient</groupId>
             <artifactId>async-http-client</artifactId>
-            <version>${async-http-client.version}</version>
         </dependency>
     </dependencies>
 </project>

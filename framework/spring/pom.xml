@@ -15,7 +15,34 @@
         <module>spring-data</module>
         <module>spring-boot</module>
         <module>spring-amqp</module>
+        <module>spring-hadoop</module>
     </modules>
 
+    <properties>
+
+        <!--spring-data-->
+        <spring-data-hadoop.version>2.5.0.RELEASE</spring-data-hadoop.version>
+
+        <amqp-client.version>4.2.0</amqp-client.version>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-hadoop</artifactId>
+                <version>${spring-data-hadoop.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>${amqp-client.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>

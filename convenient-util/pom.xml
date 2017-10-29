@@ -11,10 +11,22 @@
 
     <artifactId>convenient-util</artifactId>
     <packaging>pom</packaging>
+    <description>便捷小工具</description>
+
     <modules>
         <module>spring-stopwatch</module>
         <module>BTrace</module>
     </modules>
+
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>

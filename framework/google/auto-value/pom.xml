@@ -12,15 +12,13 @@
     <artifactId>auto-value</artifactId>
 
     <properties>
-        <auto-value.version>1.5</auto-value.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>com.google.auto.value</groupId>
             <artifactId>auto-value</artifactId>
-            <version>${auto-value.version}</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 

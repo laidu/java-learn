@@ -12,7 +12,7 @@
     <artifactId>spring-amqp</artifactId>
 
     <properties>
-        <amqp-client.version>4.2.0</amqp-client.version>
+
     </properties>
 
     <dependencies>
@@ -20,7 +20,6 @@
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>${amqp-client.version}</version>
         </dependency>
 
     </dependencies>

@@ -8,6 +8,36 @@
     <artifactId>java-learn</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <name>java-learn</name>
+    <url>https://github.com/laidu/java-learn</url>
+    <description>java 程序员的学习成长之路</description>
+
+    <scm>
+        <url>https://github.com/laidu/java-learn</url>
+        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
+        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
+        <tag>master</tag>
+    </scm>
+
+    <ciManagement>
+        <system>Hudson</system>
+        <url></url>
+    </ciManagement>
+
+    <developers>
+        <developer>
+            <id>tiancai.zang</id>
+            <name>臧天才</name>
+            <email>laidu823@gmail.com</email>
+            <timezone>8</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/laidu/java-learn/issues</url>
+    </issueManagement>
+
 
     <modules>
         <module>language-feature</module>
@@ -19,9 +49,8 @@
         <module>production-component</module>
         <module>language-advance</module>
         <module>dev-ops</module>
+        <module>big-data</module>
     </modules>
-
-    <url>https://laidu.github.io/java-learn-site</url>
 
     <distributionManagement>
         <site>
@@ -32,30 +61,26 @@
         </site>
     </distributionManagement>
 
-    <scm>
-        <url>https://laidu.github.io/java-learn-site</url>
-        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
-        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
-    </scm>
-
     <properties>
 
+        <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--mvn site-->
         <github.global.server>github</github.global.server>
         <apache.maven-site-plugin.version>3.6</apache.maven-site-plugin.version>
         <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
         <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
+        <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
 
         <!--项目基础依赖配置-->
         <lombok.version>1.16.16</lombok.version>
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
-        <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
         <junit.jupiter.version>5.0.0</junit.jupiter.version>
         <junit.vintage.version>${junit.version}.0</junit.vintage.version>
@@ -134,7 +159,6 @@
     </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -145,6 +169,16 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+                <!--<version>3.0.0-M1</version>-->
+                <!--<configuration>-->
+                    <!--<show>private</show>-->
+                    <!--<nohelp>true</nohelp>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -157,13 +191,7 @@
                         <include>**/*TestCase.java</include>
                     </includes>
                     <properties>
-                        <!-- <includeTags>fast</includeTags> -->
                         <excludeTags>slow</excludeTags>
-                        <!--
-                        <configurationParameters>
-                            junit.jupiter.conditions.deactivate = *
-                        </configurationParameters>
-                        -->
                     </properties>
                 </configuration>
                 <dependencies>
@@ -186,11 +214,11 @@
                         <version>${doxia-module-markdown.version}</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                    <port>9000</port>
-                    <tempWebappDirectory>${basedir}/target/staging</tempWebappDirectory>
-                    <skipDeploy>true</skipDeploy>
-                </configuration>
+                <!--<configuration>-->
+                    <!--<port>9000</port>-->
+                    <!--<tempWebappDirectory>${basedir}/target/staging</tempWebappDirectory>-->
+                    <!--<skipDeploy>true</skipDeploy>-->
+                <!--</configuration>-->
             </plugin>
 
             <plugin>
@@ -206,21 +234,10 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>github-site</id>
                         <goals>
                             <goal>site</goal>
                         </goals>
                         <phase>site</phase>
-                        <configuration>
-                            <!-- Plugin configuration ges here -->
-                            <server>github</server>
-                            <!-- The commit message -->
-                            <message>Building site for my project</message>
-                            <!-- The location where the site is uploaded -->
-                            <path>${project.distributionManagement.site.url}</path>
-                            <!-- Use merge or override the content -->
-                            <merge>true</merge>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -228,9 +245,41 @@
         </plugins>
     </build>
 
-
     <reporting>
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>${maven-project-info-reports-plugin.version}</version>
+                <configuration>
+                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+                </configuration>
+                <!--<reportSets>-->
+                    <!--<reportSet>-->
+                        <!--<reports>-->
+                            <!--<report>dependencies</report>-->
+                            <!--<report>project-team</report>-->
+                            <!--<report>mailing-list</report>-->
+                            <!--<report>cim</report>-->
+                            <!--<report>issue-tracking</report>-->
+                            <!--<report>license</report>-->
+                            <!--<report>scm</report>-->
+                        <!--</reports>-->
+                    <!--</reportSet>-->
+                <!--</reportSets>-->
+            </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+                <!--<version>3.0.0-M1</version>-->
+                <!--<configuration>-->
+                    <!--<stylesheetfile>${basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>-->
+                    <!--<show>public</show>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
@@ -261,31 +310,5 @@
 
         </plugins>
     </reporting>
-
-    <!--<profiles>-->
-        <!--<profile>-->
-            <!--<id>gh-pages</id>-->
-            <!--<build>-->
-                <!--<plugins>-->
-                    <!--<plugin>-->
-                        <!--<groupId>com.github.github</groupId>-->
-                        <!--<artifactId>site-maven-plugin</artifactId>-->
-                        <!--<configuration>-->
-                            <!--<message>Creating site for ${project.version}</message>-->
-                        <!--</configuration>-->
-                        <!--<executions>-->
-                            <!--<execution>-->
-                                <!--<goals>-->
-                                    <!--<goal>site</goal>-->
-                                <!--</goals>-->
-                                <!--<phase>site</phase>-->
-                            <!--</execution>-->
-                        <!--</executions>-->
-                    <!--</plugin>-->
-                <!--</plugins>-->
-            <!--</build>-->
-        <!--</profile>-->
-
-    <!--</profiles>-->
 
 </project>

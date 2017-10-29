@@ -11,5 +11,17 @@
 
     <artifactId>data-structure</artifactId>
 
+    <description>数据结构学习</description>
+
+
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>

@@ -11,10 +11,22 @@
 
     <artifactId>production-component</artifactId>
     <packaging>pom</packaging>
+    <description>可用于实际项目中的小工具</description>
+
     <modules>
         <module>common-util</module>
-        <module>crawler-helper</module>
+        <!--<module>crawler-helper</module>-->
     </modules>
+
+    <properties>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>

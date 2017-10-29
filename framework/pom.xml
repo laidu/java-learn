@@ -11,6 +11,8 @@
 
     <artifactId>framework</artifactId>
     <packaging>pom</packaging>
+    <description>java 常用框架学习</description>
+
     <modules>
         <module>apache</module>
         <module>junit5</module>
@@ -19,13 +21,69 @@
         <module>spring</module>
         <module>netty</module>
         <module>async-http-client</module>
+        <module>play</module>
     </modules>
 
-    <!--<build>-->
-        <!--<plugins>-->
+    <properties>
+        <!--apache-->
+        <apache-commons-lang3.version>3.6</apache-commons-lang3.version>
+        <apache-commons-text.version>1.1</apache-commons-text.version>
 
-        <!--</plugins>-->
-    <!--</build>-->
 
+        <async-http-client.version>2.1.0-alpha24</async-http-client.version>
+
+        <!--google-->
+        <auto-value.version>1.5</auto-value.version>
+
+        <!--test-->
+        <mockito.version>2.9.0</mockito.version>
+
+        <!--play-->
+        <play.version>2.6.6</play.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache-commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${apache-commons-text.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.asynchttpclient</groupId>
+                <artifactId>async-http-client</artifactId>
+                <version>${async-http-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.auto.value</groupId>
+                <artifactId>auto-value</artifactId>
+                <version>${auto-value.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.typesafe.play</groupId>
+                <artifactId>play_2.11</artifactId>
+                <version>${play.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
