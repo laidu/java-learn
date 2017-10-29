@@ -96,13 +96,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <servers>
-        <server>
-            <id>github</id>
-            <password>${env.GITHUB_OAUTH_TOKEN}</password>
-        </server>
-    </servers>
-
     <dependencies>
 
         <!--通过注解简化代码-->
