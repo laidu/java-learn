@@ -26,11 +26,17 @@
     <distributionManagement>
         <site>
             <id>github-pages-site</id>
-            <name>Deployment through GitHub's site deployment plugin</name>
+            <name>java-learn</name>
             <url>scm:git:git@github.com:laidu/java-learn-site.git</url>
             <!--<url>site/${project.version}</url>-->
         </site>
     </distributionManagement>
+
+    <scm>
+        <url>https://laidu.github.io/java-learn-site</url>
+        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
+        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
+    </scm>
 
     <properties>
 
@@ -66,11 +72,14 @@
 
     <dependencies>
 
+        <!--通过注解简化代码-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+
+        <!--日志平台-->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
@@ -87,6 +96,7 @@
             <version>${logback.version}</version>
         </dependency>
 
+        <!--junit5-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -218,11 +228,6 @@
         </plugins>
     </build>
 
-    <scm>
-        <url>https://laidu.github.io/java-learn-site</url>
-        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
-        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
-    </scm>
 
     <reporting>
         <plugins>
