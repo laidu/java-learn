@@ -1,4 +1,18 @@
 language: java
-
 jdk:
   - oraclejdk8
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+
+script:
+  - mvn clean package -DskipTests=true
+
+after_success:
+  - mvn site
+
+#branches:
+#  only:
+#    - test
+notifications:
+  email: true
