@@ -14,8 +14,8 @@
 
     <scm>
         <url>https://github.com/laidu/java-learn</url>
-        <connection>scm:git:git@github.com:laidu/java-learn-site.git</connection>
-        <developerConnection>scm:git:git@github.com:laidu/java-learn-site.git</developerConnection>
+        <connection>scm:git:git@github.com:laidu/java-learn.git</connection>
+        <developerConnection>scm:git:git@github.com:laidu/java-learn.git</developerConnection>
         <tag>master</tag>
     </scm>
 
@@ -56,7 +56,7 @@
         <site>
             <id>github-pages-site</id>
             <name>java-learn</name>
-            <url>scm:git:git@github.com:laidu/java-learn-site.git</url>
+            <url>scm:git:git@github.com:laidu/java-learn.git</url>
             <!--<url>site/${project.version}</url>-->
         </site>
     </distributionManagement>
