@@ -56,7 +56,7 @@
         <site>
             <id>github-pages-site</id>
             <name>java-learn</name>
-            <url>https://github.com/laidu/java-learn</url>
+            <url>site/${project.version}</url>
         </site>
     </distributionManagement>
 
@@ -247,7 +247,7 @@
                 <configuration>
                     <message>Creating site for ${project.artifactId}, ${project.version}</message>
                     <!-- this does the trick to place every module in the correct subfolder -->
-                    <path>${site.path}</path>
+                    <path>${project.distributionManagement.site.url}</path>
                     <!--<force>true</force>-->
                     <!--<noJekyll>true</noJekyll>-->
                     <merge>true</merge>
@@ -257,8 +257,8 @@
                         <goals>
                             <goal>site</goal>
                         </goals>
-                        <phase>site</phase>
-                        <!--<phase>site-deploy</phase>-->
+                        <!--<phase>site</phase>-->
+                        <phase>site-deploy</phase>
                     </execution>
                 </executions>
             </plugin>
