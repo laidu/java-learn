@@ -71,7 +71,7 @@
         <!--mvn site-->
         <github.global.server>github</github.global.server>
         <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
-        <site.path>/</site.path>
+        <site.path>${project.artifactId}</site.path>
         <apache.maven-site-plugin.version>3.6</apache.maven-site-plugin.version>
         <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
         <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
@@ -266,70 +266,5 @@
         </plugins>
     </build>
 
-    <!--<reporting>-->
-        <!--<plugins>-->
-
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-project-info-reports-plugin</artifactId>-->
-                <!--<version>${maven-project-info-reports-plugin.version}</version>-->
-                <!--<configuration>-->
-                    <!--<dependencyLocationsEnabled>false</dependencyLocationsEnabled>-->
-                <!--</configuration>-->
-                <!--&lt;!&ndash;<reportSets>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<reportSet>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<reports>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>dependencies</report>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>project-team</report>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>mailing-list</report>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>cim</report>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>issue-tracking</report>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>license</report>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>scm</report>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</reports>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</reportSet>&ndash;&gt;-->
-                <!--&lt;!&ndash;</reportSets>&ndash;&gt;-->
-            <!--</plugin>-->
-
-            <!--&lt;!&ndash;<plugin>&ndash;&gt;-->
-                <!--&lt;!&ndash;<groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
-                <!--&lt;!&ndash;<artifactId>maven-javadoc-plugin</artifactId>&ndash;&gt;-->
-                <!--&lt;!&ndash;<version>3.0.0-M1</version>&ndash;&gt;-->
-                <!--&lt;!&ndash;<configuration>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<stylesheetfile>${basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<show>public</show>&ndash;&gt;-->
-                <!--&lt;!&ndash;</configuration>&ndash;&gt;-->
-            <!--&lt;!&ndash;</plugin>&ndash;&gt;-->
-
-            <!--&lt;!&ndash;<plugin>&ndash;&gt;-->
-                <!--&lt;!&ndash;<groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
-                <!--&lt;!&ndash;<artifactId>maven-jxr-plugin</artifactId>&ndash;&gt;-->
-                <!--&lt;!&ndash;<version>2.5</version>&ndash;&gt;-->
-                <!--&lt;!&ndash;<reportSets>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<reportSet>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<id>aggregate</id>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<inherited>false</inherited>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<reports>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<report>aggregate</report>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</reports>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</reportSet>&ndash;&gt;-->
-                <!--&lt;!&ndash;</reportSets>&ndash;&gt;-->
-            <!--&lt;!&ndash;</plugin>&ndash;&gt;-->
-
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
-                <!--<version>2.17</version>-->
-                <!--<reportSets>-->
-                    <!--<reportSet>-->
-                        <!--<reports>-->
-                            <!--<report>checkstyle</report>-->
-                        <!--</reports>-->
-                    <!--</reportSet>-->
-                <!--</reportSets>-->
-            <!--</plugin>-->
-
-        <!--</plugins>-->
-    <!--</reporting>-->
 
 </project>
