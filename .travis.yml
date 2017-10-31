@@ -6,11 +6,10 @@ cache:
   - '$HOME/.m2/repository'
 
 script:
-  - mvn clean package -DskipTests=true
+  - mvn clean test
 
 after_success:
-  - mvn -o site
-  - mvn -o site-deploy
+  - mvn clean package
 
 #branches:
 #  only:
