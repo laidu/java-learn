@@ -248,7 +248,7 @@
                     <message>Creating site for ${project.artifactId}, ${project.version}</message>
                     <!-- this does the trick to place every module in the correct subfolder -->
                     <path>${project.distributionManagement.site.url}</path>
-                    <branch>origin/master</branch>
+                    <branch>refs/origin/master</branch>
                     <!--<force>true</force>-->
                     <!--<noJekyll>true</noJekyll>-->
                     <merge>true</merge>
