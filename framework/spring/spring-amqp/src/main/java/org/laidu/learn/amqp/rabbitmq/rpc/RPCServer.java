@@ -20,7 +20,7 @@ public class RPCServer {
 
     public static void main(String[] argv) {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
         factory.setPort(5672);
@@ -48,12 +48,218 @@ public class RPCServer {
                     String response = "";
 
                     try {
-                        String message = new String(body, "UTF-8");
-                        int n = Integer.parseInt(message);
 
-                        System.out.println(" [.] fib(" + message + ")");
-
-                        response += fib(n);
+                        response += "{\n" +
+                                "    \"code\": \"E000000\",\n" +
+                                "    \"data\": {\n" +
+                                "        \"total\": 40,\n" +
+                                "        \"mobile\": \"17091003126\",\n" +
+                                "        \"result_list\": [\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            },\n" +
+                                "            {\n" +
+                                "                \"reg_result\": 1,\n" +
+                                "                \"code\": \"E000000\",\n" +
+                                "                \"message\": \"请求成功\"\n" +
+                                "            }\n" +
+                                "        ]\n" +
+                                "    },\n" +
+                                "    \"message\": \"请求成功\",\n" +
+                                "    \"success\": true\n" +
+                                "}";
 
                     } catch (RuntimeException e) {
                         System.out.println(" [.] " + e.toString());
