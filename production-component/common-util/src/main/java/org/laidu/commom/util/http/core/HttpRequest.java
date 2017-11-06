@@ -1,5 +1,6 @@
 package org.laidu.commom.util.http.core;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +17,7 @@ import java.util.Map;
 @Slf4j
 @Data
 @Builder
+@AllArgsConstructor
 public class HttpRequest implements Serializable {
 
     private static final long serialVersionUID = 2062192774891352043L;
@@ -46,7 +48,7 @@ public class HttpRequest implements Serializable {
 
     private String charset;
 
-    private HttpRequest() {
+    public HttpRequest() {
     }
 
     public static HttpRequest post(String url) {

@@ -15,6 +15,7 @@
         <module>commons-lang3</module>
         <module>httpclient</module>
         <module>commons-text</module>
+        <module>commons-cli</module>
     </modules>
 
 
