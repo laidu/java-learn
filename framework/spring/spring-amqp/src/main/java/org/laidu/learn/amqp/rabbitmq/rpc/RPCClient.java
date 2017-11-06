@@ -7,9 +7,7 @@ import com.rabbitmq.client.*;
 
 import java.io.IOException;
 import java.util.UUID;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
 /**
  * rabbitmq 官方示例 RPCClient
@@ -27,7 +25,7 @@ public class RPCClient {
 
     public RPCClient() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
         factory.setPort(5672);
@@ -72,9 +70,21 @@ public class RPCClient {
 
         RPCClient fibonacciRpc = new RPCClient();
 
-        System.out.println(" [x] Requesting fib(30)");
-        String response = fibonacciRpc.call("30");
-        System.out.println(" [.] Got '" + response + "'");
+        ExecutorService service  = Executors.newFixedThreadPool(10);
+        service.submit(()->{
+
+            System.out.println(" [x] Requesting fib(30)");
+            String response = null;
+            try {
+                response = fibonacciRpc.call("30");
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(" [.] Got '" + response + "'");
+        });
+
 
         fibonacciRpc.close();
     }
