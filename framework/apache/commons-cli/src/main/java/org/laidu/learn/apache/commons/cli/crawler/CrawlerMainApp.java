@@ -41,15 +41,15 @@ public class CrawlerMainApp {
 
         Options options = new Options();
         options.addOption(opt);
-        options.addOption(opt2);
-        options.addOption(opt3);
+//        options.addOption(opt2);
+//        options.addOption(opt3);
 
-        String[] argsA = {"-t=reg1", "-use.proxy=true", "-max.service.count=12"};
+        String[] argsA = {"-t=reg", "-use.proxy1=true", "-max.service.count=12"};
 
 
         CommandLineParser parser = new DefaultParser();
 
-        CommandLine line = parser.parse(options, argsA);
+        CommandLine line = parser.parse(options, argsA,false);
 
         for (Option option : line.getOptions()) {
             System.out.print(option.getLongOpt() + ": \t");
