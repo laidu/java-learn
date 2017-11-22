@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>spring-data &#x2013; </title>
+    <title>spring-data &#x2013; Surefire Report</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -49,9 +49,17 @@
                                                                                                                                                                                                                                                                           <li class="collapsed">
                           <a href="project-info.html" title="Project Information">Project Information</a>
                   </li>
-                                                                                      <li class="collapsed">
+                                                                                                <li class="expanded">
                           <a href="project-reports.html" title="Project Reports">Project Reports</a>
-                  </li>
+                    <ul>
+                      <li class="none">
+            <strong>Surefire Report</strong>
+          </li>
+                      <li class="none">
+                          <a href="checkstyle.html" title="Checkstyle">Checkstyle</a>
+            </li>
+              </ul>
+        </li>
           </ul>
                              <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
         <img class="poweredBy" alt="Built by Maven" src="./images/logos/maven-feather.png" />
@@ -61,7 +69,43 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        
+        <script type="text/javascript">
+//<![CDATA[
+function toggleDisplay(elementId) {
+ var elm = document.getElementById(elementId + 'error');
+ if (elm && typeof elm.style != "undefined") {
+ if (elm.style.display == "none") {
+ elm.style.display = "";
+ document.getElementById(elementId + 'off').style.display = "none";
+ document.getElementById(elementId + 'on').style.display = "inline";
+ } else if (elm.style.display == "") { elm.style.display = "none";
+ document.getElementById(elementId + 'off').style.display = "inline";
+ document.getElementById(elementId + 'on').style.display = "none";
+ } 
+ } 
+ }
+//]]>
+</script>
+<div class="section">
+<h2><a name="Surefire_Report"></a>Surefire Report</h2></div>
+<div class="section">
+<h2><a name="Summary"></a>Summary</h2><a name="Summary"></a><br />
+<table border="1" class="bodyTable">
+<tr class="a">
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th></tr>
+<tr class="b">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+<td>0</td></tr></table><br />
+<p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></div>
       </div>
     </div>
     <div class="clear">
