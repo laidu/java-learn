@@ -17,25 +17,24 @@ REG_TYPE=pc
 
 ARGS="--service.type=${SERVICE_TYPE} --use.proxy=${USE_PROXY} --proxy.type=${PROXY_TYPE} --max.limit=${MAX_LIMIT} --index.code=${INDEX_CODE} --reg.type=${REG_TYPE}"
 QUERY_ARGS="\-\-service.type=${SERVICE_TYPE}\ \-\-use.proxy=${USE_PROXY}\ \-\-proxy.type=${PROXY_TYPE}\ \-\-max.limit=${MAX_LIMIT}\ \-\-index.code=${INDEX_CODE} \-\-reg.type=${REG_TYPE}"
-PID=`ps -aux | grep temple-application-crawler-query-1.0.0.jar | grep "${QUERY_ARGS}" |  grep -v grep | awk '{print $2}' | egrep '[1-9][0-9]+'`
-
-
-#while [[ ! -z "$PID" ]]
-#do
-#    kill -9 $PID
-#    echo "restart service. PID = $PID"
-#    PID=`ps -aux | grep temple-application-crawler-query-1.0.0.jar | grep "${QUERY_ARGS}" |  grep -v grep | awk '{print $2}' | egrep '[1-9][0-9]+' | sed -n '1p'`
-#done
+PID_OLD=`ps -aux | grep temple-application-crawler-query-1.0.0.jar | grep "${QUERY_ARGS}" |  grep -v grep | awk '{print $2}' | egrep '[1-9][0-9]+'`
+PID_OLD_ARRAY=(${PID_OLD// / })
 
 /data/query/shell/crawler.sh $ARGS
 
 sleep 30
 
-PID_ARRAY=(${PID// / })
-for i in "${PID_ARRAY[@]}";
-do
-    kill -9 $PID
-    echo "restart service. PID = $PID"
-done
+PID_NEW=`ps -aux | grep temple-application-crawler-query-1.0.0.jar | grep "${QUERY_ARGS}" |  grep -v grep | awk '{print $2}' | egrep '[1-9][0-9]+'`
+PID_NEW_ARRAY=(${PID_NEW// / })
+
+if ${PID_NEW_ARRAY[@]} > ${PID_OLD[@]}; then
+
+    for i in "${PID_ARRAY[@]}";
+    do
+        kill -9 $PID
+        echo "restart service. PID = $PID"
+    done
+
+fi
 
 echo ${SERVICE_TYPE}+"_"+${REG_TYPE}+"_"+${INDEX_CODE}+"_"+${MAX_LIMIT}+"_"+"service restart completed"
