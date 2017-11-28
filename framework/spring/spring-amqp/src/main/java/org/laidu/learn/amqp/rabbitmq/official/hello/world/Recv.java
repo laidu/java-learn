@@ -1,4 +1,4 @@
-package org.laidu.learn.amqp.rabbitmq.hello.world;
+package org.laidu.learn.amqp.rabbitmq.official.hello.world;
 
 
 import com.rabbitmq.client.*;

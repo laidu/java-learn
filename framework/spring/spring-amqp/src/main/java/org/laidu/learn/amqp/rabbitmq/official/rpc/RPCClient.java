@@ -1,4 +1,4 @@
-package org.laidu.learn.amqp.rabbitmq.rpc;
+package org.laidu.learn.amqp.rabbitmq.official.rpc;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -48,7 +48,7 @@ public class RPCClient {
 
         channel.basicPublish("", requestQueueName, props, message.getBytes("UTF-8"));
 
-        final BlockingQueue<String> response = new ArrayBlockingQueue<String>(1);
+        final BlockingQueue<String> response = new ArrayBlockingQueue<>(1);
 
         channel.basicConsume(replyQueueName, true, new DefaultConsumer(channel) {
             @Override
