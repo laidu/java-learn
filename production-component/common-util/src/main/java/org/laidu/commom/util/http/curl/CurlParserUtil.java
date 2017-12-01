@@ -2,6 +2,7 @@ package org.laidu.commom.util.http.curl;
 
 import jodd.util.StringUtil;
 import jodd.util.URLDecoder;
+import lombok.val;
 import org.laidu.commom.util.regex.RegexUtil;
 
 import java.util.HashMap;
@@ -24,19 +25,6 @@ import java.util.Map;
 public final class CurlParserUtil {
 
 
-    private final String HEADE_PATTERN = "(-H \\$'([^:]*:[^']*)')+";
-    private final int HEAD_DATA_INDEX = 2;
-    private final String B_HEADER_PATTRERN = "-b \\$'([^']*)'";
-    private final int B_HEADER__INDEX = 1;
-    private final String METHOD_OATTERN = "-X \\$'([A-Z]{2,5})'";
-    private final int METHOD_INDEX = 1;
-    private final String URL_PATTERN = "\\$'(https?://.*)'";
-    private final int URL_INDEX = 1;
-    private final String STRING_BODY_PATTERN = "--data-binary \\$'(.*)'";
-    private final int STRING_BODY_INDEX = 1;
-    private final String FORM_DATA_PATTERN = "([^=&]+=[^&']*)+";
-    private final int FORM_DATA_INDEX = 1;
-
     /**
      * Private constructor.
      */
@@ -58,9 +46,11 @@ public final class CurlParserUtil {
                 new CurlParserUtil();
     }
 
-    protected Map<String, String> keyValuePairs(String curlLine) {
+    private Map<String, String> keyValuePairs(String curlLine) {
         Map<String, String> keyValuePairs = new HashMap<>();
-        List<String> headerList = RegexUtil.getInstance().getMacthAllResult(HEADE_PATTERN,curlLine,HEAD_DATA_INDEX);
+        String HEADE_PATTERN = "(-H \\$'([^:]*:[^']*)')+";
+        int HEAD_DATA_INDEX = 2;
+        List<String> headerList = RegexUtil.getInstance().getMacthAllResult(HEADE_PATTERN, curlLine, HEAD_DATA_INDEX);
         headerList.forEach(header ->{
             String[] keyValue = header.split(":", 2);
             if (keyValue.length == 2) {
@@ -71,7 +61,7 @@ public final class CurlParserUtil {
         return keyValuePairs;
     }
 
-    public Map<String, String> getHeaders(String curlLine) {
+    Map<String, String> getHeaders(String curlLine) {
 
         Map<String, String> keyValuePairs = keyValuePairs(curlLine);
 
@@ -80,7 +70,7 @@ public final class CurlParserUtil {
         return keyValuePairs;
     }
 
-    public Map<String, String> getCookies(String curlLine) {
+    Map<String, String> getCookies(String curlLine) {
 
         Map<String, String> cookieMap = new HashMap<>();
 
@@ -106,29 +96,39 @@ public final class CurlParserUtil {
 
     private String getBCookiesString(String curlLine) {
 
-        return RegexUtil.getInstance().getMacthResult(B_HEADER_PATTRERN, curlLine, B_HEADER__INDEX);
+        String b_HEADER_PATTRERN = "-b \\$'([^']*)'";
+        int b_HEADER__INDEX = 1;
+        return RegexUtil.getInstance().getMacthResult(b_HEADER_PATTRERN, curlLine, b_HEADER__INDEX);
     }
 
 
-    public String getMethod(String curlLine) {
+    String getMethod(String curlLine) {
+        String METHOD_OATTERN = "-X \\$'([A-Z]{2,5})'";
+        int METHOD_INDEX = 1;
         return RegexUtil.getInstance().getMacthResult(METHOD_OATTERN, curlLine, METHOD_INDEX, "GET");
     }
 
 
-    public String getUrl(String curlLine) {
+    String getUrl(String curlLine) {
+        String URL_PATTERN = "\\$'(https?://.*)'";
+        int URL_INDEX = 1;
         return RegexUtil.getInstance().getMacthResult(URL_PATTERN, curlLine, URL_INDEX);
     }
 
-    public String getBodyString(String curlLine) {
+    String getBodyString(String curlLine) {
+        String STRING_BODY_PATTERN = "--data-binary \\$'(.*)'";
+        int STRING_BODY_INDEX = 1;
         return RegexUtil.getInstance().getMacthResult(STRING_BODY_PATTERN, curlLine, STRING_BODY_INDEX);
     }
 
-    public Map<String,String> getFormBody(String curlLine){
-        Map<String,String> formMap = new HashMap<>();
+    Map<String, String> getFormBody(String curlLine) {
+        val formMap = new HashMap<String, String>();
 
         String formBodyString = getBodyString(curlLine);
 
-        List<String> formStringList = RegexUtil.getInstance().getMacthAllResult(FORM_DATA_PATTERN,formBodyString,FORM_DATA_INDEX);
+        String FORM_DATA_PATTERN = "([^=&]+=[^&']*)+";
+        int FORM_DATA_INDEX = 1;
+        List<String> formStringList = RegexUtil.getInstance().getMacthAllResult(FORM_DATA_PATTERN, formBodyString, FORM_DATA_INDEX);
 
         formStringList.forEach(formString -> {
 

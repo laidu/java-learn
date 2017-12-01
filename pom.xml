@@ -78,7 +78,7 @@
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
 
         <!--项目基础依赖配置-->
-        <lombok.version>1.16.16</lombok.version>
+        <lombok.version>1.16.18</lombok.version>
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
