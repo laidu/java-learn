@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-data</module>
-        <module>spring-boot</module>
         <module>spring-amqp</module>
         <module>spring-hadoop</module>
     </modules>
