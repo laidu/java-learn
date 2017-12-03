@@ -22,6 +22,7 @@
         <module>netty</module>
         <module>async-http-client</module>
         <module>play</module>
+        <module>webmagic</module>
     </modules>
 
     <properties>
