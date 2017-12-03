@@ -1,0 +1,3 @@
+[submodule "framework/webmagic/webmagic-parent"]
+	path = framework/webmagic/webmagic-parent
+	url = git@github.com:laidu823/webmagic.git

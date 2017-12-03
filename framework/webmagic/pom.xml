@@ -12,7 +12,7 @@
     <artifactId>webmagic</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>origin</module>
+        <module>webmagic-parent</module>
     </modules>
 
 
