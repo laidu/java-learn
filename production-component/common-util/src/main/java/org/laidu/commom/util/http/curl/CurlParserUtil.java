@@ -21,6 +21,7 @@ import java.util.Map;
  * -H $'Content-Type: application/x-www-form-urlencoded' -H $'User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 3 Build/M4B30X)' \
  * --data-binary $'pcn=com.zhaoqianhua.cash&screen=%28720%2C1280%29&dpi=%28320%2C320%29&ak=Xz4E3L0mcVhwhAktoDoHCXbtOAsKPG1L&macaddr=MDI6MDA6MDA6MDA6MDA6MDA%3D%0A++++&url=https%3A%2F%2Fapi.map.baidu.com%2Fsdkcs%2Fverify&appid=-1&mb=Redmi+3&from_service=lbs_androidsdk&net=0&from=lbs_yunsdk&os=Android23&sv=4.0.0&imt=1&output=json&cuid=F663AF9A1E6D8107A06B4AB7DFC5BD38%7C87374814251&mcode=FA%3A8A%3AD5%3AE1%3A57%3A30%3A03%3A1D%3A48%3A2E%3A44%3A9B%3AFB%3AF2%3AEE%3A7A%3ABE%3AE5%3AED%3AFF%3Bcom.zhaoqianhua.cash&resid=02&version=1.0.6&name=%E6%89%BE%E9%92%B1%E8%8A%B1&language=zh&ver=1' \
  * $'https://api.map.baidu.com/sdkcs/verify'
+ * @author tczang
  */
 public final class CurlParserUtil {
 
@@ -96,9 +97,9 @@ public final class CurlParserUtil {
 
     private String getBCookiesString(String curlLine) {
 
-        String b_HEADER_PATTRERN = "-b \\$'([^']*)'";
-        int b_HEADER__INDEX = 1;
-        return RegexUtil.getInstance().getMacthResult(b_HEADER_PATTRERN, curlLine, b_HEADER__INDEX);
+        String B_HEADER_PATTRERN = "-b \\$'([^']*)'";
+        int B_HEADER__INDEX = 1;
+        return RegexUtil.getInstance().getMacthResult(B_HEADER_PATTRERN, curlLine, B_HEADER__INDEX);
     }
 
 
@@ -116,7 +117,7 @@ public final class CurlParserUtil {
     }
 
     String getBodyString(String curlLine) {
-        String STRING_BODY_PATTERN = "--data-binary \\$'(.*)'";
+        String STRING_BODY_PATTERN = "--data-binary \\$'([^\\$]*)'";
         int STRING_BODY_INDEX = 1;
         return RegexUtil.getInstance().getMacthResult(STRING_BODY_PATTERN, curlLine, STRING_BODY_INDEX);
     }
