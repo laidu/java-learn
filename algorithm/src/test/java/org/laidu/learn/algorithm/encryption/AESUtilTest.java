@@ -35,7 +35,7 @@ class AESUtilTest {
     }
 
     @Test
-    void encryptAES2() throws Exception {
+    void decryptAES2() throws Exception {
 
         //蜡笔分期
         String encrypString = "YXMwUmh6QzdoamNDMU9FOFBnRTh1TTQwOFdSWVQ4TkF6Ynh6TERIZTZmOTBFMjhJT2NvYUFoUExDOXNYTnMyVGxaUmVXTTM4RWc5OQ0KV0dFcXlBZUlaUUMyUWhqMGtGb2toMXh6ME1EYXAyTGxZRGFKVGRRaVM1S1VYZmhQajFIRWxkcVgrTEhXZXBGb1YvaU9DTXpqbWszdQ0KR2hxcmMxb3haNC9ROEFDY0dVS1VyUXU5eTQweUltSGNaZlpibXUyRHdyTlZqL2lUeXNVdko4NlJyK2dDTDRBcW11SUVGTGZvQzdwVQ0KbUFzTDNndWJFZTRraHBNRTl1QmZEdmlwd09hL2NzVkQybUxvbzYvb0RtWVhPaDNVQWFwZkVaemZFZExjZGZTcEM4d2YzMGtvS2RNeQ0KaFU4bmtJdlFFV0tEY2lWY0FRZFlYbDM1eEJsTHJlUkpscHhHOE5uOFRPWUh4WktEQVhHb2M1N2h4M1k9";
@@ -46,9 +46,6 @@ class AESUtilTest {
 
     @Test
     void encryptAES3() throws Exception {
-
-
-
 
     }
 
