@@ -61,7 +61,7 @@ public final class BasicEncryptionUtil {
             }
             encrypt = cipher.doFinal(data);
         } catch (Exception e) {
-            log.error("{} encrypt error", algorithm);
+            log.error("{} encrypt error ", algorithm, e);
         }
 
         return encrypt;
@@ -105,7 +105,7 @@ public final class BasicEncryptionUtil {
             cipher.init(Cipher.DECRYPT_MODE, privateKey);
             cipherBytes = cipher.doFinal(data);
         } catch (Exception e) {
-            log.error("{} encrypt error",algorithm);
+            log.error("{} encrypt error",algorithm,e);
         }
         return cipherBytes;
     }

@@ -1,7 +1,5 @@
 package org.laidu.learn.algorithm.encryption;
 
-import org.apache.commons.codec.binary.Hex;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -107,10 +105,9 @@ public class DESede {
 //        System.out.println("解密后：/t"+new String(data));
 
 
-        System.out.println(new String(decrypt(Hex.decodeHex("b5720f816f50db5eb94116fd795b9f770f4af1f252692aa8c138f0e8150856db0b52b7c8000a7be699aabc4ab106f380f9e488a10e8269792beb5b46a667cdf32e20cf7649e74841dcfc49d871e100bda5b005efdca1abf6d8f95b802b6db01dc0bc44d9f75be7b899fcac6bf3674bff51429cb76f9ea218fa2bad0b88a6c6c80d9edbb96f284e26c08a514ffe89869973b1d297873df3042f7fed5cff21498279cee5c1521deab082083b21bbdbcdcbe94fb492867d0f86e85abe28a833f518ae8bea426903c923bd5014d733aca51d689036c848d6a9f9a984ac4b07ea513bc0e43baa0023274cbac722d157661202e3f3be1793e6e813".toCharArray()),
-                "1234567`90koiuyhgtfrdews".getBytes(),Hex.decodeHex("0000000000000000".toCharArray()))));
+//        System.out.println(new String(decrypt(Hex.decodeHex("b5720f816f50db5eb94116fd795b9f770f4af1f252692aa8c138f0e8150856db0b52b7c8000a7be699aabc4ab106f380f9e488a10e8269792beb5b46a667cdf32e20cf7649e74841dcfc49d871e100bda5b005efdca1abf6d8f95b802b6db01dc0bc44d9f75be7b899fcac6bf3674bff51429cb76f9ea218fa2bad0b88a6c6c80d9edbb96f284e26c08a514ffe89869973b1d297873df3042f7fed5cff21498279cee5c1521deab082083b21bbdbcdcbe94fb492867d0f86e85abe28a833f518ae8bea426903c923bd5014d733aca51d689036c848d6a9f9a984ac4b07ea513bc0e43baa0023274cbac722d157661202e3f3be1793e6e813".toCharArray()),
+//                "1234567`90koiuyhgtfrdews".getBytes(),Hex.decodeHex("0000000000000000".toCharArray()))));
 
-        System.out.println(Hex.encodeHexString(encrypt("<Request><HeaderInfos><Code>randomCodeAndAuthValidate</Code><Timestamp>20171205160214</Timestamp><ClientType>#6.2.1#channel38#Yulong Coolpad 5267#</ClientType><Source>110003</Source><SourcePassword>Sid98s</SourcePassword><Token>bf342ddef8954dcbbf10f34de8f2007a</Token><UserLoginName>13359410020</UserLoginName></HeaderInfos><Content><Attach>test</Attach><FieldData><RandomCode>504038</RandomCode><ValidateType>1</ValidateType><Username>陈帅</Username><ShopId>20002</ShopId><IdCardNum>622225199011033315</IdCardNum><PhoneNum>13359410020</PhoneNum></FieldData></Content></Request>".getBytes(),
-                "1234567`90koiuyhgtfrdews".getBytes(),Hex.decodeHex("0000000000000000".toCharArray()))));
+
     }
 }

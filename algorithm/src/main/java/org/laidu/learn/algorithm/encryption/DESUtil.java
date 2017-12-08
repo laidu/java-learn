@@ -1,5 +1,7 @@
 package org.laidu.learn.algorithm.encryption;
 
+import jodd.util.Base64;
+
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -57,5 +59,16 @@ public class DESUtil {
 		byte[] plain = cipher.doFinal(data);
 		
 		return plain;
+	}
+
+	public static void main(String[] args) throws Exception {
+
+		System.out.println(Base64.encodeToString(encryptDES("{\"deviceImsi\":\"\",\"deviceUuid\":\"\",\"imei\":\"\",\"ip\":\"\",\"latitude\":\"\",\"loginId\":\"13241487379\",\"longitude\":\"\",\"mac\":\"\",\"password\":\"q1111111\",\"tokenKey\":\"97317bee-4a6b-4063-92ec-c908b47ffe96\"}".getBytes(),
+				"ab_sdgd_".getBytes())));
+
+
+		System.out.println(new String(decryptDES(Base64.decode("BQr0VsH+iN+VZMVameIzweZEH84tKfUxcWyYwMqFi2RI1iVKQLjNCKiW4G4zDoClCJSbUZuhkNeqGfEs5pI6/ywhukFgkT3lPOM4q+LbMwG7wlkKrRCNsJGJkUWrV2M6NmZjSKwy72wo1hXThNCpsfCby53VqI3b/JTAfzcsMwPl/u0vGXKdkQh7h25eH5+v1nrjCS4DGipsQI2blkKI55PBgQ2fsfgB"),
+				"ab_sdgd_".getBytes())));
+
 	}
 }

@@ -61,7 +61,7 @@ public final class DESedeEncryptionUtil {
      * @param key  密钥
      * @return byte[] 解密后的数据
      */
-    public byte[] decrypt(byte[] data, byte[] key, byte[] ivp) throws Exception {
+    public byte[] decrypt(byte[] data, byte[] key, byte[] ivp){
         return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_CBC_KEY, key, ivp, data);
     }
 }

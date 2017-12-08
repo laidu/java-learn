@@ -29,7 +29,8 @@ public final class AESEncryptionUtil {
     private static class HelperHolder {
 
         static final String ALGORITHM = "AES";
-        static final String ALGORITHM_CBC_KEY = "AES/CBC/PKCS5Padding";
+//        static final String ALGORITHM_CBC_KEY = "AES/CBC/PKCS5Padding";
+        static final String ALGORITHM_CBC_KEY = "AES/CBC/NoPadding";
 
         private static final AESEncryptionUtil INSTANCE =
                 new AESEncryptionUtil();

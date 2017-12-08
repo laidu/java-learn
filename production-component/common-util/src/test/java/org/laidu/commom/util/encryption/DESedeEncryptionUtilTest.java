@@ -1,8 +1,12 @@
 package org.laidu.commom.util.encryption;
 
+import jodd.util.Base64;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.BeforeEach;
+import org.apache.commons.codec.DecoderException;
 import org.junit.jupiter.api.Test;
+
+import java.math.BigInteger;
+
 @Slf4j
 class DESedeEncryptionUtilTest {
 
@@ -11,20 +15,39 @@ class DESedeEncryptionUtilTest {
     private String palaintext;
     private String cryptograph;
 
-    @BeforeEach
+//    @BeforeEach
     void setUp() {
-        key = "5O0ItwSgCtrrsuV9C2fRJWDBh2FNGItJ";
-        ivp = "00000000000000000000000000000000";
-        palaintext = "{\"f\":\"loginV3\",\"passport\":\"WiT1Q9UXYZMDAKSstQTlAoeW\",\"phone\":\"13241847378\",\"code\":\"\",\"cv\":\"and1.0.0\\/babaqianbao\",\"app\":\"爸爸钱包\",\"sub_app\":\"爸爸钱包_android\",\"phone_token\":\"\",\"password\":\"q11111111\",\"new_password\":\"\",\"ov\":\"and23\",\"place\":\"xiaomi\"}";
-        cryptograph = "5LzbdFzcgXpHYzP%2FMtHpKpqeujNAr7nn05HWALGjudJedauho0G8HRXmgPL9h62PvciQ2NhiQ%2Fj5PPknyP5PYeklspNa3iV5C9hm1%2FGauWR5nNmNfAjkSNPOe9oCK3ao9kiYlPZwJ%2Bggxu6sh0esNDJpIB14WjCOL8C%2BDZuL%2BlyPJqNNLbtzYeOFSdIdV7fe9vhWarVmGlGo92ATTV48vdNrxujOfhyrDBD9ks5pmY%2FwRs0RynrmCTEqbO4iECzTSahRtASv186LflijzlsTndK4aQuAOi4Dy%2B3ZkP04fb%2BVeO0h6vKVIECzkS%2FvmyVXIChsSvHesFnVeg5W4axUhnvGICO4xwM3H1t5lxUnnAo%3D";
+        key = "YAYA_FINANCIAL_BANK_APP@";
+        ivp = "b069e2e85555e20";
+        palaintext = "AppName:44@apiVersion:1.3.0@appCode:KQJK1.3.0@channel:android@pwd:q111111@type:2@userName:13241847378@version:1.3.0";
+        cryptograph = "iLVTnl0XdanW1ZoIc+1Qqeiux8fOcyjNdAQ5gsrK83zGg0f1yY5HdvKKpF/QLPgnR+YOngv2VFty/BET9HuzGp6dYu98twcmguE9T689Kr21DbO6HSmBfFCbPxQVYE2hYbqOWikXSJTorsfHznMozRY4ViKNAzFn";
     }
 
     @Test
-    void encrypt() {
+    void encrypt() throws DecoderException {
+
+        key = "YAYA_FINANCIAL_BANK_APP@";
+        ivp = "b069e2e85555e20";
+        palaintext = "AppName:44@apiVersion:1.3.0@appCode:KQJK1.3.0@channel:android@pwd:q111111@type:2@userName:13241847378@version:1.3.0";
+        cryptograph = "iLVTnl0XdanW1ZoIc+1Qqeiux8fOcyjNdAQ5gsrK83zGg0f1yY5HdvKKpF/QLPgnR+YOngv2VFty/BET9HuzGp6dYu98twcmguE9T689Kr21DbO6HSmBfFCbPxQVYE2hYbqOWikXSJTorsfHznMozRY4ViKNAzFn";
+
+        byte[]  result;
+        result = DESedeEncryptionUtil.getInstance().encrypt(palaintext.getBytes(),key.getBytes(), new BigInteger(ivp,16).toByteArray());
+        log.info("Base64.encodeToString(result) 's value : {}", Base64.encodeToString(result));
+
     }
 
     @Test
     void decrypt() {
+
+        key = "YAYA_FINANCIAL_BANK_APP@";
+        ivp = "b069e2e85555e20";
+        palaintext = "AppName:44@apiVersion:1.3.0@appCode:KQJK1.3.0@channel:android@pwd:q111111@type:2@userName:13241847378@version:1.3.0";
+        cryptograph = "iLVTnl0XdanW1ZoIc+1Qqeiux8fOcyjNdAQ5gsrK83zGg0f1yY5HdvKKpF/QLPgnR+YOngv2VFty/BET9HuzGp6dYu98twcmguE9T689Kr21DbO6HSmBfFCbPxQVYE2hYbqOWikXSJTorsfHznMozRY4ViKNAzFn";
+
+        byte[] result;
+        result = DESedeEncryptionUtil.getInstance().decrypt(Base64.decode(cryptograph),key.getBytes(),new BigInteger(ivp,16).toByteArray());
+        log.info("new String(result) 's value : {}", new String(result));
     }
 
 }
