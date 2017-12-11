@@ -1,0 +1,42 @@
+<root>
+    <sites>
+        <site>
+            <siteNameZh><![CDATA[]]></siteNameZh>
+            <curl><![CDATA[]]></curl>
+
+            <response>
+                <registers>
+                    <register>
+                        <contentType>json</contentType>
+                        <contentSource></contentSource>
+                        <filedPath></filedPath>
+                        <filedValue></filedValue>
+                    </register>
+                </registers>
+
+                <unRegisters>
+                    <unRegister>
+                        <contentType>json</contentType>
+                        <contentSource></contentSource>
+                        <filedPath></filedPath>
+                        <filedValue></filedValue>
+                    </unRegister>
+
+                </unRegisters>
+
+            </response>
+
+            <encryptions>
+                <encryption>
+                    <encryptionFiled><![CDATA[sign]]></encryptionFiled>
+                    <encryptionSource><![CDATA[]]></encryptionSource>
+                    <encryptionAlgorithm>MD5</encryptionAlgorithm>
+                    <encryptionKey><![CDATA[]]></encryptionKey>
+                    <encryptionIvp><![CDATA[]]></encryptionIvp>
+                </encryption>
+            </encryptions>
+
+        </site>
+
+    </sites>
+</root>
