@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2017</copyright>
     <item>
-      <title>File: 31,
-             Errors: 667,
+      <title>File: 39,
+             Errors: 891,
              Warnings: 0,
              Infos: 0
       </title>
@@ -56,6 +56,20 @@ under the License.
                 </td>
                 <td>
                   62
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.encryption.BasicEncryptionUtil.java">org/laidu/commom/util/encryption/BasicEncryptionUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  58
                 </td>
               </tr>
                           <tr>
@@ -116,6 +130,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.encryption.DESedeEncryptionUtil.java">org/laidu/commom/util/encryption/DESedeEncryptionUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.encryption.RSAencryptionUtil.java">org/laidu/commom/util/encryption/RSAencryptionUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  43
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.http.har.model.PostData.java">org/laidu/commom/util/http/har/model/PostData.java</a>
                 </td>
                 <td>
@@ -126,6 +168,20 @@ under the License.
                 </td>
                 <td>
                   7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.regex.RegexUtil.java">org/laidu/commom/util/regex/RegexUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  28
                 </td>
               </tr>
                           <tr>
@@ -172,6 +228,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.encryption.DESEncryptionUtil.java">org/laidu/commom/util/encryption/DESEncryptionUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.http.har.model.QueryString.java">org/laidu/commom/util/http/har/model/QueryString.java</a>
                 </td>
                 <td>
@@ -182,6 +252,20 @@ under the License.
                 </td>
                 <td>
                   5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.http.curl.CurlParserUtil.java">org/laidu/commom/util/http/curl/CurlParserUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  50
                 </td>
               </tr>
                           <tr>
@@ -410,7 +494,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.http.curl.CurlParser.java">org/laidu/commom/util/http/curl/CurlParser.java</a>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.encryption.AESEncryptionUtil.java">org/laidu/commom/util/encryption/AESEncryptionUtil.java</a>
                 </td>
                 <td>
                   0
@@ -419,7 +503,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  16
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.util.AESUtil.java">org/laidu/commom/util/util/AESUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -476,6 +574,20 @@ under the License.
                 </td>
                 <td>
                   5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/common-util/checkstyle.html#org.laidu.commom.util.annotation.Singleton.java">org/laidu/commom/util/annotation/Singleton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
                 </td>
               </tr>
                       </tbody>
