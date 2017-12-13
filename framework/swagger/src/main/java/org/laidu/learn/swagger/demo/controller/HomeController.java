@@ -37,5 +37,24 @@ public class HomeController {
         return product;
     }
 
+    @PostMapping("/test")
+    public String test(){
+
+//        byte[] entryptionByte = "MTczNDY1MTkxNDM6cTExMTExMTExMQ==".getBytes();
+//        int index = ArraysUtil.indexOf(body,entryptionByte);
+//
+//        byte[] byte1 = ArraysUtil.subarray(body,0,index);
+////        byte[] byte2 = ArraysUtil.subarray(body,index+entryptionByte.length,body.length);
+//        byte[] byte2 = ArraysUtil.remove(body,0,170);
+//
+//        System.out.println(Base64.encodeToString(byte1));
+//        System.out.println(Base64.encodeToString(byte2));
+//
+//
+//        return new String(body);
+
+        return "";
+    }
+
 
 }

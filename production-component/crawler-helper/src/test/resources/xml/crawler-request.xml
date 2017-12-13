@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<requests>
+    <request>
+        <requestNameZh>demo</requestNameZh>
+        <curl>demo</curl>
+        <params>
+            <param name="demo" value="demo"/>
+        </params>
+        <encryptionFileds>
+            <encryptionFiled>
+                <emcryptionExtendParams>
+                    <emcryptionExtendParam name="demo" value="demo"/>
+                </emcryptionExtendParams>
+                <encryptionAlgorithm>MD5</encryptionAlgorithm>
+                <encryptionFiled>demo</encryptionFiled>
+                <encryptionSource>dsaadassdas</encryptionSource>
+            </encryptionFiled>
+        </encryptionFileds>
+        <responses>
+            <response>
+                <responseName>demo</responseName>
+                <responseType>demo</responseType>
+                <attentionField>demo</attentionField>
+                <attentionFieldValue>demo</attentionFieldValue>
+                <responseSource>demo</responseSource>
+            </response>
+        </responses>
+    </request>
+</requests>
