@@ -2,6 +2,11 @@ package org.laidu.commom.util.encryption;
 
 import lombok.extern.slf4j.Slf4j;
 
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+
+
 /**
  * DES
  * <p>
@@ -29,42 +34,42 @@ public final class DESEncryptionUtil {
     private static class HelperHolder {
 
         static final String ALGORITHM = "DES";
-        static final String ALGORITHM_KEY = "DES";
-        static final String ALGORITHM_EDE_KEY = "DES";
+        static final String ALGORITHM_ECB_KEY = "DES/ECB/PKCS5PADDING";;
 
         private static final DESEncryptionUtil INSTANCE =
                 new DESEncryptionUtil();
     }
 
-//
-//    /**
-//     * 生成密钥
-//     * @throws Exception
-//     */
-//    public  byte[] initKey() throws Exception{
-//        //密钥生成器
-//        KeyGenerator keyGen = KeyGenerator.getInstance("DES");
-//        //初始化密钥生成器
-//        keyGen.init(56);
-//        //生成密钥
-//        SecretKey secretKey = keyGen.generateKey();
-//        return secretKey.getEncoded();
-//    }
+
+    /**
+     * 生成密钥
+     * @throws Exception
+     */
+    public  byte[] initKey() throws Exception{
+        //密钥生成器
+        KeyGenerator keyGen = KeyGenerator.getInstance("DES");
+        //初始化密钥生成器
+        keyGen.init(56);
+        //生成密钥
+        SecretKey  secretKey = keyGen.generateKey();
+        return secretKey.getEncoded();
+    }
 
     /**
      * 加密
-     *
      * @throws Exception
      */
-    public byte[] desEncrypt(byte[] data, byte[] key) throws Exception {
-        return BasicEncryptionUtil.getInstance().encrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_KEY, key, null, data);
+    public  byte[] ecbEncrypt(byte[] data, byte[] key) {
+        SecretKey secretKey = new SecretKeySpec(key, "DES");
+        return BasicEncryptionUtil.getInstance().encrypt(secretKey,HelperHolder.ALGORITHM_ECB_KEY,null,data);
     }
 
     /**
      * 解密
      */
-    public byte[] desDecryptDES(byte[] data, byte[] key) throws Exception {
-        return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_KEY, key, null, data);
+    public  byte[] ecbDecrypt(byte[] data, byte[] key){
+        SecretKey secretKey = new SecretKeySpec(key, "DES");
+        return BasicEncryptionUtil.getInstance().decrypt(secretKey,HelperHolder.ALGORITHM_ECB_KEY,null,data);
     }
 }
 

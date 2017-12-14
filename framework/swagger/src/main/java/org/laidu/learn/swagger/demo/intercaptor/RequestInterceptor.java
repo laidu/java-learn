@@ -1,6 +1,7 @@
 package org.laidu.learn.swagger.demo.intercaptor;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.IOUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.servlet.ModelAndView;
@@ -8,6 +9,8 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * RequestInterceptor
@@ -16,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 @Component
-// TODO: 2017/12/13 18/36 RequestInterceptor
+// : 2017/12/13 18/36 RequestInterceptor
 public class RequestInterceptor extends HandlerInterceptorAdapter {
 
     /**
@@ -27,13 +30,13 @@ public class RequestInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object object) throws Exception {
-        System.out.println("In preHandle we are Intercepting the Request");
-        System.out.println("____________________________________________");
+        
+        log.info("In preHandle we are Intercepting the Request");
         String requestURI = request.getRequestURI();
         Integer personId = ServletRequestUtils.getIntParameter(request, "personId", 0);
-        System.out.println("RequestURI::" + requestURI +
+        log.info("RequestURI::" + requestURI +
                 " || Search for Person with personId ::" + personId);
-        System.out.println("____________________________________________");
+
         return true;
     }
 
@@ -41,18 +44,22 @@ public class RequestInterceptor extends HandlerInterceptorAdapter {
     public void postHandle(HttpServletRequest request, HttpServletResponse response,
                            Object object, ModelAndView model)
             throws Exception {
-        System.out.println("_________________________________________");
-        System.out.println("In postHandle request processing "
+        log.info("In postHandle request processing "
                 + "completed by @RestController");
-        System.out.println("_________________________________________");
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
+        String body = IOUtils.toString(reader);
+
+        System.out.println(body);
+
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response,
                                 Object object, Exception arg3)
             throws Exception {
-        System.out.println("________________________________________");
-        System.out.println("In afterCompletion Request Completed");
-        System.out.println("________________________________________");
+        log.info("In afterCompletion Request Completed");
+
     }
+
 }

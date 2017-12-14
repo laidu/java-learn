@@ -71,7 +71,7 @@ class RSAencryptionUtilTest {
         RSAPublicKey rsaPublicKey = (RSAPublicKey) keyFactory.generatePublic(keySpec);
 
         byte[] result = null;
-//        result = RSAencryptionUtil.getInstance().encrypt(palaintext.getBytes(),rsaPublicKey);
+//        result = RSAencryptionUtil.getInstance().cbcEncrypt(palaintext.getBytes(),rsaPublicKey);
         result = RSAencryptionUtil.getInstance().encrypt("13241847378".getBytes(),rsaPublicKey);
         log.info("result 's value : {}", jodd.util.Base64.encodeToString(result));
         result = RSAencryptionUtil.getInstance().encrypt(palaintext.getBytes(),rsaPublicKey);

@@ -39,7 +39,7 @@ public final class BasicEncryptionUtil {
     }
 
     /**
-     * encrypt
+     * cbcEncrypt
      * @param algorithm
      * @param algorithmKey
      * @param key
@@ -61,14 +61,14 @@ public final class BasicEncryptionUtil {
             }
             encrypt = cipher.doFinal(data);
         } catch (Exception e) {
-            log.error("{} encrypt error ", algorithm, e);
+            log.error("{} Encrypt error ", algorithmKey, e);
         }
 
         return encrypt;
     }
 
     /**
-     * decrypt
+     * cbcDecrypt
      * @param algorithm
      * @param algorithmKey
      * @param key
@@ -91,7 +91,61 @@ public final class BasicEncryptionUtil {
             }
             encrypt = cipher.doFinal(data);
         } catch (Exception e) {
-            log.error("{} decrypt error",algorithm,e);
+            log.error("{} Decrypt error",algorithmKey,e);
+        }
+
+        return encrypt;
+    }
+
+
+    /**
+     * Encrypt
+     * @param algorithmKey
+     * @param ivp
+     * @param data
+     * @return
+     * @throws Exception
+     */
+    public  byte[] encrypt(SecretKey secretKey,String algorithmKey, byte[] ivp, byte[] data){
+
+        byte[] encrypt = null;
+        try {
+            Cipher cipher = Cipher.getInstance(algorithmKey);
+            if (ivp==null) {
+                cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+            }else {
+                cipher.init(Cipher.ENCRYPT_MODE, secretKey, new IvParameterSpec(ivp));
+            }
+            encrypt = cipher.doFinal(data);
+        } catch (Exception e) {
+            log.error("{} Encrypt error ", algorithmKey, e);
+        }
+
+        return encrypt;
+    }
+
+    /**
+     * Decrypt
+     * @param algorithmKey
+     * @param ivp
+     * @param data
+     * @return
+     * @throws Exception
+     */
+    public byte[] decrypt(SecretKey secretKey,String algorithmKey, byte[] ivp, byte[] data){
+
+        byte[] encrypt = null;
+
+        try {
+            Cipher cipher = Cipher.getInstance(algorithmKey);
+            if (ivp==null) {
+                cipher.init(Cipher.DECRYPT_MODE, secretKey);
+            }else {
+                cipher.init(Cipher.DECRYPT_MODE, secretKey, new IvParameterSpec(ivp));
+            }
+            encrypt = cipher.doFinal(data);
+        } catch (Exception e) {
+            log.error("{} Decrypt error",algorithmKey,e);
         }
 
         return encrypt;
@@ -105,7 +159,7 @@ public final class BasicEncryptionUtil {
             cipher.init(Cipher.DECRYPT_MODE, privateKey);
             cipherBytes = cipher.doFinal(data);
         } catch (Exception e) {
-            log.error("{} encrypt error",algorithm,e);
+            log.error("{} Encrypt error",algorithm,e);
         }
         return cipherBytes;
     }
@@ -118,7 +172,7 @@ public final class BasicEncryptionUtil {
             cipher.init(Cipher.ENCRYPT_MODE, publicKey);
             cipherBytes = cipher.doFinal(data);
         } catch (Exception e) {
-            log.error("{} encrypt error",algorithm,e);
+            log.error("{} Encrypt error",algorithm,e);
         }
         return cipherBytes;
     }

@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
@@ -21,11 +19,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 // : 2017/12/13 13/53 request root
-@XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "requests")
 public class RootRequest {
     @XmlElement(name = "request")
-    private List<CrawlerRequest> request;
-
-
+    protected List<CrawlerRequest> request;
 }

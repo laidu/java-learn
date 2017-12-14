@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <requests>
     <request>
-        <requestNameZh><![CDATA[]]></requestNameZh>
+        <requestNameZh><![CDATA[缺钱用]]></requestNameZh>
         <curl><![CDATA[]]></curl>
         <params>
             <param name="" value=""/>

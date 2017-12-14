@@ -38,7 +38,7 @@ public class HomeController {
     }
 
     @PostMapping("/test")
-    public String test(){
+    public String test(@RequestBody byte[] bodyByte){
 
 //        byte[] entryptionByte = "MTczNDY1MTkxNDM6cTExMTExMTExMQ==".getBytes();
 //        int index = ArraysUtil.indexOf(body,entryptionByte);
@@ -53,7 +53,7 @@ public class HomeController {
 //
 //        return new String(body);
 
-        return "";
+        return new String(bodyByte);
     }
 
 

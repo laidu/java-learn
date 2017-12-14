@@ -51,7 +51,7 @@ public final class AESEncryptionUtil {
 //    }
 
     /**
-     * aes encrypt
+     * aes cbcEncrypt
      *
      * @param data
      * @param key
@@ -64,7 +64,7 @@ public final class AESEncryptionUtil {
     }
 
     /**
-     * aes decrypt
+     * aes cbcDecrypt
      *
      * @param data data
      * @param key  key

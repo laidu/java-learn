@@ -37,6 +37,7 @@ public final class DESedeEncryptionUtil {
          * 加密/解密算法/工作模式/填充方式
          */
         public static final String ALGORITHM_CBC_KEY = "DESede/CBC/PKCS5Padding";
+        public static final String ALGORITHM_ECB_KEY = "DESede/ECB/PKCS5Padding";
 
         private static final DESedeEncryptionUtil INSTANCE =
                 new DESedeEncryptionUtil();
@@ -50,7 +51,7 @@ public final class DESedeEncryptionUtil {
      * @param key  密钥
      * @return byte[] 加密后的数据
      */
-    public byte[] encrypt(byte[] data, byte[] key, byte[] ivp) {
+    public byte[] cbcEncrypt(byte[] data, byte[] key, byte[] ivp) {
         return BasicEncryptionUtil.getInstance().encrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_CBC_KEY, key, ivp, data);
     }
 
@@ -61,8 +62,30 @@ public final class DESedeEncryptionUtil {
      * @param key  密钥
      * @return byte[] 解密后的数据
      */
-    public byte[] decrypt(byte[] data, byte[] key, byte[] ivp){
+    public byte[] cbcDecrypt(byte[] data, byte[] key, byte[] ivp){
         return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_CBC_KEY, key, ivp, data);
+    }
+
+    /**
+     * 加密数据
+     *
+     * @param data 待加密数据
+     * @param key  密钥
+     * @return byte[] 加密后的数据
+     */
+    public byte[] ecbEncrypt(byte[] data, byte[] key) {
+        return BasicEncryptionUtil.getInstance().encrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_ECB_KEY, key, null, data);
+    }
+
+    /**
+     * 解密数据
+     *
+     * @param data 待解密数据
+     * @param key  密钥
+     * @return byte[] 解密后的数据
+     */
+    public byte[] ecbDecrypt(byte[] data, byte[] key){
+        return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_ECB_KEY, key, null, data);
     }
 }
 
