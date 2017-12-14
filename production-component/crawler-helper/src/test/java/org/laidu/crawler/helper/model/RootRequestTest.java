@@ -1,13 +1,17 @@
 package org.laidu.crawler.helper.model;
 
+import jodd.io.FileUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.laidu.commom.util.xml.JAXBUtil;
 
 import javax.xml.bind.JAXBException;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 
+@Slf4j
 class RootRequestTest {
 
     private RootRequest rootRequest;
@@ -29,7 +33,6 @@ class RootRequestTest {
                 .responseSource("demo")
                 .attentionField("demo")
                 .attentionFieldValue("demo")
-                .responseType("demo")
                 .build();
 
         EncryptionFiled filed = EncryptionFiled.builder()
@@ -56,18 +59,18 @@ class RootRequestTest {
     }
 
     @Test
-    void getRequest() throws JAXBException, UnsupportedEncodingException {
+    void getRequest() throws JAXBException, IOException {
 
-        System.out.println(JAXBUtil.getInstance().obj2Xml(rootRequest));
+        String xml = FileUtil.readString(this.getClass().getClassLoader().getResource("xml/crawler-request-example.xml").getFile());
 
+        RootRequest request = JAXBUtil.getInstance().xml2Obj(xml,RootRequest.class);
+
+        log.info("xml 's value : {}", xml);
     }
 
     @Test
-    void setRequest() {
-
-
-
-
+    void buildRequest() throws JAXBException, UnsupportedEncodingException {
+        System.out.println(JAXBUtil.getInstance().obj2Xml(rootRequest));
     }
 
 }

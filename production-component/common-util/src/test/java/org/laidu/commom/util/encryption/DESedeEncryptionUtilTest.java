@@ -66,4 +66,21 @@ class DESedeEncryptionUtilTest {
         log.info("new String(result) 's value : {}", new String(result));
     }
 
+
+    @Test
+    void decrypt3() {
+
+        key = "YAYA_FINANCIAL_BANK_APP@";
+        palaintext = "apiVersion:1.1.0@appCode:QQY@channel:android@pwd:q111111@type:2@userName:13241847379@version:1.1.0";
+        cryptograph = "fEBRtWCX5PD2A2pBHICF77gGPz0rdaSVdCbNb1XPdiwDQQTOftSju3odGKF24dM6TIjPwtce/U1fQefxZfXhjq/6Hukwj60QUESr8tdxEzOdfAHu4zhDQt7lA+eB7TcZGDrY0Hqo24k=";
+
+        byte[] result;
+        result = DESedeEncryptionUtil.getInstance().ecbDecrypt(Base64.decode(cryptograph),key.getBytes());
+        log.info("new String(result) 's value : {}", new String(result));
+
+        result = DESedeEncryptionUtil.getInstance().ecbEncrypt(palaintext.getBytes(),key.getBytes());
+        log.info("new String(result) 's value : {}", Base64.encodeToString(result));
+    }
+
+
 }

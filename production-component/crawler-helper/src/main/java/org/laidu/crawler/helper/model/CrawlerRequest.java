@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
@@ -19,7 +18,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@XmlRootElement(name = "request")
+//@XmlRootElement(name = "request")
 @XmlAccessorType(XmlAccessType.FIELD)
 // : 2017/12/13 11/19 crawler request and reponse
 public class CrawlerRequest {
@@ -56,6 +55,9 @@ public class CrawlerRequest {
     @AllArgsConstructor
     @NoArgsConstructor
     public static class Responses{
+//        @XmlAttribute
+        private String responseType;
+
         private List<CrawlerResponse> response;
     }
 

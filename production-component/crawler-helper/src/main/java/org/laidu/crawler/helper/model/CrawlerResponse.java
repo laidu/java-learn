@@ -16,9 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 // : 2017/12/13 11/28 crawler response
 public class CrawlerResponse {
-
     private String responseName;
-    private String responseType;
     private String responseSource;
     private String attentionField;
     private String attentionFieldValue;
