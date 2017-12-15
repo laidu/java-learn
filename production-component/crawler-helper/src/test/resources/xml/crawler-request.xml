@@ -17,6 +17,7 @@
             </encryptionFiled>
         </encryptionFileds>
         <responses>
+            <responseType>json</responseType>
             <response>
                 <responseName>demo</responseName>
                 <responseType><![CDATA[]]></responseType>

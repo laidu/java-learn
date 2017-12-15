@@ -20,6 +20,7 @@
             </encryptionFiled>
         </encryptionFileds>
         <responses type ="json">
+            <responseType>json</responseType>
             <response>
                 <responseName>not_reg</responseName>
                 <attentionField>message</attentionField>
