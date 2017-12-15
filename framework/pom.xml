@@ -22,6 +22,7 @@
         <module>netty</module>
         <module>async-http-client</module>
         <module>play</module>
+        <module>webmagic</module>
     </modules>
 
     <properties>
@@ -85,5 +86,13 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.laidu.learn</groupId>
+            <artifactId>common-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -18,6 +18,7 @@
         <module>jvm</module>
         <module>io</module>
         <module>script</module>
+        <module>xml</module>
     </modules>
 
     <properties>

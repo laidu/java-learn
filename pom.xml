@@ -78,14 +78,14 @@
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
 
         <!--项目基础依赖配置-->
-        <lombok.version>1.16.16</lombok.version>
+        <lombok.version>1.16.18</lombok.version>
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
-        <junit.version>4.12</junit.version>
-        <junit.jupiter.version>5.0.0</junit.jupiter.version>
-        <junit.vintage.version>${junit.version}.0</junit.vintage.version>
-        <junit.platform.version>1.0.0</junit.platform.version>
+        <junit4.version>4.12</junit4.version>
+        <junit.version>5.0.0</junit.version>
+        <junit.vintage.version>${junit4.version}.0</junit.vintage.version>
+        <junit.platform.version>1.0.2</junit.platform.version>
     </properties>
 
 
@@ -122,40 +122,45 @@
             <version>${logback.version}</version>
         </dependency>
 
-        <!--junit5-->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
+        <!-- tag::tests[] -->
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>${junit4.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- Only required to run tests in an IDE that bundles an older version -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-engine</artifactId>
+            <version>${junit.platform.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <version>${junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- Only required to run tests in an IDE that bundles an older version -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- Only required to run tests in an IDE that bundles an older version -->
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
             <version>${junit.vintage.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- end::tests[] -->
 
     </dependencies>
 
@@ -211,11 +216,11 @@
                                 <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
                             </configuration>
                         </plugin>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-javadoc-plugin</artifactId>
-                            <version>3.0.0-M1</version>
-                        </plugin>
+                        <!--<plugin>-->
+                            <!--<groupId>org.apache.maven.plugins</groupId>-->
+                            <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+                            <!--<version>3.0.0-M1</version>-->
+                        <!--</plugin>-->
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-surefire-report-plugin</artifactId>
