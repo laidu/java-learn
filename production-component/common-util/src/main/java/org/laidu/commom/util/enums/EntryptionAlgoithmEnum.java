@@ -6,7 +6,7 @@ package org.laidu.commom.util.enums;
  * algorithm/mode/padding
  * Created by tiancai.zang on 2017-12-15 10-05.
  */
-// TODO: 2017/12/15 10/05 common entryption algorithm
+// : 2017/12/15 10/05 common entryption algorithm
 public enum EntryptionAlgoithmEnum {
 
     ;
