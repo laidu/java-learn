@@ -23,6 +23,7 @@
         <module>async-http-client</module>
         <module>play</module>
         <module>webmagic</module>
+        <module>swagger</module>
     </modules>
 
     <properties>
