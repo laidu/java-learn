@@ -1,17 +1,24 @@
 package org.laidu.crawler.helper;
 
 import com.alibaba.fastjson.JSON;
+import com.squareup.javapoet.MethodSpec;
 import jodd.io.FileUtil;
+import jodd.util.ArraysUtil;
 import jodd.util.StringUtil;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.commom.util.http.curl.CurlParserUtilV2;
 import org.laidu.commom.util.xml.JAXBUtil;
 import org.laidu.crawler.helper.model.CrawlerRequest;
+import org.laidu.crawler.helper.model.EncryptionFiled;
 import org.laidu.crawler.helper.model.RootRequest;
 
+import javax.lang.model.element.Modifier;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -68,7 +75,7 @@ public class PageProcessorGen {
                 /**
                  * step 2.3、build sign method
                  */
-                String signMethod = buildSignMethodString(request);
+                String signMethod = buildAllSignMethodString(request);
 
                 /**
                  * step 2.4、build result parser logic
@@ -83,17 +90,34 @@ public class PageProcessorGen {
 
     }
 
-    private static String buildSignMethodString(@NonNull CrawlerRequest request) {
+    private static String buildAllSignMethodString(@NonNull CrawlerRequest request) {
         StringBuilder signString = new StringBuilder();
-        request.getEncryptionFileds().getEncryptionFiled().forEach(encryptionFiled -> {
+        List<String> signMethodList = new ArrayList<>();
 
-            if (StringUtil.isNotBlank(encryptionFiled.getEncryptionAlgorithm())) {
-
-            }else {
-                log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryptionFiled));
-            }
-        });
+        request.getEncryptionFileds().getEncryptionFiled().forEach(encryptionFiled -> signMethodList.add(buildSignMethodString(encryptionFiled)));
         return signString.toString();
+    }
+
+    private static String buildSignMethodString(@NonNull EncryptionFiled encryptionFiled) {
+
+        StringBuilder signMethod = new StringBuilder();
+
+        if (StringUtil.isNotBlank(encryptionFiled.getEncryptionAlgorithm())) {
+
+            MethodSpec main = MethodSpec.methodBuilder("main")
+                    .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
+                    .returns(void.class)
+                    .addParameter(String[].class, "args")
+                    .addStatement("$T.out.println($S)", System.class, "Hello, JavaPoet!")
+                    .build();
+
+            main.toBuilder().toString();
+
+        }else {
+            log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryptionFiled));
+        }
+
+        return signMethod.toString();
     }
 
 

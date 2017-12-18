@@ -25,7 +25,7 @@
         <httpclient.version>4.5.3</httpclient.version>
 
         <jpinyin.verison>1.1.8</jpinyin.verison>
-        <javapoet.version>javawriter-2.5.1</javapoet.version>
+        <javapoet.version>1.0.0</javapoet.version>
 
     </properties>
 
