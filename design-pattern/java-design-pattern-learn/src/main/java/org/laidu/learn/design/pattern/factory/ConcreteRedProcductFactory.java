@@ -8,13 +8,13 @@ import lombok.extern.slf4j.Slf4j;
  * <p>
  * Created by 臧天才 on 2017-09-06 10:44.
  */
-//  : 2017-09-06 10:44  具体的 蓝色产品 工厂类
+//  : 2017-09-06 10:44  具体的 红色产品 工厂类
 @Slf4j
-public class ConcreteBlueProcductFactory extends AbstractFactory{
+public class ConcreteRedProcductFactory implements AbstractFactory{
 
     @Override
     public  AbstractProduct createProduct() {
-        log.info("-*--*--*--*- 创建蓝色产品-*--*--*--*--");
-        return new ConcreteBlueProduct();
+        log.info("-*--*--*--*- 创建红色产品-*--*--*--*--");
+        return new ConcreteRedProduct();
     }
 }

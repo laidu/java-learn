@@ -24,11 +24,33 @@
         <httpcore.version>4.4.8</httpcore.version>
         <httpclient.version>4.5.3</httpclient.version>
 
+        <jpinyin.verison>1.1.8</jpinyin.verison>
+        <javapoet.version>1.0.0</javapoet.version>
+
     </properties>
 
     <artifactId>common-util</artifactId>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
+
+        <dependency>
+            <groupId>com.github.laidu823</groupId>
+            <artifactId>javapoet</artifactId>
+            <version>${javapoet.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.stuxuhai</groupId>
+            <artifactId>jpinyin</artifactId>
+            <version>${jpinyin.verison}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>

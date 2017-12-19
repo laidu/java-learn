@@ -12,27 +12,29 @@
     <artifactId>webmagic-learn</artifactId>
 
     <properties>
-        <webmagic.version>0.7.3</webmagic.version>
+        <webmagic.version>1.0.0</webmagic.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
+
+        <dependency>
+            <groupId>com.github.laidu823.webmagic</groupId>
+            <artifactId>webmagic-core</artifactId>
+            <version>${webmagic.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.laidu.learn</groupId>
             <artifactId>common-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>us.codecraft</groupId>-->
-            <!--<artifactId>webmagic-core</artifactId>-->
-            <!--<version>${webmagic.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>us.codecraft</groupId>-->
-            <!--<artifactId>webmagic-extension</artifactId>-->
-            <!--<version>${webmagic.version}</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 

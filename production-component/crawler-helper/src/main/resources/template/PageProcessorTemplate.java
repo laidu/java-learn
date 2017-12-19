@@ -36,6 +36,7 @@ public class __CLASS_NAME__PageProcessor extends AbstractRegPageProcessor {
     @Override
     public PlatformCodeEnum.RegisterSiteResult parseResult(Page page) throws ParseException {
 
+        __PARSER__
         return PlatformCodeEnum.RegisterSiteResult.ERROR;
     }
 

@@ -1,0 +1,6 @@
+#crawler helper config
+helperConfig:
+  codePackage: /Users/tczang/IdeaProjects/temple/alpha-business/temple-business-crawler/temple-business-crawler-reg/src/main/java/com/alpha/business/crawler/app
+  codePath: com.alpha.business.crawler.app
+  templeFilePath: template/PageProcessorTemplate.java
+  xmlFilePath: curl/crawler-request-example.xml

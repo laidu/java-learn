@@ -22,31 +22,26 @@ import java.util.Map;
  * $'https://api.map.baidu.com/sdkcs/verify'
  * @author tczang
  */
-public final class CurlParserUtil {
+public final class CurlParserUtilV2 {
 
+    private final String curlLine;
 
     /**
      * Private constructor.
+     * @param curl
      */
-    private CurlParserUtil() {
+    private CurlParserUtilV2(String curl) {
+        this.curlLine = curl;
     }
 
     /**
      * @return Singleton instance
      */
-    public static CurlParserUtil getInstance() {
-        return HelperHolder.INSTANCE;
+    public static CurlParserUtilV2 init(String curl) {
+        return new CurlParserUtilV2(curl);
     }
 
-    /**
-     * Provides the lazy-loaded Singleton instance.
-     */
-    private static class HelperHolder {
-        private static final CurlParserUtil INSTANCE =
-                new CurlParserUtil();
-    }
-
-    private Map<String, String> keyValuePairs(String curlLine) {
+    private Map<String, String> keyValuePairs() {
         Map<String, String> keyValuePairs = new HashMap<>();
         String headePattern = "(-H \\$'([^:]*:[^']*)')+";
         int headDataIndex = 2;
@@ -61,23 +56,23 @@ public final class CurlParserUtil {
         return keyValuePairs;
     }
 
-    public Map<String, String> getHeaders(String curlLine) {
+    public Map<String, String> getHeaders() {
 
-        Map<String, String> keyValuePairs = keyValuePairs(curlLine);
+        Map<String, String> keyValuePairs = keyValuePairs();
 
         keyValuePairs.remove("Content-Length");
 
         return keyValuePairs;
     }
 
-    public Map<String, String> getCookies(String curlLine) {
+    public Map<String, String> getCookies() {
 
         Map<String, String> cookieMap = new HashMap<>();
 
         StringBuilder cookiesString = new StringBuilder();
 
-        cookiesString.append(getHeaders(curlLine).get("Cookie"));
-        cookiesString.append(getBCookiesString(curlLine));
+        cookiesString.append(getHeaders().get("Cookie"));
+        cookiesString.append(getBCookiesString());
 
         if (StringUtil.isNotBlank(cookiesString.toString())) {
             String cookiesPattern = "([^; ]*=[^;]*)+";
@@ -94,7 +89,7 @@ public final class CurlParserUtil {
         return cookieMap;
     }
 
-    private String getBCookiesString(String curlLine) {
+    private String getBCookiesString() {
 
         String bHeaderPattrern = "-b \\$'([^']*)'";
         int bHeaderIndex = 1;
@@ -102,29 +97,29 @@ public final class CurlParserUtil {
     }
 
 
-    public String getMethod(String curlLine) {
+    public String getMethod() {
         String methodPattern = "-X \\$'([A-Z]{2,5})'";
         int methodIndex = 1;
         return RegexUtil.getInstance().getMacthResult(methodPattern, curlLine, methodIndex, "GET");
     }
 
 
-    public String getUrl(String curlLine) {
+    public String getUrl() {
         String urlPattern = "\\$'(https?://.*)'";
         int urlIndex = 1;
         return RegexUtil.getInstance().getMacthResult(urlPattern, curlLine, urlIndex);
     }
 
-    public String getBodyString(String curlLine) {
+    public String getBodyString() {
         String stringBodyPattern = "--data-binary \\$'([^\\$]*)'";
         int stringBodyIndex = 1;
         return RegexUtil.getInstance().getMacthResult(stringBodyPattern, curlLine, stringBodyIndex);
     }
 
-    public Map<String, String> getFormBody(String curlLine) {
+    public Map<String, String> getFormBody() {
         Map<String, String> formMap = new HashMap<>();
 
-        String formBodyString = getBodyString(curlLine);
+        String formBodyString = getBodyString();
 
         String formDataPattern = "([^=&]+=[^&']*)+";
         int formDataIndex = 1;

@@ -1,3 +1,12 @@
 [submodule "framework/webmagic/webmagic-parent"]
 	path = framework/webmagic/webmagic-parent
 	url = git@github.com:laidu823/webmagic.git
+[submodule "design-pattern/java-design-patterns"]
+	path = design-pattern/java-design-patterns
+	url = https://github.com/laidu823/java-design-patterns.git
+[submodule "convenient-util/javapoet"]
+	path = convenient-util/javapoet
+	url = git@github.com:laidu823/javapoet.git
+[submodule "blog"]
+	path = blog
+	url = git@github.com:laidu/myBlogSource.git
