@@ -104,15 +104,6 @@ public class PageProcessorGen {
 
         if (StringUtil.isNotBlank(encryptionFiled.getEncryptionAlgorithm())) {
 
-            MethodSpec main = MethodSpec.methodBuilder("main")
-                    .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
-                    .returns(void.class)
-                    .addParameter(String[].class, "args")
-                    .addStatement("$T.out.println($S)", System.class, "Hello, JavaPoet!")
-                    .build();
-
-            main.toBuilder().toString();
-
         }else {
             log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryptionFiled));
         }
@@ -124,7 +115,6 @@ public class PageProcessorGen {
     private static String buildParamString(@NonNull Map<String, String> headers) {
 
         StringBuilder paramString = new StringBuilder();
-
 
         return paramString.toString();
     }

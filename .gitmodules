@@ -7,3 +7,6 @@
 [submodule "convenient-util/javapoet"]
 	path = convenient-util/javapoet
 	url = git@github.com:laidu823/javapoet.git
+[submodule "blog"]
+	path = blog
+	url = git@github.com:laidu/myBlogSource.git

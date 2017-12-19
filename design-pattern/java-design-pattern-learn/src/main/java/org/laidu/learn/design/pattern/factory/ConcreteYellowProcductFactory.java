@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 //  : 2017-09-06 10:44  具体的 黄色产品 工厂类
 @Slf4j
-public class ConcreteYellowProcductFactory extends AbstractFactory {
+public class ConcreteYellowProcductFactory implements AbstractFactory {
 
     @Override
     public AbstractProduct createProduct() {
