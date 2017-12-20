@@ -13,6 +13,12 @@
 [submodule "production-component/crawler-helper"]
 	path = production-component/crawler-helper
 	url = git@github.com:laidu/crawler-helper.git
+[submodule "production-component/crawler"]
+	path = production-component/crawler
+	url = git@github.com:laidu/crawler.git
 [submodule "production-component/common-util"]
 	path = production-component/common-util
 	url = git@github.com:laidu/common-util.git
+[submodule "production-component/common-basic"]
+	path = production-component/common-basic
+	url = git@github.com:laidu/common-basic.git

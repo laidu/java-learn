@@ -19,11 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.laidu.learn</groupId>
+            <groupId>com.github.laidu</groupId>
             <artifactId>common-basic</artifactId>
-            <version>1.0-RELEASE</version>
-            <type>pom</type>
-            <scope>import</scope>
+            <version>v1.0.0</version>
         </dependency>
     </dependencies>
 
