@@ -10,3 +10,9 @@
 [submodule "blog"]
 	path = blog
 	url = git@github.com:laidu/myBlogSource.git
+[submodule "production-component/crawler-helper"]
+	path = production-component/crawler-helper
+	url = git@github.com:laidu/crawler-helper.git
+[submodule "production-component/common-util"]
+	path = production-component/common-util
+	url = git@github.com:laidu/common-util.git
