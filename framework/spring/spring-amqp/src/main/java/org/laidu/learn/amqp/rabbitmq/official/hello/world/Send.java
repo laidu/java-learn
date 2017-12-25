@@ -7,6 +7,8 @@ import com.rabbitmq.client.ConnectionFactory;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeoutException;
 
 /**
@@ -25,27 +27,44 @@ public class Send {
 
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
         factory.setPort(5672);
         factory.setVirtualHost("/hello");
 
-        Connection connection = factory.newConnection();
-        Channel channel = connection.createChannel();
 
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+        for (int i = 0; i < 10; i++) {
+            Connection connection = factory.newConnection();
+            Channel channel = connection.createChannel();
 
-        String message = "Hello World!";
+            channel.queueDeclare(QUEUE_NAME + i, false, false, false, null);
 
-//        while (true){
-        channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
+            String message = "heieh";
+
+            ExecutorService executorService = Executors.newFixedThreadPool(20);
+            executorService.submit(() -> {
+
+                try {
+//                Channel channel1 = connection.createChannel();
+                    while (true) {
+//                    log.info("message 's value : {}", message);
+                        channel.basicPublish(QUEUE_NAME, "", null, message.getBytes());
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            });
+        }
+//        while (true) {
+//            channel.basicPublish(QUEUE_NAME + "_exchange", "", null, message.getBytes());
 //        }
 
-        System.out.println(" [x] Sent '" + message + "'");
-
-        channel.close();
-        connection.close();
+//        System.out.println(" [x] Sent '" + message + "'");
+//
+//        channel.close();
+//        connection.close();
 
 
     }

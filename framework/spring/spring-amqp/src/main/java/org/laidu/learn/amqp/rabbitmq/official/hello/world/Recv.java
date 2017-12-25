@@ -20,7 +20,7 @@ public class Recv {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
         factory.setPort(5672);
