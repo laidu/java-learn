@@ -1,29 +1,29 @@
 # my java learning
-##data-structure
-##algorithm
-###sort
-###search
-###encryption
-##desigin-pattern
-##java-feature
-##java-advance
-##java-common-framework
-###web
+## data-structure
+## algorithm
+### sort
+### search
+### encryption
+## desigin-pattern
+## java-feature
+## java-advance
+## java-common-framework
+### web
 * spring boot
 * play
 
-###http
+### http
 * httpclient
 * asyncHttpclient
 * netty
-###crawler
+### crawler
 * webmagic
-###test
+### test
 * junit5
 * mockito
-###document
+### document
 * swagger
-###utils
+### utils
 * apache
   * common-util
   * common-lang3
@@ -32,15 +32,15 @@
 * google
   * guava
   * auto-value
-###amqp
+### amqp
 * spring-amqp
-###big-data
+### big-data
 * spring-hadoop
-###db
+### db
 * spring-data
-##java-util
-##devops
-###docker
-###shell
-###python
-##production-component
+## java-util
+## devops
+### docker
+### shell
+### python
+## production-component
