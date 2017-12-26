@@ -43,7 +43,7 @@
         <module>language-feature</module>
         <module>framework</module>
         <module>design-pattern</module>
-        <module>convenient-util</module>
+        <module>convenient-tool</module>
         <module>data-structure</module>
         <module>algorithm</module>
         <module>production-component</module>
