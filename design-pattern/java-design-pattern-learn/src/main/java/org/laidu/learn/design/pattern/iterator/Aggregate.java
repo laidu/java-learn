@@ -9,7 +9,7 @@ import java.util.List;
  * @param <E> the type parameter
  * @author tiancai.zang  2017-12-26 10:20.
  */
-public interface Aggregate<E> extends List{
+public interface Aggregate<E>{
     /**
      * Create iterator iterator.
      *
