@@ -1,15 +1,18 @@
-# 原型模式(Prototype Pattern)
+# 迭代器模式(Iterator Pattern)
 
 ## 1 定义
-> Specify the kinds of object to create using a prototypical instance, and create new object by copying this prototype.
+> Provide a way to access the elements of an aggregate object sequentially whitout exposing its underlying representation.
 
-> 不使用new关键字创建对象，而是通过对象复制来实现新对象的创建。
+> 提供一种方法访问容器对象中的各个元素，而又不需要暴露该方法的内部细节。目前已经是一种没落的模式，基本上没人会单独写一个迭代器。
     
 ## 2 角色
->  cloneable object
+* Iterator 抽象迭代器
+* Concrete Iterator 具体迭代器
+* Aggregate 抽象容器
+* Concrete Aggregate 具体容器
 
 ## 3 类图
-![](image/prototype.png)
+![](image/iterator.png)
 
 ## 4 优点
 * 性能优良 
