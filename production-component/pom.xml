@@ -22,7 +22,7 @@
         <!--<module>crawler-helper</module>-->
         <!--<module>crawler</module>-->
         <module>common-pool</module>
-        <module>common-basic</module>
+        <!--<module>common-basic</module>-->
     </modules>
 
     <dependencyManagement>
