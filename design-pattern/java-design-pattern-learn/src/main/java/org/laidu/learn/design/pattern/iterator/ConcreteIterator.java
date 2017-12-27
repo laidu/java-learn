@@ -6,7 +6,6 @@ package org.laidu.learn.design.pattern.iterator;
  * @author tiancai.zang
  * 2017-12-26 10:51.
  */
-
 public class ConcreteIterator<E> implements Iterator<E> {
 
     private int index = 0;
