@@ -25,3 +25,6 @@
 [submodule "convenient-tool/fastjson/fastjson-source"]
 	path = convenient-tool/fastjson/fastjson-source
 	url = git@github.com:laidu823/fastjson.git
+[submodule "production-component/alpha"]
+	path = production-component/alpha
+	url = git@github.com:laidu823/alpha.git
