@@ -6,7 +6,7 @@
 ### encryption
 ## desigin-pattern
 ## [java-feature](language-feature/src/site/markdown/index.md)
-## java-advance
+## [java-advance](language-advance/src/site/markdown/index.md)
 ## java-common-framework
 ### web
 * spring boot
