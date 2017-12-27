@@ -4,8 +4,8 @@
 [submodule "design-pattern/java-design-patterns"]
 	path = design-pattern/java-design-patterns
 	url = https://github.com/laidu823/java-design-patterns.git
-[submodule "convenient-util/javapoet"]
-	path = convenient-util/javapoet
+[submodule "convenient-tool/javapoet"]
+	path = convenient-tool/javapoet
 	url = git@github.com:laidu823/javapoet.git
 [submodule "blog"]
 	path = blog
@@ -22,3 +22,6 @@
 [submodule "production-component/common-basic"]
 	path = production-component/common-basic
 	url = git@github.com:laidu/common-basic.git
+[submodule "convenient-tool/fastjson/fastjson-source"]
+	path = convenient-tool/fastjson/fastjson-source
+	url = git@github.com:laidu823/fastjson.git
