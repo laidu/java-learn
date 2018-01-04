@@ -34,6 +34,7 @@
   * auto-value
 ### amqp
 * spring-amqp
+  * [rabbitmq](framework/spring/spring-amqp/src/site/markdown/rabbitmq.md)
 ### big-data
 * spring-hadoop
 ### db

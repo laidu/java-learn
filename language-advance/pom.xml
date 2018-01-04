@@ -19,7 +19,6 @@
         <module>io</module>
         <module>script</module>
         <module>xml</module>
-        <module>jmm</module>
     </modules>
 
     <properties>
