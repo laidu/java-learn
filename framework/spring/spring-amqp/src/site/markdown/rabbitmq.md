@@ -46,14 +46,21 @@ __Channel:__ 消息通道,在客户端的每个连接里,可建立多个channel�
 类型 | 预先声明的默认名称 | 说明
 --- | --- | ---
 Direct exchange | (Empty string) and amq.direct | 默认使用，直连交换机是一种带路由功能的交换机，一个队列会和一个交换机绑定，<br/>除此之外再绑定一个routing_key，当消息被发送的时候，需要指定一个binding_key，<br/>这个消息被送达交换机的时候，就会被这个交换机送到指定的队列里面去。同样的一个binding_key也是支持应用到多个队列中的
-Fanout exchange | amq.fanout | 广播消息
-Topic exchange | amq.topic | 使用 "*" "#" 匹配
-Headers exchange | amq.match (and amq.headers in RabbitMQ) | 忽略路由键属性。相反，用于路由的属性取自headers属性。如果报头的值等于绑定时指定的值，则认为消息匹配。不经常使用。
+Fanout exchange | amq.fanout | 直接将消息转发到所有binding的对应queue中，这种exchange在路由转发的时候，忽略Routing key。
+Topic exchange | amq.topic | 将消息中的Routing key与该Exchange关联的所有Binding中的Routing key进行对比，如果 __匹配__ 上了，则发送到该Binding对应的Queue中。
+Headers exchange | amq.match (and amq.headers in RabbitMQ) | 忽略路由键属性。将消息中的headers与该Exchange相关联的所有Binging中的参数进行匹配，如果匹配上了，则发送到该Binding对应的Queue中。不经常使用。
+
+> __执行效率:__ fanout > direct > topic
 
 ### 2.2 进程模型
 ![](image/process.png)
 
-tcp_acceptor进程接收客户端连接，创建rabbit_reader、rabbit_writer、rabbit_channel进程。rabbit_reader接收客户端连接，解析AMQP帧；rabbit_writer向客户端返回数据；rabbit_channel解析AMQP方法，对消息进行路由，然后发给相应队列进程。rabbit_amqqueue_process是队列进程，在RabbitMQ启动（恢复durable类型队列）或创建队列时创建。rabbit_msg_store是负责消息持久化的进程。<br/>
+__tcp_acceptor__ 进程接收客户端连接，创建rabbit_reader、rabbit_writer、rabbit_channel进程。
+__rabbit_reader__ 接收客户端连接，解析AMQP帧；
+rabbit_writer向客户端返回数据；
+rabbit_channel解析AMQP方法，对消息进行路由，然后发给相应队列进程。
+rabbit_amqqueue_process是队列进程，在RabbitMQ启动（恢复durable类型队列）或创建队列时创建。
+rabbit_msg_store是负责消息持久化的进程。<br/>
 在整个系统中，存在一个tcp_accepter进程，一个rabbit_msg_store进程，有多少个队列就有多少个rabbit_amqqueue_process进程，每个客户端连接对应一个rabbit_reader和rabbit_writer进程。
 
 ## 3、性能参数

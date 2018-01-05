@@ -1,12 +1,14 @@
 package org.laidu.learn.amqp.rabbitmq.official.hello.world;
 
 
+import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeoutException;
@@ -30,7 +32,7 @@ public class Send {
         factory.setHost("dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
-        factory.setPort(5672);
+        factory.setPort(5673);
         factory.setVirtualHost("/hello");
 
 
@@ -39,6 +41,8 @@ public class Send {
             Channel channel = connection.createChannel();
 
             channel.queueDeclare(QUEUE_NAME + i, false, false, false, null);
+            channel.exchangeDeclare("hello", BuiltinExchangeType.DIRECT,false,true,new HashMap<>());
+            channel.queueBind(QUEUE_NAME+i,"hello",QUEUE_NAME+i);
 
             String message = "heieh";
 
@@ -48,8 +52,8 @@ public class Send {
                 try {
 //                Channel channel1 = connection.createChannel();
                     while (true) {
-//                    log.info("message 's value : {}", message);
-                        channel.basicPublish(QUEUE_NAME, "", null, message.getBytes());
+                    log.info("message 's value : {}", message);
+                        channel.basicPublish("hell1o",QUEUE_NAME+1, null, message.getBytes());
                     }
 
                 } catch (IOException e) {
