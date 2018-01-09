@@ -41,7 +41,4 @@
 * spring-data
 ## java-util
 ## [devops](dev-ops/src/site/markdown/index.md)
-### docker
-### shell
-### python
 ## production-component
