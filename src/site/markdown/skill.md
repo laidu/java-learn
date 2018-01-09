@@ -1,8 +1,14 @@
 #java爬虫
+
+编程语言： java python
+爬虫框架： webmagic、scarpy
+网络协议：  TCP，HTTP，HTTPS，
+并发： java并发
+数据库： mysql、redis，nosql
     
     1、具备扎实的计算机专业基础知识
-    2、熟悉java,掌握python,熟悉常用爬虫框架中的一种或多种，如Scrapy框架或其他的Web scraping framework；
     
+    2、熟悉java,掌握python,熟悉常用爬虫框架中的一种或多种，如Scrapy框架或其他的Web scraping framework；   
     4、熟练掌握 TCP，HTTP，HTTPS，熟悉高并发。
     3、熟练掌握JavaScript，熟悉HTML，CSS；
     
@@ -28,3 +34,6 @@
     了解简单的NLP算法优先，了解验证码相关知识优先；
 
     较强的学习能力，有主人翁意识，能够从技术和业务多角度分析和解决问题
+    
+    
+    

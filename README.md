@@ -34,12 +34,13 @@
   * auto-value
 ### amqp
 * spring-amqp
+  * [rabbitmq](framework/spring/spring-amqp/src/site/markdown/rabbitmq.md)
 ### big-data
 * spring-hadoop
 ### db
 * spring-data
 ## java-util
-## devops
+## [devops](dev-ops/src/site/markdown/index.md)
 ### docker
 ### shell
 ### python
