@@ -1,16 +1,15 @@
 package org.laidu.learn.amqp.rabbitmq.official.hello.world;
 
 
-import com.rabbitmq.client.BuiltinExchangeType;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.*;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeoutException;
 
 /**
@@ -25,51 +24,66 @@ public class Send {
 
     private final static String QUEUE_NAME = "hello";
 
-    public static void main(String[] args) throws IOException, TimeoutException {
 
-
+    private static ConnectionFactory getConnectionFactory() {
         ConnectionFactory factory = new ConnectionFactory();
+        factory.useNio();
         factory.setHost("dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
         factory.setPort(5673);
         factory.setVirtualHost("/hello");
+        return factory;
+    }
+
+    public static void main(String[] args) throws IOException, TimeoutException {
+
+
+        Connection connection = getConnection();
+        connection.addBlockedListener(new BlockedListener() {
+            @Override
+            public void handleBlocked(String reason) throws IOException {
+                System.out.println("blocked reason: "+reason);
+            }
+
+            @Override
+            public void handleUnblocked() throws IOException {
+                System.out.println("Unblocked");
+//                connection.close();
+            }
+        });
 
 
         for (int i = 0; i < 10; i++) {
-            Connection connection = factory.newConnection();
+
             Channel channel = connection.createChannel();
 
             channel.queueDeclare(QUEUE_NAME + i, false, false, false, null);
             channel.exchangeDeclare("hello", BuiltinExchangeType.DIRECT,false,true,new HashMap<>());
             channel.queueBind(QUEUE_NAME+i,"hello",QUEUE_NAME+i);
+            String message = "hello "+new Date();
 
-            String message = "heieh";
+            Integer index = new Integer(i);
 
-            ExecutorService executorService = Executors.newFixedThreadPool(20);
-            executorService.submit(() -> {
-
-                try {
-//                Channel channel1 = connection.createChannel();
-                    while (true) {
-                    log.info("message 's value : {}", message);
-                        channel.basicPublish("hell1o",QUEUE_NAME+1, null, message.getBytes());
-                    }
-
-                } catch (IOException e) {
-                    e.printStackTrace();
+            ExecutorService executorService = new ForkJoinPool(1);
+            executorService.submit(()->{
+                while (true){
+                    channel.basicPublish("hello",QUEUE_NAME+ index, null, message.getBytes());
                 }
             });
-        }
-//        while (true) {
-//            channel.basicPublish(QUEUE_NAME + "_exchange", "", null, message.getBytes());
-//        }
 
-//        System.out.println(" [x] Sent '" + message + "'");
-//
-//        channel.close();
-//        connection.close();
+
+//            channel.close();
+//            connection.close();
+
+        }
 
 
     }
+
+    private static Connection getConnection() throws IOException, TimeoutException {
+        ConnectionFactory connectionFactory = getConnectionFactory();
+        return connectionFactory.newConnection();
+    }
+
 }
