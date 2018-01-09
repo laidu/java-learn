@@ -7,7 +7,7 @@
 ## [desigin-pattern](design-pattern/java-design-pattern-learn/src/site/markdown/index.md)
 ## [java-feature](language-feature/src/site/markdown/index.md)
 ## [java-advance](language-advance/src/site/markdown/index.md)
-## java-common-framework
+## [java-common-framework](framework/src/site/markdown/index.md)
 ### web
 * spring boot
 * play
