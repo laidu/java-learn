@@ -18,7 +18,7 @@
     </properties>
 
     <modules>
-        <!--<module>common-util</module>-->
+        <module>common-util</module>
         <!--<module>crawler-helper</module>-->
         <!--<module>crawler</module>-->
         <module>common-pool</module>
