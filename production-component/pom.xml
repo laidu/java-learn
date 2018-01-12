@@ -20,10 +20,10 @@
     <modules>
         <module>common-util</module>
         <!--<module>crawler-helper</module>-->
-        <!--<module>crawler</module>-->
-        <module>common-pool</module>
-        <module>common-util</module>
         <module>crawler</module>
+        <module>common-pool</module>
+        <!--<module>common-util</module>-->
+        <!--<module>crawler</module>-->
         <module>common-amqp</module>
         <!--<module>common-basic</module>-->
     </modules>

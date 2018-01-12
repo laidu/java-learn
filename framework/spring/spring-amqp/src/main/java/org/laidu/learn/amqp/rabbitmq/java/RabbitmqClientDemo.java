@@ -3,6 +3,8 @@ package org.laidu.learn.amqp.rabbitmq.java;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.ShutdownSignalException;
+import com.rabbitmq.client.impl.AMQImpl;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -48,14 +50,14 @@ public class RabbitmqClientDemo implements ClientDemo {
     public void declareQueue() throws IOException {
         Connection connection = connection(connectionFactory());
         Channel channel = connection.createChannel();
-        channel.queueDeclare("demo1",true,false,false,null);
-        channel.queueDeclare("demo1",true,false,false,null);
         try {
-            channel.queueDeclare("demo1",false,false,false,null);
+            channel.queueDeclare("demo1",true,false,false,null);
         }catch (IOException e){
-            channel = connection.createChannel();
-            channel.queueDelete("demo1");
-            channel.queueDeclare("demo1",false,false,false,null);
+            if ("406".equals(((AMQImpl.Channel.Close) (((ShutdownSignalException)e.getCause())).getReason()).getReplyCode())){
+                channel = connection.createChannel();
+                channel.queueDelete("demo1");
+                channel.queueDeclare("demo1",false,false,false,null);
+            }
         }
     }
 
