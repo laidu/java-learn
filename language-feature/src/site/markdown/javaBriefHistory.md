@@ -118,4 +118,8 @@
 * 发布时间：1996年1月
 * 新增特性：
 
+参考：
+* [Java 8 特性 – 终极手册](http://ifeve.com/java-8-features-tutorial/)
+* [Java 7语法新特性](http://blog.csdn.net/u012152619/article/details/72236577)
+
 

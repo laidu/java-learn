@@ -12,8 +12,13 @@
 ### 开发
 * [__Eclipse__]()
 * [__IDEA__]()
+* [__shell__]()
+* [__python__]()
+
 ### 测试
 * [__siege__](siege.md)
 ### 数据库
+
+### docker
 
 ## 开发工具
