@@ -5,6 +5,7 @@
 * [java注解](annotation.md)
 * [java常用包](packages.md)
 * [java数据结构]()
+* [java集合](collection.md)
 
 ------------
 
