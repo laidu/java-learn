@@ -44,6 +44,9 @@
 * [__MongoDB__](mongodb.md) MongoDB 是一个基于分布式文件存储的数据库。由C++语言编写。旨在为WEB应用提供可扩展的高性能数据存储解决方案。
 * [__DynamoDB__](dynamodb.md) AmazonDynamoDB被设计成用来托管的NoSQL数据库服务、可预期的性能、可实现无缝扩展性和可靠性等核心问题。
 
+### 消息队列
+* [__RabbitMQ__]() RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统。他遵循Mozilla Public License开源协议。
+
 ### docker
 
 ## 开发工具

@@ -1,6 +1,6 @@
 # my java learning
 ## data-structure
-## algorithm
+## [algorithm](algorithm/src/site/markdown/index.md)
 ### sort
 ### search
 ### encryption
