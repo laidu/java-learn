@@ -26,8 +26,9 @@
 ### 开发
 * [~~Eclipse~~]() 
 * [__IDEA__]()
-* [__shell__]()
-* [__python__]()
+* [__Postman__]() API调用工具
+* [__Charles__]() 基于java开发的抓包工具
+* [__Burp Suite__]() Burp Suite是一个Web应用程序集成攻击平台，它包含了一系列burp工具，这些工具之间有大量接口可以互相通信，这样设计的目的是为了促进和提高整个攻击的效率。 
 
 ### java 命令行工具
 * [jps](jps.md) 列出本机所有java进程信息 
