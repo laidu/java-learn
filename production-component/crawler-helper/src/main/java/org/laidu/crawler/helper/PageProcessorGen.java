@@ -29,10 +29,10 @@ import java.util.Map;
 @Slf4j
 public class PageProcessorGen {
 
-    private static final String CODE_PATH = "/Users/tczang/IdeaProjects/temple/alpha-business/temple-business-crawler/temple-business-crawler-reg/src/main/java/com/alpha/business/crawler/app";
+    private static final String CODE_PATH = "/Users/tczang/IdeaProjects/java-learn/production-component/crawler-helper/src/main/resources/template/";
     private static final String CODE_PACKAGE = "com.alpha.business.crawler.app";
-    private static final String TEMPLE_FILE = "com.alpha.business.crawler.app";
-    private static final String XML_FILE = "com.alpha.business.crawler.app";
+    private static final String TEMPLE_FILE = "/Users/tczang/IdeaProjects/java-learn/production-component/crawler-helper/src/main/resources/template/PageProcessorTemplate.java";
+    private static final String XML_FILE = "/Users/tczang/IdeaProjects/java-learn/production-component/crawler-helper/src/main/resources/curl/curl-demo.xml";
 
     public static void main(String[] args) throws IOException, JAXBException {
 

@@ -23,9 +23,9 @@ import java.util.List;
 // : 2017/12/13 11/19 crawler request and reponse
 public class CrawlerRequest {
 
-    private String curl;
+    private String siteNameZh;
 
-    private String requestNameZh;
+    private String curl;
 
     private Params params;
 
