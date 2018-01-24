@@ -10,9 +10,6 @@
 [submodule "blog"]
 	path = blog
 	url = git@github.com:laidu/myBlogSource.git
-[submodule "production-component/common-basic"]
-	path = production-component/common-basic
-	url = git@github.com:laidu/common-basic.git
 [submodule "convenient-tool/fastjson/fastjson-source"]
 	path = convenient-tool/fastjson/fastjson-source
 	url = git@github.com:laidu823/fastjson.git

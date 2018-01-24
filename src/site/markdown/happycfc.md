@@ -25,4 +25,3 @@
 7、熟悉kafka、rabbitmq中的一种消息中间件的开发者优先；
 
 8、熟练使用git、maven。
-
