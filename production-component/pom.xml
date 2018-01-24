@@ -14,15 +14,14 @@
     <description>可用于实际项目中的小工具</description>
 
     <properties>
-
+        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
     </properties>
 
     <modules>
         <module>common-util</module>
-        <!--<module>crawler-helper</module>-->
+        <module>crawler-helper</module>
         <module>crawler</module>
         <module>common-pool</module>
-        <!--<module>common-util</module>-->
         <!--<module>crawler</module>-->
         <module>common-amqp</module>
         <!--<module>common-basic</module>-->

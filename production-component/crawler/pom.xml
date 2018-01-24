@@ -16,7 +16,6 @@
         <common-util.version>1.0-SNAPSHOT</common-util.version>
         <common-amqp.version>1.0-SNAPSHOT</common-amqp.version>
         <webmagic.version>0.7.3</webmagic.version>
-        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
     </properties>
 
     <dependencyManagement>

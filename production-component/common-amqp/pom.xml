@@ -12,7 +12,6 @@
     <artifactId>common-amqp</artifactId>
 
     <properties>
-        <spring-boot-starter-amqp.version>2.0.0.M6</spring-boot-starter-amqp.version>
     </properties>
 
     <dependencies>
@@ -24,7 +23,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
-            <version>${spring-boot-starter-amqp.version}</version>
+            <version>${spring-boot.version}</version>
         </dependency>
     </dependencies>
 
