@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-stopwatch</artifactId>
+    <artifactId>spring-tool</artifactId>
+
 
     <properties>
         <spring.version>4.3.10.RELEASE</spring.version>
@@ -22,6 +23,5 @@
             <version>${spring.version}</version>
         </dependency>
     </dependencies>
-
 
 </project>

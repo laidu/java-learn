@@ -1,4 +1,4 @@
-package org.laidu.learn.spring.stopwatch;
+package org.laidu.learn.tool.spring.stopwatch;
 
 
 import lombok.extern.slf4j.Slf4j;

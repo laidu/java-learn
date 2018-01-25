@@ -1,4 +1,4 @@
-package org.laidu.learn.spring.stopwatch.source;
+package org.laidu.learn.tool.spring.stopwatch.source;
 
 import java.text.NumberFormat;
 import java.util.LinkedList;
