@@ -20,7 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 // : 2017/12/13 11/24 encrtption field
-public class EncryptionFiled {
+public class Encryption {
 
     private String encryptionFiled;
 
@@ -28,15 +28,15 @@ public class EncryptionFiled {
 
     private String encryptionAlgorithm;
 
-    private EmcryptionExtendParams emcryptionExtendParams;
+    private EncryptionExtendParams encryptionExtendParams;
 
 
     @Data
     @Builder
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class EmcryptionExtendParams{
-        private List<Extend> emcryptionExtendParam;
+    public static class EncryptionExtendParams {
+        private List<Extend> encryptionExtendParam;
     }
 
 

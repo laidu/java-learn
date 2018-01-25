@@ -1,9 +1,9 @@
 # my java learning
 ## data-structure
 ## [algorithm](algorithm/src/site/markdown/index.md)
-### sort
-### search
-### encryption
+> ### sort
+> ### search
+> ### encryption
 ## [desigin-pattern](design-pattern/java-design-pattern-learn/src/site/markdown/index.md)
 ## [java-feature](language-feature/src/site/markdown/index.md)
 ## [java-advance](language-advance/src/site/markdown/index.md)

@@ -1,46 +1,44 @@
-<root>
-    <sites>
-        <site>
-            <siteNameZh><![CDATA[瓜牛钱包]]></siteNameZh>
-            <curl><![CDATA[curl -i -s -k  -X $'POST' \
+<sites>
+    <site>
+        <siteNameZh><![CDATA[瓜牛钱包]]></siteNameZh>
+        <curl><![CDATA[curl -i -s -k  -X $'POST' \
     -H $'Content-Type: multipart/form-data; boundary=e2177321-85f7-4931-9679-7a3fad388bf4' -H $'Content-Length: 676' -H $'Host: api.gnfenqi.com' -H $'Connection: close' -H $'Accept-Encoding: gzip, deflate' -H $'User-Agent: okhttp/3.2.0' \
     --data-binary $'--e2177321-85f7-4931-9679-7a3fad388bf4\x0d\x0aContent-Disposition: form-data; name=\"data\"\x0d\x0aContent-Transfer-Encoding: binary\x0d\x0aContent-Type: application/json; charset=UTF-8\x0d\x0aContent-Length: 90\x0d\x0a\x0d\x0a\"2LGhHJ9g7fNVpRcM3MRNAy9agb1ZWgu4yhnbkRT3hOqmZjWpZzrjlz04Uo/zQ9swrFI+PVWNkISvGLgziSwfrg==\"\x0d\x0a--e2177321-85f7-4931-9679-7a3fad388bf4\x0d\x0aContent-Disposition: form-data; name=\"type\"\x0d\x0aContent-Length: 7\x0d\x0a\x0d\x0aandroid\x0d\x0a--e2177321-85f7-4931-9679-7a3fad388bf4\x0d\x0aContent-Disposition: form-data; name=\"app_name\"\x0d\x0aContent-Length: 6\x0d\x0a\x0d\x0aguaniu\x0d\x0a--e2177321-85f7-4931-9679-7a3fad388bf4\x0d\x0aContent-Disposition: form-data; name=\"app_version\"\x0d\x0aContent-Length: 5\x0d\x0a\x0d\x0a30905\x0d\x0a--e2177321-85f7-4931-9679-7a3fad388bf4--\x0d\x0a' \
     $'http://api.gnfenqi.com/login']]></curl>
 
+        <responses>
+            <responseType>json</responseType>
+
             <response>
-                <registers>
-                    <register>
-                        <contentType>json</contentType>
-                        <encrypString></encrypString>
-                        <contentSource>{"success":false,"msg":"您输入的密码错误"}</contentSource>
-                        <filedPath>msg</filedPath>
-                        <filedValue>您输入的密码错误</filedValue>
-                    </register>
-                </registers>
-
-                <unRegisters>
-                    <unRegister>
-                        <contentType>json</contentType>
-                        <encrypString></encrypString>
-                        <contentSource>{"success":false,"msg":"帐户不存在"}</contentSource>
-                        <filedPath>msg</filedPath>
-                        <filedValue>帐户不存在</filedValue>
-                    </unRegister>
-                </unRegisters>
-
+                <responseName>unRegister</responseName>
+                <encryptString></encryptString>
+                <contentSource>{"success":false,"msg":"帐户不存在"}</contentSource>
+                <filedPath>msg</filedPath>
+                <filedValue>帐户不存在</filedValue>
             </response>
 
-            <encryptions>
-                <encryption>
-                    <encryptionFiled><![CDATA[body]]></encryptionFiled>
-                    <encryptionSource><![CDATA[{"hidecode":1,"mobile":"17091003126","password":"qq1111111"}]]></encryptionSource>
-                    <encryptionAlgorithm>AES/CBC</encryptionAlgorithm>
-                    <encryptionKey><![CDATA[418c764b9f0f202d]]></encryptionKey>
-                    <encryptionIvp><![CDATA[424827A5858CC3BD]]></encryptionIvp>
-                </encryption>
-            </encryptions>
+            <response>
+                <responseName>registers</responseName>
+                <encryptString></encryptString>
+                <contentSource>{"success":false,"msg":"您输入的密码错误"}</contentSource>
+                <filedPath>msg</filedPath>
+                <filedValue>您输入的密码错误</filedValue>
+            </response>
 
-        </site>
+        </responses>
 
-    </sites>
-</root>
+        <encryptions>
+            <encryption>
+                <encryptionFiled><![CDATA[body]]></encryptionFiled>
+                <encryptionSource><![CDATA[{"hidecode":1,"mobile":"17091003126","password":"qq1111111"}]]></encryptionSource>
+                <encryptionAlgorithm>AES/CBC</encryptionAlgorithm>
+                <encryptionExtendParams>
+                    <encryptionExtendParam name="entryptionKey" value="418c764b9f0f202d"/>
+                    <encryptionExtendParam name="encryptionIvp" value="424827A5858CC3BD"/>
+                </encryptionExtendParams>
+            </encryption>
+        </encryptions>
+
+    </site>
+
+</sites>

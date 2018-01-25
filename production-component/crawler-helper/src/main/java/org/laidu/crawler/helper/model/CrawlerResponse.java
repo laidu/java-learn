@@ -6,18 +6,41 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * crawler response
+ * crawler responses
  * <p>
- * Created by tiancai.zang on 2017-12-13 11:28.
+ *
+ * @author tiancai.zang
+ * @date 2017-12-13 11:28
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-// : 2017/12/13 11/28 crawler response
 public class CrawlerResponse {
+
+
+    /**
+     * responses name
+     */
     private String responseName;
-    private String responseSource;
-    private String attentionField;
-    private String attentionFieldValue;
+
+    /**
+     * encrypt String
+     */
+    private String encryptString;
+
+    /**
+     * origin content
+     */
+    private String contentSource;
+
+    /**
+     * file path
+     */
+    private String filedPath;
+
+    /**
+     * file value
+     */
+    private String filedValue;
 }

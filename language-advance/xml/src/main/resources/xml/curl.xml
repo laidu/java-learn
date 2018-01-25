@@ -28,7 +28,7 @@
 
             <encryptions>
                 <encryption>
-                    <encryptionFiled><![CDATA[sign]]></encryptionFiled>
+                    <encryption><![CDATA[sign]]></encryption>
                     <encryptionSource><![CDATA[]]></encryptionSource>
                     <encryptionAlgorithm>MD5</encryptionAlgorithm>
                     <encryptionKey><![CDATA[]]></encryptionKey>

@@ -10,14 +10,14 @@
             <param name="" value=""/>
         </params>
         <encryptionFileds>
-            <encryptionFiled>
+            <encryption>
                 <emcryptionExtendParams>
                     <emcryptionExtendParam name="entryptionKey" value="YAYA_FINANCIAL_BANK_APP@"/>
                 </emcryptionExtendParams>
                 <encryptionAlgorithm>DESede/toUnicode</encryptionAlgorithm>
-                <encryptionFiled>key</encryptionFiled>
+                <encryption>key</encryption>
                 <encryptionSource><![CDATA[apiVersion:1.1.0@appCode:QQY@channel:android@pwd:q111111@type:2@userName:13241847378@version:1.1.0]]></encryptionSource>
-            </encryptionFiled>
+            </encryption>
         </encryptionFileds>
         <responses type ="json">
             <responseType>json</responseType>

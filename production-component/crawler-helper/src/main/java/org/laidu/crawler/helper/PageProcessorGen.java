@@ -1,23 +1,19 @@
 package org.laidu.crawler.helper;
 
 import com.alibaba.fastjson.JSON;
-import com.squareup.javapoet.MethodSpec;
 import jodd.io.FileUtil;
-import jodd.util.ArraysUtil;
 import jodd.util.StringUtil;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.commom.util.http.curl.CurlParserUtilV2;
 import org.laidu.commom.util.xml.JAXBUtil;
-import org.laidu.crawler.helper.model.CrawlerRequest;
-import org.laidu.crawler.helper.model.EncryptionFiled;
-import org.laidu.crawler.helper.model.RootRequest;
+import org.laidu.crawler.helper.model.CrawlerSite;
+import org.laidu.crawler.helper.model.Encryption;
+import org.laidu.crawler.helper.model.RootSite;
 
-import javax.lang.model.element.Modifier;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -29,10 +25,11 @@ import java.util.Map;
 @Slf4j
 public class PageProcessorGen {
 
-    private static final String CODE_PATH = "/Users/tczang/IdeaProjects/java-learn/production-component/crawler-helper/src/main/resources/template/";
+    private static final String PROJECT_PATH = "/Users/tczang/IdeaProjects/java-learn/";
+    private static final String CODE_PATH = PROJECT_PATH + "production-component/crawler-helper/src/main/resources/template/";
     private static final String CODE_PACKAGE = "com.alpha.business.crawler.app";
-    private static final String TEMPLE_FILE = "/Users/tczang/IdeaProjects/java-learn/production-component/crawler-helper/src/main/resources/template/PageProcessorTemplate.java";
-    private static final String XML_FILE = "/Users/tczang/IdeaProjects/java-learn/production-component/crawler-helper/src/main/resources/curl/curl-demo.xml";
+    private static final String TEMPLE_FILE = "template/PageProcessorTemplate.java";
+    private static final String XML_FILE = "curl/curl-demo.xml";
 
     public static void main(String[] args) throws IOException, JAXBException {
 
@@ -40,10 +37,10 @@ public class PageProcessorGen {
          * step 1、get all request objects
          */
         final String xmlContent = FileUtil.readString(PageProcessorGen.class.getClassLoader().getResource(XML_FILE).getFile());
-        RootRequest rootRequest = JAXBUtil.getInstance().xml2Obj(xmlContent, RootRequest.class);
+        RootSite rootRequest = JAXBUtil.getInstance().xml2Obj(xmlContent, RootSite.class);
 
 
-        rootRequest.getRequest().forEach(request -> {
+        rootRequest.getSite().forEach(request -> {
 
             String template = null;
 
@@ -90,22 +87,22 @@ public class PageProcessorGen {
 
     }
 
-    private static String buildAllSignMethodString(@NonNull CrawlerRequest request) {
+    private static String buildAllSignMethodString(@NonNull CrawlerSite request) {
         StringBuilder signString = new StringBuilder();
         List<String> signMethodList = new ArrayList<>();
 
-        request.getEncryptionFileds().getEncryptionFiled().forEach(encryptionFiled -> signMethodList.add(buildSignMethodString(encryptionFiled)));
+        request.getEncryptions().getEncryption().forEach(encryption -> signMethodList.add(buildSignMethodString(encryption)));
         return signString.toString();
     }
 
-    private static String buildSignMethodString(@NonNull EncryptionFiled encryptionFiled) {
+    private static String buildSignMethodString(@NonNull Encryption encryption) {
 
         StringBuilder signMethod = new StringBuilder();
 
-        if (StringUtil.isNotBlank(encryptionFiled.getEncryptionAlgorithm())) {
+        if (StringUtil.isNotBlank(encryption.getEncryptionAlgorithm())) {
 
         }else {
-            log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryptionFiled));
+            log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryption));
         }
 
         return signMethod.toString();

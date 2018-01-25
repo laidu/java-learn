@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * response result data
+ * responses result data
  * <p>
  * Created by tiancai.zang on 2017-10-22 11:52.
  */
