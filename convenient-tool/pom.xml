@@ -16,7 +16,6 @@
     <modules>
         <module>spring-stopwatch</module>
         <module>BTrace</module>
-        <module>fastjson</module>
     </modules>
 
     <properties>
