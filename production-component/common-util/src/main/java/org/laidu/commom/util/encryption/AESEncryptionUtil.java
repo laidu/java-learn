@@ -31,6 +31,7 @@ public final class AESEncryptionUtil {
         static final String ALGORITHM = "AES";
 //        static final String ALGORITHM_CBC_KEY = "AES/CBC/PKCS5Padding";
         static final String ALGORITHM_CBC_KEY = "AES/CBC/NoPadding";
+        static final String ALGORITHM_ECB_KEY = "AES/ECB/PKCS5Padding";
 
         private static final AESEncryptionUtil INSTANCE =
                 new AESEncryptionUtil();
@@ -74,6 +75,26 @@ public final class AESEncryptionUtil {
      */
     public byte[] cbcDecrypt(byte[] data, byte[] key, byte[] ivp) {
         return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_CBC_KEY, key, ivp, data);
+    }
+
+    /**
+     * AES/ECB/PKCS5Padding
+     * @param data
+     * @param key
+     * @return
+     */
+    public byte[] ecbEncrypt(byte[] data, byte[] key){
+        return BasicEncryptionUtil.getInstance().encrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_ECB_KEY, key, null, data);
+    }
+
+    /**
+     * AES/ECB/PKCS5Padding
+     * @param data
+     * @param key
+     * @return
+     */
+    public byte[] ecbDecrypt(byte[] data, byte[] key){
+        return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_ECB_KEY, key, null, data);
     }
 }
 

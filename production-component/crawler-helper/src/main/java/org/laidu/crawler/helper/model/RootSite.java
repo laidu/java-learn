@@ -19,9 +19,8 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-// : 2017/12/13 13/53 request root
-@XmlRootElement(name = "requests")
-public class RootRequest {
-//    @XmlElement(name = "request")
-    protected List<CrawlerRequest> request;
+@XmlRootElement(name = "sites")
+public class RootSite {
+
+    protected List<CrawlerSite> site;
 }

@@ -12,9 +12,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 
 @Slf4j
-class RootRequestTest {
+class RootSiteTest {
 
-    private RootRequest rootRequest;
+    private RootSite rootRequest;
 
 
     @BeforeEach
@@ -30,29 +30,29 @@ class RootRequestTest {
 
         CrawlerResponse response = CrawlerResponse.builder()
                 .responseName("demo")
-                .responseSource("demo")
-                .attentionField("demo")
-                .attentionFieldValue("demo")
+                .contentSource("demo")
+                .filedPath("demo")
+                .filedValue("demo")
                 .build();
 
-        EncryptionFiled filed = EncryptionFiled.builder()
+        Encryption filed = Encryption.builder()
                 .encryptionAlgorithm("MD5")
                 .encryptionFiled("demo")
                 .encryptionSource("dsaadassdas")
-                .emcryptionExtendParams(EncryptionFiled.EmcryptionExtendParams.builder().emcryptionExtendParam(Collections.singletonList(EncryptionFiled.Extend.builder().name("demo").value("demo").build())).build())
+                .encryptionExtendParams(Encryption.EncryptionExtendParams.builder().encryptionExtendParam(Collections.singletonList(Encryption.Extend.builder().name("demo").value("demo").build())).build())
                 .build();
 
 
-        CrawlerRequest request = CrawlerRequest.builder()
+        CrawlerSite request = CrawlerSite.builder()
                 .curl(curl)
-                .encryptionFileds(CrawlerRequest.EncryptionFileds.builder().encryptionFiled(Collections.singletonList(filed)).build())
-                .params(CrawlerRequest.Params.builder().param(Collections.singletonList(param)).build())
-                .requestNameZh(requestNameZh)
-                .responses(CrawlerRequest.Responses.builder().response(Collections.singletonList(response)).build())
+                .encryptions(CrawlerSite.Encryptions.builder().encryption(Collections.singletonList(filed)).build())
+                .params(CrawlerSite.Params.builder().param(Collections.singletonList(param)).build())
+                .siteNameZh(requestNameZh)
+                .responses(CrawlerSite.Response.builder().response(Collections.singletonList(response)).build())
                 .build();
 
-        rootRequest = RootRequest.builder()
-                .request(Collections.singletonList(request))
+        rootRequest = RootSite.builder()
+                .site(Collections.singletonList(request))
                 .build();
 
 
@@ -63,7 +63,7 @@ class RootRequestTest {
 
         String xml = FileUtil.readString(this.getClass().getClassLoader().getResource("xml/crawler-request-example.xml").getFile());
 
-        RootRequest request = JAXBUtil.getInstance().xml2Obj(xml,RootRequest.class);
+        RootSite request = JAXBUtil.getInstance().xml2Obj(xml,RootSite.class);
 
         log.info("xml 's value : {}", xml);
     }

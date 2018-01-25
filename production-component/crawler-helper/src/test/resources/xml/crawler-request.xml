@@ -7,14 +7,14 @@
             <param name="" value=""/>
         </params>
         <encryptionFileds>
-            <encryptionFiled>
+            <encryption>
                 <emcryptionExtendParams>
                     <emcryptionExtendParam name="" value=""/>
                 </emcryptionExtendParams>
                 <encryptionAlgorithm>MD5</encryptionAlgorithm>
-                <encryptionFiled>demo</encryptionFiled>
+                <encryption>demo</encryption>
                 <encryptionSource><![CDATA[]]></encryptionSource>
-            </encryptionFiled>
+            </encryption>
         </encryptionFileds>
         <responses>
             <responseType>json</responseType>

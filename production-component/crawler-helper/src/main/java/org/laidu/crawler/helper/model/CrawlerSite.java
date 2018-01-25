@@ -21,17 +21,17 @@ import java.util.List;
 //@XmlRootElement(name = "request")
 @XmlAccessorType(XmlAccessType.FIELD)
 // : 2017/12/13 11/19 crawler request and reponse
-public class CrawlerRequest {
+public class CrawlerSite {
+
+    private String siteNameZh;
 
     private String curl;
 
-    private String requestNameZh;
-
     private Params params;
 
-    private EncryptionFileds encryptionFileds;
+    private Encryptions encryptions;
 
-    private Responses responses;
+    private Response responses;
 
 
     @Data
@@ -46,16 +46,16 @@ public class CrawlerRequest {
     @Builder
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class EncryptionFileds{
-        private List<EncryptionFiled> encryptionFiled;
+    public static class Encryptions {
+        private List<Encryption> encryption;
     }
 
     @Data
     @Builder
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class Responses{
-//        @XmlAttribute
+    public static class Response {
+
         private String responseType;
 
         private List<CrawlerResponse> response;
