@@ -1,6 +1,9 @@
 package org.laidu.crawler.helper;
 
 import com.alibaba.fastjson.JSON;
+import com.squareup.javapoet.CodeBlock;
+import com.squareup.javapoet.MethodSpec;
+import com.squareup.javapoet.ParameterSpec;
 import jodd.io.FileUtil;
 import jodd.util.StringUtil;
 import lombok.NonNull;
@@ -11,6 +14,7 @@ import org.laidu.crawler.helper.model.CrawlerSite;
 import org.laidu.crawler.helper.model.Encryption;
 import org.laidu.crawler.helper.model.RootSite;
 
+import javax.lang.model.element.Modifier;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -99,7 +103,17 @@ public class PageProcessorGen {
 
         StringBuilder signMethod = new StringBuilder();
 
-        if (StringUtil.isNotBlank(encryption.getEncryptionAlgorithm())) {
+        if (StringUtil.isNotBlank(encryption.getEncryptionFiled())) {
+
+            MethodSpec method = MethodSpec.methodBuilder(encryption.getEncryptionFiled())
+                    .addModifiers(Modifier.PRIVATE)
+                    .addParameter(String.class,"origin")
+                    .addJavadoc("get sign string\n")
+                    .addCode(CodeBlock.builder().add("System.out.println()").build())
+                    .returns(String.class)
+                    .build();
+
+            signMethod.append(method.toString());
 
         }else {
             log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryption));

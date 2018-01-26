@@ -31,7 +31,7 @@
             <encryption>
                 <encryptionFiled><![CDATA[body]]></encryptionFiled>
                 <encryptionSource><![CDATA[{"hidecode":1,"mobile":"17091003126","password":"qq1111111"}]]></encryptionSource>
-                <encryptionAlgorithm>AES/CBC</encryptionAlgorithm>
+                <encryptionAlgorithm>AES/CBC/PKCS5Padding</encryptionAlgorithm>
                 <encryptionExtendParams>
                     <encryptionExtendParam name="entryptionKey" value="418c764b9f0f202d"/>
                     <encryptionExtendParam name="encryptionIvp" value="424827A5858CC3BD"/>
