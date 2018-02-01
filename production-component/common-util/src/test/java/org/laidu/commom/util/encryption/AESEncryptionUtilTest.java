@@ -9,6 +9,10 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
 import java.io.UnsupportedEncodingException;
 
 @Slf4j
@@ -148,6 +152,34 @@ class AESEncryptionUtilTest {
         Assert.assertEquals(entryptString,Base64.encodeToString(Hex.decodeHex(entryptHex.toCharArray())));
 //        Assert.assertEquals(entryptString,Base64.encodeToString(result));
         System.out.println(new String(result));
+    }
+
+    @Test
+    void cfbDecrypt() throws DecoderException, UnsupportedEncodingException {
+
+        // 天天盈球
+        String key = "yTEnTOnfqtS+hxFQW4HwsQ==";
+        String iv = "\"\"\"\"NNNNttttpppp";
+
+        String origin = "";
+        String entryptString = "KR653d2FJEPbmYF//5eNnl/9tWTxOnVMJXBtqhTs5552Dn5y+Z9JNBtS/uNTFgVnD7GfGk2L5C8+JZ0ZSvgH5NADXJbnRfyMfatg1mYtmBE9KUHaNwni9b7vtqXFPJuhdy3R7XtFEVStkV6xHNZbvsha9SBT785MQ6W8y6X9ApQ=";
+
+        byte[] result = AESEncryptionUtil.getInstance().cbcDecrypt(Base64.decode(entryptString),Base64.decode(key),iv.getBytes());
+
+//        Assert.assertEquals(entryptString,Base64.encodeToString(Hex.decodeHex(entryptHex.toCharArray())));
+//        Assert.assertEquals(entryptString,Base64.encodeToString(result));
+
+        SecretKey secretKey = new SecretKeySpec(Base64.decode(key), "AES");
+        byte[] encrypt = null;
+
+        try {
+            Cipher cipher = Cipher.getInstance("AES/CFB8/NoPadding");
+                cipher.init(Cipher.DECRYPT_MODE, secretKey, new IvParameterSpec(iv.getBytes()));
+            encrypt = cipher.doFinal(Base64.decode(entryptString));
+        } catch (Exception e) {
+        }
+
+        System.out.println(new String(encrypt));
     }
 
 }
