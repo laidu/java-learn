@@ -26,9 +26,9 @@ public class BloomFilterDemo {
 //        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.forName("utf-8")), size + size / 5, 0.0000001d);
 
         for (int var : p) {
-            var = var * 1000_000_000;
+            int num = var * 1000_000_000;
             for (long i = 0; i < size; i++) {
-                doWork("1" + var + i);
+                doWork("1" + (num + i));
             }
         }
 
