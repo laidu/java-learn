@@ -14,16 +14,13 @@
     <description>java 常用框架学习</description>
 
     <modules>
-        <module>apache</module>
-        <module>junit5</module>
-        <module>mockito</module>
         <module>google</module>
         <module>spring</module>
-        <module>netty</module>
-        <module>async-http-client</module>
-        <module>play</module>
         <module>webmagic</module>
-        <module>swagger</module>
+        <module>common</module>
+        <module>test</module>
+        <module>network</module>
+        <module>web</module>
     </modules>
 
     <properties>
