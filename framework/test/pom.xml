@@ -9,13 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>apache</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>test</artifactId>
+
     <modules>
-        <module>commons-lang3</module>
-        <module>httpclient</module>
-        <module>commons-text</module>
-        <module>commons-cli</module>
+        <module>junit5</module>
+        <module>mockito</module>
     </modules>
 
 

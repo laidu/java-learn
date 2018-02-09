@@ -113,7 +113,11 @@ class AESEncryptionUtilTest {
 //        System.out.println(Hex.encodeHexString(Base64.decode(source)));
         System.out.println(Base64.encodeToString(Hex.decodeHex(source.toCharArray())));
 
-        byte[] result = AESEncryptionUtil.getInstance().ecbDecrypt(Hex.decodeHex(source.toCharArray()),key.getBytes());
+        byte[] reponse = {120,-100,-85,86,74,45,42,-54,47,114,-50,79,73,85,-78,82,-78,4,2,37,29,-91,-36,-44,-30,-30,-60,116,-112,-64,-117,-11,75,95,108,89,-10,-76,127,-5,-45,13,-77,-98,-51,89,-11,108,-13,-118,-89,109,61,74,-75,0,69,58,25,83};
+
+        System.out.println(new String(reponse,"utf-8"));
+
+        byte[] result = AESEncryptionUtil.getInstance().ecbDecrypt(reponse,key.getBytes());
 
 
         System.out.println("source : "+ new String(AESEncryptionUtil.getInstance().ecbDecrypt(Base64.decode(result),key.getBytes())));
