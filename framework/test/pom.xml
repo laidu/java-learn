@@ -10,11 +10,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>test</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>junit5</module>
         <module>mockito</module>
     </modules>
+
+    <properties>
+        <!--test-->
+        <mockito.version>2.9.0</mockito.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>

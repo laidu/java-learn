@@ -11,6 +11,8 @@
 
     <artifactId>web</artifactId>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>play</module>
     </modules>
