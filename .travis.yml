@@ -6,10 +6,10 @@ cache:
   - '$HOME/.m2/repository'
 
 script:
-  - mvn clean test
+  - mvn clean package
 
 after_success:
-  - mvn clean package
+  - mvn clean site
 
 #branches:
 #  only:

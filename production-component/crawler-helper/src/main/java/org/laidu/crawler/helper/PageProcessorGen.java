@@ -1,16 +1,22 @@
 package org.laidu.crawler.helper;
 
 import com.alibaba.fastjson.JSON;
+import com.google.gson.Gson;
+import com.squareup.javapoet.CodeBlock;
+import com.squareup.javapoet.MethodSpec;
+import com.squareup.javapoet.ParameterSpec;
 import jodd.io.FileUtil;
 import jodd.util.StringUtil;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.commom.util.encryption.AESEncryptionUtil;
 import org.laidu.commom.util.http.curl.CurlParserUtilV2;
 import org.laidu.commom.util.xml.JAXBUtil;
 import org.laidu.crawler.helper.model.CrawlerSite;
 import org.laidu.crawler.helper.model.Encryption;
 import org.laidu.crawler.helper.model.RootSite;
 
+import javax.lang.model.element.Modifier;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -82,6 +88,7 @@ public class PageProcessorGen {
                  * step 3、repleace all build string and generator pageProcessor
                  */
 
+
             }
         });
 
@@ -99,7 +106,17 @@ public class PageProcessorGen {
 
         StringBuilder signMethod = new StringBuilder();
 
-        if (StringUtil.isNotBlank(encryption.getEncryptionAlgorithm())) {
+        if (StringUtil.isNotBlank(encryption.getEncryptionFiled())) {
+
+            MethodSpec method = MethodSpec.methodBuilder(encryption.getEncryptionFiled())
+                    .addModifiers(Modifier.PRIVATE)
+                    .addParameter(String.class,"origin")
+                    .addJavadoc(new Gson().toJson(encryption) + "\n")
+                    .addCode(CodeBlock.builder().add("// TODO : "+ encryption.getEncryptionFiled()).add("return \"\";\\n ").build())
+                    .returns(String.class)
+                    .build();
+
+            signMethod.append("\n"+ method.toString());
 
         }else {
             log.error("encryption algorithm is blank : {}", JSON.toJSONString(encryption));

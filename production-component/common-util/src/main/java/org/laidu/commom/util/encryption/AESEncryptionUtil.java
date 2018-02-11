@@ -1,5 +1,6 @@
 package org.laidu.commom.util.encryption;
 
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -26,15 +27,20 @@ public final class AESEncryptionUtil {
     /**
      * Provides the lazy-loaded Singleton instance.
      */
-    private static class HelperHolder {
+    @Data
+    public  static class HelperHolder {
 
         static final String ALGORITHM = "AES";
 //        static final String ALGORITHM_CBC_KEY = "AES/CBC/PKCS5Padding";
         static final String ALGORITHM_CBC_KEY = "AES/CBC/NoPadding";
         static final String ALGORITHM_ECB_KEY = "AES/ECB/PKCS5Padding";
 
-        private static final AESEncryptionUtil INSTANCE =
+        private static  final AESEncryptionUtil INSTANCE =
                 new AESEncryptionUtil();
+
+        private Object readResolve() {
+            return INSTANCE;
+        }
     }
 
 //    /**
@@ -96,5 +102,6 @@ public final class AESEncryptionUtil {
     public byte[] ecbDecrypt(byte[] data, byte[] key){
         return BasicEncryptionUtil.getInstance().decrypt(HelperHolder.ALGORITHM, HelperHolder.ALGORITHM_ECB_KEY, key, null, data);
     }
+
 }
 

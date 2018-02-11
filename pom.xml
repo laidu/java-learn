@@ -130,7 +130,6 @@
         </dependency>
 
         <!-- tag::tests[] -->
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -219,7 +218,7 @@
                             <artifactId>maven-project-info-reports-plugin</artifactId>
                             <version>${maven-project-info-reports-plugin.version}</version>
                             <configuration>
-                                <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
+                                <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
                                 <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
                             </configuration>
                         </plugin>
@@ -252,6 +251,28 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pdf-plugin</artifactId>
+                <version>1.4</version>
+                <configuration>
+                    <locales>en,fr</locales>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>pdf</id>
+                        <phase>site</phase>
+                        <goals>
+                            <goal>pdf</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
+                            <includeReports>false</includeReports>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>${github.maven-site-plugin.version}</version>
@@ -268,9 +289,9 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>site-deploy</goal>
+                            <goal>site</goal>
                         </goals>
-                        <phase>site-deploy</phase>
+                        <phase>site</phase>
                     </execution>
                 </executions>
             </plugin>

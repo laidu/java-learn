@@ -85,11 +85,11 @@ public final class RegexUtil {
 
     public String getMacthResult(String regex, String source, int index, String defaultValue) {
         List<String> result = getMacthAllResult(regex,source,index);
-        return result.isEmpty()? defaultValue:result.get(index);
+        return result.isEmpty()? defaultValue:result.get(0);
     }
     public String getMacthResult(Pattern pattern, String source, int index, String defaultValue) {
         List<String> result = getMacthAllResult(pattern,source,index);
-        return result.isEmpty()? defaultValue:result.get(index);
+        return result.isEmpty()? defaultValue:result.get(0);
     }
 }
 
