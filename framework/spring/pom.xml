@@ -15,6 +15,7 @@
         <module>spring-data</module>
         <module>spring-amqp</module>
         <module>spring-hadoop</module>
+        <module>swagger</module>
     </modules>
 
     <properties>
