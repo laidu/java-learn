@@ -50,6 +50,7 @@
         <module>language-advance</module>
         <module>dev-ops</module>
         <module>big-data</module>
+        <module>code-practice</module>
     </modules>
 
     <distributionManagement>
