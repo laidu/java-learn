@@ -43,13 +43,14 @@
         <module>language-feature</module>
         <module>framework</module>
         <module>design-pattern</module>
-        <module>convenient-tool</module>
+        <module>convenient-util</module>
         <module>data-structure</module>
         <module>algorithm</module>
         <module>production-component</module>
         <module>language-advance</module>
         <module>dev-ops</module>
         <module>big-data</module>
+        <module>code-practice</module>
     </modules>
 
     <distributionManagement>

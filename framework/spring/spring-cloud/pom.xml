@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-data</artifactId>
+    <artifactId>spring-cloud</artifactId>
 
-    <dependencies>
-        <!--mysql-->
 
-        <!--mongo-->
-
-        <!--redis-->
-    </dependencies>
 </project>
