@@ -70,9 +70,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.laidu823</groupId>
+            <groupId>com.squareup</groupId>
             <artifactId>javapoet</artifactId>
-            <version>${javapoet.version}</version>
+            <version>1.10.0</version>
         </dependency>
 
         <dependency>
@@ -171,12 +171,6 @@
             <version>${jackson.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.github.laidu</groupId>
-            <artifactId>common-basic</artifactId>
-            <version>v1.0.0</version>
-            <!--<type>test</type>-->
-        </dependency>
     </dependencies>
 
     <build>
