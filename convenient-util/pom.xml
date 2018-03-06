@@ -17,6 +17,7 @@
         <module>BTrace</module>
         <module>spring-tool</module>
         <module>local-cache</module>
+        <module>fastutil</module>
     </modules>
 
     <properties>
