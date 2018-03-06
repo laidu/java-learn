@@ -11,5 +11,10 @@
 
     <artifactId>spring-cloud</artifactId>
 
+    <modules>
+        <module>consumer-hello</module>
+        <module>eureka-server</module>
+        <module>service-hello</module>
+    </modules>
 
 </project>
