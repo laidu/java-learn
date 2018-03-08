@@ -45,9 +45,9 @@ public class LinuxIDCBrower {
 
     public static void listAllFiles(FTPClient client, String path) throws IOException {
 
-
-        if (client.changeWorkingDirectory(path)) {
-            FTPFile[] fs = client.listFiles(path);
+        String pathName = new String(path.getBytes("GBK"),"iso-8859-1");
+        if (client.changeWorkingDirectory(pathName)) {
+            FTPFile[] fs = client.listFiles(pathName);
 
             for (FTPFile ftpFile : fs) {
 
@@ -55,7 +55,7 @@ public class LinuxIDCBrower {
                     continue;
                 }
                 if (ftpFile.isFile()) {
-                    System.out.println(ftpFile.getName());
+                    System.out.println(ftpFile.getName()+" >>>> "+path+"/"+ftpFile.getName());
                 } else if (ftpFile.isDirectory()) {
                     listAllFiles(client, path + "/" + ftpFile.getName());
                 }
@@ -73,10 +73,9 @@ public class LinuxIDCBrower {
         client.enterLocalPassiveMode();//被动模式
         client.setControlEncoding(encoding);
         client.setFileType(FTPClient.BINARY_FILE_TYPE);
-        client.setDefaultTimeout(10 * 1000);
         client.setCharset(Charset.forName("utf-8"));
 
-        listAllFiles(client, "2007年LinuxIDC.com");
+        listAllFiles(client, "");
 
     }
 
