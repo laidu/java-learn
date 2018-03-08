@@ -20,6 +20,7 @@
         <module>test</module>
         <module>network</module>
         <module>web</module>
+        <module>rules-engine</module>
     </modules>
 
     <properties>
