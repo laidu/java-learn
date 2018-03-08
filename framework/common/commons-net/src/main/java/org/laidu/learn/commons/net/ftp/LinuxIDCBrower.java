@@ -7,6 +7,7 @@ import org.apache.commons.net.ftp.FTPFile;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.SocketException;
+import java.net.URLEncoder;
 import java.nio.charset.Charset;
 
 /**
@@ -45,19 +46,22 @@ public class LinuxIDCBrower {
     public static void listAllFiles(FTPClient client, String path) throws IOException {
 
 
-//        client.changeWorkingDirectory(path);
-        FTPFile[] fs = client.listDirectories(path);
+        if (client.changeWorkingDirectory(path)) {
+            FTPFile[] fs = client.listFiles(path);
 
-        for (FTPFile ftpFile : fs) {
+            for (FTPFile ftpFile : fs) {
 
-            if (".".equals(ftpFile.getName()) || "..".equals(ftpFile.getName())) {
-                continue;
+                if (".".equals(ftpFile.getName()) || "..".equals(ftpFile.getName())) {
+                    continue;
+                }
+                if (ftpFile.isFile()) {
+                    System.out.println(ftpFile.getName());
+                } else if (ftpFile.isDirectory()) {
+                    listAllFiles(client, path + "/" + ftpFile.getName());
+                }
             }
-            if (ftpFile.isFile()) {
-                System.out.println(ftpFile.getName());
-            } else if (ftpFile.isDirectory()) {
-                listAllFiles(client, path + "/" + ftpFile.getName());
-            }
+        }else {
+            log.error(" change dir {} error",path);
         }
 
     }
@@ -68,8 +72,11 @@ public class LinuxIDCBrower {
         FTPClient client = connectFTPServer();
         client.enterLocalPassiveMode();//被动模式
         client.setControlEncoding(encoding);
+        client.setFileType(FTPClient.BINARY_FILE_TYPE);
+        client.setDefaultTimeout(10 * 1000);
+        client.setCharset(Charset.forName("utf-8"));
 
-        listAllFiles(client, "/");
+        listAllFiles(client, "2007年LinuxIDC.com");
 
     }
 
