@@ -17,8 +17,4 @@ public class ReplaceSpace {
         return str.toString().replace(" ","%20");
     }
 
-
-    public String replaceSpace2(StringBuffer str) {
-        return str.toString().replace(" ","%20");
-    }
 }

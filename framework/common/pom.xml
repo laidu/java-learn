@@ -16,6 +16,7 @@
         <module>commons-cli</module>
         <module>commons-lang3</module>
         <module>commons-text</module>
+        <module>commons-net</module>
     </modules>
 
     <properties>
