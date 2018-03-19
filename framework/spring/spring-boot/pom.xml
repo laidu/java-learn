@@ -11,5 +11,10 @@
 
     <artifactId>spring-boot</artifactId>
 
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spring-boot-app</module>
+    </modules>
 
 </project>

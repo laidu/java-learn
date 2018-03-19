@@ -12,9 +12,9 @@
 
 
 source_ip=$1
-source_path= $2
-source_username='ubuntu'
-source_password=
+source_path=$2
+source_username=laidu
+source_password=111
 
 #target_ip=
 local_path=$3
