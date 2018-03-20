@@ -12,7 +12,6 @@
     <artifactId>webmagic</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <!--<module>webmagic-parent</module>-->
         <module>webmagic-learn</module>
     </modules>
 
