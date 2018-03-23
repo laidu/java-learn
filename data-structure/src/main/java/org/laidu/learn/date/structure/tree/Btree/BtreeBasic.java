@@ -26,17 +26,14 @@ private static int count = 0;
 
     public static TreeNode preBuildTree(String[] data, int index) {
         TreeNode node = null;
-//        count++;
-//
-//        if (count > data.length || count < 0 || "#".equalsIgnoreCase(data[index])) {
-//            return node;
-//        } else {
-//            node = new TreeNode(data[index]);
-//            node.setLChild(preBuildTree(data, count));
-//            node.setRChild(preBuildTree(data, count));
-//        }
-        for (int i=0 ; i<data.length; i++){
+        count++;
 
+        if (count > data.length || count < 0 || "#".equalsIgnoreCase(data[index])) {
+            return node;
+        } else {
+            node = new TreeNode(data[index]);
+            node.setLChild(preBuildTree(data, count));
+            node.setRChild(preBuildTree(data, count));
         }
 
         return node;
