@@ -4,7 +4,7 @@
 # Command format: Instruction [arguments / command] ..
 
 # Base image to use, this must be set as the first line
-FROM docker.elastic.co/logstash/logstash:6.2.2
+FROM docker.elastic.co/logstash/logstash-platinum:6.2.2
 
 # Maintainer: docker_user <docker_user at email.com> (@docker_user)
 MAINTAINER laidu laidu823@email.com
