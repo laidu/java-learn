@@ -10,7 +10,7 @@ docker run --rm -d --name es-dev \
 	-p 9200:9200 \
 	-p 9300:9300 \
 	-e cluster.name=${cluster_name} \
-#	-e discovery.type=single-node \
+	-e discovery.type=single-node \
 	-e ELASTIC_PASSWORD=Pa88word.123 \
 	-e ES_JAVA_OPTS="-Xms3g -Xmx3g" \
 	-v ${es_root}/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \
