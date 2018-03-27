@@ -1,6 +1,6 @@
 #! /bin/bash
 
-kibana_root=/Users/laidu/Files/data/docker/elasticsearch
+kibana_root=/Users/laidu/Files/data/docker/kibana
 pubilc_path=/Users/laidu/Files/data/docker/upload
 
 #docker run  -d --restart=always \
