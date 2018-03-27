@@ -21,6 +21,7 @@
         <module>network</module>
         <module>web</module>
         <module>rules-engine</module>
+        <module>aws</module>
     </modules>
 
     <properties>
