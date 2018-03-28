@@ -18,6 +18,10 @@ RUN \
   rm -rf /var/cache/oracle-jdk8-installer
 
 
+# time zone
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Define working directory.
 WORKDIR /data
 
