@@ -4,6 +4,7 @@
 
 FROM docker.elastic.co/kibana/kibana:6.2.2
 
+USER root
 # time zone
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
