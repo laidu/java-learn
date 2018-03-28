@@ -12,6 +12,10 @@ MAINTAINER laidu laidu823@email.com
 # Commands to update the image
 # Set aliyun mirror
 
+# time zone
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN echo "" > /etc/apt/sources.list
 RUN apt update && apt upgrade -y
 
