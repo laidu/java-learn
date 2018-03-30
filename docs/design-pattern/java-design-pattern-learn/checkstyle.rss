@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>java-design-pattern-learn - Checkstyle report</title>
+    <link>https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn</link>
+    <description>java-design-pattern-learn - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2018</copyright>
+    <item>
+      <title>File: 70,
+             Errors: 417,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Schoole.java">org/laidu/learn/design/pattern/uml/Schoole.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.ConcreteLoggerDebug.java">org/laidu/learn/design/pattern/chain/responsibility/ConcreteLoggerDebug.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.package-info.java">org/laidu/learn/design/pattern/factory/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.package-info.java">org/laidu/learn/design/pattern/singleton/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.AbstractProduct.java">org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.Factory.java">org/laidu/learn/design/pattern/simple/factory/Factory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Interface_B.java">org/laidu/learn/design/pattern/uml/Interface_B.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.Client.java">org/laidu/learn/design/pattern/_abstract/factory/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.Singleton.java">org/laidu/learn/design/pattern/singleton/Singleton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  26
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Class_A.java">org/laidu/learn/design/pattern/uml/Class_A.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.AbstractFactory.java">org/laidu/learn/design/pattern/_abstract/factory/AbstractFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.Builder.java">org/laidu/learn/design/pattern/builder/Builder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.Client.java">org/laidu/learn/design/pattern/simple/factory/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.AbstractProductB.java">org/laidu/learn/design/pattern/_abstract/factory/AbstractProductB.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteBlueProduct.java">org/laidu/learn/design/pattern/factory/ConcreteBlueProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.package-info.java">org/laidu/learn/design/pattern/uml/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.ThreadUnSafeLazyLoadSingleton.java">org/laidu/learn/design/pattern/singleton/ThreadUnSafeLazyLoadSingleton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Student.java">org/laidu/learn/design/pattern/uml/Student.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.AbstractProduct.java">org/laidu/learn/design/pattern/factory/AbstractProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.AbstractLogger.java">org/laidu/learn/design/pattern/chain/responsibility/AbstractLogger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.Client.java">org/laidu/learn/design/pattern/builder/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct.java">org/laidu/learn/design/pattern/simple/factory/ConcreteBlueProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.proxy.ConcreteSubject.java">org/laidu/learn/design/pattern/proxy/ConcreteSubject.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.iterator.Aggregate.java">org/laidu/learn/design/pattern/iterator/Aggregate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.prototype.Person.java">org/laidu/learn/design/pattern/prototype/Person.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.iterator.ConcreteAggregate.java">org/laidu/learn/design/pattern/iterator/ConcreteAggregate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct.java">org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.Client.java">org/laidu/learn/design/pattern/chain/responsibility/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.AbstractProductA.java">org/laidu/learn/design/pattern/_abstract/factory/AbstractProductA.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.Client.java">org/laidu/learn/design/pattern/factory/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.command.package-info.java">org/laidu/learn/design/pattern/command/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProcductFactoryDell.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProcductFactoryDell.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.package-info.java">org/laidu/learn/design/pattern/chain/responsibility/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.proxy.Client.java">org/laidu/learn/design/pattern/proxy/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.EnumSingleton.java">org/laidu/learn/design/pattern/singleton/EnumSingleton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.iterator.ConcreteIterator.java">org/laidu/learn/design/pattern/iterator/ConcreteIterator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.template.package-info.java">org/laidu/learn/design/pattern/template/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Class_C.java">org/laidu/learn/design/pattern/uml/Class_C.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.proxy.AbstractSubject.java">org/laidu/learn/design/pattern/proxy/AbstractSubject.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.prototype.package-info.java">org/laidu/learn/design/pattern/prototype/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.package-info.java">org/laidu/learn/design/pattern/simple/factory/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.ConcreteLoggerError.java">org/laidu/learn/design/pattern/chain/responsibility/ConcreteLoggerError.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteYellowProduct.java">org/laidu/learn/design/pattern/factory/ConcreteYellowProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProductB.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProductB.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.iterator.Iterator.java">org/laidu/learn/design/pattern/iterator/Iterator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.strategy.package-info.java">org/laidu/learn/design/pattern/strategy/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteRedProcductFactory.java">org/laidu/learn/design/pattern/factory/ConcreteRedProcductFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteRedProduct.java">org/laidu/learn/design/pattern/factory/ConcreteRedProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Interface_A.java">org/laidu/learn/design/pattern/uml/Interface_A.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteYellowProcductFactory.java">org/laidu/learn/design/pattern/factory/ConcreteYellowProcductFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.prototype.Client.java">org/laidu/learn/design/pattern/prototype/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.ThreadSafeLazyLoadSyncSingleton.java">org/laidu/learn/design/pattern/singleton/ThreadSafeLazyLoadSyncSingleton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.package-info.java">org/laidu/learn/design/pattern/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProcductFactoryApple.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProcductFactoryApple.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Class_B.java">org/laidu/learn/design/pattern/uml/Class_B.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Interface_A_Impl.java">org/laidu/learn/design/pattern/uml/Interface_A_Impl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.ConcreteBuilder.java">org/laidu/learn/design/pattern/builder/ConcreteBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.decorator.package-info.java">org/laidu/learn/design/pattern/decorator/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteBlueProcductFactory.java">org/laidu/learn/design/pattern/factory/ConcreteBlueProcductFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.proxy.package-info.java">org/laidu/learn/design/pattern/proxy/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.AbstractFactory.java">org/laidu/learn/design/pattern/factory/AbstractFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.ConcreteLoggerInfo.java">org/laidu/learn/design/pattern/chain/responsibility/ConcreteLoggerInfo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.InitializingOnDemandHolderIdiom.java">org/laidu/learn/design/pattern/singleton/InitializingOnDemandHolderIdiom.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Heart.java">org/laidu/learn/design/pattern/uml/Heart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.Product.java">org/laidu/learn/design/pattern/builder/Product.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProductA.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProductA.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.ConcreteYellowProduct.java">org/laidu/learn/design/pattern/simple/factory/ConcreteYellowProduct.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.ThreadSafeDoubleCheckLocking.java">org/laidu/learn/design/pattern/singleton/ThreadSafeDoubleCheckLocking.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.package-info.java">org/laidu/learn/design/pattern/_abstract/factory/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/design-pattern/java-design-pattern-learn/checkstyle.html#org.laidu.learn.design.pattern.proxy.ProxySubject.java">org/laidu/learn/design/pattern/proxy/ProxySubject.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
