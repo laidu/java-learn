@@ -1,0 +1,126 @@
+2018-04-23 11:58:40,329 [INFO] [main] o.l.l.m.Application:48 Starting Application on laidu-pc with PID 11140 (/home/laidu/IdeaProjects/java-learn/framework/spring/spring-data/spring-mybatis/target/classes started by laidu in /home/laidu/IdeaProjects/java-learn)
+2018-04-23 11:58:40,334 [INFO] [main] o.l.l.m.Application:593 No active profile set, falling back to default profiles: default
+2018-04-23 11:58:40,421 [INFO] [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b520ea8: startup date [Mon Apr 23 11:58:40 CST 2018]; root of context hierarchy
+2018-04-23 11:58:40,844 [INFO] [background-preinit] o.h.v.i.u.Version:30 HV000001: Hibernate Validator 5.3.6.Final
+2018-04-23 11:58:41,453 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327 Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1e8c2f1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-23 11:58:41,493 [INFO] [main] o.s.w.s.a.s.AnnotationActionEndpointMapping:236 Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-04-23 11:58:41,894 [INFO] [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 Tomcat initialized with port(s): 8080 (http)
+2018-04-23 11:58:41,906 [INFO] [main] o.a.c.c.StandardService:179 Starting service [Tomcat]
+2018-04-23 11:58:41,907 [INFO] [main] o.a.c.c.StandardEngine:179 Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-23 11:58:42,008 [INFO] [localhost-startStop-1] o.a.c.c.C.[.[.[/]:179 Initializing Spring embedded WebApplicationContext
+2018-04-23 11:58:42,008 [INFO] [localhost-startStop-1] o.s.w.c.ContextLoader:276 Root WebApplicationContext: initialization completed in 1587 ms
+2018-04-23 11:58:42,022 [INFO] [localhost-startStop-1] o.l.l.m.c.DruidConfig:47 init Druid Servlet Configuration 
+2018-04-23 11:58:42,222 [INFO] [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-04-23 11:58:42,224 [INFO] [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-23 11:58:42,224 [INFO] [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-04-23 11:58:42,224 [INFO] [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:193 Servlet statViewServlet was not registered (possibly already registered?)
+2018-04-23 11:58:42,224 [INFO] [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2018-04-23 11:58:42,227 [INFO] [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-23 11:58:42,228 [INFO] [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-23 11:58:42,228 [INFO] [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-23 11:58:42,228 [INFO] [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-23 11:58:42,228 [INFO] [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:271 Mapping filter: 'webStatFilter' to urls: [/*]
+2018-04-23 11:58:42,228 [INFO] [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:227 Filter webStatFilter was not registered (possibly already registered?)
+2018-04-23 11:58:42,314 [INFO] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 Init DruidDataSource
+2018-04-23 11:58:43,282 [DEBUG] [main] d.s.Connection:? {conn-10001} connected
+2018-04-23 11:58:43,290 [DEBUG] [main] d.s.Connection:? {conn-10002} connected
+2018-04-23 11:58:43,377 [DEBUG] [main] d.s.Connection:? {conn-10003} connected
+2018-04-23 11:58:43,383 [DEBUG] [main] d.s.Connection:? {conn-10004} connected
+2018-04-23 11:58:43,388 [DEBUG] [main] d.s.Connection:? {conn-10005} connected
+2018-04-23 11:58:43,393 [INFO] [main] c.a.d.p.DruidDataSource:928 {dataSource-1} inited
+2018-04-23 11:58:43,779 [INFO] [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b520ea8: startup date [Mon Apr 23 11:58:40 CST 2018]; root of context hierarchy
+2018-04-23 11:58:43,853 [INFO] [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 Mapped "{[/query/{id}],methods=[GET]}" onto public org.laidu.learn.mybatis.model.AppUser org.laidu.learn.mybatis.controller.UserInfoController.queryById(java.lang.Long)
+2018-04-23 11:58:43,858 [INFO] [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-23 11:58:43,858 [INFO] [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-23 11:58:43,903 [INFO] [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-23 11:58:43,904 [INFO] [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-23 11:58:43,959 [INFO] [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-23 11:58:44,441 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:431 Registering beans for JMX exposure on startup
+2018-04-23 11:58:44,445 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:916 Bean with name 'logFilter' has been autodetected for JMX exposure
+2018-04-23 11:58:44,446 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:916 Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-04-23 11:58:44,446 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:916 Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-23 11:58:44,450 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:671 Located MBean 'logFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=logFilter,type=Slf4jLogFilter]
+2018-04-23 11:58:44,451 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:671 Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-04-23 11:58:44,451 [INFO] [main] o.s.j.e.a.AnnotationMBeanExporter:671 Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-04-23 11:58:44,464 [INFO] [main] o.a.c.h.Http11NioProtocol:179 Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-23 11:58:44,475 [INFO] [main] o.a.c.h.Http11NioProtocol:179 Starting ProtocolHandler ["http-nio-8080"]
+2018-04-23 11:58:44,480 [INFO] [main] o.a.t.u.n.NioSelectorPool:179 Using a shared selector for servlet write/read
+2018-04-23 11:58:44,496 [INFO] [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 Tomcat started on port(s): 8080 (http)
+2018-04-23 11:58:44,500 [INFO] [main] o.l.l.m.Application:57 Started Application in 4.793 seconds (JVM running for 5.916)
+2018-04-23 11:59:31,196 [INFO] [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/]:179 Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-23 11:59:31,196 [INFO] [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet:489 FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-23 11:59:31,214 [INFO] [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet:508 FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-04-23 12:00:11,624 [DEBUG] [http-nio-8080-exec-7] d.s.Connection:? {conn-10005} pool-connect
+2018-04-23 12:00:11,737 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} created. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:00:11,741 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} Parameters : [1]
+2018-04-23 12:00:11,741 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} Types : [BIGINT]
+2018-04-23 12:00:11,810 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 1
+2018-04-23 12:00:11,810 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} executed. 70.763978 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:00:11,811 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 1
+2018-04-23 12:00:11,811 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} executed. 70.831333 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:00:11,827 [DEBUG] [http-nio-8080-exec-7] d.sql.Statement:? {conn-10005, pstmt-20000} clearParameters. 
+2018-04-23 12:00:11,828 [DEBUG] [http-nio-8080-exec-7] d.s.Connection:? {conn-10005} pool-recycle
+2018-04-23 12:00:15,165 [DEBUG] [http-nio-8080-exec-5] d.s.Connection:? {conn-10005} pool-connect
+2018-04-23 12:00:15,166 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} Parameters : [6]
+2018-04-23 12:00:15,166 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} Types : [BIGINT]
+2018-04-23 12:00:15,167 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 6
+2018-04-23 12:00:15,167 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} executed. 1.762966 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:00:15,168 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 6
+2018-04-23 12:00:15,168 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} executed. 1.807629 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:00:15,170 [DEBUG] [http-nio-8080-exec-5] d.sql.Statement:? {conn-10005, pstmt-20000} clearParameters. 
+2018-04-23 12:00:15,170 [DEBUG] [http-nio-8080-exec-5] d.s.Connection:? {conn-10005} pool-recycle
+2018-04-23 12:01:25,453 [DEBUG] [http-nio-8080-exec-10] d.s.Connection:? {conn-10005} pool-connect
+2018-04-23 12:01:25,453 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} Parameters : [88]
+2018-04-23 12:01:25,453 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} Types : [BIGINT]
+2018-04-23 12:01:25,477 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 88
+2018-04-23 12:01:25,477 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} executed. 24.004966 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:01:25,477 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 88
+2018-04-23 12:01:25,477 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} executed. 24.032488 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-23 12:01:25,478 [DEBUG] [http-nio-8080-exec-10] d.sql.Statement:? {conn-10005, pstmt-20000} clearParameters. 
+2018-04-23 12:01:25,478 [DEBUG] [http-nio-8080-exec-10] d.s.Connection:? {conn-10005} pool-recycle
+2018-04-23 12:03:24,050 [INFO] [Thread-4] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b520ea8: startup date [Mon Apr 23 11:58:40 CST 2018]; root of context hierarchy
+2018-04-23 12:03:24,052 [INFO] [Thread-4] o.s.j.e.a.AnnotationMBeanExporter:449 Unregistering JMX-exposed beans on shutdown
+2018-04-23 12:03:24,052 [INFO] [Thread-4] o.s.j.e.a.AnnotationMBeanExporter:241 Unregistering JMX-exposed beans
+2018-04-23 12:03:24,055 [DEBUG] [Thread-4] d.s.Connection:? {conn-10001} closed
+2018-04-23 12:03:24,055 [DEBUG] [Thread-4] d.s.Connection:? {conn-10002} closed
+2018-04-23 12:03:24,056 [DEBUG] [Thread-4] d.s.Connection:? {conn-10003} closed
+2018-04-23 12:03:24,056 [DEBUG] [Thread-4] d.s.Connection:? {conn-10004} closed
+2018-04-23 12:03:24,056 [DEBUG] [Thread-4] d.sql.Statement:? {conn-10005, pstmt-20000} closed
+2018-04-23 12:03:24,056 [DEBUG] [Thread-4] d.s.Connection:? {conn-10005} closed
+2018-04-23 12:03:24,057 [INFO] [Thread-4] c.a.d.p.DruidDataSource:1823 {dataSource-1} closed

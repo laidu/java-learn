@@ -1,0 +1,33 @@
+2018-04-22 19:04:52.160 [main] DEBUG druid.sql.Connection - {conn-10001} connected
+2018-04-22 19:04:52.165 [main] DEBUG druid.sql.Connection - {conn-10002} connected
+2018-04-22 19:04:52.169 [main] DEBUG druid.sql.Connection - {conn-10003} connected
+2018-04-22 19:04:52.173 [main] DEBUG druid.sql.Connection - {conn-10004} connected
+2018-04-22 19:04:52.176 [main] DEBUG druid.sql.Connection - {conn-10005} connected
+2018-04-22 19:04:58.927 [http-nio-8080-exec-4] DEBUG druid.sql.Connection - {conn-10005} pool-connect
+2018-04-22 19:04:59.036 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} created. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-22 19:04:59.041 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [6]
+2018-04-22 19:04:59.041 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} Types : [BIGINT]
+2018-04-22 19:04:59.061 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 6
+2018-04-22 19:04:59.061 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} executed. 20.968017 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-22 19:04:59.062 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} executed. select id, open_id, register_channel, username, id_card
+	, name, id_card_detail_address, is_verify_id_card, id_card_coverup, id_card_coverdown
+	, id_card_hold, is_other_picture_auth, is_bankcard_auth, signature_pic, is_additional_auth
+	, is_emergency_auth, phone, email, address, user_status
+	, create_time, update_time, remark, id_card_police
+from ca_app_user
+where id = 6
+2018-04-22 19:04:59.062 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} executed. 20.968017 millis. select id, open_id, register_channel, username, id_card, name, id_card_detail_address,  is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth,  is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone,  email, address, user_status, create_time, update_time, remark, id_card_police from ca_app_user where id = ?
+2018-04-22 19:04:59.074 [http-nio-8080-exec-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+2018-04-22 19:04:59.074 [http-nio-8080-exec-4] DEBUG druid.sql.Connection - {conn-10005} pool-recycle
+2018-04-22 19:05:17.864 [Thread-4] DEBUG druid.sql.Connection - {conn-10001} closed
+2018-04-22 19:05:17.864 [Thread-4] DEBUG druid.sql.Connection - {conn-10002} closed
+2018-04-22 19:05:17.865 [Thread-4] DEBUG druid.sql.Connection - {conn-10003} closed
+2018-04-22 19:05:17.865 [Thread-4] DEBUG druid.sql.Connection - {conn-10004} closed
+2018-04-22 19:05:17.865 [Thread-4] DEBUG druid.sql.Statement - {conn-10005, pstmt-20000} closed
+2018-04-22 19:05:17.865 [Thread-4] DEBUG druid.sql.Connection - {conn-10005} closed
