@@ -22,6 +22,7 @@
         <module>web</module>
         <module>rules-engine</module>
         <module>aws</module>
+        <module>compress</module>
     </modules>
 
     <properties>
