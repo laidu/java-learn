@@ -1,0 +1,11 @@
+spring:
+  devtools:
+    livereload:
+      enabled: true
+      port: 8081
+    restart:
+      enabled: false
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+
