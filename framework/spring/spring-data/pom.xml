@@ -67,9 +67,9 @@
                     <executions>
                         <execution>
                             <id>Generate MyBatis Artifacts</id>
-                            <goals>
-                                <goal>generate</goal>
-                            </goals>
+                            <!--<goals>-->
+                                <!--<goal>generate</goal>-->
+                            <!--</goals>-->
                             <phase>generate-sources</phase>
                         </execution>
                     </executions>

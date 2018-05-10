@@ -1,35 +1,25 @@
 package org.laidu.commom.util.json;
 
+import com.alibaba.fastjson.JSON;
+
 /**
- * fastjson util
- *
- * @author tiancai.zang
- * 2017-12-27 10:22.
+ * json util
+ * <p>
+ * Created by tiancai.zang
+ * on 2018-05-10 13:24.
  */
-public final class JsonUtil {
+public enum JsonUtil{
+    // instance
+    INSTANCE;
 
     /**
-     * Private constructor.
+     * get json String from object
+     *
+     * @param o
+     * @return
      */
-    private JsonUtil() {
+    public String toJsonString(Object o) {
+        return JSON.toJSONString(o);
     }
-
-    /**
-     * @return Singleton instance
-     */
-    public static JsonUtil getInstance() {
-        return JsonUtilHolder.INSTANCE;
-    }
-
-    /**
-     * Provides the lazy-loaded Singleton instance.
-     */
-    private static class JsonUtilHolder {
-
-        private static final JsonUtil INSTANCE =
-                new JsonUtil();
-    }
-
-
 
 }
