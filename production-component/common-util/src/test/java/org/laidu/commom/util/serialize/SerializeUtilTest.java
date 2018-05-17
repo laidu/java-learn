@@ -34,10 +34,6 @@ class SerializeUtilTest {
                         .build())
                 .build();
 
-//        String json = SerializeUtil.INSTANCE.toJSONString(student);
-
-//        System.out.println(json);
-
     }
 
     @Test
