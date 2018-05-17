@@ -2,7 +2,6 @@
 # Oracle Java 8 Dockerfile
 #
 #
-
 # Pull base image.
 FROM ubuntu:16.04
 

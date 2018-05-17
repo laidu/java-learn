@@ -23,6 +23,7 @@
         <module>rules-engine</module>
         <module>aws</module>
         <module>compress</module>
+        <module>task-scheduler</module>
     </modules>
 
     <properties>
