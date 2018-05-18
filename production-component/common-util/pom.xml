@@ -25,7 +25,7 @@
 
         <commons-lang3.version>3.6</commons-lang3.version>
 
-        <guava.version>23.5-jre</guava.version>
+        <guava.version>25.0-jre</guava.version>
         <jsoup.version>1.11.2</jsoup.version>
 
         <jodd.version>3.9.1</jodd.version>
