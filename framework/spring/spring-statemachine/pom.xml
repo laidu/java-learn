@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.statemachine</groupId>
-            <artifactId>spring-statemachine</artifactId>
+            <artifactId>spring-statemachine-core</artifactId>
         </dependency>
     </dependencies>
 

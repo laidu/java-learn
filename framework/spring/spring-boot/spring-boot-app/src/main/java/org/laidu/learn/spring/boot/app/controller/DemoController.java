@@ -1,11 +1,9 @@
 package org.laidu.learn.spring.boot.app.controller;
 
+import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.spring.boot.app.dto.DemoDTO;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * demo
@@ -14,14 +12,22 @@ import org.springframework.web.bind.annotation.RestController;
  * on 2018-05-09 22:48.
  */
 @Slf4j
+@Timed
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("/")
 public class DemoController {
 
 
-    @PostMapping("/hello")
+    @PostMapping("/demo")
     public DemoDTO demo(@RequestBody DemoDTO demoDTO){
         demoDTO.setCreateDate(System.currentTimeMillis());
         return demoDTO;
+    }
+
+    @GetMapping("/hello")
+    @Timed(extraTags = { "region", "us-east-1" })
+    @Timed(value = "all.people", longTask = true)
+    public String demo(){
+        return "hello";
     }
 }
