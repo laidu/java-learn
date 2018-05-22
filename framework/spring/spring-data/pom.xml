@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-mybatis</module>
+        <module>spring-redis</module>
     </modules>
 
     <properties>
@@ -51,10 +52,6 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web-services</artifactId>
-        </dependency>
     </dependencies>
 
     <build>

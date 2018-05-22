@@ -1,0 +1,6 @@
+
+# redis configuration
+spring:
+  redis:
+    host: local-dev
+    port: 6379
