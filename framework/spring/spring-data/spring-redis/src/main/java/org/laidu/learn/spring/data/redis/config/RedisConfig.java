@@ -1,7 +1,12 @@
 package org.laidu.learn.spring.data.redis.config;
 
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.data.redis.model.UserInfo;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * redis config
@@ -12,5 +17,13 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 @Configuration
 public class RedisConfig {
+
+    @Bean
+    public RedisTemplate<String, UserInfo> redisTemplate(RedisConnectionFactory factory) {
+        RedisTemplate<String, UserInfo> template = new RedisTemplate<>();
+        template.setConnectionFactory(factory);
+        template.setKeySerializer(new StringRedisSerializer());
+        return template;
+    }
 
 }
