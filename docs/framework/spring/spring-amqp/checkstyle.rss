@@ -102,20 +102,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.conf.RabbitmqConfig.java">org/laidu/learn/amqp/rabbitmq/official/conf/RabbitmqConfig.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.work.queues.package-info.java">org/laidu/learn/amqp/rabbitmq/official/work/queues/package-info.java</a>
                 </td>
                 <td>
@@ -130,6 +116,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.conf.RabbitmqConfig.java">org/laidu/learn/amqp/rabbitmq/official/conf/RabbitmqConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.rpc.RPCClient.java">org/laidu/learn/amqp/rabbitmq/official/rpc/RPCClient.java</a>
                 </td>
                 <td>
@@ -139,7 +139,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  27
+                  26
                 </td>
               </tr>
                           <tr>
@@ -158,20 +158,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.ClientDemo.java">org/laidu/learn/amqp/rabbitmq/java/ClientDemo.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.service.impl.CalculateImpl.java">org/laidu/learn/amqp/service/impl/CalculateImpl.java</a>
                 </td>
                 <td>
@@ -182,6 +168,20 @@ under the License.
                 </td>
                 <td>
                   6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.ClientDemo.java">org/laidu/learn/amqp/rabbitmq/java/ClientDemo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
                 </td>
               </tr>
                           <tr>
@@ -214,20 +214,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.package-info.java">org/laidu/learn/amqp/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.json.JsonApp.java">org/laidu/learn/amqp/rabbitmq/json/JsonApp.java</a>
                 </td>
                 <td>
@@ -238,6 +224,20 @@ under the License.
                 </td>
                 <td>
                   61
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.package-info.java">org/laidu/learn/amqp/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
               </tr>
                           <tr>
@@ -265,26 +265,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
+                  21
                 </td>
               </tr>
                           <tr>
                 <td>
                   <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.package-info.java">org/laidu/learn/amqp/rabbitmq/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.package-info.java">org/laidu/learn/amqp/rabbitmq/official/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -308,6 +294,20 @@ under the License.
                 </td>
                 <td>
                   3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/framework/spring/spring-amqp/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.package-info.java">org/laidu/learn/amqp/rabbitmq/official/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
               </tr>
                           <tr>

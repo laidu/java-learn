@@ -284,20 +284,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.default_.method.InterfaceA.java">org/laidu/learn/language/feature/default_/method/InterfaceA.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.serialize.Main.java">org/laidu/learn/language/feature/serialize/Main.java</a>
                 </td>
                 <td>
@@ -308,6 +294,20 @@ under the License.
                 </td>
                 <td>
                   12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.default_.method.InterfaceA.java">org/laidu/learn/language/feature/default_/method/InterfaceA.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
                 </td>
               </tr>
                           <tr>
