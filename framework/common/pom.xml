@@ -17,15 +17,28 @@
         <module>commons-lang3</module>
         <module>commons-text</module>
         <module>commons-net</module>
+        <module>apache-poi</module>
+        <module>shiro</module>
     </modules>
 
     <properties>
         <apache-commons-lang3.version>3.6</apache-commons-lang3.version>
         <apache-commons-text.version>1.1</apache-commons-text.version>
+        <apache-poi.version>3.17</apache-poi.version>
+        <apache-shiro.version>1.3.2</apache-shiro.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <!--shiro start-->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${apache-shiro.version}</version>
+            </dependency>
+            <!--shiro end-->
+
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
@@ -36,7 +49,19 @@
                 <artifactId>commons-text</artifactId>
                 <version>${apache-commons-text.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
+
 
 </project>

@@ -1,0 +1,8 @@
+regCenter:
+  serverList: "127.0.0.1:2181"
+  namespace: "elastic-job-demo"
+
+simpleJob:
+  cron: "*/5 * * * * ?"
+  shardingTotalCount: 1
+  shardingItemParameters: ""

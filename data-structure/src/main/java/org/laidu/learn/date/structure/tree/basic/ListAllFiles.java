@@ -28,7 +28,7 @@ public class ListAllFiles {
 
     public static void main(String[] args) {
 
-        File file = new File("/home/laidu/Videos");
+        File file = new File("~/Videos");
         printFile(file);
 
     }

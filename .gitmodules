@@ -1,6 +1,3 @@
 [submodule "design-pattern/java-design-patterns"]
 	path = design-pattern/java-design-patterns
 	url = https://github.com/laidu823/java-design-patterns.git
-[submodule "production-component/alpha"]
-	path = production-component/alpha
-	url = https://github.com/laidu823/alpha.git

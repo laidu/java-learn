@@ -83,7 +83,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </logger>
 
 
-    <root level="debug">
+    <root level="info">
         <appender-ref ref="console"/>
         <appender-ref ref="file" />
     </root>

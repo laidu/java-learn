@@ -15,7 +15,6 @@ public class Main {
 
         System.gc();
 
-
         String path = "/Users/tczang/IdeaProjects/java-learn/language-feature/src/main/resources"+"/student.bin";
         try (OutputStream outputStream = new FileOutputStream(path)) {
             try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {

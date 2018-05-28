@@ -18,6 +18,7 @@
         <module>swagger</module>
         <module>spring-cloud</module>
         <module>spring-boot</module>
+        <module>spring-statemachine</module>
     </modules>
 
     <properties>
@@ -28,7 +29,10 @@
         <amqp-client.version>5.1.1</amqp-client.version>
 
         <spring.version>5.0.2.RELEASE</spring.version>
-        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.1.RELEASE</spring-boot.version>
+        <spring-shiro.version>1.4.0</spring-shiro.version>
+
+        <spring-statemacchine.version>2.0.1.RELEASE</spring-statemacchine.version>
 
     </properties>
 
@@ -55,19 +59,30 @@
                 <version>${amqp-client.version}</version>
             </dependency>
 
-
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-hadoop</artifactId>
                 <version>${spring-data-hadoop.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring-boot-starter</artifactId>
+                <version>${spring-shiro.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.statemachine</groupId>
+                <artifactId>spring-statemachine-core</artifactId>
+                <version>${spring-statemacchine.version}</version>
+            </dependency>
 
 
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

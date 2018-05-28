@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="1.7.32" exportTime="Wed Apr 11 16:38:03 CST 2018">
+  <item>
+    <time>Wed Apr 11 15:26:46 CST 2018</time>
+    <url><![CDATA[https://vulcan.genilex.com/v3ifc/services/ubi/activateExtend]]></url>
+    <host ip="115.182.232.139">vulcan.genilex.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v3ifc/services/ubi/activateExtend]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[UE9TVCAvdjNpZmMvc2VydmljZXMvdWJpL2FjdGl2YXRlRXh0ZW5kIEhUVFAvMS4xDQpBcHBJZDogMzAyMg0Kdi1sYW5ndWFnZTogemgtSGFudA0KU0RLLVZlcnNpb246IDEuMC4xOQ0KQXBwVmVyc2lvbjogVkVSOjIuMDAuMjkNClVzZXItQWdlbnQ6IEdvb2REcml2ZXIvMiAoYW5kcm9pZDogNi4wLjE7U2NhbGUvMQ0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uDQpBdXRob3JpemF0aW9uOiBCYXNpYyBPZz09DQpDb250ZW50LUxlbmd0aDogMjE3DQpIb3N0OiB2dWxjYW4uZ2VuaWxleC5jb20NCkNvbm5lY3Rpb246IGNsb3NlDQoNCnsiYXBwS2V5IjoiNDE5NDMyNjI5MSIsImN1SWQiOiI2NTI4MjMxOTgyMDUyOTIyMjgiLCJkZXZpY2VJZCI6ImZmYWU0NzMzLTU0OTUtMzAzNi1iMDEzLWRiOTcwMDg4ZWNlNSIsImV4dERhdGEiOiJ7XCJvcmdDb2RlXCI6XCI2NTk2OTEwMFwiLFwidXNlcklEXCI6XCI2NTI4MjMxOTgyMDUyOTIyMjhcIixcInVzZXJOYW1lXCI6XCLmnpfmmbZcIixcInVzZXJUeXBlXCI6XCIxXCJ9In0=]]></request>
+    <status>200</status>
+    <responselength>437</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IG5naW54DQpEYXRlOiBXZWQsIDExIEFwciAyMDE4IDA3OjI2OjU0IEdNVA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uO2NoYXJzZXQ9VVRGLTgNCkNvbm5lY3Rpb246IGNsb3NlDQpTZXQtQ29va2llOiBjbHdfc2Vzc2lvbj02OTUzNWFmMTdjNmE1MTg4YzMxZjNhZDczYTQ3M2MwODsgUGF0aD0vDQpDb250ZW50LUxlbmd0aDogMjE0DQoNCnsicmVzdWx0Q29kZSI6MSwicmVzdWx0TWVzc2FnZSI6bnVsbCwidXQiOiJ5bllKOXFtUnpreW04b0czZE9EM3lnPT0iLCJndWlkIjoiQjBDMjc2NkMtNzZBNi00RUY5LTlBNTAtQUE2RjI0MTMyOUE1IiwiaHRtbCI6Imh0dHBzOi8vdnVsY2FuLmdlbmlsZXguY29tL2NoaW5hbGlmZS91YmkuaHRtbCIsInJlZ2lzdFRpbWUiOiIyMDE3LTA5LTEzVDE1OjUwOjI1LjAwMCswODAwIn0=]]></response>
+    <comment><![CDATA[login]]></comment>
+  </item>
+</items>

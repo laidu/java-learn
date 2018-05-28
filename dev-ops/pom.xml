@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <description>运维基础学习</description>
     <modules>
-        <module>x-pack</module>
+        <!--<module>x-pack</module>-->
     </modules>
 
 
