@@ -7,7 +7,7 @@
 FROM ubuntu:latest
 
 # Maintainer: docker_user <docker_user at email.com> (@docker_user)
-MAINTAINER laidu laidu823@email.com
+MAINTAINER laidu laidu823@gmail.com
 
 # Commands to update the image
 # Set aliyun mirror
