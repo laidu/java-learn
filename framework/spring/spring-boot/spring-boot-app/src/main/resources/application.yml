@@ -4,7 +4,7 @@ spring:
       enabled: true
       port: 8081
     restart:
-      enabled: true
+      enabled: false
   jackson:
     property-naming-strategy: SNAKE_CASE
 management:
