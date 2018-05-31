@@ -2,12 +2,17 @@ package org.laidu.learn.spring.mvc.filter;
 
 import jodd.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.mvc.properties.MvcProperties;
 import org.slf4j.MDC;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.stream.Collectors;
 
 /**
  * req rep filter
@@ -21,6 +26,9 @@ import java.io.IOException;
 @Component
 public class RRFilter implements Filter {
 
+    @Autowired
+    private MvcProperties mvcProperties;
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         log.info("filter name: {}", filterConfig.getFilterName());
@@ -29,19 +37,23 @@ public class RRFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-        String uuid = String.valueOf(request.getAttribute("UUID"));
+        String uuid = request.getParameter(mvcProperties.getLogbackUuid());
 
-        if (StringUtil.isEmpty(uuid)){
-            uuid = ((HttpServletRequest)request).getSession().getId();
-            request.setAttribute("UUID",uuid);
-            MDC.put("UUID",uuid);
+        if ("POST".equalsIgnoreCase(((HttpServletRequest)request).getMethod()))
+        {
+            String test = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+            log.info("request url:{} body: {}",((HttpServletRequest) request).getRequestURL(), test.replaceAll("\n",""));
         }
 
 
-        log.info("local name: {}", request.getLocalName());
-        log.info("local: {}", response.getLocale().getDisplayName());
+        if (StringUtil.isEmpty(uuid)){
+            uuid = ((HttpServletRequest)request).getSession().getId();
+            ((HttpServletResponse)response).addCookie(new Cookie(mvcProperties.getLogbackUuid(),uuid));
+        }
+        MDC.put("UUID",uuid);
 
         chain.doFilter(request,response);
+
 
         MDC.clear();
     }

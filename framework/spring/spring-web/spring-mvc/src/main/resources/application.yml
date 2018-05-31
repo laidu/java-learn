@@ -10,3 +10,14 @@ spring:
       enabled: false
     livereload:
       enabled: true
+
+org:
+  laidu:
+    learn:
+      spring:
+        mvc:
+          properties:
+            MvcCProperties:
+              logbackUuid: _uuid
+              appName: Demo
+
