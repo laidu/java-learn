@@ -184,7 +184,23 @@
 
         <pluginManagement>
             <plugins>
-
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-publish-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <!-- svn location for publication -->
+                        <pubScmUrl>scm:git:git@github.com:laidu/java-learn.git</pubScmUrl>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <configuration>
+                        <skipDeploy>true</skipDeploy>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -203,6 +219,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>${apache.maven-site-plugin.version}</version>
+
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.doxia</groupId>
@@ -211,6 +228,18 @@
                     </dependency>
                 </dependencies>
 
+                <executions>
+                    <execution>
+                        <id>stage-for-scm-publish</id>
+                        <phase>post-site</phase>
+                        <goals>
+                            <goal>stage</goal>
+                        </goals>
+                        <configuration>
+                            <skipDeploy>false</skipDeploy>
+                        </configuration>
+                    </execution>
+                </executions>
                 <!--<configuration>-->
                     <!--<skipDeploy>true</skipDeploy>-->
                     <!--<reportPlugins>-->
@@ -236,6 +265,22 @@
                     <!--</reportPlugins>-->
                 <!--</configuration>-->
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-publish-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>scm-publish</id>
+                        <phase>site-deploy</phase>
+                        <goals>
+                            <goal>publish-scm</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
 
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
