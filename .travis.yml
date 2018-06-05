@@ -7,7 +7,7 @@ cache:
   - '$HOME/.m2/repository'
 
 script:
-  - mvn clean package
+  - mvn -T 2C clean package -DskipTests=true
 
 after_success:
   - mvn -T 2C clean site
