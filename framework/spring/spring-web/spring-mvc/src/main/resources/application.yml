@@ -1,0 +1,24 @@
+server:
+  jetty:
+    accesslog:
+      enabled: true
+      date-format: yyyy/mm/dd hh:mm:ss
+
+spring:
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: true
+  output:
+    ansi:
+      enabled: always
+  application:
+    name: mvc
+
+mvc:
+  logbackUuid: "_uuid"
+  appName: "demo"
+
+
+
