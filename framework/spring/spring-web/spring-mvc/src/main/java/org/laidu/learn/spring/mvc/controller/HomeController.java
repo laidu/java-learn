@@ -2,8 +2,8 @@ package org.laidu.learn.spring.mvc.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -24,6 +24,9 @@ public class HomeController {
     public String hello(HttpServletRequest request) throws InterruptedException {
 
         Thread.sleep(500);
-        return "hello" + request.getRequestURI();
+        log.info("url : {}",  request.getRequestURI());
+        return "hello";
     }
+
+
 }

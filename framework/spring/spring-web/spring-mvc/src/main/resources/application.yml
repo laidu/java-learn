@@ -10,14 +10,15 @@ spring:
       enabled: false
     livereload:
       enabled: true
+  output:
+    ansi:
+      enabled: always
+  application:
+    name: mvc
 
-org:
-  laidu:
-    learn:
-      spring:
-        mvc:
-          properties:
-            MvcCProperties:
-              logbackUuid: _uuid
-              appName: Demo
+mvc:
+  logbackUuid: "_uuid"
+  appName: "demo"
+
+
 

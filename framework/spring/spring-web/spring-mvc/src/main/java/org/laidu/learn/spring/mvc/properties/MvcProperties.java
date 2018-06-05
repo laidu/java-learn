@@ -1,10 +1,8 @@
 package org.laidu.learn.spring.mvc.properties;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * mvc configuration
@@ -15,9 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-@Configuration
-@ConfigurationProperties(prefix="org.laidu.learn.spring.mvc.properties")
+@ConfigurationProperties(prefix = "mvc")
 public class MvcProperties {
 
     private String appName;

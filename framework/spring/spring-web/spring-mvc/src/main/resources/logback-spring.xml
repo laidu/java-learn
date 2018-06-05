@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- configuration file for LogBack (slf4J implementation)
 See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
-<configuration debug="true">
-    <!-- To enable JMX Management -->
+<configuration >
+<!-- To enable JMX Management -->
     <jmxConfigurator/>
+
+    <!--获取spring properties 配置-->
+    <springProperty scope="context" name="mdc-uuid" source="mvc.logbackUuid" defaultValue="_uuid"/>
+    <springProperty scope="context" name="app-name" source="spring.application.name" defaultValue="web-app"/>
+
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%X{UUID} %date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+            <pattern>%X{${mdc-uuid}} %d{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
         </layout>
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/learn.log</file>
+        <file>logs/${app-name}.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>logs/learn.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/${app-name}.log.%d{yyyy-MM-dd}.log</fileNamePattern>
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
+
         </rollingPolicy>
 
         <encoder>
-            <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+            <pattern>%X{${mdc-uuid}} %d{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
         </encoder>
     </appender>
 
     <appender name="error-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/learn.error.log</file>
+        <file>logs/${app-name}.error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>logs/learn.error.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/${app-name}.error.log.%d{yyyy-MM-dd}.log</fileNamePattern>
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
 
         <encoder>
-            <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+            <pattern>%X{${mdc-uuid}} %d{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
         </encoder>
 
         <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印错误日志 -->
@@ -45,20 +51,21 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             <onMatch>ACCEPT</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
+
     </appender>
 
     <appender name="debug-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/learn.debug.log</file>
+        <file>logs/${app-name}.debug.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>logs/learn.debug.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/${app-name}.debug.log.%d{yyyy-MM-dd}.log</fileNamePattern>
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
 
         <encoder>
-            <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+            <pattern>%X{${mdc-uuid}} %d{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
         </encoder>
 
         <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印错误日志 -->
@@ -71,7 +78,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     
 
     <!--日志打印的包的范围，及分类日志文件存储 -->
-    <logger name="com.learn" additivity="false">
+    <logger name="org.laidu" additivity="false">
         <level value="debug" />
         <appender-ref ref="console"/>
         <appender-ref ref="error-file"/>
@@ -83,4 +90,5 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
         <appender-ref ref="console"/>
         <appender-ref ref="file" />
     </root>
+
 </configuration>
