@@ -37,7 +37,7 @@ class UserServiceImplTest {
 
 
         UserInfo userInfo = redisTemplate.opsForValue().get(cacheKey);
-       
+
         log.info("user info: {}", userInfo);
 
     }
