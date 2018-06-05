@@ -1,15 +1,11 @@
 package org.laidu.learn.mybatis.mapper;
 
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.InsertProvider;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
-import org.apache.ibatis.annotations.UpdateProvider;
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 import org.laidu.learn.mybatis.model.AppUser;
+
+import java.util.List;
 
 public interface AppUserMapper {
     @Delete({
@@ -145,4 +141,16 @@ public interface AppUserMapper {
         "where id = #{id,jdbcType=BIGINT}"
     })
     int updateByPrimaryKey(AppUser record);
+
+
+    @Select({
+            "select",
+            "id, open_id, register_channel, username, id_card, name, id_card_detail_address, ",
+            "is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth, ",
+            "is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone, ",
+            "email, address, user_status, create_time, update_time, remark, id_card_police",
+            "from ca_app_user",
+            "where 1=1 "
+    })
+    List<AppUser> selectAppUserList(Pagination pagination);
 }

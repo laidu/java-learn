@@ -1,13 +1,16 @@
 package org.laidu.learn.mybatis.controller;
 
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.mybatis.mapper.AppUserMapper;
 import org.laidu.learn.mybatis.model.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 
 /**
@@ -34,6 +37,13 @@ public class UserInfoController {
         AppUser user = userMapper.selectByPrimaryKey(id);
 
         return user;
+    }
+
+
+    @GetMapping("/query/{index}/{size}")
+    public List<AppUser> queryById(@PathVariable("index") int index, @PathVariable("size") int size){
+
+        return userMapper.selectAppUserList(new Pagination(index,size));
     }
 
 }
