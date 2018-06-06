@@ -1,6 +1,5 @@
 package org.laidu.learn.mybatis.controller;
 
-import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.mybatis.mapper.AppUserMapper;
 import org.laidu.learn.mybatis.model.AppUser;
@@ -43,7 +42,7 @@ public class UserInfoController {
     @GetMapping("/query/{index}/{size}")
     public List<AppUser> queryById(@PathVariable("index") int index, @PathVariable("size") int size){
 
-        return userMapper.selectAppUserList(new Pagination(index,size));
+        return userMapper.selectAppUserList(index,size);
     }
 
 }

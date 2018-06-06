@@ -1,6 +1,5 @@
 package org.laidu.learn.mybatis.mapper;
 
-import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 import org.laidu.learn.mybatis.model.AppUser;
@@ -152,5 +151,5 @@ public interface AppUserMapper {
             "from ca_app_user",
             "where 1=1 "
     })
-    List<AppUser> selectAppUserList(Pagination pagination);
+    List<AppUser> selectAppUserList(@Param("pageNum") int pageNum, @Param("pageSize") int pageSize);
 }

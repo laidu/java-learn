@@ -8,7 +8,7 @@ simpleJob:
   shardingItemParameters: ""
 
 dataflowJob:
-  cron: "*/1 * * * * ?"
+  cron: "*/15 * * * * ?"
   shardingTotalCount: 4
   shardingItemParameters: ""
 

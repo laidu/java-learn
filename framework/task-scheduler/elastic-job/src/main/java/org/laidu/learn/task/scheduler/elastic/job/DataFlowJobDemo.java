@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 /**
  * say hello
@@ -27,6 +28,9 @@ public class DataFlowJobDemo implements DataflowJob {
     @Autowired
     private UserMapper userMapper;
 
+    /**
+     * 多进程 需要 分布式锁（redission）
+     */
     private static final AtomicInteger INDEX = new AtomicInteger(0);
 
     private static final int PAGE_SIZE = 500;
@@ -35,11 +39,27 @@ public class DataFlowJobDemo implements DataflowJob {
 
     @Override
     public List fetchData(ShardingContext shardingContext) {
-        return userMapper.selectUserList(new Pagination(INDEX.getAndIncrement(), PAGE_SIZE));
+
+        List<User> users = userMapper.selectUserList(new Pagination(INDEX.getAndIncrement(), PAGE_SIZE));
+
+        if (users == null || users.isEmpty()) {
+            INDEX.set(0);
+        }
+
+        int total = shardingContext.getShardingTotalCount();
+        int current = shardingContext.getShardingItem()-1;
+
+        return users != null ? users.stream().filter(user -> user.getId() % total == current).collect(Collectors.toList()) : null;
     }
 
     @Override
     public void processData(ShardingContext shardingContext, List data) {
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         data.parallelStream().forEach(System.out::println);
     }
 }

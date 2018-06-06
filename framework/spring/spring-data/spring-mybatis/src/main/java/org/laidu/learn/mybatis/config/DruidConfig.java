@@ -1,6 +1,5 @@
 package org.laidu.learn.mybatis.config;
 
-import com.alibaba.druid.filter.logging.Slf4jLogFilter;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 import com.google.common.collect.Maps;
@@ -21,19 +20,6 @@ import java.util.Map;
 @Slf4j
 @Configuration
 public class DruidConfig {
-
-    @Bean
-    public Slf4jLogFilter logFilter(){
-        Slf4jLogFilter filter = new Slf4jLogFilter();
-        filter.setResultSetLogEnabled(false);
-        filter.setConnectionLogEnabled(false);
-        filter.setStatementParameterClearLogEnable(false);
-        filter.setStatementCreateAfterLogEnabled(false);
-        filter.setStatementCloseAfterLogEnabled(false);
-        filter.setStatementParameterSetLogEnabled(false);
-        filter.setStatementPrepareAfterLogEnabled(false);
-        return  filter;
-    }
 
     @Bean
     public ServletRegistrationBean druidServlet() {
