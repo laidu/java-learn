@@ -1,3 +1,5 @@
+
+
 spring:
   devtools:
     livereload:
@@ -28,6 +30,7 @@ management:
     web:
       exposure:
         include: "*"
+  # METRICS
   metrics:
     export:
       atlas:
@@ -42,5 +45,7 @@ management:
     binders:
       jvm:
         enabled: true
-logging:
-  config: classpath:logback-spring.xml
+
+debug: false
+trace: false
+
