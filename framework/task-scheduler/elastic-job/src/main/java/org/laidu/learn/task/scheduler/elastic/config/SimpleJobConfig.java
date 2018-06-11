@@ -13,6 +13,7 @@ import org.laidu.learn.task.scheduler.elastic.job.SayHelloJob;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -24,7 +25,7 @@ import java.util.List;
  * on 2018-05-18 15:17.
  */
 @Slf4j
-//@Configuration
+@Configuration
 public class SimpleJobConfig {
 
     @Resource

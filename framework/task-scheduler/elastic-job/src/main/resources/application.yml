@@ -3,7 +3,7 @@ regCenter:
   namespace: "elastic-job-demo"
 
 simpleJob:
-  cron: "*/15 * * * * ?"
+  cron: "*/15 * * * * ?,*/1 * * * * ?"
   shardingTotalCount: 1
   shardingItemParameters: ""
 
