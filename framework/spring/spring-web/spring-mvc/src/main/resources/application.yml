@@ -1,7 +1,7 @@
 server:
   jetty:
     accesslog:
-      enabled: true
+      enabled: false
       date-format: yyyy/mm/dd hh:mm:ss
 
 spring:

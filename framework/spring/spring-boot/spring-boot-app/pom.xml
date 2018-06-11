@@ -24,14 +24,14 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-registry-atlas</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-registry-graphite</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>io.micrometer</groupId>-->
+			<!--<artifactId>micrometer-registry-atlas</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>io.micrometer</groupId>-->
+			<!--<artifactId>micrometer-registry-graphite</artifactId>-->
+		<!--</dependency>-->
 
 
 		<dependency>

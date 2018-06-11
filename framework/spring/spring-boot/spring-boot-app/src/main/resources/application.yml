@@ -42,3 +42,5 @@ management:
     binders:
       jvm:
         enabled: true
+logging:
+  config: classpath:logback-spring.xml
