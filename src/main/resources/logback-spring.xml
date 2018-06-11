@@ -32,7 +32,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             <onMismatch>NEUTRAL</onMismatch>
         </filter>
     </appender>
-
+    
 
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_HOME}/${APP_NAME}.log</file>

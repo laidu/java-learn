@@ -19,6 +19,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+  output:
+    ansi:
+      enabled: always
 
 #spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
 #spring.datasource.url= jdbc:mysql://local-dev:3306/job_demo?useSSL=false
@@ -29,3 +32,4 @@ spring:
 pagehelper:
   helperDialect: mysql
   reasonable: true
+
