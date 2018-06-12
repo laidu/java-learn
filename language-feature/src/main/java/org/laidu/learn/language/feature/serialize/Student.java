@@ -16,10 +16,11 @@ import java.io.Serializable;
 @Data
 public class Student implements Serializable{
 
-    private static final long serialVersionUID = -3313075503108247550L;
+    private static final long serialVersionUID = 2L;
     private static String flag = "STUDENT";
 
     private String name;
+    private String name1;
 
     transient private String className;
     public String gradeName;

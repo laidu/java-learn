@@ -11,11 +11,38 @@ import java.io.*;
 // TODO: 2018-01-02 10:47  main
 public class Main {
 
+    private static   String path = System.getProperty("user.dir")+"/language-feature/src/main/resources"+"/student.bin";
+
     public static void main(String[] args) {
 
-        System.gc();
 
-        String path = "/Users/tczang/IdeaProjects/java-learn/language-feature/src/main/resources"+"/student.bin";
+//        serialize();
+
+        deserialize();
+
+
+    }
+
+    private static void deserialize() {
+        try (InputStream inputStream = new FileInputStream(path)) {
+            try (ObjectInputStream objectInputStream = new ObjectInputStream(inputStream)) {
+
+                Student student = (Student) objectInputStream.readObject();
+
+                System.out.println(String.valueOf(student));
+
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void serialize() {
         try (OutputStream outputStream = new FileOutputStream(path)) {
             try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {
                 Student student = new Student();
@@ -36,24 +63,5 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        try (InputStream inputStream = new FileInputStream(path)) {
-            try (ObjectInputStream objectInputStream = new ObjectInputStream(inputStream)) {
-
-                Student student = (Student) objectInputStream.readObject();
-
-                System.out.println(String.valueOf(student));
-
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
     }
 }

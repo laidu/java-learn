@@ -61,3 +61,4 @@ Definitions:
 
 参考：
 * [javase-8-docs-tools](https://docs.oracle.com/javase/8/docs/technotes/tools/)
+* [《深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)》.周志明]()
