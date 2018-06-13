@@ -21,6 +21,7 @@
         <module>spring-statemachine</module>
         <module>spring-web</module>
         <module>spring-transaction</module>
+        <module>spring-aop</module>
     </modules>
 
     <properties>
