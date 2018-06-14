@@ -8,7 +8,7 @@ cache:
 
 script:
   - mvn -T 2C clean package -DskipTests=true
-  - mvn install
+  - cd production-component/common-util; mvn install; cd -
 
 after_success:
   - mvn -T 2C clean site
