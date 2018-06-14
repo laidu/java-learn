@@ -8,6 +8,7 @@ cache:
 
 script:
   - mvn -T 2C clean package -DskipTests=true
+  - mvn install
 
 after_success:
   - mvn -T 2C clean site
