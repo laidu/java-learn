@@ -23,10 +23,10 @@ under the License.
     <link>https://github.com/laidu/java-learn/language-feature</link>
     <description>language-feature - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2017</copyright>
+    <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 21,
-             Errors: 104,
+      <title>File: 25,
+             Errors: 134,
              Warnings: 0,
              Infos: 0
       </title>
@@ -60,34 +60,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.boxed.package-info.java">org/laidu/learn/language/feature/boxed/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.thread.local.MyThreadLocal.java">org/laidu/learn/language/feature/thread/local/MyThreadLocal.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.date.DateUsage.java">org/laidu/learn/language/feature/date/DateUsage.java</a>
                 </td>
                 <td>
@@ -112,20 +84,6 @@ under the License.
                 </td>
                 <td>
                   15
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.default_.method.InterfaceA.java">org/laidu/learn/language/feature/default_/method/InterfaceA.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
                 </td>
               </tr>
                           <tr>
@@ -158,20 +116,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.thread.local.source.ThreadLocal.java">org/laidu/learn/language/feature/thread/local/source/ThreadLocal.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.regex.package-info.java">org/laidu/learn/language/feature/regex/package-info.java</a>
                 </td>
                 <td>
@@ -186,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.default_.method.package-info.java">org/laidu/learn/language/feature/default_/method/package-info.java</a>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.serialize.package-info.java">org/laidu/learn/language/feature/serialize/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -195,54 +139,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.string.package-info.java">org/laidu/learn/language/feature/string/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.string.StringPartMethod.java">org/laidu/learn/language/feature/string/StringPartMethod.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  15
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
                   <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.thread.local.package-info.java">org/laidu/learn/language/feature/thread/local/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.syntactic.sugar.package-info.java">org/laidu/learn/language/feature/syntactic/sugar/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.package-info.java">org/laidu/learn/language/feature/package-info.java</a>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.serialize.Student.java">org/laidu/learn/language/feature/serialize/Student.java</a>
                 </td>
                 <td>
                   0
@@ -279,7 +181,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.collection.ListDemo.java">org/laidu/learn/language/feature/collection/ListDemo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -336,6 +252,146 @@ under the License.
                 </td>
                 <td>
                   5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.boxed.package-info.java">org/laidu/learn/language/feature/boxed/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.thread.local.MyThreadLocal.java">org/laidu/learn/language/feature/thread/local/MyThreadLocal.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.serialize.Main.java">org/laidu/learn/language/feature/serialize/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.default_.method.InterfaceA.java">org/laidu/learn/language/feature/default_/method/InterfaceA.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.thread.local.source.ThreadLocal.java">org/laidu/learn/language/feature/thread/local/source/ThreadLocal.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.default_.method.package-info.java">org/laidu/learn/language/feature/default_/method/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.string.package-info.java">org/laidu/learn/language/feature/string/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.string.StringPartMethod.java">org/laidu/learn/language/feature/string/StringPartMethod.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.syntactic.sugar.package-info.java">org/laidu/learn/language/feature/syntactic/sugar/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-feature/checkstyle.html#org.laidu.learn.language.feature.package-info.java">org/laidu/learn/language/feature/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
               </tr>
                       </tbody>

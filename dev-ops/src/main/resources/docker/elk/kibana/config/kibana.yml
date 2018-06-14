@@ -1,0 +1,8 @@
+# Default Kibana configuration from kibana-docker.
+
+server.name: kibana
+server.host: "kibana.finlink.net.cn"
+elasticsearch.url: http://es.finlink.net.cn:9200
+elasticsearch.username: elastic
+elasticsearch.password: Pa88word.123
+xpack.monitoring.ui.container.elasticsearch.enabled: true

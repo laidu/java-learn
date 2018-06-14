@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "mvc.logbackUuid",
+      "type": "java.lang.String",
+      "description": "Description for org.laidu.learn.spring.mvc.properties.mvc.logbackUuid.",
+      "sourceType": "org.laidu.learn.spring.mvc.properties.MvcProperties"
+    },
+    {
+      "name": "mvc.appName",
+      "type": "java.lang.String",
+      "description": "Description for org.laidu.learn.spring.mvc.properties.mvc.appName.",
+      "sourceType": "org.laidu.learn.spring.mvc.properties.MvcProperties"
+    }
+  ]
+}

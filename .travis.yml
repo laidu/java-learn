@@ -1,15 +1,17 @@
 language: java
 jdk:
   - oraclejdk8
+
 cache:
   directories:
   - '$HOME/.m2/repository'
 
 script:
-  - mvn clean test
+  - mvn -T 2C clean package -DskipTests=true
+  - mvn install
 
 after_success:
-  - mvn clean package
+  - mvn -T 2C clean site
 
 #branches:
 #  only:

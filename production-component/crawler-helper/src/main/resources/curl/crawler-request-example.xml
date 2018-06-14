@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<requests>
+    <request>
+        <requestNameZh><![CDATA[缺钱用]]></requestNameZh>
+        <curl><![CDATA[curl -i -s -k  -X $'POST' \
+    -H $'Content-Type: application/json; charset=utf-8' -H $'Content-Length: 282' -H $'Host: jk.suyijia.com' -H $'Connection: close' -H $'User-Agent: thinkandroid/1.1 (http://www.thinkandroid.cn)' -H $'Accept-Encoding: gzip, deflate' \
+    --data-binary $'{\"pwd\":\"q111111\",\"type\":\"2\",\"userName\":\"13241847378\",\"apiVersion\":\"1.1.0\",\"appCode\":\"QQY\",\"channel\":\"android\",\"key\":\"fEBRtWCX5PD2A2pBHICF77gGPz0rdaSVdCbNb1XPdiwDQQTOftSju3odGKF24dM6TIjPwtce/U1fQefxZfXhjq/6Hukwj60QUESr8tdxEzOdfAHu4zhDQt7lA+eB7TcZGDrY0Hqo24k\\u003d\",\"version\":\"1.1.0\"}' \
+    $'https://jk.suyijia.com/loan/i/user/login']]></curl>
+        <params>
+            <param name="" value=""/>
+        </params>
+        <encryptionFileds>
+            <encryption>
+                <emcryptionExtendParams>
+                    <emcryptionExtendParam name="entryptionKey" value="YAYA_FINANCIAL_BANK_APP@"/>
+                </emcryptionExtendParams>
+                <encryptionAlgorithm>DESede/toUnicode</encryptionAlgorithm>
+                <encryption>key</encryption>
+                <encryptionSource><![CDATA[apiVersion:1.1.0@appCode:QQY@channel:android@pwd:q111111@type:2@userName:13241847378@version:1.1.0]]></encryptionSource>
+            </encryption>
+        </encryptionFileds>
+        <responses type ="json">
+            <responseType>json</responseType>
+            <response>
+                <responseName>not_reg</responseName>
+                <attentionField>message</attentionField>
+                <attentionFieldValue></attentionFieldValue>
+                <responseSource><![CDATA[{"success":false,"code":"3","message":"该用户尚未注册!","data":{}}]]></responseSource>
+            </response>
+            <response>
+                <responseName>reg</responseName>
+                <attentionField>message</attentionField>
+                <attentionFieldValue></attentionFieldValue>
+                <responseSource><![CDATA[{"success":false,"code":"3","message":"密码错误!","data":{}}]]></responseSource>
+            </response>
+        </responses>
+    </request>
+</requests>

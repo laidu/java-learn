@@ -23,10 +23,10 @@ under the License.
     <link>https://github.com/laidu/java-learn</link>
     <description>java-learn - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2017</copyright>
+    <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 350,
-             Errors: 5094,
+      <title>File: 325,
+             Errors: 4144,
              Warnings: 0,
              Infos: 0
       </title>
@@ -44,6 +44,20 @@ under the License.
             </tr>
           </thead>
           <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.CrawlerRequestParam.java">org/laidu/crawler/helper/model/CrawlerRequestParam.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
                           <tr>
                 <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.date.DateUsage.java">org/laidu/learn/language/feature/date/DateUsage.java</a>
@@ -74,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.RequestMatcher.java">us/codecraft/webmagic/handler/RequestMatcher.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.model.Page.java">org/laidu/crawler/model/Page.java</a>
                 </td>
                 <td>
                   0
@@ -83,7 +97,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  16
                 </td>
               </tr>
                           <tr>
@@ -102,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.MonitorableScheduler.java">us/codecraft/webmagic/scheduler/MonitorableScheduler.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.curl.CurlParserUtilV2.java">org/laidu/commom/util/http/curl/CurlParserUtilV2.java</a>
                 </td>
                 <td>
                   0
@@ -111,7 +125,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  33
                 </td>
               </tr>
                           <tr>
@@ -130,6 +144,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.data.mongo.package-info.java">org/laidu/learn/spring/data/mongo/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.package-info.java">org/laidu/learn/design/pattern/singleton/package-info.java</a>
                 </td>
                 <td>
@@ -144,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.stopwatch.source.StopWatch.java">org/laidu/learn/spring/stopwatch/source/StopWatch.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.encryption.RSAencryptionUtil.java">org/laidu/commom/util/encryption/RSAencryptionUtil.java</a>
                 </td>
                 <td>
                   0
@@ -153,12 +181,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  75
+                  43
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.conf.RabbitmqConfig.java">org/laidu/learn/amqp/rabbitmq/official/conf/RabbitmqConfig.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.RabbitmqClientDemo.java">org/laidu/learn/amqp/rabbitmq/java/RabbitmqClientDemo.java</a>
                 </td>
                 <td>
                   0
@@ -167,7 +195,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  8
+                  28
                 </td>
               </tr>
                           <tr>
@@ -186,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.main.QuickStarter.java">us/codecraft/webmagic/main/QuickStarter.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.conf.RabbitmqConfig.java">org/laidu/learn/amqp/rabbitmq/official/conf/RabbitmqConfig.java</a>
                 </td>
                 <td>
                   0
@@ -195,21 +223,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.Client.java">org/laidu/learn/design/pattern/_abstract/factory/Client.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  7
+                  8
                 </td>
               </tr>
                           <tr>
@@ -224,6 +238,20 @@ under the License.
                 </td>
                 <td>
                   26
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.Client.java">org/laidu/learn/design/pattern/_abstract/factory/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
               </tr>
                           <tr>
@@ -251,7 +279,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  8
                 </td>
               </tr>
                           <tr>
@@ -270,6 +298,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.Builder.java">org/laidu/learn/design/pattern/builder/Builder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.provider.DSProvider.java">org/laidu/learn/tool/cache/provider/DSProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.test.mockito.package-info.java">org/laidu/learn/test/mockito/package-info.java</a>
                 </td>
                 <td>
@@ -284,7 +340,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.DianpingFtlDataScanner.java">us/codecraft/webmagic/model/samples/DianpingFtlDataScanner.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.serialize.Student.java">org/laidu/learn/language/feature/serialize/Student.java</a>
                 </td>
                 <td>
                   0
@@ -293,7 +349,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  10
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Log.java">org/laidu/commom/util/http/har/model/Log.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
                 </td>
               </tr>
                           <tr>
@@ -321,7 +391,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
+                  14
                 </td>
               </tr>
                           <tr>
@@ -340,7 +410,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.Downloader.java">us/codecraft/webmagic/downloader/Downloader.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.BurpSiteItem.java">org/laidu/crawler/helper/model/http/burp/BurpSiteItem.java</a>
                 </td>
                 <td>
                   0
@@ -349,12 +419,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  2
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.google.auto.value.package-info.java">org/laidu/learn/google/auto/value/package-info.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.config.DruidConfig.java">org/laidu/learn/mybatis/config/DruidConfig.java</a>
                 </td>
                 <td>
                   0
@@ -363,35 +433,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.JokejiModel.java">us/codecraft/webmagic/model/samples/JokejiModel.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.ClassUtils.java">us/codecraft/webmagic/utils/ClassUtils.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
+                  22
                 </td>
               </tr>
                           <tr>
@@ -424,21 +466,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.formatter.ObjectFormatters.java">us/codecraft/webmagic/model/formatter/ObjectFormatters.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.RequestUtils.java">us/codecraft/webmagic/utils/RequestUtils.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.spring.stopwatch.TimeConsumingStatistics.java">org/laidu/learn/tool/spring/stopwatch/TimeConsumingStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -448,6 +476,34 @@ under the License.
                 </td>
                 <td>
                   5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.json.package-info.java">org/laidu/commom/util/json/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.package-info.java">org/laidu/crawler/helper/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -480,7 +536,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.IPUtils.java">us/codecraft/webmagic/utils/IPUtils.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.package-info.java">org/laidu/learn/mybatis/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -489,12 +545,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.PhantomJSDownloader.java">us/codecraft/webmagic/downloader/PhantomJSDownloader.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.util.NameUtil.java">org/laidu/commom/util/util/NameUtil.java</a>
                 </td>
                 <td>
                   0
@@ -503,12 +559,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  52
+                  47
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.AbstractDownloader.java">us/codecraft/webmagic/downloader/AbstractDownloader.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.encryption.MD5Util.java">org/laidu/commom/util/encryption/MD5Util.java</a>
                 </td>
                 <td>
                   0
@@ -517,12 +573,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
+                  8
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.proxy.SimpleProxyProvider.java">us/codecraft/webmagic/proxy/SimpleProxyProvider.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.Application.java">org/laidu/learn/mybatis/Application.java</a>
                 </td>
                 <td>
                   0
@@ -531,21 +587,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.Html.java">us/codecraft/webmagic/selector/Html.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  23
+                  6
                 </td>
               </tr>
                           <tr>
@@ -578,34 +620,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.google.auto.value.model.Animal.java">org/laidu/learn/google/auto/value/model/Animal.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.FilePageModelPipeline.java">us/codecraft/webmagic/pipeline/FilePageModelPipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.apache.commins.lang3.usage.StringUtilsUsage.java">org/laidu/learn/apache/commins/lang3/usage/StringUtilsUsage.java</a>
                 </td>
                 <td>
@@ -620,7 +634,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.ExtractorUtils.java">us/codecraft/webmagic/utils/ExtractorUtils.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.spring.package-info.java">org/laidu/learn/tool/spring/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -629,12 +643,54 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.date.structure.tree.package-info.java">org/laidu/learn/date/structure/tree/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.enums.package-info.java">org/laidu/commom/util/enums/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProcductFactoryDell.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProcductFactoryDell.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Creator.java">org/laidu/commom/util/http/har/model/Creator.java</a>
                 </td>
                 <td>
                   0
@@ -662,7 +718,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.GithubRepoPageMapper.java">us/codecraft/webmagic/example/GithubRepoPageMapper.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.encryption.BasicEncryptionUtil.java">org/laidu/commom/util/encryption/BasicEncryptionUtil.java</a>
                 </td>
                 <td>
                   0
@@ -671,21 +727,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.monitor.SpiderMonitor.java">us/codecraft/webmagic/monitor/SpiderMonitor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  44
+                  96
                 </td>
               </tr>
                           <tr>
@@ -704,7 +746,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.processor.PageProcessor.java">us/codecraft/webmagic/processor/PageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.date.structure.tree.basic.ListAllFiles.java">org/laidu/learn/date/structure/tree/basic/ListAllFiles.java</a>
                 </td>
                 <td>
                   0
@@ -713,7 +755,35 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.code.practice.jianzhioffer.ReConstructBinaryTree.java">org/laidu/learn/code/practice/jianzhioffer/ReConstructBinaryTree.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.CrawlerRequestTrack.java">org/laidu/commom/util/http/har/CrawlerRequestTrack.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
               </tr>
                           <tr>
@@ -732,6 +802,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.elasticsearch.xpack.core.XPackBuild.java">org/elasticsearch/xpack/core/XPackBuild.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.encryption.DESedeEncryptionUtil.java">org/laidu/commom/util/encryption/DESedeEncryptionUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  28
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.xml.jsoup.package-info.java">org/laidu/learn/xml/jsoup/package-info.java</a>
                 </td>
                 <td>
@@ -742,20 +840,6 @@ under the License.
                 </td>
                 <td>
                   1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.SpiderListener.java">us/codecraft/webmagic/SpiderListener.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
                 </td>
               </tr>
                           <tr>
@@ -788,7 +872,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.Request.java">us/codecraft/webmagic/Request.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.btrace.monitor.MethodRunTime.java">org/laidu/learn/btrace/monitor/MethodRunTime.java</a>
                 </td>
                 <td>
                   0
@@ -797,12 +881,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  95
+                  26
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.TianyaPageProcesser.java">us/codecraft/webmagic/samples/TianyaPageProcesser.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.serialize.package-info.java">org/laidu/learn/language/feature/serialize/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -811,7 +895,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  3
                 </td>
               </tr>
                           <tr>
@@ -830,6 +914,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.package-info.java">org/laidu/learn/amqp/rabbitmq/java/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.ServiceHelloApplication.java">org/laidu/learn/spring/cloud/ServiceHelloApplication.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.factory.ConcreteYellowProduct.java">org/laidu/learn/design/pattern/factory/ConcreteYellowProduct.java</a>
                 </td>
                 <td>
@@ -840,20 +952,6 @@ under the License.
                 </td>
                 <td>
                   2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProductB.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProductB.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
                 </td>
               </tr>
                           <tr>
@@ -872,7 +970,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.io.nio.Worker.java">org/laidu/learn/io/nio/Worker.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.ConcreteProductB.java">org/laidu/learn/design/pattern/_abstract/factory/ConcreteProductB.java</a>
                 </td>
                 <td>
                   0
@@ -881,12 +979,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.Kr36NewsModel.java">us/codecraft/webmagic/model/samples/Kr36NewsModel.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.io.nio.Worker.java">org/laidu/learn/io/nio/Worker.java</a>
                 </td>
                 <td>
                   0
@@ -970,7 +1068,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.annotation.ComboExtract.java">us/codecraft/webmagic/model/annotation/ComboExtract.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.model.PageProxy.java">org/laidu/crawler/model/PageProxy.java</a>
                 </td>
                 <td>
                   0
@@ -979,7 +1077,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  27
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.package-info.java">org/laidu/learn/tool/cache/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -998,20 +1110,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.OOSpider.java">us/codecraft/webmagic/model/OOSpider.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  38
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.uml.Interface_A_Impl.java">org/laidu/learn/design/pattern/uml/Interface_A_Impl.java</a>
                 </td>
                 <td>
@@ -1026,7 +1124,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.GithubRepo.java">us/codecraft/webmagic/model/samples/GithubRepo.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.strategy.CacheStrategy.java">org/laidu/learn/tool/cache/strategy/CacheStrategy.java</a>
                 </td>
                 <td>
                   0
@@ -1035,12 +1133,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  37
+                  4
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.ZhihuPageProcessor.java">us/codecraft/webmagic/samples/ZhihuPageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.core.package-info.java">org/laidu/commom/util/http/core/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1049,7 +1147,49 @@ under the License.
                   0
                 </td>
                 <td>
-                  32
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.package-info.java">org/laidu/commom/util/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.commons.net.ftp.LinuxIDCBrower.java">org/laidu/learn/commons/net/ftp/LinuxIDCBrower.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  42
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.data.Application.java">org/laidu/learn/spring/data/Application.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
                 </td>
               </tr>
                           <tr>
@@ -1068,7 +1208,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.Blog.java">us/codecraft/webmagic/model/samples/Blog.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.elasticsearch.license.LicenseVerifier.java">org/elasticsearch/license/LicenseVerifier.java</a>
                 </td>
                 <td>
                   0
@@ -1077,12 +1217,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  14
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.Spider.java">us/codecraft/webmagic/Spider.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.SpringClientDemo.java">org/laidu/learn/amqp/rabbitmq/java/SpringClientDemo.java</a>
                 </td>
                 <td>
                   0
@@ -1091,49 +1231,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  214
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.LinksSelector.java">us/codecraft/webmagic/selector/LinksSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  9
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.AngularJSProcessor.java">us/codecraft/webmagic/samples/AngularJSProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  15
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.processor.example.ZhihuPageProcessor.java">us/codecraft/webmagic/processor/example/ZhihuPageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  16
+                  33
                 </td>
               </tr>
                           <tr>
@@ -1152,7 +1250,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.PageModelCollectorPipeline.java">us/codecraft/webmagic/model/PageModelCollectorPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.conf.HelperConfig.java">org/laidu/crawler/helper/conf/HelperConfig.java</a>
                 </td>
                 <td>
                   0
@@ -1161,7 +1259,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  7
                 </td>
               </tr>
                           <tr>
@@ -1194,6 +1292,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.code.practice.jianzhioffer.LinkListPrintf.java">org/laidu/learn/code/practice/jianzhioffer/LinkListPrintf.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.swagger.demo.config.SwaggerConfig.java">org/laidu/learn/swagger/demo/config/SwaggerConfig.java</a>
                 </td>
                 <td>
@@ -1203,21 +1315,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.CssSelector.java">us/codecraft/webmagic/selector/CssSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  24
+                  7
                 </td>
               </tr>
                           <tr>
@@ -1236,7 +1334,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.KaichibaProcessor.java">us/codecraft/webmagic/samples/KaichibaProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.HttpClientUtil.java">org/laidu/commom/util/http/HttpClientUtil.java</a>
                 </td>
                 <td>
                   0
@@ -1245,21 +1343,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.Selectors.java">us/codecraft/webmagic/selector/Selectors.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
+                  1
                 </td>
               </tr>
                           <tr>
@@ -1320,20 +1404,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.HttpConstant.java">us/codecraft/webmagic/utils/HttpConstant.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  16
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.Application.java">org/laidu/learn/amqp/Application.java</a>
                 </td>
                 <td>
@@ -1362,6 +1432,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.entry.Entry.java">org/laidu/learn/tool/cache/entry/Entry.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.Factory.java">org/laidu/learn/design/pattern/simple/factory/Factory.java</a>
                 </td>
                 <td>
@@ -1372,6 +1456,20 @@ under the License.
                 </td>
                 <td>
                   4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Timings.java">org/laidu/commom/util/http/har/model/Timings.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
                 </td>
               </tr>
                           <tr>
@@ -1390,20 +1488,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.QueueScheduler.java">us/codecraft/webmagic/scheduler/QueueScheduler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.algorithm.encryption.AESUtil.java">org/laidu/learn/algorithm/encryption/AESUtil.java</a>
                 </td>
                 <td>
@@ -1414,6 +1498,20 @@ under the License.
                 </td>
                 <td>
                   34
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.encryption.DESEncryptionUtil.java">org/laidu/commom/util/encryption/DESEncryptionUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  30
                 </td>
               </tr>
                           <tr>
@@ -1460,20 +1558,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.scheduler.DelayQueueScheduler.java">us/codecraft/webmagic/samples/scheduler/DelayQueueScheduler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  28
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.swagger.demo.intercaptor.RequestInterceptor.java">org/laidu/learn/swagger/demo/intercaptor/RequestInterceptor.java</a>
                 </td>
                 <td>
@@ -1516,7 +1600,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.DuplicateRemovedScheduler.java">us/codecraft/webmagic/scheduler/DuplicateRemovedScheduler.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.controller.HelloController.java">org/laidu/learn/spring/cloud/controller/HelloController.java</a>
                 </td>
                 <td>
                   0
@@ -1525,35 +1609,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  24
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.RedisPriorityScheduler.java">us/codecraft/webmagic/scheduler/RedisPriorityScheduler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  75
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.configurable.ConfigurablePageProcessor.java">us/codecraft/webmagic/configurable/ConfigurablePageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  16
+                  13
                 </td>
               </tr>
                           <tr>
@@ -1567,35 +1623,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.PriorityScheduler.java">us/codecraft/webmagic/scheduler/PriorityScheduler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
                   21
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.BaiduNews.java">us/codecraft/webmagic/model/samples/BaiduNews.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  16
                 </td>
               </tr>
                           <tr>
@@ -1628,6 +1656,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.service.Calculate.java">org/laidu/learn/amqp/service/Calculate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.official.package-info.java">org/laidu/learn/amqp/rabbitmq/official/package-info.java</a>
                 </td>
                 <td>
@@ -1642,7 +1684,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.service.Calculate.java">org/laidu/learn/amqp/service/Calculate.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Response.java">org/laidu/commom/util/http/har/model/Response.java</a>
                 </td>
                 <td>
                   0
@@ -1651,7 +1693,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.enums.BasicCodeEnum.java">org/laidu/commom/util/enums/BasicCodeEnum.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
               </tr>
                           <tr>
@@ -1670,21 +1726,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.GithubRepoPageProcessor.java">us/codecraft/webmagic/samples/GithubRepoPageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.annotation.TargetUrl.java">us/codecraft/webmagic/model/annotation/TargetUrl.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.Response.java">org/laidu/crawler/helper/model/http/burp/Response.java</a>
                 </td>
                 <td>
                   0
@@ -1712,20 +1754,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.AndSelector.java">us/codecraft/webmagic/selector/AndSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.iterator.Aggregate.java">org/laidu/learn/design/pattern/iterator/Aggregate.java</a>
                 </td>
                 <td>
@@ -1735,12 +1763,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  5
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.Xpath2Selector.java">us/codecraft/webmagic/selector/Xpath2Selector.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#helper.properties">helper.properties</a>
                 </td>
                 <td>
                   0
@@ -1749,21 +1777,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  40
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.FilePipeline.java">us/codecraft/webmagic/pipeline/FilePipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
+                  1
                 </td>
               </tr>
                           <tr>
@@ -1796,20 +1810,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.RegexSelector.java">us/codecraft/webmagic/selector/RegexSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  29
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern._abstract.factory.AbstractProductA.java">org/laidu/learn/design/pattern/_abstract/factory/AbstractProductA.java</a>
                 </td>
                 <td>
@@ -1834,6 +1834,20 @@ under the License.
                 </td>
                 <td>
                   60
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.policy.CrontabSyncPolicy.java">org/laidu/learn/tool/cache/policy/CrontabSyncPolicy.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -1866,7 +1880,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scripts.Language.java">us/codecraft/webmagic/scripts/Language.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.Item.java">org/laidu/crawler/helper/model/http/burp/Item.java</a>
                 </td>
                 <td>
                   0
@@ -1875,7 +1889,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  23
+                  15
                 </td>
               </tr>
                           <tr>
@@ -1894,7 +1908,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.SubPipeline.java">us/codecraft/webmagic/handler/SubPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.processor.AbstractPageProcessor.java">org/laidu/crawler/processor/AbstractPageProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -1903,12 +1917,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  22
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.Task.java">us/codecraft/webmagic/Task.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.enums.EntryptionAlgoithmEnum.java">org/laidu/commom/util/enums/EntryptionAlgoithmEnum.java</a>
                 </td>
                 <td>
                   0
@@ -1917,7 +1931,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  26
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.core.HttpRequest.java">org/laidu/commom/util/http/core/HttpRequest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  62
                 </td>
               </tr>
                           <tr>
@@ -1945,7 +1973,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  10
                 </td>
               </tr>
                           <tr>
@@ -1964,63 +1992,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.configurable.ExtractRule.java">us/codecraft/webmagic/configurable/ExtractRule.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  52
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.OrSelector.java">us/codecraft/webmagic/selector/OrSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.BaiduBaike.java">us/codecraft/webmagic/example/BaiduBaike.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  20
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.PhantomJSPageProcessor.java">us/codecraft/webmagic/samples/PhantomJSPageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  13
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.OschinaBlog.java">us/codecraft/webmagic/example/OschinaBlog.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.strategy.EhcacheStrategy.java">org/laidu/learn/tool/cache/strategy/EhcacheStrategy.java</a>
                 </td>
                 <td>
                   0
@@ -2030,6 +2002,34 @@ under the License.
                 </td>
                 <td>
                   16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Cache.java">org/laidu/commom/util/http/har/model/Cache.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.xml.JsoupParser.java">org/laidu/commom/util/xml/JsoupParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
               </tr>
                           <tr>
@@ -2048,7 +2048,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.component.HashSetDuplicateRemover.java">us/codecraft/webmagic/scheduler/component/HashSetDuplicateRemover.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.book.learn.dsaa3th.package-info.java">org/laidu/learn/book/learn/dsaa3th/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2057,26 +2057,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  12
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.AbstractSelectable.java">us/codecraft/webmagic/selector/AbstractSelectable.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  37
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.annotation.ExtractBy.java">us/codecraft/webmagic/model/annotation/ExtractBy.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.Encryption.java">org/laidu/crawler/helper/model/Encryption.java</a>
                 </td>
                 <td>
                   0
@@ -2090,6 +2076,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.aws.dynamodb.convert.ItermConverter.java">org/laidu/learn/aws/dynamodb/convert/ItermConverter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.swagger.demo.config.WebConfig.java">org/laidu/learn/swagger/demo/config/WebConfig.java</a>
                 </td>
                 <td>
@@ -2099,7 +2099,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  7
                 </td>
               </tr>
                           <tr>
@@ -2118,7 +2118,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.HttpRequestBody.java">us/codecraft/webmagic/model/HttpRequestBody.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.data.mysql.package-info.java">org/laidu/learn/spring/data/mysql/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2127,12 +2127,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  62
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.formatter.StringTemplateFormatter.java">us/codecraft/webmagic/samples/formatter/StringTemplateFormatter.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.spring.stopwatch.package-info.java">org/laidu/learn/tool/spring/stopwatch/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2141,12 +2141,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.selenium.WebDriverPool.java">us/codecraft/webmagic/downloader/selenium/WebDriverPool.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.policy.EventSyncPolicy.java">org/laidu/learn/tool/cache/policy/EventSyncPolicy.java</a>
                 </td>
                 <td>
                   0
@@ -2155,7 +2155,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  65
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.algorithm.bloom.BloomFilterDemo.java">org/laidu/learn/algorithm/bloom/BloomFilterDemo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
                 </td>
               </tr>
                           <tr>
@@ -2174,7 +2188,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.QQMeishi.java">us/codecraft/webmagic/model/samples/QQMeishi.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.event.package-info.java">org/laidu/learn/tool/cache/event/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2183,7 +2197,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  3
                 </td>
               </tr>
                           <tr>
@@ -2202,6 +2216,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Headers.java">org/laidu/commom/util/http/har/model/Headers.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.netty.package-info.java">org/laidu/learn/netty/package-info.java</a>
                 </td>
                 <td>
@@ -2216,7 +2244,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.RedisScheduler.java">us/codecraft/webmagic/scheduler/RedisScheduler.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.eureka.EurekaServerApplication.java">org/laidu/learn/spring/cloud/eureka/EurekaServerApplication.java</a>
                 </td>
                 <td>
                   0
@@ -2225,21 +2253,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  35
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.News163.java">us/codecraft/webmagic/model/samples/News163.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
+                  6
                 </td>
               </tr>
                           <tr>
@@ -2258,7 +2272,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.PatternProcessorExample.java">us/codecraft/webmagic/example/PatternProcessorExample.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.event.EventType.java">org/laidu/learn/tool/cache/event/EventType.java</a>
                 </td>
                 <td>
                   0
@@ -2267,12 +2281,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  28
+                  2
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.OschinaAnswer.java">us/codecraft/webmagic/model/samples/OschinaAnswer.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.util.UserAgents.java">org/laidu/crawler/util/UserAgents.java</a>
                 </td>
                 <td>
                   0
@@ -2281,35 +2295,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.Selectable.java">us/codecraft/webmagic/selector/Selectable.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  38
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.annotation.HelpUrl.java">us/codecraft/webmagic/model/annotation/HelpUrl.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
+                  94
                 </td>
               </tr>
                           <tr>
@@ -2324,6 +2310,20 @@ under the License.
                 </td>
                 <td>
                   1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.spider.CrawlerBootStrap.java">org/laidu/crawler/spider/CrawlerBootStrap.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
                 </td>
               </tr>
                           <tr>
@@ -2356,34 +2356,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.Extractor.java">us/codecraft/webmagic/model/Extractor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  34
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.monitor.SpiderStatusMXBean.java">us/codecraft/webmagic/monitor/SpiderStatusMXBean.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  24
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.package-info.java">org/laidu/learn/language/feature/package-info.java</a>
                 </td>
                 <td>
@@ -2398,7 +2370,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.Scheduler.java">us/codecraft/webmagic/scheduler/Scheduler.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.string.package-info.java">org/laidu/commom/util/string/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2407,12 +2379,26 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.jvm.package-info.java">org/laidu/learn/jvm/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.exception.package-info.java">org/laidu/commom/util/exception/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2440,7 +2426,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.BaseElementSelector.java">us/codecraft/webmagic/selector/BaseElementSelector.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.annotation.Singleton.java">org/laidu/commom/util/annotation/Singleton.java</a>
                 </td>
                 <td>
                   0
@@ -2449,7 +2435,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  13
+                  4
                 </td>
               </tr>
                           <tr>
@@ -2482,34 +2468,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.Selector.java">us/codecraft/webmagic/selector/Selector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.ResultItems.java">us/codecraft/webmagic/ResultItems.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  28
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.play.model.Result.java">org/laidu/learn/play/model/Result.java</a>
                 </td>
                 <td>
@@ -2520,20 +2478,6 @@ under the License.
                 </td>
                 <td>
                   5
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.ConsolePipeline.java">us/codecraft/webmagic/pipeline/ConsolePipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
                 </td>
               </tr>
                           <tr>
@@ -2552,7 +2496,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.IteyeBlogProcessor.java">us/codecraft/webmagic/samples/IteyeBlogProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.HarParser.java">org/laidu/commom/util/http/har/HarParser.java</a>
                 </td>
                 <td>
                   0
@@ -2561,21 +2505,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.QzoneBlogProcessor.java">us/codecraft/webmagic/samples/QzoneBlogProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
+                  4
                 </td>
               </tr>
                           <tr>
@@ -2594,7 +2524,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.DiandianBlogProcessor.java">us/codecraft/webmagic/samples/DiandianBlogProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.regex.RegexUtil.java">org/laidu/commom/util/regex/RegexUtil.java</a>
                 </td>
                 <td>
                   0
@@ -2603,7 +2533,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  68
                 </td>
               </tr>
                           <tr>
@@ -2622,7 +2552,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.stopwatch.package-info.java">org/laidu/learn/spring/stopwatch/package-info.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.PageTimings.java">org/laidu/commom/util/http/har/model/PageTimings.java</a>
                 </td>
                 <td>
                   0
@@ -2631,7 +2561,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.CrawlerSite.java">org/laidu/crawler/helper/model/CrawlerSite.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
                 </td>
               </tr>
                           <tr>
@@ -2650,7 +2594,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.DiaoyuwengProcessor.java">us/codecraft/webmagic/samples/DiaoyuwengProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.event.CacheEntryUpdatedListener.java">org/laidu/learn/tool/cache/event/CacheEntryUpdatedListener.java</a>
                 </td>
                 <td>
                   0
@@ -2659,7 +2603,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  24
+                  3
                 </td>
               </tr>
                           <tr>
@@ -2674,6 +2618,20 @@ under the License.
                 </td>
                 <td>
                   6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.collection.ListDemo.java">org/laidu/learn/language/feature/collection/ListDemo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -2706,7 +2664,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.InfoQMiniBookProcessor.java">us/codecraft/webmagic/samples/InfoQMiniBookProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.CrawlerResponse.java">org/laidu/crawler/helper/model/CrawlerResponse.java</a>
                 </td>
                 <td>
                   0
@@ -2715,12 +2673,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  10
+                  9
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.PlainText.java">us/codecraft/webmagic/selector/PlainText.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.consumer.controller.HelloConsumerController.java">org/laidu/learn/spring/cloud/consumer/controller/HelloConsumerController.java</a>
                 </td>
                 <td>
                   0
@@ -2729,21 +2687,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  27
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.java">us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  62
+                  12
                 </td>
               </tr>
                           <tr>
@@ -2762,20 +2706,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.SimpleHttpClient.java">us/codecraft/webmagic/SimpleHttpClient.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  24
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.singleton.ThreadUnSafeLazyLoadSingleton.java">org/laidu/learn/design/pattern/singleton/ThreadUnSafeLazyLoadSingleton.java</a>
                 </td>
                 <td>
@@ -2786,20 +2716,6 @@ under the License.
                 </td>
                 <td>
                   15
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.HttpClientGenerator.java">us/codecraft/webmagic/downloader/HttpClientGenerator.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  43
                 </td>
               </tr>
                           <tr>
@@ -2818,6 +2734,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.code.practice.jianzhioffer.ReplaceSpace.java">org/laidu/learn/code/practice/jianzhioffer/ReplaceSpace.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.ConcreteBlueProduct.java">org/laidu/learn/design/pattern/simple/factory/ConcreteBlueProduct.java</a>
                 </td>
                 <td>
@@ -2832,91 +2762,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.JsonFilePipeline.java">us/codecraft/webmagic/pipeline/JsonFilePipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  9
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.formatter.DateFormatter.java">us/codecraft/webmagic/model/formatter/DateFormatter.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.NjuBBSProcessor.java">us/codecraft/webmagic/samples/NjuBBSProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.CompositePageProcessor.java">us/codecraft/webmagic/handler/CompositePageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  25
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.JsonFilePageModelPipeline.java">us/codecraft/webmagic/pipeline/JsonFilePageModelPipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.component.DuplicateRemover.java">us/codecraft/webmagic/scheduler/component/DuplicateRemover.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.MonitorExample.java">us/codecraft/webmagic/example/MonitorExample.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.Client.java">org/laidu/learn/design/pattern/builder/Client.java</a>
                 </td>
                 <td>
                   0
@@ -2930,7 +2776,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.annotation.ExtractByUrl.java">us/codecraft/webmagic/model/annotation/ExtractByUrl.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.boot.app.SpringBootAppApplication.java">org/laidu/learn/spring/boot/app/SpringBootAppApplication.java</a>
                 </td>
                 <td>
                   0
@@ -2939,12 +2785,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  6
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.SmartContentSelector.java">us/codecraft/webmagic/selector/SmartContentSelector.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.request.RequestBuilder.java">org/laidu/crawler/request/RequestBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -2953,7 +2799,49 @@ under the License.
                   0
                 </td>
                 <td>
-                  30
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.controller.UserInfoController.java">org/laidu/learn/mybatis/controller/UserInfoController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.fastutil.package-info.java">org/laidu/learn/fastutil/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.aws.dynamodb.package-info.java">org/laidu/learn/aws/dynamodb/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -2972,20 +2860,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.ResultItemsCollectorPipeline.java">us/codecraft/webmagic/pipeline/ResultItemsCollectorPipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  6
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.ConcreteRedProduct.java">org/laidu/learn/design/pattern/simple/factory/ConcreteRedProduct.java</a>
                 </td>
                 <td>
@@ -3000,7 +2874,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.processor.SimplePageProcessor.java">us/codecraft/webmagic/processor/SimplePageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.event.CacheEntryListener.java">org/laidu/learn/tool/cache/event/CacheEntryListener.java</a>
                 </td>
                 <td>
                   0
@@ -3009,7 +2883,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  3
                 </td>
               </tr>
                           <tr>
@@ -3028,7 +2902,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.CollectorPipeline.java">us/codecraft/webmagic/pipeline/CollectorPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.event.CacheEntryRemovedListener.java">org/laidu/learn/tool/cache/event/CacheEntryRemovedListener.java</a>
                 </td>
                 <td>
                   0
@@ -3037,12 +2911,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  4
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.DoubleKeyMap.java">us/codecraft/webmagic/utils/DoubleKeyMap.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.enums.WebsiteEnum.java">org/laidu/crawler/enums/WebsiteEnum.java</a>
                 </td>
                 <td>
                   0
@@ -3051,49 +2925,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  34
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.AmanzonPageProcessor.java">us/codecraft/webmagic/samples/AmanzonPageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  25
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.pipeline.ReplacePipeline.java">us/codecraft/webmagic/samples/pipeline/ReplacePipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.UrlUtils.java">us/codecraft/webmagic/utils/UrlUtils.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  30
+                  19
                 </td>
               </tr>
                           <tr>
@@ -3126,7 +2958,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.proxy.Proxy.java">us/codecraft/webmagic/proxy/Proxy.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.serialize.package-info.java">org/laidu/commom/util/serialize/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3135,12 +2967,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  57
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.selenium.SeleniumDownloader.java">us/codecraft/webmagic/downloader/selenium/SeleniumDownloader.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.consumer.service.HelloService.java">org/laidu/learn/spring/cloud/consumer/service/HelloService.java</a>
                 </td>
                 <td>
                   0
@@ -3149,12 +2981,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  26
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.HasKey.java">us/codecraft/webmagic/model/HasKey.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.config.package-info.java">org/laidu/crawler/config/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3163,12 +2995,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.thread.CountableThreadPool.java">us/codecraft/webmagic/thread/CountableThreadPool.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.Host.java">org/laidu/crawler/helper/model/http/burp/Host.java</a>
                 </td>
                 <td>
                   0
@@ -3177,35 +3009,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  29
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.formatter.ObjectFormatter.java">us/codecraft/webmagic/model/formatter/ObjectFormatter.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scripts.ScriptEnginePool.java">us/codecraft/webmagic/scripts/ScriptEnginePool.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  23
+                  3
                 </td>
               </tr>
                           <tr>
@@ -3219,12 +3023,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
+                  33
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.XpathSelector.java">us/codecraft/webmagic/selector/XpathSelector.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.ClientDemo.java">org/laidu/learn/amqp/rabbitmq/java/ClientDemo.java</a>
                 </td>
                 <td>
                   0
@@ -3233,7 +3037,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  13
+                  4
                 </td>
               </tr>
                           <tr>
@@ -3280,7 +3084,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.Pipeline.java">us/codecraft/webmagic/pipeline/Pipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.processor.BaiduPageProcessor.java">org/laidu/crawler/processor/BaiduPageProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -3289,12 +3093,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  22
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.PatternProcessor.java">us/codecraft/webmagic/handler/PatternProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Pages.java">org/laidu/commom/util/http/har/model/Pages.java</a>
                 </td>
                 <td>
                   0
@@ -3303,7 +3107,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  186
                 </td>
               </tr>
                           <tr>
@@ -3322,7 +3126,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.PageModelExtractor.java">us/codecraft/webmagic/model/PageModelExtractor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.mapper.AppUserMapper.java">org/laidu/learn/mybatis/mapper/AppUserMapper.java</a>
                 </td>
                 <td>
                   0
@@ -3331,7 +3135,49 @@ under the License.
                   0
                 </td>
                 <td>
-                  96
+                  187
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.policy.SyncPolicy.java">org/laidu/learn/tool/cache/policy/SyncPolicy.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.enums.VariateEnum.java">org/laidu/crawler/helper/enums/VariateEnum.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.entity.ParserResult.java">org/laidu/crawler/entity/ParserResult.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
                 </td>
               </tr>
                           <tr>
@@ -3350,7 +3196,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.ConsolePageModelPipeline.java">us/codecraft/webmagic/model/ConsolePageModelPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Cookies.java">org/laidu/commom/util/http/har/model/Cookies.java</a>
                 </td>
                 <td>
                   0
@@ -3359,12 +3205,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  5
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.NumberUtils.java">us/codecraft/webmagic/utils/NumberUtils.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.spring.stopwatch.MockServiceClient.java">org/laidu/learn/tool/spring/stopwatch/MockServiceClient.java</a>
                 </td>
                 <td>
                   0
@@ -3373,12 +3219,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  9
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.annotation.Formatter.java">us/codecraft/webmagic/model/annotation/Formatter.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.App.java">org/laidu/crawler/App.java</a>
                 </td>
                 <td>
                   0
@@ -3387,7 +3233,35 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.scheduler.RabbitMQScheduler.java">org/laidu/crawler/scheduler/RabbitMQScheduler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.mapper.AppUserSqlProvider.java">org/laidu/learn/mybatis/mapper/AppUserSqlProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  66
                 </td>
               </tr>
                           <tr>
@@ -3420,6 +3294,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.amqp.rabbitmq.java.DeclareQueue.java">org/laidu/learn/amqp/rabbitmq/java/DeclareQueue.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.data.package-info.java">org/laidu/learn/spring/data/package-info.java</a>
                 </td>
                 <td>
@@ -3430,20 +3318,6 @@ under the License.
                 </td>
                 <td>
                   3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.MeicanProcessor.java">us/codecraft/webmagic/samples/MeicanProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
                 </td>
               </tr>
                           <tr>
@@ -3462,7 +3336,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.MultiKeyMapBase.java">us/codecraft/webmagic/utils/MultiKeyMapBase.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Har.java">org/laidu/commom/util/http/har/model/Har.java</a>
                 </td>
                 <td>
                   0
@@ -3471,21 +3345,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.stopwatch.TimeConsumingStatistics.java">org/laidu/learn/spring/stopwatch/TimeConsumingStatistics.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
+                  3
                 </td>
               </tr>
                           <tr>
@@ -3504,7 +3364,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.CollectorPageModelPipeline.java">us/codecraft/webmagic/pipeline/CollectorPageModelPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.PageProcessorGen.java">org/laidu/crawler/helper/PageProcessorGen.java</a>
                 </td>
                 <td>
                   0
@@ -3513,12 +3373,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  8
+                  54
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.OschinaBlog.java">us/codecraft/webmagic/model/samples/OschinaBlog.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.package-info.java">org/laidu/crawler/helper/model/http/burp/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3527,7 +3387,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  21
+                  1
                 </td>
               </tr>
                           <tr>
@@ -3588,7 +3448,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scripts.ScriptConsole.java">us/codecraft/webmagic/scripts/ScriptConsole.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.Product.java">org/laidu/learn/design/pattern/builder/Product.java</a>
                 </td>
                 <td>
                   0
@@ -3597,12 +3457,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  67
+                  5
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.HttpClientRequestContext.java">us/codecraft/webmagic/downloader/HttpClientRequestContext.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.commons.net.package-info.java">org/laidu/learn/commons/net/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3611,21 +3471,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.samples.IteyeBlog.java">us/codecraft/webmagic/model/samples/IteyeBlog.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  15
+                  2
                 </td>
               </tr>
                           <tr>
@@ -3644,35 +3490,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.proxy.ProxyProvider.java">us/codecraft/webmagic/proxy/ProxyProvider.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.configurable.ExpressionType.java">us/codecraft/webmagic/configurable/ExpressionType.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.ModelPipeline.java">us/codecraft/webmagic/model/ModelPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.PlatformCodeGen.java">org/laidu/crawler/helper/PlatformCodeGen.java</a>
                 </td>
                 <td>
                   0
@@ -3682,6 +3500,20 @@ under the License.
                 </td>
                 <td>
                   13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.json.JsonUtil.java">org/laidu/commom/util/json/JsonUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -3714,34 +3546,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.AppStore.java">us/codecraft/webmagic/example/AppStore.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  9
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.GithubRepo.java">us/codecraft/webmagic/example/GithubRepo.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  40
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.simple.factory.AbstractProduct.java">org/laidu/learn/design/pattern/simple/factory/AbstractProduct.java</a>
                 </td>
                 <td>
@@ -3756,7 +3560,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.CharsetUtils.java">us/codecraft/webmagic/utils/CharsetUtils.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Entries.java">org/laidu/commom/util/http/har/model/Entries.java</a>
                 </td>
                 <td>
                   0
@@ -3765,7 +3569,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
+                  171
                 </td>
               </tr>
                           <tr>
@@ -3779,12 +3583,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.HttpUriRequestConverter.java">us/codecraft/webmagic/downloader/HttpUriRequestConverter.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.algorithm.sort.package-info.java">org/laidu/learn/algorithm/sort/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3793,7 +3597,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  38
+                  1
                 </td>
               </tr>
                           <tr>
@@ -3808,20 +3612,6 @@ under the License.
                 </td>
                 <td>
                   1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.ModelPageProcessor.java">us/codecraft/webmagic/model/ModelPageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  31
                 </td>
               </tr>
                           <tr>
@@ -3854,34 +3644,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.AfterExtractor.java">us/codecraft/webmagic/model/AfterExtractor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.pipeline.OneFilePipeline.java">us/codecraft/webmagic/samples/pipeline/OneFilePipeline.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.jvm.Test.java">org/laidu/learn/jvm/Test.java</a>
                 </td>
                 <td>
@@ -3896,7 +3658,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scripts.ScriptProcessorBuilder.java">us/codecraft/webmagic/scripts/ScriptProcessorBuilder.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Content.java">org/laidu/commom/util/http/har/model/Content.java</a>
                 </td>
                 <td>
                   0
@@ -3905,12 +3667,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  26
+                  5
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.HuxiuProcessor.java">us/codecraft/webmagic/samples/HuxiuProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.HttpClientService.java">org/laidu/commom/util/http/HttpClientService.java</a>
                 </td>
                 <td>
                   0
@@ -3919,12 +3681,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.monitor.SpiderStatus.java">us/codecraft/webmagic/monitor/SpiderStatus.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.core.HttpMethod.java">org/laidu/commom/util/http/core/HttpMethod.java</a>
                 </td>
                 <td>
                   0
@@ -3933,7 +3695,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  36
+                  32
                 </td>
               </tr>
                           <tr>
@@ -3947,12 +3709,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  12
+                  25
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.processor.example.BaiduBaikePageProcessor.java">us/codecraft/webmagic/processor/example/BaiduBaikePageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.event.CacheEntryCreatedListener.java">org/laidu/learn/tool/cache/event/CacheEntryCreatedListener.java</a>
                 </td>
                 <td>
                   0
@@ -3961,12 +3723,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  18
+                  3
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.formatter.ObjectFormatterBuilder.java">us/codecraft/webmagic/model/formatter/ObjectFormatterBuilder.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.har.package-info.java">org/laidu/crawler/helper/model/http/har/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3975,35 +3737,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  23
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.ReplaceSelector.java">us/codecraft/webmagic/selector/ReplaceSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  13
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover.java">us/codecraft/webmagic/scheduler/BloomFilterDuplicateRemover.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  29
+                  1
                 </td>
               </tr>
                           <tr>
@@ -4022,7 +3756,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.Experimental.java">us/codecraft/webmagic/utils/Experimental.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.xml.JAXBUtil.java">org/laidu/commom/util/xml/JAXBUtil.java</a>
                 </td>
                 <td>
                   0
@@ -4031,12 +3765,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  12
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.F58PageProcesser.java">us/codecraft/webmagic/samples/F58PageProcesser.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.RootSite.java">org/laidu/crawler/helper/model/RootSite.java</a>
                 </td>
                 <td>
                   0
@@ -4045,12 +3779,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  5
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.WMCollections.java">us/codecraft/webmagic/utils/WMCollections.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.core.HttpRequestBody.java">org/laidu/commom/util/http/core/HttpRequestBody.java</a>
                 </td>
                 <td>
                   0
@@ -4059,7 +3793,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  62
                 </td>
               </tr>
                           <tr>
@@ -4092,7 +3826,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.Site.java">us/codecraft/webmagic/Site.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.enums.BasicStringEnum.java">org/laidu/commom/util/enums/BasicStringEnum.java</a>
                 </td>
                 <td>
                   0
@@ -4101,7 +3835,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  162
+                  4
                 </td>
               </tr>
                           <tr>
@@ -4120,7 +3854,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.CustomRedirectStrategy.java">us/codecraft/webmagic/downloader/CustomRedirectStrategy.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.code.practice.jianzhioffer.SearchInDoubleDimArray.java">org/laidu/learn/code/practice/jianzhioffer/SearchInDoubleDimArray.java</a>
                 </td>
                 <td>
                   0
@@ -4129,7 +3863,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  10
+                  15
                 </td>
               </tr>
                           <tr>
@@ -4144,20 +3878,6 @@ under the License.
                 </td>
                 <td>
                   2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.processor.example.GithubRepoPageProcessor.java">us/codecraft/webmagic/processor/example/GithubRepoPageProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  20
                 </td>
               </tr>
                           <tr>
@@ -4204,20 +3924,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.example.GithubRepoApi.java">us/codecraft/webmagic/example/GithubRepoApi.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  30
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.command.package-info.java">org/laidu/learn/design/pattern/command/package-info.java</a>
                 </td>
                 <td>
@@ -4232,34 +3938,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.SinaBlogProcessor.java">us/codecraft/webmagic/samples/SinaBlogProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  18
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.ProxyUtils.java">us/codecraft/webmagic/utils/ProxyUtils.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.swagger.demo.SwaggerApplication.java">org/laidu/learn/swagger/demo/SwaggerApplication.java</a>
                 </td>
                 <td>
@@ -4270,20 +3948,6 @@ under the License.
                 </td>
                 <td>
                   6
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.GithubRepo.java">us/codecraft/webmagic/samples/GithubRepo.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
                 </td>
               </tr>
                           <tr>
@@ -4316,7 +3980,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.MultiPagePipeline.java">us/codecraft/webmagic/pipeline/MultiPagePipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.PostData.java">org/laidu/commom/util/http/har/model/PostData.java</a>
                 </td>
                 <td>
                   0
@@ -4325,35 +3989,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  25
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.PageMapper.java">us/codecraft/webmagic/model/PageMapper.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.Json.java">us/codecraft/webmagic/selector/Json.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  17
+                  7
                 </td>
               </tr>
                           <tr>
@@ -4386,35 +4022,35 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.ElementSelector.java">us/codecraft/webmagic/selector/ElementSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.RegexResult.java">us/codecraft/webmagic/selector/RegexResult.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.chain.responsibility.ConcreteLoggerError.java">org/laidu/learn/design/pattern/chain/responsibility/ConcreteLoggerError.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.Request.java">org/laidu/crawler/helper/model/http/burp/Request.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.QueryString.java">org/laidu/commom/util/http/har/model/QueryString.java</a>
                 </td>
                 <td>
                   0
@@ -4438,6 +4074,20 @@ under the License.
                 </td>
                 <td>
                   35
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.curl.CurlParserUtil.java">org/laidu/commom/util/http/curl/CurlParserUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  38
                 </td>
               </tr>
                           <tr>
@@ -4484,6 +4134,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Request.java">org/laidu/commom/util/http/har/model/Request.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.boxed.Boxing.java">org/laidu/learn/language/feature/boxed/Boxing.java</a>
                 </td>
                 <td>
@@ -4512,20 +4176,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.AlexanderMcqueenGoodsProcessor.java">us/codecraft/webmagic/samples/AlexanderMcqueenGoodsProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  36
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.prototype.Client.java">org/laidu/learn/design/pattern/prototype/Client.java</a>
                 </td>
                 <td>
@@ -4540,7 +4190,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.Page.java">us/codecraft/webmagic/Page.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.consumer.CustomerHelloApplication.java">org/laidu/learn/spring/cloud/consumer/CustomerHelloApplication.java</a>
                 </td>
                 <td>
                   0
@@ -4549,12 +4199,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  117
+                  7
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.FieldExtractor.java">us/codecraft/webmagic/model/FieldExtractor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.config.RabbitConfig.java">org/laidu/crawler/config/RabbitConfig.java</a>
                 </td>
                 <td>
                   0
@@ -4563,12 +4213,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  24
+                  28
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.CompositePipeline.java">us/codecraft/webmagic/handler/CompositePipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.language.feature.serialize.Main.java">org/laidu/learn/language/feature/serialize/Main.java</a>
                 </td>
                 <td>
                   0
@@ -4577,35 +4227,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  13
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.scheduler.LevelLimitScheduler.java">us/codecraft/webmagic/samples/scheduler/LevelLimitScheduler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.MultiPageModel.java">us/codecraft/webmagic/MultiPageModel.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  6
+                  12
                 </td>
               </tr>
                           <tr>
@@ -4624,6 +4246,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.file.package-info.java">org/laidu/commom/util/file/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.mybatis.model.AppUser.java">org/laidu/learn/mybatis/model/AppUser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  190
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.hadoop.package-info.java">org/laidu/learn/spring/hadoop/package-info.java</a>
                 </td>
                 <td>
@@ -4638,7 +4288,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.PatternRequestMatcher.java">us/codecraft/webmagic/handler/PatternRequestMatcher.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.design.pattern.builder.ConcreteBuilder.java">org/laidu/learn/design/pattern/builder/ConcreteBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -4647,21 +4297,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.FilePersistentBase.java">us/codecraft/webmagic/utils/FilePersistentBase.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  18
+                  4
                 </td>
               </tr>
                           <tr>
@@ -4680,7 +4316,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.pipeline.PageModelPipeline.java">us/codecraft/webmagic/pipeline/PageModelPipeline.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.code.practice.package-info.java">org/laidu/learn/code/practice/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -4689,7 +4325,63 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.http.har.model.Browser.java">org/laidu/commom/util/http/har/model/Browser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.helper.model.http.burp.Items.java">org/laidu/crawler/helper/model/http/burp/Items.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.code.practice.jianzhioffer.package-info.java">org/laidu/learn/code/practice/jianzhioffer/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.spring.stopwatch.source.StopWatch.java">org/laidu/learn/tool/spring/stopwatch/source/StopWatch.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  75
                 </td>
               </tr>
                           <tr>
@@ -4708,7 +4400,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.scheduler.ZipCodePageProcessor.java">us/codecraft/webmagic/samples/scheduler/ZipCodePageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.commom.util.encryption.AESEncryptionUtil.java">org/laidu/commom/util/encryption/AESEncryptionUtil.java</a>
                 </td>
                 <td>
                   0
@@ -4717,7 +4409,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  24
+                  35
                 </td>
               </tr>
                           <tr>
@@ -4759,7 +4451,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  27
+                  26
                 </td>
               </tr>
                           <tr>
@@ -4778,34 +4470,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.utils.HttpClientUtils.java">us/codecraft/webmagic/utils/HttpClientUtils.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.scripts.ScriptProcessor.java">us/codecraft/webmagic/scripts/ScriptProcessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.algorithm.encryption.DESUtil.java">org/laidu/learn/algorithm/encryption/DESUtil.java</a>
                 </td>
                 <td>
@@ -4820,63 +4484,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.JsonPathSelector.java">us/codecraft/webmagic/selector/JsonPathSelector.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.model.formatter.BasicTypeFormatter.java">us/codecraft/webmagic/model/formatter/BasicTypeFormatter.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  48
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.downloader.HttpClientDownloader.java">us/codecraft/webmagic/downloader/HttpClientDownloader.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  48
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.stopwatch.MockServiceClient.java">org/laidu/learn/spring/stopwatch/MockServiceClient.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  9
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.handler.SubPageProcessor.java">us/codecraft/webmagic/handler/SubPageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.scheduler.package-info.java">org/laidu/crawler/scheduler/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -4890,7 +4498,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.samples.MamacnPageProcessor.java">us/codecraft/webmagic/samples/MamacnPageProcessor.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.date.structure.tree.Binarytree.BtreeBasic.java">org/laidu/learn/date/structure/tree/Binarytree/BtreeBasic.java</a>
                 </td>
                 <td>
                   0
@@ -4899,7 +4507,35 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.crawler.package-info.java">org/laidu/crawler/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.Cache.java">org/laidu/learn/tool/cache/Cache.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
                 </td>
               </tr>
                           <tr>
@@ -4918,7 +4554,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/checkstyle.html#us.codecraft.webmagic.selector.HtmlNode.java">us/codecraft/webmagic/selector/HtmlNode.java</a>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.tool.cache.CacheService.java">org/laidu/learn/tool/cache/CacheService.java</a>
                 </td>
                 <td>
                   0
@@ -4927,7 +4563,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  29
+                  27
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/checkstyle.html#org.laidu.learn.spring.cloud.eureka.server.EurekaServer.java">org/laidu/learn/spring/cloud/eureka/server/EurekaServer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
                 </td>
               </tr>
                           <tr>

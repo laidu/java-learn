@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>java-learn</artifactId>
+        <groupId>org.laidu.learn</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>convenient-util</artifactId>
+    <packaging>pom</packaging>
+    <description>便捷小工具</description>
+
+    <modules>
+        <module>BTrace</module>
+        <module>spring-tool</module>
+        <module>local-cache</module>
+        <module>fastutil</module>
+    </modules>
+
+    <properties>
+        <ehcache.version>3.4.0</ehcache.version>
+        <javax.cache.version>1.1.0</javax.cache.version>
+
+        <spring.version>5.0.3.RELEASE</spring.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--local-cache-->
+            <dependency>
+                <groupId>javax.cache</groupId>
+                <artifactId>cache-api</artifactId>
+                <version>${javax.cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${ehcache.version}</version>
+            </dependency>
+
+            <!--spring-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

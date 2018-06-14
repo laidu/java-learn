@@ -1,0 +1,51 @@
+
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+      port: 8081
+    restart:
+      enabled: false
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+management:
+  server:
+    port: 9999
+    address: local-dev
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+    metrics:
+      enabled: true
+    info:
+      enabled: true
+  endpoints:
+    enabled-by-default: true
+    jmx:
+      exposure:
+        include: "*"
+    web:
+      exposure:
+        include: "*"
+  # METRICS
+  metrics:
+    export:
+      atlas:
+        enabled: true
+        step: 1s
+      graphite:
+        host: local-dev
+        port: 2004
+        enabled: true
+        step: 1s
+        protocol: pickled
+    binders:
+      jvm:
+        enabled: true
+
+debug: false
+trace: false
+

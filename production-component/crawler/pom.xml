@@ -14,9 +14,7 @@
 
     <properties>
         <common-util.version>1.0-SNAPSHOT</common-util.version>
-        <common-amqp.version>1.0-SNAPSHOT</common-amqp.version>
         <webmagic.version>0.7.3</webmagic.version>
-        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
     </properties>
 
     <dependencyManagement>
@@ -37,12 +35,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.laidu.learn</groupId>
-            <artifactId>common-amqp</artifactId>
-            <version>${common-amqp.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
         <dependency>
             <groupId>org.laidu.learn</groupId>
@@ -73,7 +69,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
             </plugin>
         </plugins>
     </build>

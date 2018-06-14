@@ -2,25 +2,21 @@ package org.laidu.crawler.config;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.amqp.core.*;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
-import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
-import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-
-import javax.sound.midi.Receiver;
 
 /**
  * rabbitmq queue config
  *
  * @author tiancai.zang 2018-01-09 14:51.
  */
-// TODO: 2018-01-09 14:51  rabbitmq queue config
 @Data
 @Configuration
 @NoArgsConstructor

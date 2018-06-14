@@ -23,7 +23,7 @@ under the License.
     <link>https://github.com/laidu/java-learn/language-advance/concurrent</link>
     <description>concurrent - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2017</copyright>
+    <copyright>&#169;2018</copyright>
     <item>
       <title>File: 6,
              Errors: 73,
@@ -46,20 +46,6 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-advance/concurrent/checkstyle.html#org.laidu.learn.concurrent.latch.package-info.java">org/laidu/learn/concurrent/latch/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/language-advance/concurrent/checkstyle.html#org.laidu.learn.concurrent.latch.LatchWorker.java">org/laidu/learn/concurrent/latch/LatchWorker.java</a>
                 </td>
                 <td>
@@ -70,6 +56,20 @@ under the License.
                 </td>
                 <td>
                   35
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-advance/concurrent/checkstyle.html#org.laidu.learn.concurrent.latch.package-info.java">org/laidu/learn/concurrent/latch/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
               </tr>
                           <tr>

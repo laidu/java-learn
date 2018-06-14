@@ -143,10 +143,10 @@ frontend http_80_in
     capture request header Host len 40              # 请求中的主机名
     capture request header Content-Length len 10    # 请求中的内容长度
     capture request header Referer len 200          # 请求中的引用地址
-    capture response header Server len 40           # 响应中的server name
-    capture response header Content-Length len 10   # 响应中的内容长度(可配合option logasap使用)
-    capture response header Cache-Control len 8     # 响应中的cache控制
-    capture response header Location len 20         # 响应中的重定向地址
+    capture responses header Server len 40           # 响应中的server name
+    capture responses header Content-Length len 10   # 响应中的内容长度(可配合option logasap使用)
+    capture responses header Cache-Control len 8     # 响应中的cache控制
+    capture responses header Location len 20         # 响应中的重定向地址
  
  
     #ACL策略规则定义

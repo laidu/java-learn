@@ -2,6 +2,8 @@
 
 .idea/
 
+.DS_Store
+
 ### Maven template
 **/target/
 pom.xml.tag
@@ -44,4 +46,4 @@ hs_err_pid*
 *.ipr
 *.iml
 *.iws
-/production-component/common-util/target/
+**/.mvn

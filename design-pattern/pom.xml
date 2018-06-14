@@ -14,6 +14,7 @@
     <description>设计模式学习</description>
     <modules>
         <module>java-design-pattern-learn</module>
+        <!--<module>java-design-patterns</module>-->
     </modules>
 
 

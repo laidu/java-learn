@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>crawler-helper - Checkstyle report</title>
+    <link>https://github.com/laidu/java-learn/production-component/crawler-helper</link>
+    <description>crawler-helper - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2018</copyright>
+    <item>
+      <title>File: 11,
+             Errors: 137,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.model.CrawlerRequestParam.java">org/laidu/crawler/helper/model/CrawlerRequestParam.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.model.CrawlerSite.java">org/laidu/crawler/helper/model/CrawlerSite.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.package-info.java">org/laidu/crawler/helper/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.PlatformCodeGen.java">org/laidu/crawler/helper/PlatformCodeGen.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.enums.VariateEnum.java">org/laidu/crawler/helper/enums/VariateEnum.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.model.CrawlerResponse.java">org/laidu/crawler/helper/model/CrawlerResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.model.RootSite.java">org/laidu/crawler/helper/model/RootSite.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#helper.properties">helper.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.conf.HelperConfig.java">org/laidu/crawler/helper/conf/HelperConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.model.Encryption.java">org/laidu/crawler/helper/model/Encryption.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/production-component/crawler-helper/checkstyle.html#org.laidu.crawler.helper.PageProcessorGen.java">org/laidu/crawler/helper/PageProcessorGen.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  54
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

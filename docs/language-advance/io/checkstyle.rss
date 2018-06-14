@@ -23,7 +23,7 @@ under the License.
     <link>https://github.com/laidu/java-learn/language-advance/io</link>
     <description>io - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2017</copyright>
+    <copyright>&#169;2018</copyright>
     <item>
       <title>File: 8,
              Errors: 72,
@@ -74,20 +74,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/laidu/java-learn/language-advance/io/checkstyle.html#org.laidu.learn.io.nio.channel.BasicChannelExample.java">org/laidu/learn/io/nio/channel/BasicChannelExample.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/laidu/java-learn/language-advance/io/checkstyle.html#org.laidu.learn.io.nio.NioClient.java">org/laidu/learn/io/nio/NioClient.java</a>
                 </td>
                 <td>
@@ -112,6 +98,20 @@ under the License.
                 </td>
                 <td>
                   15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/laidu/java-learn/language-advance/io/checkstyle.html#org.laidu.learn.io.nio.channel.BasicChannelExample.java">org/laidu/learn/io/nio/channel/BasicChannelExample.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
                 </td>
               </tr>
                           <tr>

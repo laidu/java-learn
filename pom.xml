@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>java-learn</name>
-    <url>https://github.com/laidu/java-learn</url>
+    <url>https://laidu.github.io/java-learn</url>
     <description>java 程序员的学习成长之路</description>
 
     <scm>
@@ -43,13 +43,14 @@
         <module>language-feature</module>
         <module>framework</module>
         <module>design-pattern</module>
-        <module>convenient-tool</module>
+        <module>convenient-util</module>
         <module>data-structure</module>
         <module>algorithm</module>
         <module>production-component</module>
         <module>language-advance</module>
         <module>dev-ops</module>
         <module>big-data</module>
+        <module>code-practice</module>
     </modules>
 
     <distributionManagement>
@@ -60,12 +61,12 @@
         </site>
     </distributionManagement>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+    <!--<repository>-->
+    <!--<id>jitpack.io</id>-->
+    <!--<url>https://jitpack.io</url>-->
+    <!--</repository>-->
+    <!--</repositories>-->
 
     <properties>
 
@@ -77,12 +78,15 @@
 
         <!--mvn site-->
         <github.global.server>github</github.global.server>
-        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
+        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}
+        </github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
         <site.path>${project.artifactId}</site.path>
-        <apache.maven-site-plugin.version>3.6</apache.maven-site-plugin.version>
         <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
         <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
+        <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
+        <javadoc-plugin.version>3.0.1</javadoc-plugin.version>
+        <markdown-page-generator.version>2.1.0</markdown-page-generator.version>
 
         <!--项目基础依赖配置-->
         <lombok.version>1.16.18</lombok.version>
@@ -130,7 +134,6 @@
         </dependency>
 
         <!-- tag::tests[] -->
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -180,13 +183,36 @@
         </profile>
     </profiles>
 
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>${maven-project-info-reports-plugin.version}</version>
+                <configuration>
+                    <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <!--<report>dependencies</report>-->
+                            <report>project-team</report>
+                            <report>mailing-list</report>
+                            <report>cim</report>
+                            <report>issue-tracking</report>
+                            <report>license</report>
+                            <report>scm</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+
+        </plugins>
+    </reporting>
+
+
     <build>
-
-        <pluginManagement>
-            <plugins>
-
-            </plugins>
-        </pluginManagement>
 
         <plugins>
             <plugin>
@@ -200,55 +226,42 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>${apache.maven-site-plugin.version}</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.doxia</groupId>
-                        <artifactId>doxia-module-markdown</artifactId>
-                        <version>${doxia-module-markdown.version}</version>
-                    </dependency>
-                </dependencies>
-
+                <groupId>com.ruleoftech</groupId>
+                <artifactId>markdown-page-generator-plugin</artifactId>
+                <version>${markdown-page-generator.version}</version>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    <skipDeploy>true</skipDeploy>
-                    <reportPlugins>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-project-info-reports-plugin</artifactId>
-                            <version>${maven-project-info-reports-plugin.version}</version>
-                            <configuration>
-                                <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
-                                <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-                            </configuration>
-                        </plugin>
-                        <!--<plugin>-->
-                            <!--<groupId>org.apache.maven.plugins</groupId>-->
-                            <!--<artifactId>maven-javadoc-plugin</artifactId>-->
-                            <!--<version>3.0.0-M1</version>-->
-                        <!--</plugin>-->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-surefire-report-plugin</artifactId>
-                            <version>2.20.1</version>
-                        </plugin>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-checkstyle-plugin</artifactId>
-                            <version>2.17</version>
-                        </plugin>
-                    </reportPlugins>
+                    <inputDirectory>${project.basedir}/src/site/markdown/</inputDirectory>
+                    <outputDirectory>${project.build.directory}/site/</outputDirectory>
+
+                    <!-- copy other /markdown_/* directories -->
+                    <copyDirectories>images</copyDirectories>
+                    <transformRelativeMarkdownLinks>true</transformRelativeMarkdownLinks>
+                    <pegdownExtensions>ANCHORLINKS,HARDWRAPS,AUTOLINKS,TABLES,FENCED_CODE_BLOCKS</pegdownExtensions>
                 </configuration>
             </plugin>
 
             <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.2.1</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>${maven-site-plugin.version}</version>
                 <configuration>
-                    <useReleaseProfile>true</useReleaseProfile>
-                    <goals>deploy site site-deploy</goals>
+                    <locales>en,zh</locales>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-module-markdown</artifactId>
+                        <version>${doxia-module-markdown.version}</version><!-- to keep Java 6 compatibility-->
+                    </dependency>
+                </dependencies>
             </plugin>
 
             <plugin>
@@ -258,19 +271,18 @@
 
                 <configuration>
                     <message>Creating site for ${project.artifactId}, ${project.version}</message>
-                    <!-- this does the trick to place every module in the correct subfolder -->
                     <path>${project.distributionManagement.site.url}</path>
                     <branch>refs/heads/master</branch>
+                    <noJekyll>true</noJekyll>
                     <force>true</force>
-                    <!--<noJekyll>true</noJekyll>-->
                     <merge>true</merge>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>site-deploy</goal>
+                            <goal>site</goal>
                         </goals>
-                        <phase>site-deploy</phase>
+                        <phase>site</phase>
                     </execution>
                 </executions>
             </plugin>

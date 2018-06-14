@@ -14,16 +14,16 @@
     <description>java 常用框架学习</description>
 
     <modules>
-        <module>apache</module>
-        <module>junit5</module>
-        <module>mockito</module>
-        <module>google</module>
         <module>spring</module>
-        <module>netty</module>
-        <module>async-http-client</module>
-        <module>play</module>
         <module>webmagic</module>
-        <module>swagger</module>
+        <module>common</module>
+        <module>test</module>
+        <module>network</module>
+        <module>web</module>
+        <module>rules-engine</module>
+        <module>aws</module>
+        <module>compress</module>
+        <module>task-scheduler</module>
     </modules>
 
     <properties>
@@ -37,45 +37,20 @@
         <!--google-->
         <auto-value.version>1.5</auto-value.version>
 
-        <!--test-->
-        <mockito.version>2.9.0</mockito.version>
 
         <!--play-->
         <play.version>2.6.6</play.version>
+
+        <shade.version>3.1.1</shade.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
 
             <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${apache-commons-lang3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-text</artifactId>
-                <version>${apache-commons-text.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.asynchttpclient</groupId>
                 <artifactId>async-http-client</artifactId>
                 <version>${async-http-client.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.auto.value</groupId>
-                <artifactId>auto-value</artifactId>
-                <version>${auto-value.version}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-core</artifactId>
-                <version>${mockito.version}</version>
-                <scope>test</scope>
             </dependency>
 
             <dependency>
@@ -87,19 +62,13 @@
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <dependency>
-            <groupId>com.github.laidu</groupId>
+            <groupId>org.laidu.learn</groupId>
             <artifactId>common-util</artifactId>
-            <version>v0.0.1</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 
 </project>

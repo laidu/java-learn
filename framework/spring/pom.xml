@@ -15,6 +15,13 @@
         <module>spring-data</module>
         <module>spring-amqp</module>
         <module>spring-hadoop</module>
+        <module>swagger</module>
+        <module>spring-cloud</module>
+        <module>spring-boot</module>
+        <module>spring-statemachine</module>
+        <module>spring-web</module>
+        <module>spring-transaction</module>
+        <module>spring-aop</module>
     </modules>
 
     <properties>
@@ -24,8 +31,11 @@
 
         <amqp-client.version>5.1.1</amqp-client.version>
 
-        <spring.version>5.0.2.RELEASE</spring.version>
-        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+        <spring.version>5.0.6.RELEASE</spring.version>
+        <spring-boot.version>2.0.2.RELEASE</spring-boot.version>
+        <spring-shiro.version>1.4.0</spring-shiro.version>
+
+        <spring-statemacchine.version>2.0.1.RELEASE</spring-statemacchine.version>
 
     </properties>
 
@@ -40,11 +50,11 @@
                 <scope>import</scope>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-amqp</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-starter-amqp</artifactId>-->
+                <!--<version>${spring-boot.version}</version>-->
+            <!--</dependency>-->
 
             <dependency>
                 <groupId>com.rabbitmq</groupId>
@@ -52,13 +62,23 @@
                 <version>${amqp-client.version}</version>
             </dependency>
 
-
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-hadoop</artifactId>
                 <version>${spring-data-hadoop.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring-boot-starter</artifactId>
+                <version>${spring-shiro.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.statemachine</groupId>
+                <artifactId>spring-statemachine-core</artifactId>
+                <version>${spring-statemacchine.version}</version>
+            </dependency>
 
 
         </dependencies>
@@ -66,28 +86,15 @@
 
     <dependencies>
 
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring-boot.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-            </exclusions>
             <scope>test</scope>
         </dependency>
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<requests>
+    <request>
+        <requestNameZh><![CDATA[]]></requestNameZh>
+        <curl><![CDATA[]]></curl>
+        <params>
+            <param name="" value=""/>
+        </params>
+        <encryptionFileds>
+            <encryption>
+                <emcryptionExtendParams>
+                    <emcryptionExtendParam name="" value=""/>
+                </emcryptionExtendParams>
+                <encryptionAlgorithm>MD5</encryptionAlgorithm>
+                <encryption>demo</encryption>
+                <encryptionSource><![CDATA[]]></encryptionSource>
+            </encryption>
+        </encryptionFileds>
+        <responses>
+            <responseType>json</responseType>
+            <response>
+                <responseName>demo</responseName>
+                <responseType><![CDATA[]]></responseType>
+                <attentionField>demo</attentionField>
+                <attentionFieldValue>demo</attentionFieldValue>
+                <responseSource><![CDATA[]]></responseSource>
+            </response>
+        </responses>
+    </request>
+</requests>
