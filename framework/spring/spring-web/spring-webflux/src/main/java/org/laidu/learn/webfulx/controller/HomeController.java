@@ -21,12 +21,14 @@ import java.time.LocalDate;
 @RequestMapping("/")
 public class HomeController {
 
-    @GetMapping("index")
+    @GetMapping("/hello")
     public String idnex(){
+
+        log.info("active Thread count: {}", Thread.activeCount());
         return "hello";
     }
 
-    @GetMapping("hello")
+    @GetMapping("/hello2")
     public HelloModel hello(@RequestParam("user") String username){
         return HelloModel.builder()
                 .message("hello")

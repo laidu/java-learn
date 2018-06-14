@@ -39,9 +39,9 @@
             <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.laidu.learn</groupId>
-            <artifactId>common-amqp</artifactId>
-            <version>${common-amqp.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.laidu.learn</groupId>

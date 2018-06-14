@@ -22,7 +22,6 @@
         <module>crawler-helper</module>
         <module>common-pool</module>
         <module>crawler</module>
-        <module>common-amqp</module>
     </modules>
 
     <dependencyManagement>

@@ -25,8 +25,9 @@ public class HomeController {
     @GetMapping("/hello")
     public String hello(HttpServletRequest request) throws InterruptedException {
 
-        Thread.sleep(500);
-        log.info("url : {}",  request.getRequestURI());
+//        Thread.sleep(500);
+//        log.info("url : {}",  request.getRequestURI());
+        log.info("active Thread count: {}", Thread.activeCount());
         return "hello";
     }
 
