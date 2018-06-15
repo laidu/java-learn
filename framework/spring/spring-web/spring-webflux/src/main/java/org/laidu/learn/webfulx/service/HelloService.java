@@ -5,7 +5,11 @@ package org.laidu.learn.webfulx.service;
  * <p>
  * Created by tiancai.zang
  * on 2018-06-15 15:25.
+ * @author laidu
  */
-// TODO: 2018-06-15 15:25  hello service
 public interface HelloService {
+
+    String sayHello();
+
+    String sayHelloSlow();
 }

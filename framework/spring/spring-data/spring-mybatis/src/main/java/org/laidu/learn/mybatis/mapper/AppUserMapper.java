@@ -6,6 +6,7 @@ import org.laidu.learn.mybatis.model.AppUser;
 
 import java.util.List;
 
+@Mapper
 public interface AppUserMapper {
     @Delete({
         "delete from ca_app_user",
