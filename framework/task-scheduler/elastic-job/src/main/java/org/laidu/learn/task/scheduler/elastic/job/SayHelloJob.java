@@ -24,6 +24,8 @@ public class SayHelloJob implements SimpleJob {
 
         log.info("shardingContext: {}", shardingContext);
 
+        log.info("job param : {}", shardingContext.getJobParameter());
+
         switch (shardingContext.getShardingItem()) {
             case 0:
                 worker.doWork(shardingContext);
