@@ -1,6 +1,7 @@
 package org.laidu.learn.spring.aop.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.aop.annotation.MethodMonitor;
 import org.laidu.learn.spring.aop.service.UserService;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Override
+    @MethodMonitor
     public void addUser(String name) {
         log.info("addUser: {}", name);
     }

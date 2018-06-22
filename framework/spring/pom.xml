@@ -37,6 +37,7 @@
 
         <spring-statemacchine.version>2.0.1.RELEASE</spring-statemacchine.version>
 
+
     </properties>
 
     <dependencyManagement>
