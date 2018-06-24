@@ -12,7 +12,6 @@ import org.laidu.learn.spring.aop.service.impl.UserServiceImpl;
  *
  * @author tiancai.zang
  */
-// TODO: 2018-06-15 16:49  cglib 代理静态实现
 @Slf4j
 public class StaticCglibProxyDemo extends UserServiceImpl {
 

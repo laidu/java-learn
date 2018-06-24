@@ -21,7 +21,6 @@ import java.util.UUID;
  * @author tiancai.zang
  */
 @Slf4j
-@Component
 public class CommonFilter implements HandlerInterceptor {
 
     @Autowired

@@ -2,25 +2,24 @@
 <!-- configuration file for LogBack (slf4J implementation)
 See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
 <configuration >
-<!-- To enable JMX Management -->
+    <!-- To enable JMX Management -->
     <jmxConfigurator/>
 
 
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
-    <property name="log.directory" value="logs" />
+    <springProfile scope="context"  name="log.directory" defaultValue="logs" />
     <!--项目名称，也是存储日志的具体目录-->
-    <property name="log.context.name" value="shop-crm-service21" />
-    <!--日志的字符编码-->
-    <property name="log.charset" value="UTF-8" />
+    <springProfile scope="context" name="log.context.name" defaultValue="shop-crm-service21" />
+
     <!--历史记录最大保存天数-->
-    <property name="log.maxHistory" value="30" />
+    <springProfile scope="context"  name="log.maxHistory" defaultValue="30" />
     <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
-    <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$%-5level{}$$shop-crm-service$$%msg%n" />
-    <property name="log.pattern.json" value="" />
+    <springProfile  scope="context" name="log.pattern" defaultValue="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$%-5level{}$$shop-crm-service$$%msg%n" />
+    <springProfile scope="context" name="log.pattern.json" defaultValue="" />
     <!--日志Error级别名称配置-->
-    <property name="log.error.log.level" value="ERROR" />
+    <springProfile scope="context" name="log.error.log.level" defaultValue="ERROR" />
     <!--异步写日志的队列大小配置，默认为256-->
-    <property name="log.async.queue.size" value="1024" />
+    <springProfile scope="context" name="log.async.queue.size" defaultValue="1024" />
 
     <!--配置日志的上下文名称-->
     <contextName>${log.context.name}</contextName>
@@ -37,7 +36,6 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
         <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
             <encoder>
                 <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{50}) - %yellow([%file:%line]) - %msg%n</pattern>
-                <charset>${log.charset}</charset>
             </encoder>
         </appender>
     </springProfile>
@@ -54,7 +52,6 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             </rollingPolicy>
             <encoder>
                 <pattern>${log.pattern}</pattern>
-                <charset>${log.charset}</charset>
             </encoder>
         </appender>
 
@@ -75,7 +72,6 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             <!-- 此日志文件只记录error级别的 -->
             <encoder>
                 <pattern>${log.pattern}</pattern>
-                <charset>${log.charset}</charset>
             </encoder>
         </appender>
 
