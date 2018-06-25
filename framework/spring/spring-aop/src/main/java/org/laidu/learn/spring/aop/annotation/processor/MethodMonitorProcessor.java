@@ -5,9 +5,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.laidu.learn.spring.aop.annotation.MethodMonitor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
@@ -27,18 +27,22 @@ import java.io.Serializable;
 @Component
 public class MethodMonitorProcessor {
 
+
     @Autowired
     private MethodMonitor.LogPrintLogic logPrintLogic;
 
-    @Around("@annotation(org.laidu.learn.spring.aop.annotation.MethodMonitor)")
-    public Object logExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Pointcut("@annotation(org.laidu.learn.spring.aop.annotation.MethodMonitor)")
+    private void pointcut() {
+    }
+
+    @Around("pointcut() && @annotation(monitor)")
+    public Object logExecutionTime(ProceedingJoinPoint joinPoint, MethodMonitor monitor) throws Throwable {
         return logPrintLogic.build(joinPoint);
     }
 
 
     @Bean
-    @ConditionalOnMissingBean
-    public DefaultLogPrintLogic logPrintLogic(){
+    public DefaultLogPrintLogic logPrintLogic() {
         return new DefaultLogPrintLogic();
     }
 
@@ -60,12 +64,12 @@ public class MethodMonitorProcessor {
                 data.setElapsedTime(watch.getTotalTimeMillis());
                 data.setMethodSignature(joinPoint.getSignature().toLongString());
 
-            }catch (Exception ex){
+            } catch (Exception ex) {
 
                 throw ex;
-            }finally {
+            } finally {
                 watch.stop();
-                log.warn("{} with args {} executed in {} ms", joinPoint.getSignature(),joinPoint.getArgs(), watch.getTotalTimeMillis());
+                log.warn("{} with args {} executed in {} ms", joinPoint.getSignature(), joinPoint.getArgs(), watch.getTotalTimeMillis());
             }
 
             return proceed;
@@ -108,7 +112,7 @@ public class MethodMonitorProcessor {
          */
         private String exceptionClass;
 
-        public void setSuccess(boolean success){
+        public void setSuccess(boolean success) {
             this.success = success ? 1 : 0;
         }
 

@@ -2,10 +2,7 @@ package org.laidu.learn.spring.aop.annotation;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * 方法执行 monitor
@@ -15,7 +12,8 @@ import java.lang.annotation.Target;
  *
  * @author laidu
  */
-@Target({ElementType.METHOD,ElementType.TYPE})
+@Documented
+@Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MethodMonitor {
 
@@ -25,7 +23,6 @@ public @interface MethodMonitor {
      */
     String prefix() default "";
 
-    @FunctionalInterface
     interface LogPrintLogic{
         Object build(ProceedingJoinPoint joinPoint) throws Throwable;
     }
