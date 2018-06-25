@@ -8,6 +8,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.laidu.learn.spring.aop.annotation.MethodMonitor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
@@ -29,7 +30,7 @@ public class MethodMonitorProcessor {
 
 
     @Autowired
-    private MethodMonitor.LogPrintLogic logPrintLogic;
+    private ApplicationContext context;
 
     @Pointcut("@annotation(org.laidu.learn.spring.aop.annotation.MethodMonitor)")
     private void pointcut() {
@@ -37,24 +38,20 @@ public class MethodMonitorProcessor {
 
     @Around("pointcut() && @annotation(monitor)")
     public Object logExecutionTime(ProceedingJoinPoint joinPoint, MethodMonitor monitor) throws Throwable {
+
+        MethodMonitor.LogPrintLogic logPrintLogic = context.getBean(monitor.logic());
+
         return logPrintLogic.build(joinPoint);
     }
 
-
-    @Bean
-    public DefaultLogPrintLogic logPrintLogic() {
-        return new DefaultLogPrintLogic();
-    }
-
-    @Slf4j
-    public static class DefaultLogPrintLogic implements MethodMonitor.LogPrintLogic {
+    public class DefaultLogPrintLogic implements MethodMonitor.LogPrintLogic {
 
         @Override
         public Object build(ProceedingJoinPoint joinPoint) throws Throwable {
 
             StopWatch watch = new StopWatch();
             Object proceed = null;
-            MonitorBaseData data = new MonitorBaseData();
+            MethodMonitorProcessor.MonitorBaseData data = new MethodMonitorProcessor.MonitorBaseData();
 
             watch.start();
 
@@ -74,6 +71,12 @@ public class MethodMonitorProcessor {
 
             return proceed;
         }
+    }
+
+
+    @Bean
+    public DefaultLogPrintLogic logPrintLogic() {
+        return new DefaultLogPrintLogic();
     }
 
     @Data

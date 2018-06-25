@@ -15,7 +15,6 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     <springProfile scope="context"  name="log.maxHistory" defaultValue="30" />
     <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
     <springProfile  scope="context" name="log.pattern" defaultValue="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$%-5level{}$$shop-crm-service$$%msg%n" />
-    <springProfile scope="context" name="log.pattern.json" defaultValue="" />
     <!--日志Error级别名称配置-->
     <springProfile scope="context" name="log.error.log.level" defaultValue="ERROR" />
     <!--异步写日志的队列大小配置，默认为256-->
@@ -44,7 +43,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
         <!-- 服务器上使用的appender start -->
         <!-- 默认的file appender，按天切分日志 -->
         <appender name="ROLLING_FILE_DEFAULT" class="ch.qos.logback.core.rolling.RollingFileAppender">
-            <file>${log.directory}${log.context.name}/${HOSTNAME}.log</file>
+            <file>${log.directory}/${log.context.name}/${HOSTNAME}.log</file>
             <append>true</append>
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
                 <fileNamePattern>${log.directory}/${log.context.name}/${HOSTNAME}.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -66,7 +65,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             <!-- 日志追加配置 -->
             <append>true</append>
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-                <fileNamePattern>${log.directory}${log.context.name}/${HOSTNAME}_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <fileNamePattern>${log.directory}/${log.context.name}/${HOSTNAME}_error.%d{yyyy-MM-dd}.log</fileNamePattern>
                 <maxHistory>${log.maxHistory}</maxHistory>
             </rollingPolicy>
             <!-- 此日志文件只记录error级别的 -->

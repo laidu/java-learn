@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UserServiceImpl implements UserService {
 
     @Override
-    @MethodMonitor
+    @MethodMonitor(logic = UserServiceLogLogic.class)
     public void addUser(String name) {
         log.info("addUser: {}", name);
     }

@@ -22,7 +22,6 @@ public class HomeController {
     final
     UserService userService;
 
-
     @Autowired
     public HomeController(UserService userService) {
         this.userService = userService;
@@ -31,6 +30,8 @@ public class HomeController {
     @GetMapping("/")
     @MethodMonitor
     public String home(){
+
+        userService.addUser("xiaoming");
         return "hello";
     }
 

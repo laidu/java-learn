@@ -1,6 +1,7 @@
 package org.laidu.learn.spring.aop.annotation;
 
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.laidu.learn.spring.aop.annotation.processor.MethodMonitorProcessor;
 
 import java.lang.annotation.*;
 
@@ -18,12 +19,15 @@ import java.lang.annotation.*;
 public @interface MethodMonitor {
 
     /**
-     * 日志 前缀
-     * @return prefix。
+     * 日志打印 逻辑
+     *
      */
-    String prefix() default "";
+    Class<? extends LogPrintLogic> logic() default MethodMonitorProcessor.DefaultLogPrintLogic.class;
 
-    interface LogPrintLogic{
+    String value() default "";
+
+    @FunctionalInterface
+    interface LogPrintLogic {
         Object build(ProceedingJoinPoint joinPoint) throws Throwable;
     }
 
