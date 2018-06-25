@@ -21,6 +21,25 @@ public class SayHelloJob implements SimpleJob {
 
     @Override
     public void execute(ShardingContext shardingContext) {
-        worker.doWork(shardingContext);
+
+        log.info("shardingContext: {}", shardingContext);
+
+        log.info("job param : {}", shardingContext.getJobParameter());
+
+        switch (shardingContext.getShardingItem()) {
+            case 0:
+                worker.doWork(shardingContext);
+                break;
+            case 1:
+                log.info("do work {}", shardingContext.getShardingItem());
+                break;
+            case 2:
+                log.info("do work {}", shardingContext.getShardingItem());
+                break;
+            default:
+                log.info("分片溢出");
+
+        }
+
     }
 }

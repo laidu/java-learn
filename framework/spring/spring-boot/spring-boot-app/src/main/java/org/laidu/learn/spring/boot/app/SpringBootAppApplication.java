@@ -15,7 +15,6 @@ public class SpringBootAppApplication {
 
 		new SpringApplicationBuilder()
 				.sources(SpringBootAppApplication.class)
-//				.web(WebApplicationType.NONE)
 				.registerShutdownHook(true)
 				.logStartupInfo(true)
 				.run(args);

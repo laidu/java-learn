@@ -1,6 +1,8 @@
 spring:
   application:
     name: spring-aop-learn
+  main:
+    banner-mode: "off"
 
 
 

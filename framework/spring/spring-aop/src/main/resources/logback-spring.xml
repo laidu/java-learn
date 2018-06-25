@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configuration file for LogBack (slf4J implementation)
+See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
+<configuration >
+    <!-- To enable JMX Management -->
+    <jmxConfigurator/>
+
+
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
+    <springProfile scope="context"  name="log.directory" defaultValue="logs" />
+    <!--项目名称，也是存储日志的具体目录-->
+    <springProfile scope="context" name="log.context.name" defaultValue="shop-crm-service21" />
+
+    <!--历史记录最大保存天数-->
+    <springProfile scope="context"  name="log.maxHistory" defaultValue="30" />
+    <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+    <springProfile  scope="context" name="log.pattern" defaultValue="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$%-5level{}$$shop-crm-service$$%msg%n" />
+    <!--日志Error级别名称配置-->
+    <springProfile scope="context" name="log.error.log.level" defaultValue="ERROR" />
+    <!--异步写日志的队列大小配置，默认为256-->
+    <springProfile scope="context" name="log.async.queue.size" defaultValue="1024" />
+
+    <!--配置日志的上下文名称-->
+    <contextName>${log.context.name}</contextName>
+
+    <!--获取spring properties 配置-->
+    <springProperty scope="context" name="MDC_UUID" source="MDC_UUID" defaultValue="_uuid"/>
+    <springProperty scope="context" name="APP_NAME" source="APP_NAME" defaultValue="app"/>
+    <springProperty scope="context" name="LOG_PATH" source="logging.path" defaultValue="logs"/>
+    <springProperty scope="context" name="LOG_FILE_MAX_SIZE" source="logging.file.max-size" />
+
+    <!--对应spring环境变量为local的日志配置，只做控制台输出配置-->
+    <springProfile name="default,dev">
+        <!--控制台日志输出配置，可以匹配色彩和高亮-->
+        <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{50}) - %yellow([%file:%line]) - %msg%n</pattern>
+            </encoder>
+        </appender>
+    </springProfile>
+
+    <springProfile name="prod">
+        <!-- 服务器上使用的appender start -->
+        <!-- 默认的file appender，按天切分日志 -->
+        <appender name="ROLLING_FILE_DEFAULT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${log.directory}/${log.context.name}/${HOSTNAME}.log</file>
+            <append>true</append>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${log.directory}/${log.context.name}/${HOSTNAME}.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>${log.maxHistory}</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${log.pattern}</pattern>
+            </encoder>
+        </appender>
+
+        <!-- 错误日志，按天切分 -->
+        <appender name="ROLLING_FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <filter class="ch.qos.logback.classic.filter.LevelFilter">
+                <level>${log.error.log.level}</level>
+                <onMatch>ACCEPT</onMatch>
+                <onMismatch>DENY</onMismatch>
+            </filter>
+            <file>${log.directory}/${log.context.name}/${HOSTNAME}_error.log</file>
+            <!-- 日志追加配置 -->
+            <append>true</append>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${log.directory}/${log.context.name}/${HOSTNAME}_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>${log.maxHistory}</maxHistory>
+            </rollingPolicy>
+            <!-- 此日志文件只记录error级别的 -->
+            <encoder>
+                <pattern>${log.pattern}</pattern>
+            </encoder>
+        </appender>
+
+        <!-- 异步写日志文件的配置 -->
+        <appender name ="ASYNC_FILE" class= "ch.qos.logback.classic.AsyncAppender">
+            <!-- 当队列达到配置队列大小的80%时，不将日志丢失 -->
+            <discardingThreshold >0</discardingThreshold>
+            <queueSize>${log.async.queue.size}</queueSize>
+            <appender-ref ref = "ROLLING_FILE_DEFAULT"/>
+        </appender>
+    </springProfile>
+
+    <!--mybatis的日志专属配置 -->
+    <logger name="jdbc.sqltiming" level="debug"/>
+    <logger name="com.ibatis" level="debug" />
+    <logger name="com.ibatis.common.jdbc.SimpleDataSource" level="debug" />
+    <logger name="com.ibatis.common.jdbc.ScriptRunner" level="debug" />
+    <logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="debug" />
+    <logger name="java.sql.Connection" level="debug" />
+    <logger name="java.sql.Statement" level="debug" />
+    <logger name="java.sql.PreparedStatement" level="debug" />
+    <logger name="java.sql.ResultSet" level="debug" />
+
+    <logger name="org.springframework" level="WARN" />
+
+    <!-- 当前项目 的不同环境的日志级别配置 -->
+    <logger name="org.laidu" level="debug" additivity="false">
+        <springProfile name="default,dev">
+            <appender-ref ref="STDOUT" />
+        </springProfile>
+
+        <springProfile name="test">
+            <appender-ref ref="ASYNC_FILE" />
+            <appender-ref ref="ROLLING_FILE_ERROR" />
+        </springProfile>
+
+        <springProfile name="prod">
+            <appender-ref ref="ASYNC_FILE" />
+            <appender-ref ref="ROLLING_FILE_ERROR" />
+        </springProfile>
+    </logger>
+
+    <root>
+        <springProfile name="default">
+            <level value="info"/>
+            <appender-ref ref="STDOUT" />
+        </springProfile>
+
+        <springProfile name="test">
+            <level value="info"/>
+
+            <appender-ref ref="ASYNC_FILE" />
+            <appender-ref ref="ROLLING_FILE_ERROR" />
+        </springProfile>
+
+        <!-- pre环境用来做压测，避免对测试环境的日志服务产生压力，日志级别设置为warn -->
+        <springProfile name="pre">
+            <level value="warn"/>
+
+            <appender-ref ref="ASYNC_FILE" />
+            <appender-ref ref="ROLLING_FILE_ERROR" />
+        </springProfile>
+
+        <!-- production为生产环境，需要记录能够定位问题或流程流转的日志，但是非必要的日志无须记录 -->
+        <springProfile name="prod">
+            <level value="info"/>
+            <appender-ref ref="ASYNC_FILE" />
+            <appender-ref ref="ROLLING_FILE_ERROR" />
+        </springProfile>
+    </root>
+
+</configuration>

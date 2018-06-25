@@ -1,5 +1,6 @@
-package org.laidu.learn.spring.data;
+package org.laidu.learn.mybatis;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,12 +9,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * <p>
  * Created by tiancai.zang on 2017-11-28 16:35.
  */
-
+@MapperScan("org.laidu.learn.mybatis.mapper")
 @SpringBootApplication
-public class Application {
+public class AmqpApp {
 
     public static void main(String[] args){
-        SpringApplication.run(Application.class);
+        SpringApplication.run(AmqpApp.class);
     }
 
 }
