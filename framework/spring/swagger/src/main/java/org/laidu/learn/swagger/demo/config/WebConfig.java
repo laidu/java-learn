@@ -1,27 +1,19 @@
 package org.laidu.learn.swagger.demo.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.laidu.learn.swagger.demo.intercaptor.RequestInterceptor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import springfox.documentation.spring.web.SpringfoxWebMvcConfiguration;
 
 /**
  * web config
  * <p>
- * Created by tiancai.zang on 2017-12-13 18:39.
+ * Created by laidu
+ * on 2018-06-28 09:45.
+ *
+ * @author laidu
  */
+// TODO: 2018-06-28 09:45  web config
 @Slf4j
-@Configuration
-// : 2017/12/13 18/39 web config
-public class WebConfig extends WebMvcConfigurerAdapter {
+public class WebConfig extends SpringfoxWebMvcConfiguration {
 
-    @Autowired
-    RequestInterceptor requestInterceptor;
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(requestInterceptor);
-    }
 }

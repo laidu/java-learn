@@ -72,8 +72,7 @@
 
         <!--mvn site-->
         <github.global.server>github</github.global.server>
-        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}
-        </github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
+        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
         <site.path>${project.artifactId}</site.path>
         <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
         <doxia-module-markdown.version>1.7</doxia-module-markdown.version>

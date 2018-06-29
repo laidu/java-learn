@@ -4,8 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.ServletRequestUtils;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,12 +15,13 @@ import java.io.InputStreamReader;
 /**
  * RequestInterceptor
  * <p>
- * Created by tiancai.zang on 2017-12-13 18:36.
+ *
+ * @author tiancai.zang
+ * @date 2017-12-13 18:36
  */
 @Slf4j
 @Component
-// : 2017/12/13 18/36 RequestInterceptor
-public class RequestInterceptor extends HandlerInterceptorAdapter {
+public class RequestInterceptor implements HandlerInterceptor {
 
     /**
      * This is not a good practice to use sysout. Always integrate any logger

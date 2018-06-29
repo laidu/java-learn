@@ -39,8 +39,13 @@ public class MethodMonitorProcessor {
     @Around("pointcut() && @annotation(monitor)")
     public Object logExecutionTime(ProceedingJoinPoint joinPoint, MethodMonitor monitor) throws Throwable {
 
-        MethodMonitor.LogPrintLogic logPrintLogic = context.getBean(monitor.logic());
-
+        MethodMonitor.LogPrintLogic logPrintLogic;
+        try {
+            logPrintLogic = context.getBean(monitor.logic());
+        }catch (Exception ex){
+            log.error("未找到日志打印逻辑： {}， 将使用默认逻辑打印日志！", monitor.logic());
+            logPrintLogic = context.getBean(DefaultLogPrintLogic.class);
+        }
         return logPrintLogic.build(joinPoint);
     }
 
