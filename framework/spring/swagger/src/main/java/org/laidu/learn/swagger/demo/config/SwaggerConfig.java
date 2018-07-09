@@ -1,6 +1,7 @@
 package org.laidu.learn.swagger.demo.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -16,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
-//@ConditionalOnExpression("'${spring.profiles.active}' == 'default' || '${spring.profiles.active}' == 'dev' || '${spring.profiles.active}' == 'test'")
+@ConditionalOnExpression("'${spring.profiles.active}' == 'default' || '${spring.profiles.active}' == 'dev' || '${spring.profiles.active}' == 'test'")
 public class SwaggerConfig {
     @Bean
     @ConditionalOnBean(SwaggerConfig.class)

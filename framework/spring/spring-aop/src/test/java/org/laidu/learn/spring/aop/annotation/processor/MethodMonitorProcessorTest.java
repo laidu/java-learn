@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 @Slf4j
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
@@ -20,5 +22,7 @@ class MethodMonitorProcessorTest {
     void logExecutionTime() {
 
         userService.addUser("xiaoming");
+
+        assertThrows(NullPointerException.class, () -> userService.addUser("小明", 123));
     }
 }

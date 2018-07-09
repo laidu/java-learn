@@ -23,15 +23,15 @@
             <responseType>json</responseType>
             <response>
                 <responseName>not_reg</responseName>
-                <attentionField>message</attentionField>
+                <attentionField>exceptionStackTrace</attentionField>
                 <attentionFieldValue></attentionFieldValue>
-                <responseSource><![CDATA[{"success":false,"code":"3","message":"该用户尚未注册!","data":{}}]]></responseSource>
+                <responseSource><![CDATA[{"success":false,"code":"3","exceptionStackTrace":"该用户尚未注册!","data":{}}]]></responseSource>
             </response>
             <response>
                 <responseName>reg</responseName>
-                <attentionField>message</attentionField>
+                <attentionField>exceptionStackTrace</attentionField>
                 <attentionFieldValue></attentionFieldValue>
-                <responseSource><![CDATA[{"success":false,"code":"3","message":"密码错误!","data":{}}]]></responseSource>
+                <responseSource><![CDATA[{"success":false,"code":"3","exceptionStackTrace":"密码错误!","data":{}}]]></responseSource>
             </response>
         </responses>
     </request>
