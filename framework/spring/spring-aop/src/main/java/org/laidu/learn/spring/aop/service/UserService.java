@@ -12,6 +12,9 @@ public interface UserService {
      * @param name
      */
     void addUser(String name);
+    default void addUser(String name, int age){
+        System.out.println(String.format("name: %s, age : %d", name, age));
+    }
 
     /**
      * @param name

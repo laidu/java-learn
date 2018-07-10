@@ -77,16 +77,16 @@
         //责任链中的下一个元素
         private AbstractLogger nextLogger;
     
-        public void logMessage(int level, String message) {
+        public void logMessage(int level, String exceptionStackTrace) {
             if (this.level == level) {
-                write(message);
+                write(exceptionStackTrace);
             }
             if (nextLogger != null) {
-                nextLogger.logMessage(level, message);
+                nextLogger.logMessage(level, exceptionStackTrace);
             }
         }
     
-        abstract protected void write(String message);
+        abstract protected void write(String exceptionStackTrace);
     }
 
 > ConcreteLoggerDebug:
@@ -98,8 +98,8 @@
             super(DEBUG);
         }
         @Override
-        protected void write(String message) {
-            log.debug("-*--*--*--*- {} -*--*--*--*--",message);
+        protected void write(String exceptionStackTrace) {
+            log.debug("-*--*--*--*- {} -*--*--*--*--",exceptionStackTrace);
         }
     }
     
@@ -112,8 +112,8 @@
             super(ERROR);
         }
         @Override
-        protected void write(String message) {
-            log.error("-*--*--*--*- {} -*--*--*--*--",message);
+        protected void write(String exceptionStackTrace) {
+            log.error("-*--*--*--*- {} -*--*--*--*--",exceptionStackTrace);
         }
     }
     
@@ -126,8 +126,8 @@
             super(INFO);
         }
         @Override
-        protected void write(String message) {
-            log.info("-*--*--*--*- {} -*--*--*--*--",message);
+        protected void write(String exceptionStackTrace) {
+            log.info("-*--*--*--*- {} -*--*--*--*--",exceptionStackTrace);
         }
     }
 
