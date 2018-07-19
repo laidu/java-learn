@@ -1,12 +1,14 @@
 package org.laidu.learn.spring.mvc.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.mvc.service.HelloService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import xyz.xpcoder.commons.common.monitor.annoation.MethodMonitor;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Random;
 
 /**
@@ -22,13 +24,17 @@ import java.util.Random;
 @RequestMapping("/")
 public class HomeController {
 
+    @Autowired
+    HelloService helloService;
+
     @GetMapping("/hello")
-    public String hello(HttpServletRequest request) throws InterruptedException {
+//    @MethodMonitor
+    public String hello() throws InterruptedException {
 
 //        Thread.sleep(500);
 //        log.info("url : {}",  request.getRequestURI());
         log.info("active Thread count: {}", Thread.activeCount());
-        return "hello";
+        return helloService.sayHello();
     }
 
     @GetMapping("/sleep")
@@ -39,6 +45,7 @@ public class HomeController {
     }
 
     @GetMapping("/sleepRandom")
+    @MethodMonitor
     public Integer sleepRandom(@RequestParam("sec") int secends ) throws InterruptedException {
 
         Thread.sleep(new Random(100).nextInt(secends) * 1000);

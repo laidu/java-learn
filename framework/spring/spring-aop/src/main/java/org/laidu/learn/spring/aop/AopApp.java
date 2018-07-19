@@ -15,6 +15,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @author tiancai.zang
  */
 @Slf4j
+//@EnableMonitor
 @SpringBootApplication
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AopApp {

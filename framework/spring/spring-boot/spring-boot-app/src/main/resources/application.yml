@@ -49,3 +49,8 @@ management:
 debug: false
 trace: false
 
+monitor:
+  project-name: app
+
+
+

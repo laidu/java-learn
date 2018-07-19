@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @MethodMonitor
+    @xyz.xpcoder.commons.common.monitor.annoation.MethodMonitor
     public void addUser(String name, int age) {
         log.info("name: {}, age : {}", name, age);
         throw new NullPointerException();
