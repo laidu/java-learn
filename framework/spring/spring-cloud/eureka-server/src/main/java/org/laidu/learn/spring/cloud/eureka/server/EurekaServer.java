@@ -1,7 +1,6 @@
 package org.laidu.learn.spring.cloud.eureka.server;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * eurrka server
