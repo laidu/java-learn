@@ -34,6 +34,8 @@
         <fastjson.version>1.2.45</fastjson.version>
         <jackson.version>2.9.1</jackson.version>
 
+        <dom4j.version>2.1.1</dom4j.version>
+
         <httpcore.version>4.4.8</httpcore.version>
         <httpclient.version>4.5.3</httpclient.version>
 
@@ -174,6 +176,14 @@
             <artifactId>jackson-annotations</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+
+        <!--xml-->
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>${dom4j.version}</version>
+        </dependency>
+
 
         <!--serialization-->
         <dependency>
