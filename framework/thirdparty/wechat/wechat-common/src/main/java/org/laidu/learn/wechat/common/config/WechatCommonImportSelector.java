@@ -12,7 +12,6 @@ import org.springframework.core.type.AnnotationMetadata;
  *
  * @author laidu
  */
-// TODO: 2018-07-20 14:56  微信
 @Slf4j
 public class WechatCommonImportSelector implements ImportSelector {
 

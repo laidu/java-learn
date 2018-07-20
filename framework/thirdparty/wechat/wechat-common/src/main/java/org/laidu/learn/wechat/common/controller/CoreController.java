@@ -1,7 +1,9 @@
 package org.laidu.learn.wechat.common.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import me.chanjar.weixin.common.api.WxConsts;
 import me.chanjar.weixin.common.error.WxErrorException;
+import me.chanjar.weixin.mp.AiLangType;
 import me.chanjar.weixin.mp.api.WxMpConfigStorage;
 import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlMessage;
@@ -15,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -30,20 +33,24 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class CoreController extends GenericController {
 
-    @Autowired
-    protected WxMpConfigStorage configStorage;
-    @Autowired
-    protected WxMpService wxMpService;
-    @Autowired
-    protected CoreService coreService;
+    private final WxMpConfigStorage configStorage;
+    private final WxMpService wxMpService;
+    private final CoreService coreService;
 
-    @Autowired
-    private StringRedisTemplate redisTemplate;
+    private final StringRedisTemplate redisTemplate;
 
     @Value("${msgQueueKey:msg}")
     private String msgQueueKey;
 
-    @RequestMapping(value = "/index")
+    @Autowired
+    public CoreController(WxMpConfigStorage configStorage, WxMpService wxMpService, CoreService coreService, StringRedisTemplate redisTemplate) {
+        this.configStorage = configStorage;
+        this.wxMpService = wxMpService;
+        this.coreService = coreService;
+        this.redisTemplate = redisTemplate;
+    }
+
+    @GetMapping(value = "/index")
     public String index() {
         return "index";
     }
@@ -85,8 +92,18 @@ public class CoreController extends GenericController {
             if (outMessage == null) {
                 response.getWriter().write("");
             } else {
-                redisTemplate.opsForList().leftPush(msgQueueKey,inMessage.getContent());
-                response.getWriter().write("弹幕内容： "+inMessage.getContent());
+                String openid = inMessage.getFromUser();
+                WxMpUser wxMpUser = this.wxMpService.getUserService().userInfo(openid, "zh_CN");
+
+                String msg = inMessage.getContent() ;
+                if (WxConsts.MassMsgType.VOICE.equals(inMessage.getMsgType())) {
+                    msg =  wxMpService.getAiOpenService().queryRecognitionResult(inMessage.getMediaId(), AiLangType.zh_CN);
+                }
+                if (!"【收到不支持的消息类型，暂无法显示】".equals(msg)) {
+                    redisTemplate.opsForList().leftPush(msgQueueKey,"来自用户 "+wxMpUser.getNickname()+" : " + msg);
+                }
+
+
                 response.getWriter().write(outMessage.toXml());
             }
             return;
