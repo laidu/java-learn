@@ -1,7 +1,9 @@
 package org.laidu.learn.spring.cloud;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
@@ -13,5 +15,9 @@ public class ServiceHelloApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServiceHelloApplication.class, args);
+		new SpringApplicationBuilder(ServiceHelloApplication.class)
+				.logStartupInfo(false)
+				.bannerMode(Banner.Mode.OFF)
+				.run(args);
 	}
 }
