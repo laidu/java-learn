@@ -16,6 +16,7 @@
         <module>consumer-hello</module>
         <module>eureka-server</module>
         <module>service-hello</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <properties>

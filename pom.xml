@@ -248,30 +248,6 @@
                         </configuration>
                     </execution>
                 </executions>
-                <!--<configuration>-->
-                <!--<skipDeploy>true</skipDeploy>-->
-                <!--<reportPlugins>-->
-                <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-project-info-reports-plugin</artifactId>-->
-                <!--<version>${maven-project-info-reports-plugin.version}</version>-->
-                <!--<configuration>-->
-                <!--<dependencyDetailsEnabled>false</dependencyDetailsEnabled>-->
-                <!--<dependencyLocationsEnabled>false</dependencyLocationsEnabled>-->
-                <!--</configuration>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-surefire-report-plugin</artifactId>-->
-                <!--<version>2.20.1</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
-                <!--<version>2.17</version>-->
-                <!--</plugin>-->
-                <!--</reportPlugins>-->
-                <!--</configuration>-->
             </plugin>
 
             <plugin>
@@ -306,27 +282,31 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-            <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<artifactId>maven-pdf-plugin</artifactId>-->
-            <!--<version>1.4</version>-->
-            <!--<configuration>-->
-            <!--<locales>en,fr</locales>-->
-            <!--</configuration>-->
-            <!--<executions>-->
-            <!--<execution>-->
-            <!--<id>pdf</id>-->
-            <!--<phase>site</phase>-->
-            <!--<goals>-->
-            <!--<goal>pdf</goal>-->
-            <!--</goals>-->
-            <!--<configuration>-->
-            <!--<outputDirectory>${project.reporting.outputDirectory}</outputDirectory>-->
-            <!--<includeReports>false</includeReports>-->
-            <!--</configuration>-->
-            <!--</execution>-->
-            <!--</executions>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-maven-plugin</artifactId>
+                <version>0.14.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>ajc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjtools</artifactId>
+                        <version>1.9.1</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
 
             <plugin>
                 <groupId>com.github.github</groupId>
@@ -335,11 +315,10 @@
 
                 <configuration>
                     <message>Creating site for ${project.artifactId}, ${project.version}</message>
-                    <!-- this does the trick to place every module in the correct subfolder -->
                     <path>${project.distributionManagement.site.url}</path>
                     <branch>refs/heads/master</branch>
                     <force>true</force>
-                    <!--<noJekyll>true</noJekyll>-->
+                    <noJekyll>true</noJekyll>
                     <merge>true</merge>
                 </configuration>
                 <executions>
@@ -347,7 +326,7 @@
                         <goals>
                             <goal>site</goal>
                         </goals>
-                        <phase>site</phase>
+                        <phase>site-deploy</phase>
                     </execution>
                 </executions>
             </plugin>

@@ -14,7 +14,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class ServiceHelloApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceHelloApplication.class, args);
 		new SpringApplicationBuilder(ServiceHelloApplication.class)
 				.logStartupInfo(false)
 				.bannerMode(Banner.Mode.OFF)

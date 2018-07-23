@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import xyz.xpcoder.commons.common.monitor.annoation.MethodMonitor;
 
 import java.util.Random;
 
@@ -28,7 +27,6 @@ public class HomeController {
     HelloService helloService;
 
     @GetMapping("/hello")
-//    @MethodMonitor
     public String hello() throws InterruptedException {
 
 //        Thread.sleep(500);
@@ -45,7 +43,6 @@ public class HomeController {
     }
 
     @GetMapping("/sleepRandom")
-    @MethodMonitor
     public Integer sleepRandom(@RequestParam("sec") int secends ) throws InterruptedException {
 
         Thread.sleep(new Random(100).nextInt(secends) * 1000);

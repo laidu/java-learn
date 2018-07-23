@@ -1,23 +1,26 @@
-package org.laidu.learn.spring.mvc;
+package org.laidu.learn.spring.cloud.hystrix;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 /**
- * spring mvc app
+ * hystrix-dashboard
  * <p>
  * Created by tiancai.zang
- * on 2018-05-30 11:29.
+ * on 2018-07-23 21:57.
  */
 @Slf4j
+@EnableHystrixDashboard
 @SpringBootApplication
-public class MvcApp {
+public class HystrixDashApp {
 
     public static void main(String[] args) {
 
-        new SpringApplicationBuilder(MvcApp.class)
+
+        new SpringApplicationBuilder(HystrixDashApp.class)
                 .logStartupInfo(false)
                 .bannerMode(Banner.Mode.OFF)
                 .run(args);
