@@ -5,9 +5,7 @@ import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.SocketException;
-import java.net.URLEncoder;
 import java.nio.charset.Charset;
 
 /**
@@ -45,7 +43,7 @@ public class LinuxIDCBrower {
 
     public static void listAllFiles(FTPClient client, String path) throws IOException {
 
-        String pathName = new String(path.getBytes("GBK"),"iso-8859-1");
+        String pathName = new String(path.getBytes("GBK"), "iso-8859-1");
         if (client.changeWorkingDirectory(pathName)) {
             FTPFile[] fs = client.listFiles(pathName);
 
@@ -55,13 +53,13 @@ public class LinuxIDCBrower {
                     continue;
                 }
                 if (ftpFile.isFile()) {
-                    System.out.println(ftpFile.getName()+" >>>> "+path+"/"+ftpFile.getName());
+                    System.out.println(ftpFile.getName() + " >>>> " + path + "/" + ftpFile.getName());
                 } else if (ftpFile.isDirectory()) {
                     listAllFiles(client, path + "/" + ftpFile.getName());
                 }
             }
-        }else {
-            log.error(" change dir {} error",path);
+        } else {
+            log.error(" change dir {} error", path);
         }
 
     }

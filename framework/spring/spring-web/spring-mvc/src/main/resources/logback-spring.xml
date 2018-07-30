@@ -2,8 +2,8 @@
 <!-- configuration file for LogBack (slf4J implementation)
 See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
 <configuration >
-<!-- To enable JMX Management -->
-    <jmxConfigurator/>
+
+    <include resource="jar!xyz/xpcoder/commons/common/monitor/logback-monitor.xml"/>
 
     <!--获取spring properties 配置-->
     <springProperty scope="context" name="mdc-uuid" source="mvc.logbackUuid" defaultValue="_uuid"/>

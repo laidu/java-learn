@@ -1,0 +1,13 @@
+
+# 测试号
+wechat:
+  appId: wx2753c5a78925a382
+  appSecret: f55fa3dc82b91473fd9ceb6f8ac8cbd5
+  token: laidu823
+server:
+  port: 8080
+spring:
+  redis:
+    host: local-dev
+    port: 6379
+    database: 0

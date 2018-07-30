@@ -8,5 +8,6 @@ package org.laidu.learn.spring.cloud.consumer.service;
  */
 public interface HelloService {
 
+    String hello();
 
 }

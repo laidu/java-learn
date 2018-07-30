@@ -1,11 +1,10 @@
 package org.laidu.learn.spring.cloud.consumer.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.laidu.learn.spring.cloud.consumer.service.HelloService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @author tiancai.zang
@@ -16,15 +15,17 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/")
 public class HelloConsumerController {
 
-    private final RestTemplate restTemplate;
 
-    @Autowired
-    public HelloConsumerController(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    private final HelloService helloService;
+
+    public HelloConsumerController(HelloService helloService) {
+        this.helloService = helloService;
     }
+
 
     @GetMapping("/hello-consumer")
     public String helloConsumer(){
-        return restTemplate.getForEntity("http://HELLO-SERVICE/hello",String.class).getBody();
+
+        return helloService.hello();
     }
 }

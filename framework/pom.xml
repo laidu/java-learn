@@ -24,6 +24,7 @@
         <module>aws</module>
         <module>compress</module>
         <module>task-scheduler</module>
+        <module>thirdparty</module>
     </modules>
 
     <properties>

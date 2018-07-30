@@ -20,6 +20,12 @@
         </dependency>
 
         <dependency>
+            <groupId>xyz.xpcoder.commons</groupId>
+            <artifactId>monitor-spring-boot-starter</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+
+        <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
         </dependency>

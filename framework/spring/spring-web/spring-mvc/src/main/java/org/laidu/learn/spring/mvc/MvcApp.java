@@ -1,8 +1,9 @@
 package org.laidu.learn.spring.mvc;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
  * spring mvc app
@@ -16,6 +17,9 @@ public class MvcApp {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(MvcApp.class,args);
+        new SpringApplicationBuilder(MvcApp.class)
+                .logStartupInfo(false)
+                .bannerMode(Banner.Mode.OFF)
+                .run(args);
     }
 }

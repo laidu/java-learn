@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Override
-//    @MethodMonitor(logic = UserServiceLogLogic.class)
     @MethodMonitor
     public void addUser(String name) {
         log.info("addUser: {}", name);
