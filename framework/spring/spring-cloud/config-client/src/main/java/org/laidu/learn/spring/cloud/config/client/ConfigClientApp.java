@@ -5,6 +5,7 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 配置中心 客户端
@@ -13,6 +14,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * on 2018-07-30 22:25.
  */
 @Slf4j
+@EnableDiscoveryClient
 @SpringBootApplication
 public class ConfigClientApp {
 

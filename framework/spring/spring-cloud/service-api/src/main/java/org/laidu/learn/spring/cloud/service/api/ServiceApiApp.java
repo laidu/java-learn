@@ -1,30 +1,27 @@
-package org.laidu.learn.spring.cloud.config.server;
+package org.laidu.learn.spring.cloud.service.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * 配置服务
+ * 服务网关
  * <p>
  * Created by tiancai.zang
- * on 2018-07-30 21:30.
+ * on 2018-07-31 22:35.
  */
 @Slf4j
-@EnableConfigServer
-@EnableDiscoveryClient
+@EnableZuulProxy
 @SpringBootApplication
-public class ConfigServerApp {
-
+public class ServiceApiApp {
 
     public static void main(String[] args) {
 
-        new SpringApplicationBuilder(ConfigServerApp.class)
-                .logStartupInfo(false)
+        new SpringApplicationBuilder(ServiceApiApp.class)
                 .bannerMode(Banner.Mode.OFF)
+                .logStartupInfo(false)
                 .run(args);
     }
 }
