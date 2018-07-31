@@ -27,7 +27,7 @@ public class DateUsage {
         log.info("-*--*--*--*- 日 : {}-*--*--*--*--",localDate.getDayOfMonth());
         log.info("-*--*--*--*- 星期 : {}-*--*--*--*--",localDate.getDayOfWeek());
 
-        // LocalTime usgae
+        // LocalTime usage
 
         LocalTime localTime = LocalTime.now();
 
