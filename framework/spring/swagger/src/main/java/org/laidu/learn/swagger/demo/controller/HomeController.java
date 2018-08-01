@@ -2,6 +2,7 @@ package org.laidu.learn.swagger.demo.controller;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.swagger.demo.model.Product;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +25,7 @@ public class HomeController {
     @GetMapping("/query/{id}")
     @ApiOperation("query product by id")
     @ApiParam(value = "id")
+    @ApiResponse(code = 100, message = "123321" , response = Product.class)
     public Product query(@PathVariable String id){
         return Product.builder()
                 .id(id)

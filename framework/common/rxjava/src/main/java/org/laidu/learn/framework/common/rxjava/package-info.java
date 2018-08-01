@@ -6,4 +6,4 @@
  *
  * @author laidu
  */
-package org.laidu.learn.framework.commons.rxjava;
+package org.laidu.learn.framework.common.rxjava;
