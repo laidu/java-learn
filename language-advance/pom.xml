@@ -19,6 +19,7 @@
         <module>io</module>
         <module>script</module>
         <module>xml</module>
+        <module>gui</module>
     </modules>
 
     <properties>
