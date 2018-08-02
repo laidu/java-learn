@@ -23,7 +23,8 @@ monitor:
   log-path: logs/
   log-type: monitor
 
-
-
-
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
