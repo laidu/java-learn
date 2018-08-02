@@ -96,7 +96,6 @@
 
     <dependencyManagement>
         <dependencies>
-
             <!--logback encoder start-->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
@@ -104,7 +103,6 @@
                 <version>${logstash-logback.version}</version>
             </dependency>
             <!--logback encoder end-->
-
 
         </dependencies>
     </dependencyManagement>
@@ -306,7 +304,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
 
             <plugin>
                 <groupId>com.github.github</groupId>
