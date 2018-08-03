@@ -248,21 +248,20 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-publish-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>scm-publish</id>
-                        <phase>site-deploy</phase>
-                        <goals>
-                            <goal>publish-scm</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-scm-publish-plugin</artifactId>-->
+                <!--<version>3.0.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>scm-publish</id>-->
+                        <!--<phase>site-deploy</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>publish-scm</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
