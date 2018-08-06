@@ -13,6 +13,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 public class ConcreteSubject extends AbstractSubject{
 
+    @Override
     public void request(String name){
         System.out.println(String.format("request %s ",name));
     }
