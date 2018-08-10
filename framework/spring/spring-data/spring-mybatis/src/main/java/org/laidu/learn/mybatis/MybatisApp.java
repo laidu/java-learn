@@ -11,10 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @MapperScan("org.laidu.learn.mybatis.mapper")
 @SpringBootApplication
-public class AmqpApp {
+public class MybatisApp {
 
     public static void main(String[] args){
-        SpringApplication.run(AmqpApp.class);
+        SpringApplication.run(MybatisApp.class);
     }
 
 }

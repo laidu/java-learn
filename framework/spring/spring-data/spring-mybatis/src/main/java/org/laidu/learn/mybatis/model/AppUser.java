@@ -3,7 +3,14 @@ package org.laidu.learn.mybatis.model;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author laidu
+ */
 public class AppUser implements Serializable {
+
+
+    private static final long serialVersionUID = 1L;
+
     private Long id;
 
     private String openId;
@@ -51,9 +58,7 @@ public class AppUser implements Serializable {
     private String remark;
 
     private String idCardPolice;
-
-    private static final long serialVersionUID = 1L;
-
+    
     public Long getId() {
         return id;
     }

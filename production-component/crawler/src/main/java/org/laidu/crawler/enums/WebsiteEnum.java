@@ -1,7 +1,5 @@
 package org.laidu.crawler.enums;
 
-import org.laidu.commom.util.enums.BasicCodeEnum;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +10,11 @@ import java.util.Map;
  * 2018-01-09 16:15.
  */
 // : 2018-01-09 16:15  web site enum
-public enum WebsiteEnum implements BasicCodeEnum{
+public enum WebsiteEnum {
+
+    /**
+     * baidu
+     */
     BAIDU("001","baidu");
 
     private final String code;
@@ -28,18 +30,15 @@ public enum WebsiteEnum implements BasicCodeEnum{
         this.name = name;
     }
 
-    @Override
     public String getCode() {
         return code;
     }
 
-    @Override
     public String getMsg() {
         return name;
     }
 
-    @Override
-    public BasicCodeEnum getEnumByCode(String code) {
+    public WebsiteEnum getEnumByCode(String code) {
         return valueMap.get(code);
     }
 }
