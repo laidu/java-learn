@@ -28,3 +28,23 @@ management:
     web:
       exposure:
         include: "*"
+
+logging.level.org.zalando.logbook: TRACE
+
+logbook:
+  exclude:
+  - /health
+  - /admin/**
+  filter.enabled: true
+  format.style: json
+  obfuscate:
+    headers:
+    - Authorization
+    - X-Secret
+    parameters:
+    - access_token
+    - password
+  write:
+    category: http.wire-log
+    level: INFO
+    chunk-size: 1000
