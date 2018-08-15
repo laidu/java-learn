@@ -15,5 +15,9 @@
         <module>webmagic-learn</module>
     </modules>
 
+    <properties>
+        <webmagic.version>0.7.3</webmagic.version>
+    </properties>
+
 
 </project>

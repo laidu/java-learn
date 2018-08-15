@@ -13,16 +13,14 @@
     <packaging>pom</packaging>
     <description>可用于实际项目中的小工具</description>
 
-    <properties>
-        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
-        <shade.version>3.1.1</shade.version>
-    </properties>
-
     <modules>
         <module>common-util</module>
         <module>crawler-helper</module>
         <module>crawler</module>
     </modules>
 
-
+    <properties>
+        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+        <shade.version>3.1.1</shade.version>
+    </properties>
 </project>
