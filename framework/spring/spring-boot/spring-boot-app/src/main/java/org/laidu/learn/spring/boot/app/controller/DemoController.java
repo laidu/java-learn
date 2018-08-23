@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
  * <p>
  * Created by tiancai.zang
  * on 2018-05-09 22:48.
+ * @author laidu
  */
 @Slf4j
 @Timed
@@ -27,7 +28,7 @@ public class DemoController {
     @GetMapping("/hello")
     @Timed(extraTags = { "region", "us-east-1" })
     @Timed(value = "all.people", longTask = true)
-    public String demo(){
+    public String hello(){
         return "hello";
     }
 }

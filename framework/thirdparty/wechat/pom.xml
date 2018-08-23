@@ -25,11 +25,11 @@
 
         <dependencies>
 
-            <dependency>
-                <groupId>com.github.binarywang</groupId>
-                <artifactId>weixin-java-tools-springmvc</artifactId>
-                <version>${wechat-java-tools.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.github.binarywang</groupId>-->
+                <!--<artifactId>weixin-java-tools-springmvc</artifactId>-->
+                <!--<version>${wechat-java-tools.version}</version>-->
+            <!--</dependency>-->
 
             <!--微信小程序：weixin-java-miniapp-->
             <dependency>

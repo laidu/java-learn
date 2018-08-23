@@ -18,9 +18,9 @@ import java.nio.charset.Charset;
 public class LinuxIDCBrower {
 
     //1~5
-    private final static String HOST = "ftp1.linuxidc.com";
+    private final static String HOST = "http://linux.linuxidc.com";
     private final static int PORT = 21;
-    private final static String USER_NAME = "ftp1.linuxidc.com";
+    private final static String USER_NAME = "www.linuxidc.com";
     private final static String PASSWORD = "www.linuxidc.com";
     private final static String encoding = "gb2312";
 

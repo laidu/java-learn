@@ -1,0 +1,5 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: service-api

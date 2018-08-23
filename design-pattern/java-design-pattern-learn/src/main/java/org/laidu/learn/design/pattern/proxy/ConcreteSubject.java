@@ -1,6 +1,7 @@
 package org.laidu.learn.design.pattern.proxy;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 真实主题角色
@@ -9,8 +10,10 @@ import lombok.Data;
  * Time: 上午11:29
  */
 @Data
+@EqualsAndHashCode
 public class ConcreteSubject extends AbstractSubject{
 
+    @Override
     public void request(String name){
         System.out.println(String.format("request %s ",name));
     }

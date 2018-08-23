@@ -11,7 +11,23 @@
 
     <artifactId>spring-mvc</artifactId>
 
+    <properties>
+        <logbook.version>1.9.0</logbook.version>
+    </properties>
+
     <dependencies>
+
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>logbook-spring-boot-starter</artifactId>
+            <version>${logbook.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.laidu.learn.swagger</groupId>
+            <artifactId>swagger</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

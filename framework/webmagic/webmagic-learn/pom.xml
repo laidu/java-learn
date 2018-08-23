@@ -11,16 +11,7 @@
 
     <artifactId>webmagic-learn</artifactId>
 
-    <properties>
-        <webmagic.version>1.0.0</webmagic.version>
-    </properties>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
 
     <dependencies>
 
@@ -32,7 +23,7 @@
         <dependency>
             <groupId>us.codecraft</groupId>
             <artifactId>webmagic-core</artifactId>
-            <version>0.7.3</version>
+            <version>${webmagic.version}</version>
         </dependency>
 
     </dependencies>

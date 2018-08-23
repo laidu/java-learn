@@ -16,6 +16,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
     <conversionRule conversionWord="wEx"
                     converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter" />
+
     <!-- 彩色日志格式 -->
     <property name="CONSOLE_LOG_PATTERN"
               value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}" />
@@ -39,7 +40,6 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
             <fileNamePattern>${LOG_HOME}/${APP_NAME}.log.%d{yyyy-MM-dd}.log</fileNamePattern>
-
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
 
@@ -93,17 +93,26 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
         </filter>
     </appender>
 
-    <appender name="DruidFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="sql_file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <file>${LOG_HOME}/${APP_NAME}-query-sql.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名 -->
-            <FileNamePattern>${LOG_HOME}/${APP_NAME}-query.log-druid-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>${LOG_HOME}/${APP_NAME}-query-sql-%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
             <MaxHistory>90</MaxHistory>
         </rollingPolicy>
+
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
-            <pattern>%X{${MDC_UUID}} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+        <pattern> %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
         </encoder>
+
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <customFields>{"app":"sql-log"}</customFields>
+        </encoder>
+
+
     </appender>
 
     
@@ -118,9 +127,8 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </logger>
 
 
-    <logger name="druid" level="DEBUG">
-        <appender-ref ref="console" />
-        <appender-ref ref="DruidFILE" />
+    <logger name="org.laidu.learn.mybatis" level="debug">
+        <appender-ref ref="sql_file" />
     </logger>
 
     <root level="info">

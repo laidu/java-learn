@@ -1,6 +1,7 @@
 package org.laidu.learn.spring.mvc.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.mvc.model.Result;
 import org.laidu.learn.spring.mvc.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,12 +28,11 @@ public class HomeController {
     HelloService helloService;
 
     @GetMapping("/hello")
-    public String hello() throws InterruptedException {
+    public Result<String> hello() throws InterruptedException {
 
-//        Thread.sleep(500);
-//        log.info("url : {}",  request.getRequestURI());
         log.info("active Thread count: {}", Thread.activeCount());
-        return helloService.sayHello();
+
+        return Result.ok(helloService.sayHello());
     }
 
     @GetMapping("/sleep")

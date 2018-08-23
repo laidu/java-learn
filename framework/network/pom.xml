@@ -16,5 +16,6 @@
         <module>async-http-client</module>
         <module>netty</module>
         <module>httpclient</module>
+        <module>web-client</module>
     </modules>
 </project>
