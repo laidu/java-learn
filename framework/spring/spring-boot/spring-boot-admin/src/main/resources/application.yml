@@ -1,14 +1,21 @@
 spring:
+#  jackson:
+#    property-naming-strategy: SNAKE_CASE
   boot:
     admin:
       client:
-        url: http://localhost:2222
-#  jackson:
-#    property-naming-strategy: SNAKE_CASE
-  application:
-    name: spring-boot-app-1
+        enabled: true
+        auto-registration: true
+        url: "http://localhost:2222"
+        api-path: instances
+      ui:
+        cache:
+          no-store: true
 
 management:
+  server:
+    port: 9998
+    address: localhost
   endpoint:
     health:
       show-details: always
@@ -22,7 +29,6 @@ management:
     enabled-by-default: true
     jmx:
       exposure:
-
         include: "*"
     web:
       exposure:
@@ -33,6 +39,14 @@ management:
       atlas:
         enabled: true
         step: 1s
+      graphite:
+        host: localhost
+        port: 2004
+        enabled: true
+        step: 1s
+        protocol: pickled
     binders:
       jvm:
         enabled: true
+server:
+  port: 2222

@@ -1,0 +1,34 @@
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+management:
+  server:
+    port: 9999
+    address: local-dev
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+    metrics:
+      enabled: true
+    info:
+      enabled: true
+  endpoints:
+    enabled-by-default: true
+    jmx:
+      exposure:
+        include: "*"
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 1111
