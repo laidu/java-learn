@@ -1,4 +1,4 @@
-# This dockerfile uses the logstash:6.2.2 image
+# This Dockerfile uses the logstash:6.2.2 image
 # VERSION 1 - EDITION 1
 # Author: laidu
 

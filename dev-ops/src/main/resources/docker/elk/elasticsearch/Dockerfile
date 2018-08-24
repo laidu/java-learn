@@ -1,4 +1,4 @@
-# This dockerfile uses the elasticsearch-platinum:6.2.2 image
+# This Dockerfile uses the elasticsearch-platinum:6.2.2 image
 # VERSION 1 - EDITION 1
 # Author: laidu
 
