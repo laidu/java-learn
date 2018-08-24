@@ -11,6 +11,27 @@ spring:
       ui:
         cache:
           no-store: true
+      notify:
+        mail:
+          to: tiancai.zang@finlink.net.cn
+          from: laidu823@sina.com
+  mail:
+    host: smtp.sina.com
+    username: laidu823@sina.com
+    password: ${sina_password}
+    default-encoding: utf-8
+    port: 465
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            required: false
+            enable: false
+          ssl:
+            enable: true
+
 
 management:
   server:
