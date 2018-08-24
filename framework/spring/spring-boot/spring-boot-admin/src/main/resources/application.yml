@@ -1,6 +1,6 @@
 spring:
-#  jackson:
-#    property-naming-strategy: SNAKE_CASE
+  jackson:
+    property-naming-strategy: SNAKE_CASE
   boot:
     admin:
       client:
@@ -18,7 +18,7 @@ spring:
   mail:
     host: smtp.sina.com
     username: laidu823@sina.com
-    password: ${sina_password}
+    password: ${sina_password} # 通过环境变量获取
     default-encoding: utf-8
     port: 465
     test-connection: true
