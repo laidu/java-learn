@@ -1,4 +1,4 @@
-# This dockerfile for apache kafka 1.1.0
+# This Dockerfile for apache kafka 1.1.0
 # Requirement: zookeeper
 # VERSION 1 - EDITION 1
 # Author: laidu
