@@ -17,5 +17,54 @@
         <module>netty</module>
         <module>httpclient</module>
         <module>web-client</module>
+        <module>retrofit</module>
     </modules>
+
+
+    <properties>
+        <retrofit.version>2.4.0</retrofit.version>
+        <async-http-client.version>2.1.0-alpha24</async-http-client.version>
+
+        <spring-webflux.version>5.0.8.RELEASE</spring-webflux.version>
+        <reactor-netty.version>0.7.8.RELEASE</reactor-netty.version>
+
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>converter-jackson</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.asynchttpclient</groupId>
+                <artifactId>async-http-client</artifactId>
+                <version>${async-http-client.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.projectreactor.ipc</groupId>
+                <artifactId>reactor-netty</artifactId>
+                <version>${reactor-netty.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webflux</artifactId>
+                <version>${spring-webflux.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 </project>
