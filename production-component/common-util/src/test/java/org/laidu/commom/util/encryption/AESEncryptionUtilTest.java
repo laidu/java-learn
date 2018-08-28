@@ -1,7 +1,7 @@
 package org.laidu.commom.util.encryption;
 
 import jodd.util.Base64;
-import jodd.util.URLDecoder;
+import jodd.net.URLDecoder;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;

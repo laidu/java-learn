@@ -20,6 +20,7 @@
         <module>apache-poi</module>
         <module>shiro</module>
         <module>rxjava</module>
+        <module>jodd</module>
     </modules>
 
     <properties>
@@ -28,6 +29,7 @@
         <apache-poi.version>3.17</apache-poi.version>
         <apache-shiro.version>1.3.2</apache-shiro.version>
         <rxjava.version>2.1.17</rxjava.version>
+        <jodd.version>5.0.4</jodd.version>
     </properties>
 
     <dependencyManagement>
@@ -66,6 +68,20 @@
                 <groupId>io.reactivex.rxjava2</groupId>
                 <artifactId>rxjava</artifactId>
                 <version>${rxjava.version}</version>
+            </dependency>
+
+
+            <!--jodd-->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-core</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-bean</artifactId>
+                <version>${jodd.version}</version>
             </dependency>
 
 
