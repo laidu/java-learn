@@ -20,14 +20,25 @@
         <module>script</module>
         <module>xml</module>
         <module>gui</module>
+        <module>bytecode</module>
     </modules>
 
     <properties>
-
+        <aspectj.version>1.9.1</aspectj.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

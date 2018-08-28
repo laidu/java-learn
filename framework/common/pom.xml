@@ -84,6 +84,13 @@
                 <version>${jodd.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-http</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+
+
 
         </dependencies>
     </dependencyManagement>
