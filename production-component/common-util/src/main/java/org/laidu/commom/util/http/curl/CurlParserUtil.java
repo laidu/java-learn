@@ -1,7 +1,7 @@
 package org.laidu.commom.util.http.curl;
 
+import jodd.net.URLDecoder;
 import jodd.util.StringUtil;
-import jodd.util.URLDecoder;
 import org.laidu.commom.util.regex.RegexUtil;
 
 import java.util.HashMap;

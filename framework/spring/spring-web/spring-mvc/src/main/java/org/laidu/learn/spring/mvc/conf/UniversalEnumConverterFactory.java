@@ -35,6 +35,7 @@ public class UniversalEnumConverterFactory implements ConverterFactory<String, N
     class IntegerStrToEnum<T extends NameValueEnum> implements Converter<String, T> {
 
         private final Class<T> enumType;
+
         private Map<String, T> enumMap = new HashMap<>();
 
         public IntegerStrToEnum(Class<T> enumType) {

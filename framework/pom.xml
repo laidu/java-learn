@@ -32,9 +32,6 @@
         <apache-commons-lang3.version>3.6</apache-commons-lang3.version>
         <apache-commons-text.version>1.1</apache-commons-text.version>
 
-
-        <async-http-client.version>2.1.0-alpha24</async-http-client.version>
-
         <!--google-->
         <auto-value.version>1.5</auto-value.version>
 
@@ -48,11 +45,6 @@
     <dependencyManagement>
         <dependencies>
 
-            <dependency>
-                <groupId>org.asynchttpclient</groupId>
-                <artifactId>async-http-client</artifactId>
-                <version>${async-http-client.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.typesafe.play</groupId>
