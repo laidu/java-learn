@@ -12,6 +12,7 @@ public class AopDemo {
 
 
     public static void main(String[] args) {
+
         UserService userService = new UserService();
         System.out.println(userService.fetchUserById(234));
     }
@@ -19,6 +20,8 @@ public class AopDemo {
     public static class UserService {
 
         @LogStartTime("Hello World")
+        @LogStartTime1("Hello 1")
+        @LogStartTime0("Hello 0")
         public String fetchUserById(int userId) {
             try {
                 Thread.sleep(1000);
