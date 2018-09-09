@@ -11,12 +11,6 @@ import java.util.Date;
 @Slf4j
 public class DateUsage {
 
-    public void text(){
-
-
-    }
-
-
     public static void main(String[] args) {
 
         // LocalDate usage
