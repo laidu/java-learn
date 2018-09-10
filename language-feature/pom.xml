@@ -14,14 +14,4 @@
     <packaging>jar</packaging>
 
     <artifactId>language-feature</artifactId>
-    <properties>
-
-    </properties>
-
-    <dependencyManagement>
-        <dependencies>
-
-        </dependencies>
-    </dependencyManagement>
-
 </project>
