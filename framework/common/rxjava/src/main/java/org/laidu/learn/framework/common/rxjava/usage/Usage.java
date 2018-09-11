@@ -23,15 +23,15 @@ public class Usage {
     public static void main(String[] args) throws InterruptedException {
 
 
-        Observable.rangeLong(0L,10000L)
+        Observable.rangeLong(0L,1000L)
 //                .subscribeOn(Schedulers.computation())
-                .filter(i -> i%50 == 0)
-                .map(i -> {
-                    Thread.sleep(100);
-                    return Arrays.asList("aaa"+i,"bbb"+i);
+                .filter(i -> i % 50 == 0)
+                .map(i -> i / 50)
+                .map(i -> Arrays.asList("aaa"+i,"bbb"+i))
+                .flatMap(strings -> null)
+                .subscribe();
 
-                })
-                .forEach(list -> list.forEach(System.out::println));
+        Thread.sleep(3000);
 
     }
 
