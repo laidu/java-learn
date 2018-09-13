@@ -5,6 +5,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -20,8 +21,21 @@ public class Usage {
 
 
     public static void main(String[] args) throws InterruptedException {
-//
 
+
+        Observable.rangeLong(0L,1000L)
+//                .subscribeOn(Schedulers.computation())
+                .filter(i -> i % 50 == 0)
+                .map(i -> i / 50)
+                .map(i -> Arrays.asList("aaa"+i,"bbb"+i))
+                .flatMap(strings -> null)
+                .subscribe();
+
+        Thread.sleep(3000);
+
+    }
+
+    private static void intervalUsage() {
         Disposable subscribe = Observable.interval(1, TimeUnit.MICROSECONDS)
                 .subscribeOn(Schedulers.newThread())
 //                .observeOn(Schedulers.computation())
@@ -42,7 +56,6 @@ public class Usage {
                 e.printStackTrace();
             }
         }
-
     }
 
 }
