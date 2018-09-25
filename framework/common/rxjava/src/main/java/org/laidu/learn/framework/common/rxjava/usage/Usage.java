@@ -24,11 +24,11 @@ public class Usage {
 
 
         Observable.rangeLong(0L,1000L)
-//                .subscribeOn(Schedulers.computation())
+                .subscribeOn(Schedulers.computation())
                 .filter(i -> i % 50 == 0)
                 .map(i -> i / 50)
                 .map(i -> Arrays.asList("aaa"+i,"bbb"+i))
-                .flatMap(strings -> null)
+                .doOnNext(System.out::println)
                 .subscribe();
 
         Thread.sleep(3000);
@@ -38,7 +38,6 @@ public class Usage {
     private static void intervalUsage() {
         Disposable subscribe = Observable.interval(1, TimeUnit.MICROSECONDS)
                 .subscribeOn(Schedulers.newThread())
-//                .observeOn(Schedulers.computation())
                 .doOnNext(System.out::println)
                 .publish()
                 .subscribe(s -> {
