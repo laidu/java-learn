@@ -25,6 +25,7 @@
         <module>compress</module>
         <module>task-scheduler</module>
         <module>thirdparty</module>
+        <module>gui-lib</module>
     </modules>
 
     <properties>
