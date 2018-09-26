@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
 import java.time.Duration;
 
 /**
- * notify conf
+ * notify config
  *
  * @author tiancai.zang
  * on 2018-08-24 17:53.

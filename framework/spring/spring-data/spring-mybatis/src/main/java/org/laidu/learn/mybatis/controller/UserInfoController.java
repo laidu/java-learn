@@ -42,7 +42,7 @@ public class UserInfoController {
     @GetMapping("/query/{index}/{size}")
     public List<AppUser> queryById(@PathVariable("index") int index, @PathVariable("size") int size){
 
-        return userMapper.selectAppUserList(index,size);
+        return null;
     }
 
 }

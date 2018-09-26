@@ -16,10 +16,11 @@ import java.util.Map;
  * <p>
  * Created by tiancai.zang
  * on 2018-04-22 16:22.
+ * @author laidu
  */
 @Slf4j
 @Configuration
-public class DruidConfig {
+public class DruidWebMonitorConfig {
 
     @Bean
     public ServletRegistrationBean druidServlet() {

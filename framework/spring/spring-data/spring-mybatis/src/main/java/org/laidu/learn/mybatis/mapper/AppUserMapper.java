@@ -1,11 +1,18 @@
 package org.laidu.learn.mybatis.mapper;
 
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.InsertProvider;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.UpdateProvider;
 import org.apache.ibatis.type.JdbcType;
 import org.laidu.learn.mybatis.model.AppUser;
 
-import java.util.List;
-
+@Mapper
 public interface AppUserMapper {
     @Delete({
         "delete from ca_app_user",
@@ -25,6 +32,10 @@ public interface AppUserMapper {
         "email, address, ",
         "user_status, create_time, ",
         "update_time, remark, ",
+        "black_status, audit_time, ",
+        "cash_black_status, cash_quota, ",
+        "frozen_cash_quota, credit_quota, ",
+        "frozen_credit_quota, audit_status, ",
         "id_card_police)",
         "values (#{id,jdbcType=BIGINT}, #{openId,jdbcType=VARCHAR}, ",
         "#{registerChannel,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, ",
@@ -37,6 +48,10 @@ public interface AppUserMapper {
         "#{email,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, ",
         "#{userStatus,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, ",
         "#{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, ",
+        "#{blackStatus,jdbcType=INTEGER}, #{auditTime,jdbcType=TIMESTAMP}, ",
+        "#{cashBlackStatus,jdbcType=INTEGER}, #{cashQuota,jdbcType=DECIMAL}, ",
+        "#{frozenCashQuota,jdbcType=DECIMAL}, #{creditQuota,jdbcType=DECIMAL}, ",
+        "#{frozenCreditQuota,jdbcType=DECIMAL}, #{auditStatus,jdbcType=INTEGER}, ",
         "#{idCardPolice,jdbcType=LONGVARCHAR})"
     })
     int insert(AppUser record);
@@ -49,7 +64,9 @@ public interface AppUserMapper {
         "id, open_id, register_channel, username, id_card, name, id_card_detail_address, ",
         "is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth, ",
         "is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone, ",
-        "email, address, user_status, create_time, update_time, remark, id_card_police",
+        "email, address, user_status, create_time, update_time, remark, black_status, ",
+        "audit_time, cash_black_status, cash_quota, frozen_cash_quota, credit_quota, ",
+        "frozen_credit_quota, audit_status, id_card_police",
         "from ca_app_user",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -77,6 +94,14 @@ public interface AppUserMapper {
         @Result(column="create_time", property="createTime", jdbcType=JdbcType.TIMESTAMP),
         @Result(column="update_time", property="updateTime", jdbcType=JdbcType.TIMESTAMP),
         @Result(column="remark", property="remark", jdbcType=JdbcType.VARCHAR),
+        @Result(column="black_status", property="blackStatus", jdbcType=JdbcType.INTEGER),
+        @Result(column="audit_time", property="auditTime", jdbcType=JdbcType.TIMESTAMP),
+        @Result(column="cash_black_status", property="cashBlackStatus", jdbcType=JdbcType.INTEGER),
+        @Result(column="cash_quota", property="cashQuota", jdbcType=JdbcType.DECIMAL),
+        @Result(column="frozen_cash_quota", property="frozenCashQuota", jdbcType=JdbcType.DECIMAL),
+        @Result(column="credit_quota", property="creditQuota", jdbcType=JdbcType.DECIMAL),
+        @Result(column="frozen_credit_quota", property="frozenCreditQuota", jdbcType=JdbcType.DECIMAL),
+        @Result(column="audit_status", property="auditStatus", jdbcType=JdbcType.INTEGER),
         @Result(column="id_card_police", property="idCardPolice", jdbcType=JdbcType.LONGVARCHAR)
     })
     AppUser selectByPrimaryKey(Long id);
@@ -108,6 +133,14 @@ public interface AppUserMapper {
           "create_time = #{createTime,jdbcType=TIMESTAMP},",
           "update_time = #{updateTime,jdbcType=TIMESTAMP},",
           "remark = #{remark,jdbcType=VARCHAR},",
+          "black_status = #{blackStatus,jdbcType=INTEGER},",
+          "audit_time = #{auditTime,jdbcType=TIMESTAMP},",
+          "cash_black_status = #{cashBlackStatus,jdbcType=INTEGER},",
+          "cash_quota = #{cashQuota,jdbcType=DECIMAL},",
+          "frozen_cash_quota = #{frozenCashQuota,jdbcType=DECIMAL},",
+          "credit_quota = #{creditQuota,jdbcType=DECIMAL},",
+          "frozen_credit_quota = #{frozenCreditQuota,jdbcType=DECIMAL},",
+          "audit_status = #{auditStatus,jdbcType=INTEGER},",
           "id_card_police = #{idCardPolice,jdbcType=LONGVARCHAR}",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -136,20 +169,16 @@ public interface AppUserMapper {
           "user_status = #{userStatus,jdbcType=INTEGER},",
           "create_time = #{createTime,jdbcType=TIMESTAMP},",
           "update_time = #{updateTime,jdbcType=TIMESTAMP},",
-          "remark = #{remark,jdbcType=VARCHAR}",
+          "remark = #{remark,jdbcType=VARCHAR},",
+          "black_status = #{blackStatus,jdbcType=INTEGER},",
+          "audit_time = #{auditTime,jdbcType=TIMESTAMP},",
+          "cash_black_status = #{cashBlackStatus,jdbcType=INTEGER},",
+          "cash_quota = #{cashQuota,jdbcType=DECIMAL},",
+          "frozen_cash_quota = #{frozenCashQuota,jdbcType=DECIMAL},",
+          "credit_quota = #{creditQuota,jdbcType=DECIMAL},",
+          "frozen_credit_quota = #{frozenCreditQuota,jdbcType=DECIMAL},",
+          "audit_status = #{auditStatus,jdbcType=INTEGER}",
         "where id = #{id,jdbcType=BIGINT}"
     })
     int updateByPrimaryKey(AppUser record);
-
-
-    @Select({
-            "select",
-            "id, open_id, register_channel, username, id_card, name, id_card_detail_address, ",
-            "is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth, ",
-            "is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone, ",
-            "email, address, user_status, create_time, update_time, remark, id_card_police",
-            "from ca_app_user",
-            "where 1=1 "
-    })
-    List<AppUser> selectAppUserList(@Param("pageNum") int pageNum, @Param("pageSize") int pageSize);
 }
