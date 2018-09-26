@@ -27,11 +27,11 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
             <charset>utf8</charset>
         </encoder>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>debug</level>
-            <onMatch>DENY</onMatch>
-            <onMismatch>NEUTRAL</onMismatch>
-        </filter>
+        <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+            <!--<level>debug</level>-->
+            <!--<onMatch>DENY</onMatch>-->
+            <!--<onMismatch>NEUTRAL</onMismatch>-->
+        <!--</filter>-->
     </appender>
 
 
@@ -127,7 +127,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </logger>
 
 
-    <logger name="org.laidu.learn.mybatis" level="debug">
+    <logger name="org.laidu.learn.mybatis.mapper" level="debug">
         <appender-ref ref="sql_file" />
     </logger>
 

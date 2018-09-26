@@ -1,13 +1,17 @@
 package org.laidu.learn.mybatis.model;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class AppUser implements Serializable {
     private Long id;
 
@@ -58,18 +62,6 @@ public class AppUser implements Serializable {
     private Integer blackStatus;
 
     private Date auditTime;
-
-    private Integer cashBlackStatus;
-
-    private BigDecimal cashQuota;
-
-    private BigDecimal frozenCashQuota;
-
-    private BigDecimal creditQuota;
-
-    private BigDecimal frozenCreditQuota;
-
-    private Integer auditStatus;
 
     private String idCardPolice;
 

@@ -33,9 +33,6 @@ public interface AppUserMapper {
         "user_status, create_time, ",
         "update_time, remark, ",
         "black_status, audit_time, ",
-        "cash_black_status, cash_quota, ",
-        "frozen_cash_quota, credit_quota, ",
-        "frozen_credit_quota, audit_status, ",
         "id_card_police)",
         "values (#{id,jdbcType=BIGINT}, #{openId,jdbcType=VARCHAR}, ",
         "#{registerChannel,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, ",
@@ -49,9 +46,6 @@ public interface AppUserMapper {
         "#{userStatus,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, ",
         "#{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, ",
         "#{blackStatus,jdbcType=INTEGER}, #{auditTime,jdbcType=TIMESTAMP}, ",
-        "#{cashBlackStatus,jdbcType=INTEGER}, #{cashQuota,jdbcType=DECIMAL}, ",
-        "#{frozenCashQuota,jdbcType=DECIMAL}, #{creditQuota,jdbcType=DECIMAL}, ",
-        "#{frozenCreditQuota,jdbcType=DECIMAL}, #{auditStatus,jdbcType=INTEGER}, ",
         "#{idCardPolice,jdbcType=LONGVARCHAR})"
     })
     int insert(AppUser record);
@@ -65,8 +59,7 @@ public interface AppUserMapper {
         "is_verify_id_card, id_card_coverup, id_card_coverdown, id_card_hold, is_other_picture_auth, ",
         "is_bankcard_auth, signature_pic, is_additional_auth, is_emergency_auth, phone, ",
         "email, address, user_status, create_time, update_time, remark, black_status, ",
-        "audit_time, cash_black_status, cash_quota, frozen_cash_quota, credit_quota, ",
-        "frozen_credit_quota, audit_status, id_card_police",
+        "audit_time, id_card_police",
         "from ca_app_user",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -96,12 +89,6 @@ public interface AppUserMapper {
         @Result(column="remark", property="remark", jdbcType=JdbcType.VARCHAR),
         @Result(column="black_status", property="blackStatus", jdbcType=JdbcType.INTEGER),
         @Result(column="audit_time", property="auditTime", jdbcType=JdbcType.TIMESTAMP),
-        @Result(column="cash_black_status", property="cashBlackStatus", jdbcType=JdbcType.INTEGER),
-        @Result(column="cash_quota", property="cashQuota", jdbcType=JdbcType.DECIMAL),
-        @Result(column="frozen_cash_quota", property="frozenCashQuota", jdbcType=JdbcType.DECIMAL),
-        @Result(column="credit_quota", property="creditQuota", jdbcType=JdbcType.DECIMAL),
-        @Result(column="frozen_credit_quota", property="frozenCreditQuota", jdbcType=JdbcType.DECIMAL),
-        @Result(column="audit_status", property="auditStatus", jdbcType=JdbcType.INTEGER),
         @Result(column="id_card_police", property="idCardPolice", jdbcType=JdbcType.LONGVARCHAR)
     })
     AppUser selectByPrimaryKey(Long id);
@@ -135,12 +122,6 @@ public interface AppUserMapper {
           "remark = #{remark,jdbcType=VARCHAR},",
           "black_status = #{blackStatus,jdbcType=INTEGER},",
           "audit_time = #{auditTime,jdbcType=TIMESTAMP},",
-          "cash_black_status = #{cashBlackStatus,jdbcType=INTEGER},",
-          "cash_quota = #{cashQuota,jdbcType=DECIMAL},",
-          "frozen_cash_quota = #{frozenCashQuota,jdbcType=DECIMAL},",
-          "credit_quota = #{creditQuota,jdbcType=DECIMAL},",
-          "frozen_credit_quota = #{frozenCreditQuota,jdbcType=DECIMAL},",
-          "audit_status = #{auditStatus,jdbcType=INTEGER},",
           "id_card_police = #{idCardPolice,jdbcType=LONGVARCHAR}",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -171,13 +152,7 @@ public interface AppUserMapper {
           "update_time = #{updateTime,jdbcType=TIMESTAMP},",
           "remark = #{remark,jdbcType=VARCHAR},",
           "black_status = #{blackStatus,jdbcType=INTEGER},",
-          "audit_time = #{auditTime,jdbcType=TIMESTAMP},",
-          "cash_black_status = #{cashBlackStatus,jdbcType=INTEGER},",
-          "cash_quota = #{cashQuota,jdbcType=DECIMAL},",
-          "frozen_cash_quota = #{frozenCashQuota,jdbcType=DECIMAL},",
-          "credit_quota = #{creditQuota,jdbcType=DECIMAL},",
-          "frozen_credit_quota = #{frozenCreditQuota,jdbcType=DECIMAL},",
-          "audit_status = #{auditStatus,jdbcType=INTEGER}",
+          "audit_time = #{auditTime,jdbcType=TIMESTAMP}",
         "where id = #{id,jdbcType=BIGINT}"
     })
     int updateByPrimaryKey(AppUser record);

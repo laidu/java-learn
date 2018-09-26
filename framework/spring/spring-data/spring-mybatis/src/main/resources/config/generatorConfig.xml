@@ -29,7 +29,8 @@
             <property name="accessors.prefix" value="m_, _"/>
 
             <!-- disable annotations -->
-            <property name="allArgsConstructor" value="false"/>
+            <property name="allArgsConstructor" value="true"/>
+            <property name="noArgsConstructor" value="true"/>
         </plugin>
 
         <!--<plugin type="com.itfsw.mybatis.generator.plugins.SelectOneByExamplePlugin"/>-->

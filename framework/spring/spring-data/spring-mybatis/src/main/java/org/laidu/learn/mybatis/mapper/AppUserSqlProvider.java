@@ -109,30 +109,6 @@ public class AppUserSqlProvider {
             sql.VALUES("audit_time", "#{auditTime,jdbcType=TIMESTAMP}");
         }
         
-        if (record.getCashBlackStatus() != null) {
-            sql.VALUES("cash_black_status", "#{cashBlackStatus,jdbcType=INTEGER}");
-        }
-        
-        if (record.getCashQuota() != null) {
-            sql.VALUES("cash_quota", "#{cashQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getFrozenCashQuota() != null) {
-            sql.VALUES("frozen_cash_quota", "#{frozenCashQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getCreditQuota() != null) {
-            sql.VALUES("credit_quota", "#{creditQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getFrozenCreditQuota() != null) {
-            sql.VALUES("frozen_credit_quota", "#{frozenCreditQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getAuditStatus() != null) {
-            sql.VALUES("audit_status", "#{auditStatus,jdbcType=INTEGER}");
-        }
-        
         if (record.getIdCardPolice() != null) {
             sql.VALUES("id_card_police", "#{idCardPolice,jdbcType=LONGVARCHAR}");
         }
@@ -238,30 +214,6 @@ public class AppUserSqlProvider {
         
         if (record.getAuditTime() != null) {
             sql.SET("audit_time = #{auditTime,jdbcType=TIMESTAMP}");
-        }
-        
-        if (record.getCashBlackStatus() != null) {
-            sql.SET("cash_black_status = #{cashBlackStatus,jdbcType=INTEGER}");
-        }
-        
-        if (record.getCashQuota() != null) {
-            sql.SET("cash_quota = #{cashQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getFrozenCashQuota() != null) {
-            sql.SET("frozen_cash_quota = #{frozenCashQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getCreditQuota() != null) {
-            sql.SET("credit_quota = #{creditQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getFrozenCreditQuota() != null) {
-            sql.SET("frozen_credit_quota = #{frozenCreditQuota,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getAuditStatus() != null) {
-            sql.SET("audit_status = #{auditStatus,jdbcType=INTEGER}");
         }
         
         if (record.getIdCardPolice() != null) {
