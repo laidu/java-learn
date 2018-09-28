@@ -32,7 +32,7 @@ public class UserInfoController {
     }
 
     @GetMapping("/query/{id}")
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public AppUser queryById(@PathVariable("id") Long id){
 
         AppUser user = userMapper.selectByPrimaryKey(id);
