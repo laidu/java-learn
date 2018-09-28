@@ -3,13 +3,21 @@ package org.laidu.learn.language.feature.date;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.*;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * Created by 臧天才 on 2017/8/23 下午4:49.
  */
 @Slf4j
 public class DateUsage {
+
+
+    static Date now(){
+        return Calendar.getInstance(TimeZone.getTimeZone(ZoneId.of("Asia/Shanghai"))).getTime();
+    }
+
 
     public static void main(String[] args) {
 
@@ -46,7 +54,7 @@ public class DateUsage {
 
         log.info("-*--*--*--*-zonedDateTime : {}-*--*--*--*--",zonedDateTime.toLocalTime());
 
-        Date date = new Date();
+        Date date = now();
 
 
     }

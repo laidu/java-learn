@@ -43,6 +43,8 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
+            <maxFileSize>1MB</maxFileSize>
+            <totalSizeCap>10MB</totalSizeCap>
 
         </rollingPolicy>
 
@@ -59,6 +61,8 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
+            <maxFileSize>1MB</maxFileSize>
+            <totalSizeCap>10MB</totalSizeCap>
         </rollingPolicy>
 
         <encoder>
@@ -81,6 +85,8 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
 
             <!-- keep 30 days' worth of history -->
             <maxHistory>30</maxHistory>
+            <maxFileSize>1MB</maxFileSize>
+            <totalSizeCap>10MB</totalSizeCap>
         </rollingPolicy>
 
         <encoder>
@@ -99,7 +105,9 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
             <!--日志文件输出的文件名 -->
             <FileNamePattern>${LOG_PATH}/${APP_NAME}-query.log-druid-%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
-            <MaxHistory>90</MaxHistory>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>1MB</maxFileSize>
+            <totalSizeCap>10MB</totalSizeCap>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->

@@ -1,5 +1,6 @@
 package org.laidu.learn.jvm.classloader;
 
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -11,10 +12,16 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ClassLoaderDemo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
 
 
+    }
 
+
+    @Data
+    public static class Person {
+        private String name;
+        private int grander;
     }
 
 }
