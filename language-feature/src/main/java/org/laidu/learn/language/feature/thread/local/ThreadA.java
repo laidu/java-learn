@@ -18,13 +18,10 @@ import java.util.stream.IntStream;
 @Slf4j
 public class ThreadA implements Runnable {
 
-    // Atomic integer containing the next thread ID to be assigned
     private static final AtomicInteger nextId = new AtomicInteger(0);
 
-    // Thread local variable containing each thread's ID
     private static final ThreadLocal<Integer> threadId = ThreadLocal.withInitial(() -> nextId.getAndIncrement());
 
-    // Returns the current thread's unique ID, assigning it if necessary
     public static int get() {
         return threadId.get();
     }
@@ -38,8 +35,10 @@ public class ThreadA implements Runnable {
 
         ExecutorService executorService = Executors.newFixedThreadPool(4);
 
-        for (int ignored : IntStream.range(0,100).toArray()){
-            executorService.submit(new ThreadA());
-        }
+        IntStream.range(0,100)
+                .boxed()
+                .forEach(i -> executorService.submit(new ThreadA()));
+
+        executorService.shutdown();
     }
 }

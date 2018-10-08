@@ -11,7 +11,34 @@
 
         <!-- plugin -->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
-        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+        <!--<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />-->
+        <!--<plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>-->
+        <!--<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>-->
+
+        <plugin type="com.softwareloop.mybatis.generator.plugins.LombokPlugin">
+
+            <!-- enable annotations -->
+            <property name="builder" value="true"/>
+            <!-- annotation's option(boolean) -->
+            <property name="builder.fluent" value="true"/>
+            <!-- annotation's option(String) -->
+            <property name="builder.builderMethodName" value="myBuilder"/>
+
+            <property name="accessors" value="true"/>
+            <!-- annotation's option(array of String) -->
+            <property name="accessors.prefix" value="m_, _"/>
+
+            <!-- disable annotations -->
+            <property name="allArgsConstructor" value="true"/>
+            <property name="noArgsConstructor" value="true"/>
+        </plugin>
+
+        <!--<plugin type="com.itfsw.mybatis.generator.plugins.SelectOneByExamplePlugin"/>-->
+
+        <!--&lt;!&ndash; MySQL分页插件 &ndash;&gt;-->
+        <!--<plugin type="com.itfsw.mybatis.generator.plugins.LimitPlugin"/>-->
+
+
 
         <!-- 注释 -->
         <commentGenerator>
@@ -42,17 +69,22 @@
             <property name="enableSubPackages" value="false" />
         </javaModelGenerator>
 
-        <!--&lt;!&ndash; 生成mapper xml文件 &ndash;&gt;-->
-        <!--<sqlMapGenerator targetPackage="com.shx.dao.mapper"  targetProject="src/main/java">-->
-            <!--&lt;!&ndash; enableSubPackages:是否让schema作为包的后缀 &ndash;&gt;-->
-            <!--<property name="enableSubPackages" value="false" />-->
-        <!--</sqlMapGenerator>-->
+        <!-- 生成mapper xml文件 -->
+        <sqlMapGenerator targetPackage="resources.config.mappers"  targetProject="src/main">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="ture" />
+        </sqlMapGenerator>
 
         <!-- 生成mapper xml对应Client-->
         <javaClientGenerator targetPackage="org.laidu.learn.mybatis.mapper" targetProject="src/main/java" type="ANNOTATEDMAPPER">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
+
+        <!--<javaClientGenerator targetPackage="org.laidu.learn.mybatis.mapper" targetProject="src/main/java" type="XMLMAPPER">-->
+            <!--&lt;!&ndash; enableSubPackages:是否让schema作为包的后缀 &ndash;&gt;-->
+            <!--<property name="enableSubPackages" value="false" />-->
+        <!--</javaClientGenerator>-->
 
         <!-- 配置表信息 -->
         <!-- schema即为数据库名 tableName为对应的数据库表 domainObjectName是要生成的实体类 enable*ByExample

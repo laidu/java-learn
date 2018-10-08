@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @MapperScan("org.laidu.learn.mybatis.mapper")
 @SpringBootApplication
+//@EnableCaching(proxyTargetClass = true)
 public class MybatisApp {
 
     public static void main(String[] args){

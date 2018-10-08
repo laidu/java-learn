@@ -256,7 +256,7 @@ else
 	chown nobody:$GROUPNAME /etc/openvpn/crl.pem
 	# Generate key for tls-auth
 	openvpn --genkey --secret /etc/openvpn/ta.key
-	# Generate server.conf
+	# Generate server.config
 	echo "port $PORT
 proto $PROTOCOL
 dev tun
@@ -275,7 +275,7 @@ ifconfig-pool-persist ipp.txt" > /etc/openvpn/server.conf
 	# DNS
 	case $DNS in
 		1)
-		# Obtain the resolvers from resolv.conf and use them for OpenVPN
+		# Obtain the resolvers from resolv.config and use them for OpenVPN
 		grep -v '#' /etc/resolv.conf | grep 'nameserver' | grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | while read line; do
 			echo "push \"dhcp-option DNS $line\"" >> /etc/openvpn/server.conf
 		done

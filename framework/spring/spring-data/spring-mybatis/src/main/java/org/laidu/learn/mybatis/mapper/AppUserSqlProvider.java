@@ -101,6 +101,14 @@ public class AppUserSqlProvider {
             sql.VALUES("remark", "#{remark,jdbcType=VARCHAR}");
         }
         
+        if (record.getBlackStatus() != null) {
+            sql.VALUES("black_status", "#{blackStatus,jdbcType=INTEGER}");
+        }
+        
+        if (record.getAuditTime() != null) {
+            sql.VALUES("audit_time", "#{auditTime,jdbcType=TIMESTAMP}");
+        }
+        
         if (record.getIdCardPolice() != null) {
             sql.VALUES("id_card_police", "#{idCardPolice,jdbcType=LONGVARCHAR}");
         }
@@ -198,6 +206,14 @@ public class AppUserSqlProvider {
         
         if (record.getRemark() != null) {
             sql.SET("remark = #{remark,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getBlackStatus() != null) {
+            sql.SET("black_status = #{blackStatus,jdbcType=INTEGER}");
+        }
+        
+        if (record.getAuditTime() != null) {
+            sql.SET("audit_time = #{auditTime,jdbcType=TIMESTAMP}");
         }
         
         if (record.getIdCardPolice() != null) {
