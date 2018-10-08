@@ -1,4 +1,4 @@
-package org.laidu.learn.mybatis.model;
+package org.laidu.learn.mybatis.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

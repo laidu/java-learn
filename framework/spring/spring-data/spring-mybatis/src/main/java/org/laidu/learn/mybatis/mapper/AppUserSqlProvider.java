@@ -1,7 +1,7 @@
 package org.laidu.learn.mybatis.mapper;
 
 import org.apache.ibatis.jdbc.SQL;
-import org.laidu.learn.mybatis.model.AppUser;
+import org.laidu.learn.mybatis.entity.AppUser;
 
 public class AppUserSqlProvider {
 

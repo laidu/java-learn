@@ -62,7 +62,7 @@
         </javaTypeResolver>
 
         <!-- 生成实体类地址 -->
-        <javaModelGenerator targetPackage="org.laidu.learn.mybatis.model" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="org.laidu.learn.mybatis.entity" targetProject="src/main/java">
             <!-- 从数据库返回的值被清理前后的空格 -->
             <property name="trimStrings" value="true" />
             <!-- enableSubPackages:是否让schema作为包的后缀 -->

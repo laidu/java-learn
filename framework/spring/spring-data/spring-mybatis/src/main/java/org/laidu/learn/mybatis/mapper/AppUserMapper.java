@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.annotations.UpdateProvider;
 import org.apache.ibatis.type.JdbcType;
-import org.laidu.learn.mybatis.model.AppUser;
+import org.laidu.learn.mybatis.entity.AppUser;
 
 @Mapper
 public interface AppUserMapper {
