@@ -15,6 +15,7 @@
 
     <modules>
         <module>hadoop</module>
+        <module>calcite</module>
     </modules>
 
     <properties>
