@@ -12,7 +12,7 @@
     <artifactId>gui-lib</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>jfoenix</module>
+        <!--<module>jfoenix</module>-->
     </modules>
 
     <properties>
