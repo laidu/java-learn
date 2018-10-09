@@ -23,3 +23,7 @@ b,使用整数索引访问(random access)
 参考:
 * [java 核心技术（第10版）]()
 * [java8 编程官方参考教程（第9版）]()
+* [Java集合类: Set、List、Map、Queue使用场景梳理](http://www.cnblogs.com/LittleHann/p/3690187.html)
+* []()
+* []()
+* []()  

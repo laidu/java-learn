@@ -11,6 +11,10 @@
 
     <artifactId>bytecode</artifactId>
 
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -18,27 +22,42 @@
         </dependency>
     </dependencies>
 
-    <!--<build>-->
-        <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.codehaus.mojo</groupId>-->
-                <!--<artifactId>aspectj-maven-plugin</artifactId>-->
-                <!--<version>1.11</version>-->
-                <!--<configuration>-->
-                    <!--<complianceLevel>${java.version}</complianceLevel>-->
-                    <!--<source>${java.version}</source>-->
-                    <!--<target>${java.version}</target>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<goals>-->
-                            <!--<goal>compile</goal>       &lt;!&ndash; use this goal to weave all your main classes &ndash;&gt;-->
-                            <!--<goal>test-compile</goal>  &lt;!&ndash; use this goal to weave all your test classes &ndash;&gt;-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
+    <build>
+        <plugins>
 
-        <!--</plugins>-->
-    <!--</build>-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>aspectj-maven-plugin</artifactId>
+                <version>1.11</version>
+                <configuration>
+                    <complianceLevel>${java.version}</complianceLevel>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!-- IMPORTANT -->
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjrt</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjtools</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>
