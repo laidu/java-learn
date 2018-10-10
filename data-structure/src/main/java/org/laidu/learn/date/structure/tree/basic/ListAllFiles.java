@@ -11,6 +11,7 @@ import java.util.Objects;
  * <p>
  * Created by tiancai.zang
  * on 2018-04-01 23:33.
+ * @author laidu
  */
 @Slf4j
 public class ListAllFiles {
@@ -28,7 +29,7 @@ public class ListAllFiles {
 
     public static void main(String[] args) {
 
-        File file = new File("~/Videos");
+        File file = new File(System.getProperty("user.home")+"/Downloads");
         printFile(file);
 
     }

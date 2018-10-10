@@ -21,7 +21,7 @@ public class ListDemo {
 
         int initSize = 8;
 
-        List<Integer> lsit = new ArrayList<>(initSize);
+        List<Integer> list = new ArrayList<>(initSize);
 
         IntStream.range(0,99999).boxed()
                 .forEach(e -> {
@@ -30,7 +30,8 @@ public class ListDemo {
                         Thread.sleep(500);
                     } catch (InterruptedException e1) {
                     }
-                    lsit.add(e << 1,e);
+
+                    list.add(e);
                 });
 
 
