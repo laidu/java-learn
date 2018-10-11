@@ -104,6 +104,11 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>xyz.xpcoder.commons</groupId>
+            <artifactId>monitor-spring-boot-starter</artifactId>
+            <version>0.0.4</version>
+        </dependency>
 
         <!--java 11 start-->
         <dependency>

@@ -29,11 +29,6 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>xyz.xpcoder.commons</groupId>
-            <artifactId>monitor-spring-boot-starter</artifactId>
-            <version>0.0.4</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

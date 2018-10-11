@@ -11,6 +11,8 @@
 
     <artifactId>common-util</artifactId>
 
+    <packaging>jar</packaging>
+
     <description>通用工具集</description>
 
     <properties>
