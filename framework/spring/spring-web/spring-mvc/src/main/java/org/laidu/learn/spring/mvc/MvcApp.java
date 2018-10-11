@@ -1,9 +1,14 @@
 package org.laidu.learn.spring.mvc;
 
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.mvc.conf.StorageProperties;
+import org.laidu.learn.spring.mvc.service.StorageService;
 import org.springframework.boot.Banner;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -15,7 +20,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Slf4j
 @EnableSwagger2
 @SpringBootApplication
+@EnableConfigurationProperties(StorageProperties.class)
 public class MvcApp {
+
+    @Bean
+    CommandLineRunner init(StorageService storageService) {
+        return (args) -> {
+            storageService.deleteAll();
+            storageService.init();
+        };
+    }
 
     public static void main(String[] args) {
 

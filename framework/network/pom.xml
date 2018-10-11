@@ -43,6 +43,11 @@
                 <artifactId>converter-jackson</artifactId>
                 <version>${retrofit.version}</version>
             </dependency>
+            <dependency>
+                <groupId>xyz.xpcoder.common.retrofit2</groupId>
+                <artifactId>converter-fastjson</artifactId>
+                <version>1.0</version>
+            </dependency>
 
 
             <dependency>
