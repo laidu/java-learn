@@ -1,6 +1,5 @@
 package org.laidu.learn.spring.mvc.dto;
 
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +17,6 @@ import org.laidu.learn.spring.mvc.enums.GoodsTypeEnum;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel("添加商品请求")
 public class AddGoodsReqDTO {
 
     @ApiModelProperty("商品ID")

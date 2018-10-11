@@ -7,4 +7,4 @@
  * @author laidu
  */
 // TODO: 2018-08-01 18:01  model
-package org.laidu.learn.swagger.demo.model;
+package org.laidu.learn.swagger.demo.dto;

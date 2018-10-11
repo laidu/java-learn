@@ -1,5 +1,6 @@
 package org.laidu.learn.spring.mvc.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -27,8 +28,9 @@ public enum  GoodsTypeEnum implements NameValueEnum<String,Integer> {
     PHONE(1,"手机"),
 
     ;
-
+    @JsonValue
     private Integer value;
+
     private String name;
 
 

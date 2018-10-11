@@ -4,8 +4,10 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.laidu.learn.swagger.demo.model.Product;
+import org.laidu.learn.swagger.demo.dto.ProductResDTO;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 /**
  * home
@@ -27,17 +29,17 @@ public class HomeController {
     @GetMapping("/query/{id}")
     @ApiOperation("query product by id")
     @ApiParam(value = "id")
-    @ApiResponse(code = 100, message = "123321" , response = Product.class)
-    public Product query(@PathVariable String id){
-        return Product.builder()
+    @ApiResponse(code = 100, message = "123321" , response = ProductResDTO.class)
+    public ProductResDTO query(@PathVariable String id){
+        return ProductResDTO.builder()
                 .id(id)
                 .name("test1")
-                .productDate(System.currentTimeMillis()+"")
+                .productDate(new Date())
                 .build();
     }
 
     @PostMapping("/add")
-    public Product add(Product product){
+    public ProductResDTO add(ProductResDTO product){
         return product;
     }
 

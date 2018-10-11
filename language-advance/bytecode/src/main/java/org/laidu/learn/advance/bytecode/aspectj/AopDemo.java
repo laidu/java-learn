@@ -19,9 +19,7 @@ public class AopDemo {
     public static class UserService {
 
         @LogStartTime("Hello World")
-        @LogStartTime1("Hello 1")
-        @LogStartTime0("Hello 0")
-        public String fetchUserById(int userId) {
+        private final String fetchUserById(int userId) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
