@@ -1,8 +1,39 @@
 
+spring:
+  boot:
+    admin:
+      client:
+        enabled: true
+        auto-registration: true
+        url: "http://local-dev:1111"
+        api-path: instances
+      ui:
+        cache:
+          no-store: true
+      notify:
+        mail:
+          to: tiancai.zang@finlink.net.cn
+          from: laidu823@sina.com
+  mail:
+    host: smtp.sina.com
+    username: laidu823@sina.com
+    password: ${sina_password} # 通过环境变量获取
+    default-encoding: utf-8
+    port: 465
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            required: false
+            enable: false
+          ssl:
+            enable: true
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: local-dev
   client:
     register-with-eureka: false
     fetch-registry: false

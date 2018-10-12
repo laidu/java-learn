@@ -1,4 +1,5 @@
 spring:
+  application: admin-dashboard
   jackson:
     property-naming-strategy: SNAKE_CASE
   boot:
@@ -33,41 +34,46 @@ spring:
             enable: true
 
 
-management:
-  server:
-    port: 9998
-    address: localhost
-  endpoint:
-    health:
-      show-details: always
-    shutdown:
-      enabled: true
-    metrics:
-      enabled: true
-    info:
-      enabled: true
-  endpoints:
-    enabled-by-default: true
-    jmx:
-      exposure:
-        include: "*"
-    web:
-      exposure:
-        include: "*"
-  # METRICS
-  metrics:
-    export:
-      atlas:
-        enabled: true
-        step: 1s
-      graphite:
-        host: localhost
-        port: 2004
-        enabled: true
-        step: 1s
-        protocol: pickled
-    binders:
-      jvm:
-        enabled: true
+#management:
+#  server:
+#    port: 9998
+#    address: localhost
+#  endpoint:
+#    health:
+#      show-details: always
+#    shutdown:
+#      enabled: true
+#    metrics:
+#      enabled: true
+#    info:
+#      enabled: true
+#  endpoints:
+#    enabled-by-default: true
+#    jmx:
+#      exposure:
+#        include: "*"
+#    web:
+#      exposure:
+#        include: "*"
+#  # METRICS
+#  metrics:
+#    export:
+#      atlas:
+#        enabled: true
+#        step: 1s
+#      graphite:
+#        host: localhost
+#        port: 2004
+#        enabled: true
+#        step: 1s
+#        protocol: pickled
+#    binders:
+#      jvm:
+#        enabled: true
 server:
   port: 2222
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://local-dev:1111/eureka/
