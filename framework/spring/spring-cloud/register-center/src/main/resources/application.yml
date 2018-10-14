@@ -5,7 +5,7 @@ spring:
       client:
         enabled: true
         auto-registration: true
-        url: "http://local-dev:1111"
+        url: "http://local-dev:8761"
         api-path: instances
       ui:
         cache:
