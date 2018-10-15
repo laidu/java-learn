@@ -13,22 +13,39 @@
     <packaging>pom</packaging>
     <modules>
         <module>dynamoDB</module>
-        <module>s3</module>
+        <!--<module>s3</module>-->
     </modules>
 
     <properties>
-        <aws.sdk.version>1.11.386</aws.sdk.version>
+        <aws.sdk.version>1.11.423</aws.sdk.version>
     </properties>
+
+    <!--<dependencyManagement>-->
+        <!--<dependencies>-->
+            <!--<dependency>-->
+                <!--<groupId>com.amazonaws</groupId>-->
+                <!--<artifactId>aws-java-sdk-bom</artifactId>-->
+                <!--<version>${aws.sdk.version}</version>-->
+                <!--<type>pom</type>-->
+                <!--<scope>import</scope>-->
+            <!--</dependency>-->
+        <!--</dependencies>-->
+    <!--</dependencyManagement>-->
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.amazonaws</groupId>
-                <artifactId>aws-java-sdk-bom</artifactId>
+                <artifactId>aws-java-sdk-s3</artifactId>
                 <version>${aws.sdk.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-dynamodb</artifactId>
+                <version>${aws.sdk.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 

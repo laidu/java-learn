@@ -5,6 +5,10 @@ server:
       date-format: yyyy/mm/dd hh:mm:ss
 
 spring:
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 10MB
   devtools:
     restart:
       enabled: false
@@ -48,3 +52,6 @@ logbook:
     category: http.wire-log
     level: INFO
     chunk-size: 1000
+
+storage:
+  location: ${user.home}/temp/resource

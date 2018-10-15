@@ -1,13 +1,10 @@
 package org.laidu.learn.algorithm.bloom;
 
-import com.google.common.hash.BloomFilter;
-import com.google.common.hash.Funnels;
 import jodd.io.FileUtil;
 import org.laidu.commom.util.encryption.MD5Util;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 
 /**
  * bloom filter demo
@@ -15,7 +12,6 @@ import java.nio.charset.Charset;
  * @author tiancai.zang
  * 2018-02-01 15:09.
  */
-// TODO: 2018-02-01 15:09   bloom filter demo
 public class BloomFilterDemo {
 
     private static final long size = 1000_000_000;

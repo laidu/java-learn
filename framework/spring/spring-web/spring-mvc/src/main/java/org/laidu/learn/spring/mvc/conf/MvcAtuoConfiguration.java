@@ -49,4 +49,5 @@ public class MvcAtuoConfiguration implements WebMvcConfigurer {
         registry.addConverterFactory(new UniversalEnumConverterFactory());
     }
 
+
 }

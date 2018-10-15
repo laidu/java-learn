@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
  * @author tiancai.zang
  * on 2018-08-23 11:44.
  */
-// TODO: 2018-08-23 11:44  商品接口
 @Slf4j
 @RestController
 @RequestMapping("/goods")
@@ -51,5 +50,7 @@ public class GoodsController {
                 .goodsType(GoodsTypeEnum.BOOK)
                 .build());
     }
+
+
 
 }

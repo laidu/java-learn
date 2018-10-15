@@ -8,7 +8,6 @@ import com.rabbitmq.client.impl.AMQImpl;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.concurrent.TimeoutException;
 
 /**
  * client usage demo
@@ -16,7 +15,6 @@ import java.util.concurrent.TimeoutException;
  * @author tiancai.zang
  * 2018-01-11 16:24.
  */
-// TODO: 2018-01-11 16:24  client usage demo
 @Slf4j
 public class RabbitmqClientDemo implements ClientDemo {
 

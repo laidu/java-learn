@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
  * @author tiancai.zang
  * on 2018-08-28 19:09.
  */
-// TODO: 2018-08-28 19:09  
 @Slf4j
 public class AopDemo {
 
@@ -20,9 +19,7 @@ public class AopDemo {
     public static class UserService {
 
         @LogStartTime("Hello World")
-        @LogStartTime1("Hello 1")
-        @LogStartTime0("Hello 0")
-        public String fetchUserById(int userId) {
+        private final String fetchUserById(int userId) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

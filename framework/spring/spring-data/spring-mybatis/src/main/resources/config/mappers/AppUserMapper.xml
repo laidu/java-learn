@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.laidu.learn.mybatis.mapper.AppUserMapper">
-  <resultMap id="BaseResultMap" type="org.laidu.learn.mybatis.model.AppUser">
+  <resultMap id="BaseResultMap" type="org.laidu.learn.mybatis.entity.AppUser">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="open_id" jdbcType="VARCHAR" property="openId" />
     <result column="register_channel" jdbcType="BIGINT" property="registerChannel" />
@@ -34,7 +34,7 @@
     <result column="frozen_credit_quota" jdbcType="DECIMAL" property="frozenCreditQuota" />
     <result column="audit_status" jdbcType="INTEGER" property="auditStatus" />
   </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="org.laidu.learn.mybatis.model.AppUser">
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="org.laidu.learn.mybatis.entity.AppUser">
     <result column="id_card_police" jdbcType="LONGVARCHAR" property="idCardPolice" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -134,7 +134,7 @@
     delete from ca_app_user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="org.laidu.learn.mybatis.model.AppUser">
+  <insert id="insert" parameterType="org.laidu.learn.mybatis.entity.AppUser">
     insert into ca_app_user (id, open_id, register_channel, 
       username, id_card, name, 
       id_card_detail_address, is_verify_id_card, id_card_coverup, 
@@ -158,7 +158,7 @@
       #{frozenCashQuota,jdbcType=DECIMAL}, #{creditQuota,jdbcType=DECIMAL}, #{frozenCreditQuota,jdbcType=DECIMAL}, 
       #{auditStatus,jdbcType=INTEGER}, #{idCardPolice,jdbcType=LONGVARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="org.laidu.learn.mybatis.model.AppUser">
+  <insert id="insertSelective" parameterType="org.laidu.learn.mybatis.entity.AppUser">
     insert into ca_app_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -357,7 +357,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="org.laidu.learn.mybatis.model.AppUser">
+  <update id="updateByPrimaryKeySelective" parameterType="org.laidu.learn.mybatis.entity.AppUser">
     update ca_app_user
     <set>
       <if test="openId != null">
@@ -456,7 +456,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="org.laidu.learn.mybatis.model.AppUser">
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="org.laidu.learn.mybatis.entity.AppUser">
     update ca_app_user
     set open_id = #{openId,jdbcType=VARCHAR},
       register_channel = #{registerChannel,jdbcType=BIGINT},
@@ -491,7 +491,7 @@
       id_card_police = #{idCardPolice,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="org.laidu.learn.mybatis.model.AppUser">
+  <update id="updateByPrimaryKey" parameterType="org.laidu.learn.mybatis.entity.AppUser">
     update ca_app_user
     set open_id = #{openId,jdbcType=VARCHAR},
       register_channel = #{registerChannel,jdbcType=BIGINT},

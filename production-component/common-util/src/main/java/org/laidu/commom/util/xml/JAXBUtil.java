@@ -16,7 +16,6 @@ import java.io.UnsupportedEncodingException;
  * Created by tiancai.zang on 2017-12-13 11:41.
  */
 @Slf4j
-// : 2017/12/13 11/41 JAXB util
 public final class JAXBUtil {
 
     /**
