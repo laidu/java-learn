@@ -15,7 +15,7 @@ spring:
           no-store: true
       notify:
         mail:
-          to: tiancai.zang@finlink.net.cn
+          to: tiancai.zang@xpcoder.xyz
           from: laidu823@sina.com
   mail:
     host: smtp.sina.com

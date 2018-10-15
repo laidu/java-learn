@@ -12,7 +12,7 @@ spring:
           no-store: true
       notify:
         mail:
-          to: tiancai.zang@finlink.net.cn
+          to: tiancai.zang@xpcoder.xyz
           from: laidu823@sina.com
   mail:
     host: smtp.sina.com
@@ -32,6 +32,8 @@ spring:
             enable: true
 
 eureka:
+  server:
+    enable-self-preservation: false
   instance:
     hostname: local-dev
   client:
@@ -62,4 +64,4 @@ management:
       exposure:
         include: "*"
 server:
-  port: 1111
+  port: 8761

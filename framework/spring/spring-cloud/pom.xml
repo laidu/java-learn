@@ -27,7 +27,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
-        <spring-boot-admin.version>2.0.2</spring-boot-admin.version>
+        <spring-boot-admin.version>2.0.3</spring-boot-admin.version>
 
     </properties>
 
@@ -68,6 +68,8 @@
 
     <dependencies>
 
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -95,6 +97,7 @@
             <artifactId>jolokia-core</artifactId>
         </dependency>
 
+
     </dependencies>
 
     <repositories>
@@ -107,6 +110,22 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 
 
