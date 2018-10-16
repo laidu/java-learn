@@ -11,9 +11,10 @@ import java.util.stream.IntStream;
 /**
  * runner
  * <p>
- * Created by 臧天才 on 2017-09-21 17:33.
+ *
+ * @author 臧天才
+ * @date 2017-09-21 17:33
  */
-//  : 2017-09-21 17:33  worker
 public class LatchWorker implements Runnable {
 
     private String id;
