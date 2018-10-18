@@ -9,9 +9,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 /**
  * 并发返回最快结果
@@ -24,14 +22,14 @@ public class ObtainFastRes {
 
 
     /**
-     * 模拟网络相应
+     * 模拟网络延迟
      *
      * @param workerName
      * @return
      */
     public static String doWork(String workerName) {
 
-        int sleep = RandomUtils.nextInt(500, 1000);
+        int sleep = RandomUtils.nextInt(1500, 2000);
 
         log.info("workname {}, sleep: {}", workerName,sleep);
         ThreadUtil.sleep(sleep);
@@ -41,18 +39,18 @@ public class ObtainFastRes {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 
-        Worker a = new Worker("a");
-        Worker b = new Worker("b");
-        Worker c = new Worker("c");
+        Work a = new Work("a");
+        Work b = new Work("b");
+        Work c = new Work("c");
 
         List<Callable<String>> tasks = Arrays.asList(a, b, c);
+
 
         String s = runAndReturnFast(tasks);
 
         System.out.println(s);
 
     }
-
 
 
     /**
@@ -64,12 +62,35 @@ public class ObtainFastRes {
      */
     @NotNull
     public static String runAndReturnFast(List<Callable<String>> tasks) throws InterruptedException, ExecutionException {
-        return Executors.newFixedThreadPool(3).invokeAny(tasks);
+
+        ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(tasks.size(), tasks.size(),
+                0L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<>(), Thread::new, new ThreadPoolExecutor.AbortPolicy());
+
+        // 执行顺序 1>3>2
+        try {
+            /*
+              step 1 : 
+             */
+            String resultFast = poolExecutor.invokeAny(tasks);
+            
+            /*
+              step 2 : 
+             */
+            return resultFast;
+        }finally {
+
+            /*
+              step 3 :
+             */
+            poolExecutor.shutdown();
+        }
+
     }
 
-    @AllArgsConstructor
     @Data
-    static class Worker implements Callable<String> {
+    @AllArgsConstructor
+    static class Work implements Callable<String> {
 
         private final String name;
 
@@ -78,4 +99,5 @@ public class ObtainFastRes {
             return doWork(this.name);
         }
     }
+
 }
