@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.laidu.learn.design.pattern.observer.Client</OriginalElement>
+  <nodes>
+    <node x="201.75" y="971.0">org.laidu.learn.design.pattern.observer.Client</node>
+    <node x="39.75" y="589.0">org.laidu.learn.design.pattern.observer.Boss</node>
+    <node x="64.67361111111109" y="182.0">org.laidu.learn.design.pattern.observer.Worker</node>
+    <node x="146.99999999999997" y="0.0">org.laidu.learn.design.pattern.observer.Observable</node>
+    <node x="0.0" y="12.5">org.laidu.learn.design.pattern.observer.WorkerState</node>
+    <node x="331.0" y="37.5">org.laidu.learn.design.pattern.observer.Observer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.laidu.learn.design.pattern.observer.Client" target="org.laidu.learn.design.pattern.observer.Worker">
+      <point x="-23.0" y="-28.5" />
+      <point x="270.75" y="946.0" />
+      <point x="288.25" y="946.0" />
+      <point x="288.25" y="559.0" />
+      <point x="227.1736111111111" y="559.0" />
+      <point x="0.0" y="178.5" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Client" target="org.laidu.learn.design.pattern.observer.Boss">
+      <point x="-69.0" y="-28.5" />
+      <point x="224.75" y="946.0" />
+      <point x="158.75" y="946.0" />
+      <point x="0.0" y="166.0" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Boss" target="org.laidu.learn.design.pattern.observer.WorkerState">
+      <point x="-79.33333333333331" y="-166.0" />
+      <point x="79.41666666666669" y="569.0" />
+      <point x="18.84027777777777" y="569.0" />
+      <point x="18.84027777777777" y="162.0" />
+      <point x="21.166666666666686" y="162.0" />
+      <point x="-42.333333333333314" y="53.5" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Worker" target="org.laidu.learn.design.pattern.observer.Observer">
+      <point x="64.99999999999997" y="-178.5" />
+      <point x="292.1736111111111" y="152.0" />
+      <point x="355.75" y="152.0" />
+      <point x="-74.25" y="28.5" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Worker" target="org.laidu.learn.design.pattern.observer.Observable">
+      <point x="-2.8421709430404007E-14" y="-178.5" />
+      <point x="227.17361111111106" y="162.0" />
+      <point x="228.99999999999997" y="162.0" />
+      <point x="0.0" y="66.0" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Boss" target="org.laidu.learn.design.pattern.observer.Observer">
+      <point x="79.33333333333331" y="-166.0" />
+      <point x="238.08333333333331" y="569.0" />
+      <point x="474.0" y="569.0" />
+      <point x="474.0" y="162.0" />
+      <point x="454.75" y="162.0" />
+      <point x="24.75" y="28.5" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Client" target="org.laidu.learn.design.pattern.observer.Observer">
+      <point x="69.0" y="-28.5" />
+      <point x="362.75" y="946.0" />
+      <point x="485.0" y="946.0" />
+      <point x="485.0" y="162.0" />
+      <point x="504.25" y="162.0" />
+      <point x="74.25" y="28.5" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Worker" target="org.laidu.learn.design.pattern.observer.WorkerState">
+      <point x="-130.00000000000003" y="-178.5" />
+      <point x="97.17361111111106" y="162.0" />
+      <point x="63.5" y="162.0" />
+      <point x="7.105427357601002E-15" y="53.5" />
+    </edge>
+    <edge source="org.laidu.learn.design.pattern.observer.Boss" target="org.laidu.learn.design.pattern.observer.Worker">
+      <point x="0.0" y="-166.0" />
+      <point x="158.75" y="569.0" />
+      <point x="118.84027777777777" y="569.0" />
+      <point x="-108.33333333333333" y="178.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="42.5" y="375.5" />
+  <SelectedNodes>
+    <node>org.laidu.learn.design.pattern.observer.Boss</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
