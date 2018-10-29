@@ -28,7 +28,7 @@ public class Singleton {
     }
 
     public void doWork(){
-        log.info("-*--*--*--*- doWork : {}-*--*--*--*--");
+//        log.info("-*--*--*--*- doWork : {}-*--*--*--*--");
 //        IntStream.range(0,100)
 ////                .parallel()
 //                .boxed()

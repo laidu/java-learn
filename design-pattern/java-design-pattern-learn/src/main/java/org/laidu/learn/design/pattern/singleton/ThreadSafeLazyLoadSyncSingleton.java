@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * User: zangtiancai
  * Date: 2017/8/24
  * Time: 下午6:01
+ * @author laidu
  */
 @Slf4j
 public class ThreadSafeLazyLoadSyncSingleton {
@@ -19,7 +20,8 @@ public class ThreadSafeLazyLoadSyncSingleton {
 
     public static synchronized ThreadSafeLazyLoadSyncSingleton getInstance() {
         if (ourInstance == null) {
-            ourInstance = new ThreadSafeLazyLoadSyncSingleton();  // 非原子操作， 故需要volatile修饰
+            // 非原子操作， 故需要volatile修饰
+            ourInstance = new ThreadSafeLazyLoadSyncSingleton();
         }
         return ourInstance;
     }
