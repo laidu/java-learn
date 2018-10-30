@@ -3,14 +3,10 @@ package org.laidu.learn.code.practice.jianzhioffer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SearchInDoubleDimArrayTest {
 
@@ -46,7 +42,7 @@ class SearchInDoubleDimArrayTest {
         Random random = new Random();
         inputs.forEach(array -> {
             int randomInt = random.nextInt(40)*10;
-            boolean reault = SearchInDoubleDimArray.find(randomInt,array);
+            boolean reault = SearchInDoubleDimArray.findByBinarySearch(randomInt,array);
             System.out.println(randomInt + " result " + reault);
         });
     }
