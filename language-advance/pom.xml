@@ -25,10 +25,18 @@
 
     <properties>
         <aspectj.version>1.9.1</aspectj.version>
+        <cglib.version>3.2.9</cglib.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
