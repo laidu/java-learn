@@ -1,0 +1,18 @@
+@startuml
+
+interface EventListener
+interface ServletDispatcher
+class Route
+
+
+
+List <|-- EventListener
+Collection <|-- AbstractCollection
+
+
+interface EventListener  {
+void handleSocket(ServerSocket server);
+}
+
+
+@enduml
