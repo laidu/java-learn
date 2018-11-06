@@ -1,4 +1,4 @@
-package org.laidu.learn.amqp.rabbitmq.official.rpc;
+package org.laidu.learn.amqp.rabbitmq.official.rpc.custom;
 
 
 import com.rabbitmq.client.*;
@@ -34,8 +34,8 @@ public class RpcClient {
         channel = connection.createChannel();
 
         String replyTo = "rpc_reply_to";
-//        replyQueueName = channel.queueDeclare(replyTo,true,false,false,null).getQueue();
-        replyQueueName = channel.queueDeclare().getQueue();
+        replyQueueName = channel.queueDeclare(replyTo,true,false,false,null).getQueue();
+//        replyQueueName = channel.queueDeclare().getQueue();
     }
 
     public String call(String message) throws IOException, InterruptedException {
@@ -47,6 +47,7 @@ public class RpcClient {
                 .replyTo(replyQueueName)
                 .build();
 
+        channel.basicPublish("", RpcServer.RPC_QUEUE_NAME, props, message.getBytes("UTF-8"));
 
         final BlockingQueue<String> response = new ArrayBlockingQueue<>(1);
 
@@ -59,8 +60,6 @@ public class RpcClient {
             }
         });
 
-        channel.basicPublish("", RpcServer.RPC_QUEUE_NAME, props, message.getBytes("UTF-8"));
-
         return response.take();
     }
 
@@ -72,23 +71,25 @@ public class RpcClient {
 
         RpcClient fibonacciRpc = new RpcClient();
 
-        ExecutorService service  = Executors.newFixedThreadPool(10);
-        service.submit(()->{
+//        ExecutorService service  = Executors.newFixedThreadPool(10);
+//        service.submit(()->{
+//
+//            System.out.println(" [x] Requesting fib(30)");
+//            String response = null;
+//            try {
+//
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println(" [.] Got '" + response + "'");
+//        });
 
-            System.out.println(" [x] Requesting fib(30)");
-            String response = null;
-            try {
-                response = fibonacciRpc.call("3");
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println(" [.] Got '" + response + "'");
-        });
-
+        String result = fibonacciRpc.call("30");
 
         fibonacciRpc.close();
+
+        System.out.println(result);
+
     }
 
 }
