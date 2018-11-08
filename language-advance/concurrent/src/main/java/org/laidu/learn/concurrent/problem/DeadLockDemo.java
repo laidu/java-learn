@@ -41,6 +41,9 @@ public class DeadLockDemo {
         deadLockWithReentrantLock();
     }
 
+    /**
+     * 通过重入锁实现
+     */
     public static void deadLockWithReentrantLock() {
         ReentrantLock lock = new ReentrantLock();
         new Thread(new DeadLoclWorker2(lock)).start();
