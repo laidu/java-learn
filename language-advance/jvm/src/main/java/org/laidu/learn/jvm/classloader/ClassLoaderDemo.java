@@ -14,9 +14,7 @@ public class ClassLoaderDemo {
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
 
-
     }
-
 
     @Data
     public static class Person {
