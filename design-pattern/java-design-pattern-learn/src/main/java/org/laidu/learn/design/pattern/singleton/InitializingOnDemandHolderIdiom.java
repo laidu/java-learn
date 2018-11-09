@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * User: zangtiancai
  * Date: 2017/8/25
  * Time: 上午10:35
+ * @author laidu
  */
 @Slf4j
 public class InitializingOnDemandHolderIdiom {
@@ -30,7 +31,7 @@ public class InitializingOnDemandHolderIdiom {
 
     public static void main(String[] args) {
 
-        for (int i=0; i<1000; i++){
+        for (int i=0; i<10000; i++){
             new Thread(InitializingOnDemandHolderIdiom::getInstance).start();
         }
 

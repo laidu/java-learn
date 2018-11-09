@@ -1,31 +1,30 @@
-package org.laidu.learn.amqp.rabbitmq.official.rpc;
+package org.laidu.learn.amqp.rabbitmq.official.rpc.custom;
 
-
-import lombok.extern.slf4j.Slf4j;
 
 import com.rabbitmq.client.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.*;
 
 /**
- * rabbitmq 官方示例 RPCClient
+ * rabbitmq 官方示例 RpcClient
  * <p>
- * Created by 臧天才 on 2017-09-13 11:02.
+ *
+ * @author 臧天才
+ * @date 2017-09-13 11:02
  */
 @Slf4j
-//  : 2017-09-13 11:02  rabbitmq 官方示例 RPCClient
-public class RPCClient {
+public class RpcClient {
 
     private Connection connection;
     private Channel channel;
-    private String requestQueueName = "rpc_queue";
     private String replyQueueName;
 
-    public RPCClient() throws IOException, TimeoutException {
+    public RpcClient() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("dev");
+        factory.setHost("local-dev");
         factory.setUsername("admin");
         factory.setPassword("admin");
         factory.setPort(5672);
@@ -34,7 +33,9 @@ public class RPCClient {
         connection = factory.newConnection();
         channel = connection.createChannel();
 
-        replyQueueName = channel.queueDeclare().getQueue();
+        String replyTo = "rpc_reply_to";
+        replyQueueName = channel.queueDeclare(replyTo,true,false,false,null).getQueue();
+//        replyQueueName = channel.queueDeclare().getQueue();
     }
 
     public String call(String message) throws IOException, InterruptedException {
@@ -46,7 +47,7 @@ public class RPCClient {
                 .replyTo(replyQueueName)
                 .build();
 
-        channel.basicPublish("", requestQueueName, props, message.getBytes("UTF-8"));
+        channel.basicPublish("", RpcServer.RPC_QUEUE_NAME, props, message.getBytes("UTF-8"));
 
         final BlockingQueue<String> response = new ArrayBlockingQueue<>(1);
 
@@ -68,25 +69,27 @@ public class RPCClient {
 
     public static void main(String[] args) throws IOException, TimeoutException, InterruptedException {
 
-        RPCClient fibonacciRpc = new RPCClient();
+        RpcClient fibonacciRpc = new RpcClient();
 
-        ExecutorService service  = Executors.newFixedThreadPool(10);
-        service.submit(()->{
+//        ExecutorService service  = Executors.newFixedThreadPool(10);
+//        service.submit(()->{
+//
+//            System.out.println(" [x] Requesting fib(30)");
+//            String response = null;
+//            try {
+//
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println(" [.] Got '" + response + "'");
+//        });
 
-            System.out.println(" [x] Requesting fib(30)");
-            String response = null;
-            try {
-                response = fibonacciRpc.call("30");
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println(" [.] Got '" + response + "'");
-        });
-
+        String result = fibonacciRpc.call("30");
 
         fibonacciRpc.close();
+
+        System.out.println(result);
+
     }
 
 }

@@ -14,6 +14,68 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ReConstructBinaryTree {
 
+    public static void main(String[] args) {
+
+        ReConstructBinaryTree reConstructBinaryTree = new ReConstructBinaryTree();
+
+        int[] pre = {1,2,4,7,3,5,6,8};
+        int[] in = {4,7,2,1,5,3,8,6};
+
+        TreeNode treeNode = reConstructBinaryTree.reConstructBinaryTree(pre, in);
+
+        System.out.println(treeNode);
+
+    }
+
+    public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+
+        return re(pre, 0, pre.length - 1, in, 0, in.length - 1);
+    }
+
+    private TreeNode re(int[] pre, int preStart, int preEnd, int[] in, int inStart, int inEnd) {
+
+
+        if (preStart > preEnd || inStart > inEnd || in.length != pre.length || in.length == 0){
+            return null;
+        }
+
+        /*
+          step 1 : 根据前序遍历第一个元素为 root 节点
+         */
+        int node = pre[preStart];
+        TreeNode treeNode = new TreeNode(node);
+
+        int nodeIndex = indexOf(in,node);
+
+        /*
+          step 2 : 设置左子树
+         */
+        treeNode.left = re(pre, preStart+1, preStart + nodeIndex - inStart, in, inStart,nodeIndex-1);
+
+        /*
+          step 3 : 设置右子树
+         */
+        treeNode.right = re(pre, preStart + nodeIndex - inStart + 1 , preEnd, in, nodeIndex+1,inEnd);
+
+        return  treeNode;
+    }
+
+    /**
+     * 获取 数组下标
+     * @param array
+     * @param value
+     * @return
+     */
+    public int indexOf(int[] array, int value){
+        for (int i = 0; i < array.length; i++) {
+            if (value == array[i]){
+                return i;
+            }
+        }
+
+        throw  new IllegalArgumentException("数据不合法");
+    }
+
     public static class TreeNode {
         int val;
         TreeNode left;
@@ -22,35 +84,5 @@ public class ReConstructBinaryTree {
         TreeNode(int x) {
             val = x;
         }
-    }
-
-
-    public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
-
-        /*
-          step 1 : 判断临界条件
-         */
-        if (pre.length != in.length || pre.length < 1) {
-            return null;
-        }
-
-        /*
-          step 2 : 根据前序遍历确定根节点
-         */
-        TreeNode root = new TreeNode(pre[0]);
-
-        if (pre.length == 1) {
-            return root;
-        }
-
-
-
-
-        return null;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("laidu");
-
     }
 }

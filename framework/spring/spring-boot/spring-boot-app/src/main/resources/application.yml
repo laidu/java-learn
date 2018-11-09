@@ -7,6 +7,8 @@ spring:
 #    property-naming-strategy: SNAKE_CASE
   application:
     name: spring-boot-app-1
+    admin:
+      enabled: true
 
 management:
   endpoint:
@@ -19,7 +21,7 @@ management:
     info:
       enabled: true
   endpoints:
-    enabled-by-default: true
+    enabled-by-default: false
     jmx:
       exposure:
 

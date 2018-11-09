@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * User: zangtiancai
  * Date: 2017/8/24
  * Time: 下午6:01
+ * @author laidu
  */
 @Slf4j
 public class ThreadUnSafeLazyLoadSingleton {
@@ -26,7 +27,8 @@ public class ThreadUnSafeLazyLoadSingleton {
     }
 
     private ThreadUnSafeLazyLoadSingleton() {
-        int count = initCount.incrementAndGet(); // initCount.incrementAndGet() ; System.out.println(initCount); 为两步操作
+        // initCount.incrementAndGet() ; System.out.println(initCount); 为两步操作
+        int count = initCount.incrementAndGet();
         log.info("-*--*--*--*- instance 初始化 第 {} 次-*--*--*--*--", count);
     }
 

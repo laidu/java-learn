@@ -11,9 +11,15 @@ public class Boxing {
     public static void main(String[] args) {
 
         // 装箱
-        Integer i = 10;
+        int i = 10;
+        Integer j = 10;
 
-        //拆箱
-        int n = i;
+        int k = 222;
+        Integer l = 222;
+
+        System.out.println("i == j :"+(i == j));
+
+        System.out.println("k == l : "+(k == l));
+
     }
 }

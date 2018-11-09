@@ -1,9 +1,8 @@
-package org.laidu.learn.amqp.rabbitmq.official.rpc;
+package org.laidu.learn.amqp.rabbitmq.official.rpc.custom;
 
-
-import lombok.extern.slf4j.Slf4j;
 
 import com.rabbitmq.client.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 
@@ -13,18 +12,12 @@ import java.io.IOException;
  * Created by 臧天才 on 2017-09-13 10:55.
  */
 @Slf4j
-//  : 2017-09-13 10:55  rabbitmq 官方 示例
-public class RPCServer {
+public class RpcServer {
 
-    private static final String RPC_QUEUE_NAME = "rpc_queue";
+    public static final String RPC_QUEUE_NAME = "rpc_queue";
 
     public static void main(String[] argv) {
-        ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("dev");
-        factory.setUsername("admin");
-        factory.setPassword("admin");
-        factory.setPort(5672);
-        factory.setVirtualHost("/rpc");
+        ConnectionFactory factory = getConnectionFactory();
 
         Connection connection = null;
         try {
@@ -43,18 +36,21 @@ public class RPCServer {
                     AMQP.BasicProperties replyProps = new AMQP.BasicProperties
                             .Builder()
                             .correlationId(properties.getCorrelationId())
+                            .replyTo(properties.getReplyTo())
                             .build();
 
                     String response = "";
 
                     try {
 
+                        System.out.println(properties.getReplyTo());
+
                         response += fib(Integer.parseInt(new String(body)));
 
                     } catch (RuntimeException e) {
                         System.out.println(" [.] " + e.toString());
                     } finally {
-                        channel.basicPublish("", properties.getReplyTo(), replyProps, response.getBytes("UTF-8"));
+                        channel.basicPublish("",replyProps.getReplyTo(), replyProps, response.getBytes("UTF-8"));
 
                         channel.basicAck(envelope.getDeliveryTag(), false);
                     }
@@ -64,8 +60,18 @@ public class RPCServer {
             channel.basicConsume(RPC_QUEUE_NAME, false, consumer);
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
+    }
+
+    public static ConnectionFactory getConnectionFactory() {
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("local-dev");
+        factory.setUsername("admin");
+        factory.setPassword("admin");
+        factory.setPort(5672);
+        factory.setVirtualHost("/rpc");
+        return factory;
     }
 
     private static int fib(int n) {

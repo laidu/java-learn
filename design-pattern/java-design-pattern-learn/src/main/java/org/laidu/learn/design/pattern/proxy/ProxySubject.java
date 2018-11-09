@@ -20,11 +20,13 @@ public class ProxySubject extends AbstractSubject {
     @Override
     public void request(String name) {
 
-        preRequest(name); // 请求前置处理
+        // 请求前置处理
+        preRequest(name);
 
         subject.request(name);
 
-        postRequest(name); // 请求后置处理
+        // 请求后置处理
+        postRequest(name);
 
     }
 

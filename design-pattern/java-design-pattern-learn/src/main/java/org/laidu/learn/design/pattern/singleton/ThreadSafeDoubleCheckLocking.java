@@ -19,9 +19,11 @@ public class ThreadSafeDoubleCheckLocking {
 
     public static ThreadSafeDoubleCheckLocking getInstance() {
 
-        if (ourInstance == null){                       //  第一次 null值 校验
+        //  第一次 null值 校验
+        if (ourInstance == null){
             synchronized (ThreadSafeDoubleCheckLocking.class){
-                if (ourInstance == null) {              //  第二次 null值 校验
+                //  第二次 null值 校验
+                if (ourInstance == null) {
                     ourInstance = new ThreadSafeDoubleCheckLocking();
                 }
             }

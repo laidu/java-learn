@@ -3,6 +3,8 @@ package org.laidu.learn.spring.boot.app.controller;
 import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.spring.boot.app.dto.DemoDTO;
+import org.laidu.learn.spring.boot.app.service.DemoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class DemoController {
 
+    @Autowired
+    private DemoService demoServiceA;
 
     @PostMapping("/demo")
     public DemoDTO demo(@RequestBody DemoDTO demoDTO){
@@ -29,6 +33,12 @@ public class DemoController {
     @Timed(extraTags = { "region", "us-east-1" })
     @Timed(value = "all.people", longTask = true)
     public String hello(){
+        demoServiceA.work();
+
         return "hello";
     }
+
+
+
+
 }
