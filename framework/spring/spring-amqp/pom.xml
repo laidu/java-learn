@@ -13,7 +13,7 @@
 
     <properties>
         <!--<common-io.version>2.6</common-io.version>-->
-        <spring-amqp.version>2.0.1.RELEASE</spring-amqp.version>
+        <spring-amqp.version>2.1.1.RELEASE</spring-amqp.version>
     </properties>
 
     <dependencies>
