@@ -16,7 +16,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
 
-        int[] input = {6, 5, 4, 3, 2, 1};
+        int[] input = {6, 5, 4, 7, 10, 123, 3, 2, 1};
 
         quickSort(input);
 
@@ -40,6 +40,7 @@ public class QuickSort {
 
     private static int partition(int[] arr, int low, int high) {
         int pivot = arr[low];
+
         while (low < high) {
             while (low < high && arr[high] >= pivot) {
                 --high;
