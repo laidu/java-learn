@@ -30,7 +30,7 @@ public class QuickSort {
 
     private static void qsort(int[] arr, int low, int high) {
         if (low < high) {
-            int pivot = partition(arr, low, high);
+            int pivot = partition2(arr, low, high);
 
             qsort(arr, low, pivot - 1);
 
@@ -38,6 +38,13 @@ public class QuickSort {
         }
     }
 
+    /**
+     * 保证 数组中在pivot(枢纽元)之前的元素均小于index上的元素, 之后的元素均大于枢纽元
+     * @param arr
+     * @param low
+     * @param high
+     * @return 枢纽元(pivot) 下标
+     */
     private static int partition(int[] arr, int low, int high) {
         int pivot = arr[low];
 
@@ -54,4 +61,46 @@ public class QuickSort {
         arr[low] = pivot;
         return low;
     }
+
+    private static  int partition2(int[] arr, int low, int high){
+
+        int mid = (low+high)/2;
+        int pivot = arr[mid];
+
+        int i = low, j= high;
+
+        while (i < j){
+
+
+            while (i < j && arr[i] <= pivot){
+                i++;
+            }
+
+            while (i <j && arr[j] >= pivot){
+                j--;
+            }
+
+            if (i < mid && mid < j){
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }else if (i < j && mid < i){
+
+                int temp = arr[mid];
+                arr[mid] = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+
+            }else if (i < j && j < mid){
+                int temp = arr[mid];
+                arr[mid] = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+        return i;
+    }
+
+
 }
