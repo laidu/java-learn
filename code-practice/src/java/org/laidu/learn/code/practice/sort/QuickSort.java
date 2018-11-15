@@ -16,7 +16,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
 
-        int[] input = {6, 5, 4, 7, 10, 123, 3, 2, 1};
+        int[] input = {1, 5, 4, 7, 10, 123, 3, 2, 6};
 
         quickSort(input);
 
@@ -30,7 +30,7 @@ public class QuickSort {
 
     private static void qsort(int[] arr, int low, int high) {
         if (low < high) {
-            int pivot = partition2(arr, low, high);
+            int pivot = partition(arr, low, high);
 
             qsort(arr, low, pivot - 1);
 
@@ -60,46 +60,6 @@ public class QuickSort {
         }
         arr[low] = pivot;
         return low;
-    }
-
-    private static  int partition2(int[] arr, int low, int high){
-
-        int mid = (low+high)/2;
-        int pivot = arr[mid];
-
-        int i = low, j= high;
-
-        while (i < j){
-
-
-            while (i < j && arr[i] <= pivot){
-                i++;
-            }
-
-            while (i <j && arr[j] >= pivot){
-                j--;
-            }
-
-            if (i < mid && mid < j){
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }else if (i < j && mid < i){
-
-                int temp = arr[mid];
-                arr[mid] = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-
-            }else if (i < j && j < mid){
-                int temp = arr[mid];
-                arr[mid] = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-
-        return i;
     }
 
 
