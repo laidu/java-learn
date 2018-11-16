@@ -47,7 +47,7 @@ public class GoodsController {
         return  Result.ok(GetGoodsResDTO.builder()
                 .goodsName("name")
                 .goodsId(goodId)
-                .goodsType(GoodsTypeEnum.BOOK)
+                .goodsType(GoodsTypeEnum.BOOK_0)
                 .build());
     }
 

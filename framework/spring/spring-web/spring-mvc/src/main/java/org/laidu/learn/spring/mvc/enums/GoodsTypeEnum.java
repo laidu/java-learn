@@ -20,12 +20,12 @@ public enum  GoodsTypeEnum implements NameValueEnum<String,Integer> {
     /**
      * 书籍
      */
-    BOOK(0,"书籍"),
+    BOOK_0(0,"书籍"),
 
     /**
      * 手机
      */
-    PHONE(1,"手机"),
+    PHONE_1(1,"手机"),
 
     ;
     @JsonValue
