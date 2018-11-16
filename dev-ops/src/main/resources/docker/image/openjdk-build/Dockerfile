@@ -15,7 +15,7 @@ MAINTAINER laidu laidu823@gmail.com
 RUN yum -y update; yum clean all
 RUN yum -y install openssh-server passwd; yum clean all
 RUN yum -y groupinstall "Development Tools"
-RUN yum -y java-1.7.0-openjdk-devel.x86_64 libXtst-devel libXt-devel libXrender-devel \
+RUN yum -y java-1.7.0-openjdk-devel.x86_64 which libXtst-devel libXt-devel libXrender-devel \
     cups-devel freetype-devel alsa-lib-devel; yum clean all
 
 ENTRYPOINT ["/usr/sbin/sshd", "-D"]
