@@ -8,7 +8,7 @@
 
 ------------
 
-* [Object解析](object.md)
+* [Object深入解析](object.md)
 * [java数据结构]()
 * [java集合](collection.md)
 

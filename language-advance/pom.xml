@@ -21,6 +21,7 @@
         <module>xml</module>
         <module>gui</module>
         <module>bytecode</module>
+        <module>jni</module>
     </modules>
 
     <properties>
