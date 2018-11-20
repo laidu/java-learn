@@ -13,6 +13,17 @@ public class StringDemo {
 
     public static void main(String[] args) {
 
+        String aa = "Aa";
+        String bb = "BB";
+
+        // aa==bb : false
+        log.debug("aa==bb : {}", aa==bb);
+
+        // aa.hashCode() == bb.hashCode() : true
+        log.debug("aa.hashCode() == bb.hashCode() : {}", aa.hashCode() == bb.hashCode());
+    }
+
+    public static void createString() {
         // 会在栈中创建一个对象引用变量str，然后查看字符串池中是否存在”XXX”，如果没有，则将”XXX”存放字符串池，并令引用变量str指向它；如果已经有”XXX”，则直接令str指向它
         String s = "hello";
 
@@ -32,6 +43,5 @@ public class StringDemo {
         System.out.println("s2\t" + System.identityHashCode(s2));
 
         System.out.println("s.equals(s1) : " + s.equals(s1));
-
     }
 }
