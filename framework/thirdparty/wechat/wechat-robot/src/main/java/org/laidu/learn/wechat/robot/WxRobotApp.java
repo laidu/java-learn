@@ -19,6 +19,7 @@ public class WxRobotApp extends WeChatBot {
 
     public WxRobotApp(Config config) {
         super(config);
+        config.assetsDir("");
     }
 
     @Bind(msgType = MsgType.TEXT)
