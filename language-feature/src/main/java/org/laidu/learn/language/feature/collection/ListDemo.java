@@ -2,9 +2,8 @@ package org.laidu.learn.language.feature.collection;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.stream.IntStream;
 
 /**
  * list learn
@@ -21,18 +20,20 @@ public class ListDemo {
 
         int initSize = 8;
 
-        List<Integer> list = new ArrayList<>(initSize);
+        List<Integer> list = Arrays.asList(11,2,3,4,5,1,58);
 
-        IntStream.range(0,99999).boxed()
-                .forEach(e -> {
+//        IntStream.range(0,99999).boxed()
+//                .forEach(e -> {
+//
+//                    try {
+//                        Thread.sleep(500);
+//                    } catch (InterruptedException e1) {
+//                    }
+//
+//                    list.add(e);
+//                });
 
-                    try {
-                        Thread.sleep(500);
-                    } catch (InterruptedException e1) {
-                    }
-
-                    list.add(e);
-                });
+        list.stream().forEach(System.out::print);
 
 
     }
