@@ -10,7 +10,7 @@ import org.laidu.learn.date.structure.util.BtreePrinter;
  * @author laidu
  */
 @Slf4j
-public class BtreeBuild {
+public class TreeBuild {
 
     private static int count = 0;
     private static final String TREETOP = "#";

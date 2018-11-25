@@ -19,7 +19,6 @@ public class WxRobotApp extends WeChatBot {
 
     public WxRobotApp(Config config) {
         super(config);
-        config.assetsDir("");
     }
 
     @Bind(msgType = MsgType.TEXT)
@@ -31,7 +30,19 @@ public class WxRobotApp extends WeChatBot {
     }
 
     public static void main(String[] args) {
-        new WxRobotApp(Config.me().autoLogin(true).showTerminal(true)).start();
+
+        String assetDir = System.getProperty("user.home")+"/.wechat/";
+        WxRobotApp robotApp = new WxRobotApp(Config.me()
+                .autoLogin(true)
+                .showTerminal(true)
+                .autoReply(true)
+                .assetsDir(assetDir));
+
+        robotApp.start();
+
+        robotApp.sendMsgByName("","");
+
+
     }
 
 }
