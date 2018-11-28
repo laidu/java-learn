@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.swagger.demo.dto.ProductReqDTO;
 import org.laidu.learn.swagger.demo.dto.ProductResDTO;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,7 +40,7 @@ public class HomeController {
     }
 
     @PostMapping("/add")
-    public ProductResDTO add(ProductResDTO product){
+    public ProductReqDTO add(@RequestBody ProductReqDTO product){
         return product;
     }
 

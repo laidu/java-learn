@@ -22,7 +22,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ApiModel
-public class ProductResDTO {
+public class ProductReqDTO {
 
     /**
      * id
@@ -33,12 +33,13 @@ public class ProductResDTO {
     /**
      * product name
      */
+    @ApiModelProperty(required = true,name = "产品ID",allowableValues = "")
     private String name;
 
     /**
      * product date
      */
-    @ApiModelProperty(required = true,example = "2016-01-01 18:10:12")
+    @ApiModelProperty(required = true,example = "2016-01-01")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss",timezone = "GMT+8")
     private Date productDate;
 }
