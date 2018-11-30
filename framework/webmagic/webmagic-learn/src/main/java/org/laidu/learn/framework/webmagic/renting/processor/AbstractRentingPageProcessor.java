@@ -29,13 +29,14 @@ public abstract class AbstractRentingPageProcessor implements PageProcessor {
     public void process(Page page) {
 
 
-        List<HouseInfo> houseInfos = processPage(page);
+        List<HouseInfo> houseInfos = null;
+        try {
+            houseInfos = processPage(page);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         houseInfos.stream()
-                .peek(houseInfo -> {
-                    int elapsed = queryExpireElapsed(houseInfo.getName(), this.conf.getDestination());
-                    houseInfo.setExpireElapsed(elapsed);
-                })
                 .filter(this::filter)
                 .forEach(houseInfo -> page.getResultItems().put(houseInfo.getName(),houseInfo));
     }
@@ -46,7 +47,7 @@ public abstract class AbstractRentingPageProcessor implements PageProcessor {
      * @return
      */
     protected Boolean filter(HouseInfo houseInfo){
-        return houseInfo.getPrice() < this.conf.getHighPrice() && houseInfo.getExpireElapsed() < this.conf.getExpireElapsed();
+        return houseInfo.getPrice() < this.conf.getHighPrice() && queryExpireElapsed(houseInfo.getName(), this.conf.getDestination()) < this.conf.getExpireElapsed();
     }
 
     /**
@@ -65,6 +66,6 @@ public abstract class AbstractRentingPageProcessor implements PageProcessor {
      * @param page
      * @return
      */
-    protected abstract List<HouseInfo> processPage(Page page);
+    protected abstract List<HouseInfo> processPage(Page page) throws Exception;
 
 }
