@@ -2,6 +2,7 @@ package org.laidu.learn.swagger.demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,16 +27,18 @@ public class ProductResDTO {
     /**
      * id
      */
-    public String  id;
+    @ApiModelProperty(required = true,name = "产品ID")
+    private String  id;
 
     /**
      * product name
      */
-    public String name;
+    private String name;
 
     /**
      * product date
      */
+    @ApiModelProperty(required = true,example = "2016-01-01 18:10:12")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss",timezone = "GMT+8")
-    public Date productDate;
+    private Date productDate;
 }

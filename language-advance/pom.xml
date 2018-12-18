@@ -21,11 +21,14 @@
         <module>xml</module>
         <module>gui</module>
         <module>bytecode</module>
+        <module>jni</module>
+        <module>security</module>
     </modules>
 
     <properties>
         <aspectj.version>1.9.1</aspectj.version>
         <cglib.version>3.2.9</cglib.version>
+        <bouncycastle.version>1.60</bouncycastle.version>
     </properties>
 
     <dependencyManagement>
@@ -48,7 +51,16 @@
                 <version>${aspectj.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+
+
         </dependencies>
+
+
     </dependencyManagement>
 
     <dependencies>

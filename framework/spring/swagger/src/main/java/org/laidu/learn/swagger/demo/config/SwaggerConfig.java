@@ -45,7 +45,7 @@ public class SwaggerConfig {
 
         ParameterBuilder ticketPar = new ParameterBuilder();
         List<Parameter> pars = new ArrayList<>();
-        ticketPar.name("__sid").description("__sid")
+        ticketPar.name("_sid").description("_sid")
                 .parameterType("query")
                 .modelRef(new ModelRef("string"))
                 .required(false).build();
