@@ -3,9 +3,8 @@ package org.laidu.learn.aws.dynamodb.convert;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import lombok.extern.slf4j.Slf4j;
 import org.nustaq.serialization.FSTConfiguration;
-import org.nustaq.serialization.serializers.FSTStringSerializer;
 
-import java.io.*;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 

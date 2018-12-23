@@ -1,7 +1,6 @@
 package org.laidu.learn.design.pattern._abstract.factory;
 
 import lombok.extern.slf4j.Slf4j;
-import org.laidu.learn.design.pattern.simple.factory.AbstractProduct;
 
 /**
  * 红色产品

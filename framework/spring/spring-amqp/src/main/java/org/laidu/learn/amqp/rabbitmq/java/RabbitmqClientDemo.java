@@ -15,7 +15,7 @@ import java.io.IOException;
  * @author tiancai.zang
  * 2018-01-11 16:24.
  */
-@Slf4j
+@Slf4j(topic = "rabbitmqClientDemo")
 public class RabbitmqClientDemo implements ClientDemo {
 
     public ConnectionFactory connectionFactory(){

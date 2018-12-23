@@ -1,8 +1,5 @@
 package org.laidu.learn.hadoop.mapreduce;
 
-import java.io.IOException;
-import java.util.StringTokenizer;
-
 import lombok.extern.slf4j.Slf4j;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -13,6 +10,9 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+import java.io.IOException;
+import java.util.StringTokenizer;
 
 /**
  * WordCount by official example

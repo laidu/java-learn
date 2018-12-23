@@ -1,8 +1,8 @@
 package org.laidu.learn.play.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import play.*;
-import play.mvc.*;
+import play.mvc.Controller;
+import play.mvc.Result;
 
 /**
  * Application

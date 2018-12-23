@@ -1,7 +1,6 @@
 package org.laidu.learn.design.pattern.iterator;
 
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * aggregate container

@@ -10,8 +10,6 @@ import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
 
-import java.util.List;
-
 /**
  * abstract page processor
  *

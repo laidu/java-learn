@@ -3,10 +3,8 @@ package org.laidu.learn.language.feature.string;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
 import java.util.Objects;
 import java.util.StringJoiner;
-import java.util.regex.Pattern;
 
 /**
  * java.lang.String 部分源码分析

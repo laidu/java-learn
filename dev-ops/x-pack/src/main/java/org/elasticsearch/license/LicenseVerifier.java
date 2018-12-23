@@ -1,12 +1,8 @@
 package org.elasticsearch.license;
 
-import java.nio.*;
-import java.util.*;
-import java.security.*;
-import org.elasticsearch.common.xcontent.*;
 import org.apache.lucene.util.*;
 import org.elasticsearch.common.io.*;
-import java.io.*;
+import org.elasticsearch.common.xcontent.*;
 
 public class LicenseVerifier
 {

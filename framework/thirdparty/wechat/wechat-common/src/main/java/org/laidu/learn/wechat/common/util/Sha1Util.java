@@ -1,11 +1,7 @@
 package org.laidu.learn.wechat.common.util;
 
 import java.security.MessageDigest;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
-import java.util.SortedMap;
+import java.util.*;
 
 /**
  * createSHA1Sign创建签名SHA1

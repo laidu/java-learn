@@ -1,6 +1,8 @@
 package org.laidu.crawler.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import us.codecraft.webmagic.Request;
 
 import java.util.ArrayList;

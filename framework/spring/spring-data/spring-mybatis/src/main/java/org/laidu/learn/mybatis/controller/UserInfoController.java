@@ -1,8 +1,8 @@
 package org.laidu.learn.mybatis.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.laidu.learn.mybatis.mapper.AppUserMapper;
 import org.laidu.learn.mybatis.entity.AppUser;
+import org.laidu.learn.mybatis.mapper.AppUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
