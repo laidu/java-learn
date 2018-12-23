@@ -3,7 +3,6 @@ package org.laidu.learn.spring.data.redis.service.impl;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.laidu.learn.spring.data.redis.RedisApp;
 import org.laidu.learn.spring.data.redis.model.UserInfo;
 import org.laidu.learn.spring.data.redis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

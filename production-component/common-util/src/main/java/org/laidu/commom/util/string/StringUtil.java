@@ -1,8 +1,6 @@
 package org.laidu.commom.util.string;
 
 import lombok.extern.slf4j.Slf4j;
-import org.laidu.commom.util.annotation.Singleton;
-import org.laidu.commom.util.xml.JAXBUtil;
 
 import java.util.ArrayList;
 import java.util.List;

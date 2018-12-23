@@ -1,17 +1,9 @@
 package __PACKAGE_NAME__;
 
-import com.alibaba.fastjson.JSONObject;
 import com.alpha.business.common.model.query.base.StringQueryRequest;
 import com.alpha.business.crawler.AbstractRegPageProcessor;
-import com.alpha.business.crawler.annotation.CrawlerProxyType;
-import com.alpha.common.enums.query.CrawlerProxyTypeEnum;
 import com.alpha.common.enums.crawler.PlatformCodeEnum;
-import com.alpha.common.utils.Md5Util;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;

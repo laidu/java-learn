@@ -5,7 +5,6 @@ import org.laidu.learn.spring.statemachine.enums.EventEnum;
 import org.laidu.learn.spring.statemachine.enums.OrderStatusEnum;
 import org.springframework.statemachine.StateContext;
 import org.springframework.statemachine.action.Action;
-import org.springframework.statemachine.annotation.OnTransition;
 import org.springframework.statemachine.annotation.WithStateMachine;
 
 /**

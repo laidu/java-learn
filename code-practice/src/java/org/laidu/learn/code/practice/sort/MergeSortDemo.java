@@ -1,7 +1,5 @@
 package org.laidu.learn.code.practice.sort;
 
-import java.lang.Math;
-
 /**
  * @author laidu
  */

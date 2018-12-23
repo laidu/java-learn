@@ -4,8 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.laidu.learn.spring.aop.service.impl.UserServiceImpl;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class JDKProxyDemoTest {
 
     JDKProxyDemo jdkProxyDemo;

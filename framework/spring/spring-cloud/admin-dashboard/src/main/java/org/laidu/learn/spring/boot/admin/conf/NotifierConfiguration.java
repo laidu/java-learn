@@ -5,16 +5,9 @@ import de.codecentric.boot.admin.server.domain.entities.InstanceRepository;
 import de.codecentric.boot.admin.server.domain.events.InstanceEvent;
 import de.codecentric.boot.admin.server.domain.events.InstanceStatusChangedEvent;
 import de.codecentric.boot.admin.server.notify.AbstractEventNotifier;
-import de.codecentric.boot.admin.server.notify.Notifier;
-import de.codecentric.boot.admin.server.notify.RemindingNotifier;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import reactor.core.publisher.Mono;
-
-import java.time.Duration;
 
 /**
  * notify config

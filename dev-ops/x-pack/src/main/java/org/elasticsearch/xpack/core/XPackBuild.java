@@ -1,11 +1,7 @@
 package org.elasticsearch.xpack.core;
 
-import org.elasticsearch.common.io.*;
-import java.net.*;
 import org.elasticsearch.common.*;
-import java.nio.file.*;
-import java.io.*;
-import java.util.jar.*;
+import org.elasticsearch.common.io.*;
 
 public class XPackBuild
 {

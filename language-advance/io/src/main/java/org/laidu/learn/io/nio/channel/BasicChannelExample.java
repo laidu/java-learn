@@ -3,7 +3,6 @@ package org.laidu.learn.io.nio.channel;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;

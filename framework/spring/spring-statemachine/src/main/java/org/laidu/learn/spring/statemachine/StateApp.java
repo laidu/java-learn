@@ -3,7 +3,6 @@ package org.laidu.learn.spring.statemachine;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.spring.statemachine.enums.EventEnum;
 import org.laidu.learn.spring.statemachine.enums.OrderStatusEnum;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;

@@ -1,7 +1,6 @@
 package org.laidu.crawler.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.selector.Html;
