@@ -7,7 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.laidu.learn.swagger.demo.enums.ProductTypeIntEnum;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -30,10 +32,14 @@ public class ProductReqDTO {
     @ApiModelProperty(required = true,name = "产品ID")
     private String  id;
 
+    @NotNull
+    @ApiModelProperty(name = "产品类型",dataType = "ProductTypeIntEnum")
+    private ProductTypeIntEnum type;
+
     /**
      * product name
      */
-    @ApiModelProperty(required = true,name = "产品ID",allowableValues = "")
+    @ApiModelProperty(required = true,name = "产品ID")
     private String name;
 
     /**

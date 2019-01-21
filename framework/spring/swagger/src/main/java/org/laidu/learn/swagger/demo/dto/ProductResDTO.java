@@ -8,6 +8,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -27,12 +28,13 @@ public class ProductResDTO {
     /**
      * id
      */
-    @ApiModelProperty(required = true,name = "产品ID")
+//    @ApiModelProperty(required = true,name = "产品ID")
     private String  id;
 
     /**
      * product name
      */
+    @NotNull(message = "产品名不能为空!")
     private String name;
 
     /**
