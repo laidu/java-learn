@@ -26,7 +26,7 @@ public class Usage {
                     WebClient.create()
                             .get()
                             .uri(uriBuilder -> uriBuilder
-                                    .scheme("h ttp")
+                                    .scheme("http")
                                     .host("www.baidu.com")
                                     .path("/s")
                                     .queryParam("wd", "北京天气")
