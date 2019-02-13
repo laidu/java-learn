@@ -22,7 +22,7 @@
 
 
     <properties>
-        <retrofit.version>2.4.0</retrofit.version>
+        <retrofit.version>2.5.0</retrofit.version>
         <async-http-client.version>2.1.0-alpha24</async-http-client.version>
 
         <spring-webflux.version>5.0.8.RELEASE</spring-webflux.version>
