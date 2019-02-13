@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--19:53:09.168 [main] INFO student - ===========无参构造器===========-->
+    <!--19:53:09.310 [main] INFO student - ===========setName===========: xiaoming-->
+    <!--19:53:09.310 [main] INFO student - ===========setIdCard===========: 411122200012311234-->
+    <!--19:53:09.311 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanFactory - Invoking init method  'init' on bean with name 'student'-->
+    <!--19:53:09.311 [main] INFO student - ===========init方法===========-->
+    <!--19:53:09.311 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanFactory - Finished creating instance of bean 'student'-->
+    <!--<bean class="org.laidu.learn.spring.core.bean.Student" id="student" scope="singleton" init-method="init">-->
+        <!--<property name="name" value="xiaoming"/>-->
+        <!--<property name="idCard" value="411122200012311234"/>-->
+    <!--</bean>-->
+
+
+
+    <!--19:58:07.595 [main] INFO student - ===========全参构造器===========-->
+    <!--19:58:07.596 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanFactory - Eagerly caching bean 'student' to allow for resolving potential circular references-->
+    <!--19:58:07.597 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanFactory - Invoking init method  'init' on bean with name 'student'-->
+    <!--19:58:07.597 [main] INFO student - ===========init方法===========-->
+    <bean class="org.laidu.learn.spring.core.bean.Student" id="student"  init-method="init" primary="true">
+        <constructor-arg name="name" value="xiaoming"/>
+        <constructor-arg name="idCard" value="411122200012311234"/>
+    </bean>
+</beans>

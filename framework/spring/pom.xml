@@ -23,6 +23,7 @@
         <module>spring-transaction</module>
         <module>spring-aop</module>
         <module>spring-spel</module>
+        <module>spring-core</module>
     </modules>
 
     <properties>
