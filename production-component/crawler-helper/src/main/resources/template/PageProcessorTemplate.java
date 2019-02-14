@@ -17,8 +17,6 @@ import java.text.ParseException;
  */
 @Slf4j
 //@Component
-//@CrawlerProxyType(type = CrawlerProxyTypeEnum.ONCE_WITHOUT_PROXY)
-// TODO: __DATE__ 取消注解 __CLASS_CN_NAME__
 public class __CLASS_NAME__PageProcessor extends AbstractRegPageProcessor {
 
     public __CLASS_NAME__PageProcessor() {
