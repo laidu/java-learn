@@ -4,12 +4,16 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
+import org.laidu.learn.mybatis.entity.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 @RunWith(SpringRunner.class)
@@ -24,7 +28,16 @@ class AppUserMapperTest {
     @Test
     void selectAppUserList() {
 
-//        appUserMapper.selectAppUserList(1,2).forEach(System.out::println);
-        Assert.assertEquals(1,1);
+        AppUser appUser = appUserMapper.selectByPrimaryKey(1L);
+        Assert.assertNotNull(appUser.getId());
+
+        List<AppUser> appUserList = Arrays.asList(appUser,appUser,appUser,appUser);
+
+        appUserMapper.insertBatch(appUserList);
+
+        AppUser appUser1 = appUserMapper.selectByPrimaryKey(3L);
+        Assert.assertNotNull(appUser1);
+
+
     }
 }
