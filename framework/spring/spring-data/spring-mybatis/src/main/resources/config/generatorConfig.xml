@@ -90,7 +90,7 @@
         <!-- schema即为数据库名 tableName为对应的数据库表 domainObjectName是要生成的实体类 enable*ByExample
             是否生成 example类 -->
 
-        <table schema="ca_app_user" tableName="ca_app_user"
+        <table schema="default" tableName="app_user"
                domainObjectName="AppUser" enableCountByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false">

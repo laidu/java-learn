@@ -1,0 +1,1 @@
+insert into app_user (username, id_card) values ('John', '411122100012319876');
