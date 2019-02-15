@@ -29,7 +29,7 @@ public class HttpServerDemo {
 
         @Override
         public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-            res.getWriter().write("helle");
+            res.getWriter().write("hello world");
         }
     }
 }
