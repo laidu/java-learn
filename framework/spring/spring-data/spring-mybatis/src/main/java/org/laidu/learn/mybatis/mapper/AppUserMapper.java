@@ -5,6 +5,9 @@ import org.laidu.learn.mybatis.entity.AppUser;
 
 import java.util.List;
 
+/**
+ * @author zangtiancai
+ */
 @Mapper
 public interface AppUserMapper {
     @Delete({

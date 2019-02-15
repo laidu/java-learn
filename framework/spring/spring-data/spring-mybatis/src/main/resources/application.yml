@@ -24,21 +24,14 @@ spring:
                 slf4j:
                     connection-log-enabled: false
                     enabled: true
-                    result-set-log-enabled: true
-#                    statement-executable-sql-log-enable: true
-                    statement-execute-after-log-enabled: true
-#                    statement-execute-batch-after-log-enabled: false
-#                    statement-execute-query-after-log-enabled: false
-#                    statement-log-enabled: true
-#                    statement-parameter-clear-log-enable: false
-#                    statement-parameter-set-log-enabled: true
-#                    statement-prepare-after-log-enabled: false
-#                    statement-prepare-call-after-log-enabled: false
+                    statement-executable-sql-log-enable: true
+
                 stat:
                     db-type: mysql
                     log-slow-sql: true
                     merge-sql: true
                     slow-sql-millis: 2000
+
             filters: stat,wall,slf4j
             initialSize: 5
             log-different-thread: true
