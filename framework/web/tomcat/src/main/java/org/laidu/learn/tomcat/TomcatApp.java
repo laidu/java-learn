@@ -7,6 +7,7 @@ import org.apache.catalina.startup.Tomcat;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
 import java.io.IOException;
@@ -24,6 +25,7 @@ public class TomcatApp {
     public static void main(String[] args) throws LifecycleException {
 
         Tomcat tomcat = new Tomcat();
+
         tomcat.setPort(8080);
 
         String contentPath = "/hello";
@@ -43,6 +45,7 @@ public class TomcatApp {
 
     }
 
+    @WebServlet(asyncSupported = true)
     public static class HelloServlet extends HttpServlet {
 
         @Override
@@ -55,4 +58,5 @@ public class TomcatApp {
             writer.close();
         }
     }
+
 }

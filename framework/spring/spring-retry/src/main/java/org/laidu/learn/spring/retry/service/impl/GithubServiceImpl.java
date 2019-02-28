@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
-import org.springframework.retry.annotation.Retryable;
+import org.springframework.retry.RetryCallback;
+import org.springframework.retry.support.RetryTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,22 +24,34 @@ public class GithubServiceImpl implements GithubService {
     @Autowired
     private RestTemplate githubRestApi;
 
+    @Autowired
+    private RetryTemplate retryTemplate;
+
     @Value("${github.user.api:https://api.github.com/users/}")
     private String usersUrl;
 
 
     @Override
-    @Retryable
     public GithubUserInfo queryUserInfo(String user) {
-        log.info(" query user {}",user);
-        return githubRestApi.getForEntity(usersUrl.concat(user),GithubUserInfo.class)
-                .getBody();
+
+
+        try {
+            return retryTemplate.execute((RetryCallback<GithubUserInfo, Exception>) retryContext ->{
+                log.info(" query user {}",user);
+                GithubUserInfo body = githubRestApi.getForEntity(usersUrl.concat(user), GithubUserInfo.class)
+                        .getBody();
+                return body;
+            });
+        } catch (Exception e) {
+            log.error(" query user error: {}",user);
+        }
+        return new GithubUserInfo();
     }
 
     @Bean(name = "githubRestApi")
     private RestTemplate githubRestApi(){
         return new RestTemplateBuilder()
-                .setReadTimeout(500)
+                .setReadTimeout(800)
                 .build();
     }
 }
