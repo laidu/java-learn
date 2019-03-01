@@ -90,13 +90,13 @@ public class LocalServiceApp {
         String filename = "20180928172521278582030156351166.xls";
 
         service.download(filename)
-                .enqueue(new Callback<>() {
+                .enqueue(new Callback<ResponseBody>() {
                     @Override
-                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                    public void onResponse(Call call, Response response) {
                         if (response.isSuccessful()) {
                             log.debug("server contacted and has file");
 
-                            boolean writtenToDisk = writeResponseBodyToDisk(filename,response.body());
+                            boolean writtenToDisk = writeResponseBodyToDisk(filename, (ResponseBody) response.body());
 
                             log.debug("file download was a success? " + writtenToDisk);
                         } else {
@@ -105,7 +105,7 @@ public class LocalServiceApp {
                     }
 
                     @Override
-                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+                    public void onFailure(Call call, Throwable t) {
                         log.error("文件下载失败");
                     }
                 });
