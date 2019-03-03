@@ -24,6 +24,7 @@
         <module>spring-aop</module>
         <module>spring-spel</module>
         <module>spring-core</module>
+        <module>spring-retry</module>
     </modules>
 
     <properties>

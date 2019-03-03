@@ -64,7 +64,7 @@
 
     <properties>
 
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
@@ -203,26 +203,26 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-toolchains-plugin</artifactId>
-                <version>1.1</version>
-                <configuration>
-                    <toolchains>
-                        <jdk>
-                            <version>11</version>
-                            <vendor>oracle</vendor>
-                        </jdk>
-                    </toolchains>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>toolchain</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-toolchains-plugin</artifactId>-->
+                <!--<version>1.1</version>-->
+                <!--<configuration>-->
+                    <!--<toolchains>-->
+                        <!--<jdk>-->
+                            <!--<version>11</version>-->
+                            <!--<vendor>oracle</vendor>-->
+                        <!--</jdk>-->
+                    <!--</toolchains>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>toolchain</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -301,6 +301,12 @@
                         <phase>site-deploy</phase>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
             </plugin>
 
 

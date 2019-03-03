@@ -1,0 +1,63 @@
+logging:
+    config: classpath:config/logback-spring.xml
+
+
+mybatis:
+    configuration:
+        local-cache-scope: session
+        map-underscore-to-camel-case: true
+        use-generated-keys: true
+
+
+pagehelper:
+    reasonable: true
+    support-methods-arguments: true
+
+
+spring:
+    datasource:
+        data: classpath:db/data.sql
+        driver-class-name: org.h2.Driver
+        druid:
+            connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+            filter:
+                slf4j:
+                    connection-log-enabled: false
+                    enabled: true
+                    statement-executable-sql-log-enable: true
+
+                stat:
+                    db-type: mysql
+                    log-slow-sql: true
+                    merge-sql: true
+                    slow-sql-millis: 2000
+
+            filters: stat,wall,slf4j
+            initialSize: 5
+            log-different-thread: true
+            maxActive: 20
+            maxPoolPreparedStatementPerConnectionSize: 20
+            maxWait: 60000
+            minEvictableIdleTimeMillis: 300000
+            minIdle: 5
+            poolPreparedStatements: true
+            testOnBorrow: false
+            testOnReturn: false
+            testWhileIdle: true
+            timeBetweenEvictionRunsMillis: 60000
+            useGlobalDataSourceStat: true
+            validationQuery: SELECT 1 FROM DUAL
+        password: ''
+        schema: classpath:db/schema.sql
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:h2:mem:default
+        username: sa
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
+            settings:
+                trace: true
+                web-allow-others: true
+    jackson:
+        property-naming-strategy: SNAKE_CASE

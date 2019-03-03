@@ -15,6 +15,7 @@
 
     <modules>
         <module>play</module>
+        <module>tomcat</module>
     </modules>
 
 

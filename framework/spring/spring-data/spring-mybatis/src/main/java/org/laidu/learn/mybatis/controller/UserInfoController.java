@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -37,9 +38,7 @@ public class UserInfoController {
 
         AppUser user = userMapper.selectByPrimaryKey(id);
 
-        System.out.println(user.getId());
-
-        user = userMapper.selectByPrimaryKey(id);
+        System.out.println(Optional.ofNullable(user).orElse(AppUser.builder().build()).getUsername());
 
         return user;
     }
