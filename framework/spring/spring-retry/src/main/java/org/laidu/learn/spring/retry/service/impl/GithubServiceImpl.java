@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.retry.RetryCallback;
+import org.springframework.retry.annotation.Retryable;
 import org.springframework.retry.support.RetryTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -24,6 +25,7 @@ public class GithubServiceImpl implements GithubService {
     @Autowired
     private RestTemplate githubRestApi;
 
+
     @Autowired
     private RetryTemplate retryTemplate;
 
@@ -32,6 +34,7 @@ public class GithubServiceImpl implements GithubService {
 
 
     @Override
+    @Retryable
     public GithubUserInfo queryUserInfo(String user) {
 
 

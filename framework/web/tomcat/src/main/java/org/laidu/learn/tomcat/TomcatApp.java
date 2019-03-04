@@ -7,6 +7,7 @@ import org.apache.catalina.startup.Tomcat;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
@@ -25,6 +26,7 @@ public class TomcatApp {
     public static void main(String[] args) throws LifecycleException {
 
         Tomcat tomcat = new Tomcat();
+
 
         tomcat.setPort(8080);
 
@@ -58,5 +60,4 @@ public class TomcatApp {
             writer.close();
         }
     }
-
 }
