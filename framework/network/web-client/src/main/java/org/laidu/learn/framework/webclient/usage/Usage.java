@@ -3,8 +3,6 @@ package org.laidu.learn.framework.webclient.usage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import java.util.stream.IntStream;
-
 /**
  * 使用
  * <p>
@@ -18,25 +16,19 @@ public class Usage {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        IntStream.range(0,1000).parallel()
-                .forEach(index->{
-                    log.info("index : {}", index);
-                    WebClient.create()
-                            .get()
-                            .uri(uriBuilder -> uriBuilder
-                                    .scheme("http")
-                                    .host("www.baidu.com")
-                                    .path("/s")
-                                    .queryParam("wd", "北京天气")
-                                    .queryParam("other", "test")
-                                    .build())
-                            .retrieve()
-                            .bodyToMono(String.class)
-                            .subscribe(resp -> log.info(": {}", resp));
-                });
 
+       WebClient.create()
+                .get()
+                .uri(uriBuilder -> uriBuilder
+                        .scheme("https")
+                        .host("api.github.com")
+                        .path("/users/laidu")
+                        .build())
+                .retrieve()
+                .bodyToMono(String.class)
+                .subscribe(resp -> log.info(": {}", resp));
 
 
     }

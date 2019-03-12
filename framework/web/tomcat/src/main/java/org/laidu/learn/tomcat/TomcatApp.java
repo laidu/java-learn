@@ -1,5 +1,6 @@
 package org.laidu.learn.tomcat;
 
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
@@ -7,7 +8,6 @@ import org.apache.catalina.startup.Tomcat;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
@@ -27,8 +27,8 @@ public class TomcatApp {
 
         Tomcat tomcat = new Tomcat();
 
-
         tomcat.setPort(8080);
+        tomcat.setBaseDir(".temp/");
 
         String contentPath = "/hello";
 
@@ -53,9 +53,16 @@ public class TomcatApp {
         @Override
         public void service(ServletRequest req, ServletResponse res) throws IOException {
             PrintWriter writer = res.getWriter();
-            writer.println("<html><title>Welcome</title><body>");
-            writer.println("<h1>Have a Great Day!</h1>");
-            writer.println("</body></html>");
+
+            res.setContentType("application/json;charset=utf-8");
+            res.setCharacterEncoding("utf-8");
+
+            JSONObject response = new JSONObject();
+            response.put("code",200);
+            response.put("message","hello world");
+            response.put("timestamp", System.currentTimeMillis());
+
+            writer.write(response.toJSONString());
             writer.flush();
             writer.close();
         }

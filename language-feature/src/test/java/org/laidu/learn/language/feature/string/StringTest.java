@@ -1,6 +1,7 @@
 package org.laidu.learn.language.feature.string;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Assert;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -266,8 +267,12 @@ class StringTest {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("空字符串切割")
     void split() {
+
+        String[] strings = "".split(",");
+
+        Assert.assertArrayEquals(strings, new String[]{""});
     }
 
     @Test
