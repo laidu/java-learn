@@ -5,6 +5,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.IntStream;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
@@ -133,5 +134,14 @@ class UserServiceImplTest {
                 assert false : "there are no other TimeUnit ordinal values";
                 return null;
         }
+    }
+
+    @Test
+    void updateUsername() {
+
+        IntStream.range(0,1000).parallel()
+                .forEach( i -> {
+                    userService.updateUsername("123","xiaoming"+i);
+                });
     }
 }
