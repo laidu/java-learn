@@ -1,19 +1,25 @@
 package org.laidu.learn.spring.mvc.controller;
 
-import lombok.extern.slf4j.Slf4j;
-import org.laidu.learn.spring.mvc.model.Result;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+
+import org.laidu.learn.spring.mvc.model.Response;
 import org.laidu.learn.spring.mvc.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 资源服务
@@ -31,11 +37,11 @@ public class ResourceController {
 
 
     @PostMapping("/upload")
-    public Result<String> upload(@RequestParam("file") MultipartFile file) throws IOException {
+    public Response<String> upload(@RequestParam("file") MultipartFile file) throws IOException {
 
         String resourceId = storageService.store(file);
 
-        return Result.ok(resourceId);
+        return Response.ok(resourceId);
     }
 
     @GetMapping("/files/{filename:.+}")

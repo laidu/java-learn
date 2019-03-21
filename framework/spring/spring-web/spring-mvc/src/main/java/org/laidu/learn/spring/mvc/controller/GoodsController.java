@@ -1,15 +1,21 @@
 package org.laidu.learn.spring.mvc.controller;
 
-import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.spring.mvc.dto.AddGoodsReqDTO;
 import org.laidu.learn.spring.mvc.dto.GetGoodsResDTO;
 import org.laidu.learn.spring.mvc.enums.GoodsTypeEnum;
 import org.laidu.learn.spring.mvc.model.Goods;
-import org.laidu.learn.spring.mvc.model.Result;
+import org.laidu.learn.spring.mvc.model.Response;
 import org.laidu.learn.spring.mvc.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 商品接口
@@ -31,9 +37,9 @@ public class GoodsController {
 
     @PostMapping("/add")
     @ApiOperation("添加商品")
-    public Result<Long> add(@RequestBody AddGoodsReqDTO reqDTO){
+    public Response<Long> add(@RequestBody AddGoodsReqDTO reqDTO){
 
-        return  Result.ok(goodsService.addGoods(Goods.builder()
+        return  Response.ok(goodsService.addGoods(Goods.builder()
                 .goodsName(reqDTO.getGoodsName())
                 .goodsId(reqDTO.getGoodsId())
                 .goodsType(reqDTO.getGoodsType())
@@ -42,9 +48,9 @@ public class GoodsController {
 
     @GetMapping("/query/{goodId}")
     @ApiOperation("查询商品")
-    public Result<GetGoodsResDTO> query(@PathVariable("goodId") Long goodId){
+    public Response<GetGoodsResDTO> query(@PathVariable("goodId") Long goodId){
 
-        return  Result.ok(GetGoodsResDTO.builder()
+        return  Response.ok(GetGoodsResDTO.builder()
                 .goodsName("name")
                 .goodsId(goodId)
                 .goodsType(GoodsTypeEnum.BOOK_0)
