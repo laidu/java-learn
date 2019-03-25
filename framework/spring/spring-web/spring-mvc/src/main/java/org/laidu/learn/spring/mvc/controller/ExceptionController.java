@@ -1,5 +1,6 @@
 package org.laidu.learn.spring.mvc.controller;
 
+import org.laidu.learn.spring.mvc.exception.StorageException;
 import org.laidu.learn.spring.mvc.model.Response;
 import org.laidu.learn.spring.mvc.service.ExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +55,12 @@ public class ExceptionController {
     public Response<String> serviceException(){
 
         return Response.ok(exceptionService.exception());
+    }
+
+    @GetMapping("/storage")
+    public Response<String> storageException(){
+
+        throw new StorageException("storage exception");
     }
 
 

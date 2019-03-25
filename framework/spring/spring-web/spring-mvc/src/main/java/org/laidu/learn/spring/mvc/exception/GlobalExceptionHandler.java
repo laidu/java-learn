@@ -39,13 +39,31 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(NullPointerException.class)
     @ResponseBody
-    public Response exceptionNull(HttpServletRequest request, Exception e){
+    public Response exceptionNull(HttpServletRequest request, NullPointerException e){
 
         log.error("{}",e);
 
         return Response.builder()
                 .code("E500001")
                 .message("空指针异常")
+                .build();
+    }
+
+    /**
+     * 异常类型自动转换
+     * @param request
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(StorageException.class)
+    @ResponseBody
+    public Response exceptionStorage(HttpServletRequest request, StorageException e){
+
+        log.error("{}",e);
+
+        return Response.builder()
+                .code("E500002")
+                .message("存储异常")
                 .build();
     }
 }
