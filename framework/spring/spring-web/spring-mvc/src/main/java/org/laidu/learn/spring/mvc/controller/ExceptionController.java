@@ -60,7 +60,7 @@ public class ExceptionController {
     @GetMapping("/storage")
     public Response<String> storageException(){
 
-        throw new StorageException("storage exception");
+        throw new StorageException(500,"storage exception");
     }
 
 
