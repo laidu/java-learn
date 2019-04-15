@@ -34,8 +34,8 @@
 
         <amqp-client.version>5.5.0</amqp-client.version>
 
-        <spring.version>5.0.6.RELEASE</spring.version>
-        <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
+        <spring.version>5.1.6.RELEASE</spring.version>
+        <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
 
         <spring-shiro.version>1.4.0</spring-shiro.version>

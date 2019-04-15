@@ -1,5 +1,6 @@
-package org.laidu.learn.spring.mvc.controller;
+package org.laidu.learn.spring.mvc.controller.exception;
 
+import org.laidu.learn.spring.mvc.controller.BaseController;
 import org.laidu.learn.spring.mvc.exception.StorageException;
 import org.laidu.learn.spring.mvc.model.Response;
 import org.laidu.learn.spring.mvc.service.ExceptionService;
@@ -19,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 @RequestMapping("/exception")
-public class ExceptionController {
+public class ExceptionController extends BaseController {
 
     @Autowired
     private ExceptionService exceptionService;

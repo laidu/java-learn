@@ -1,6 +1,6 @@
 package org.laidu.learn.spring.mvc.controller;
 
-import lombok.extern.slf4j.Slf4j;
+import java.util.Random;
 
 import org.laidu.learn.spring.mvc.model.Response;
 import org.laidu.learn.spring.mvc.service.HelloService;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Random;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * home
@@ -23,7 +23,7 @@ import java.util.Random;
 @Slf4j
 @RestController
 @RequestMapping("/")
-public class HomeController {
+public class HomeController extends BaseController{
 
     @Autowired
     HelloService helloService;

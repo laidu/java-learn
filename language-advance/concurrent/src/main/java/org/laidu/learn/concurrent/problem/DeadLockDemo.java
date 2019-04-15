@@ -1,9 +1,9 @@
 package org.laidu.learn.concurrent.problem;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 import jodd.util.ThreadUtil;
 import lombok.AllArgsConstructor;
-
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * java 实现死锁的方式
@@ -59,6 +59,7 @@ public class DeadLockDemo {
             lock.lock();
             ThreadUtil.sleep(300);
             System.out.println(Thread.currentThread().getName() + "已获取 lock 锁");
+//            lock.unlock();
         }
     }
 
