@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @ApiModel(description ="响应封装")
-public class Result<T> {
+public class Response<T> {
 
     private String code;
 
@@ -28,9 +28,9 @@ public class Result<T> {
 
     private T data;
 
-    public static <T> Result<T> ok(T data){
+    public static <T> Response<T> ok(T data){
 
-        return Result.<T>builder()
+        return Response.<T>builder()
                 .code("E000000")
                 .message("success")
                 .data(data)

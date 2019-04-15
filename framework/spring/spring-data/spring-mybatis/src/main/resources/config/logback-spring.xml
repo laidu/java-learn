@@ -127,7 +127,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     </logger>
 
 
-    <logger name="org.laidu.learn.mybatis.mapper" level="debug">
+    <logger name="druid.sql.Statement" level="debug">
         <appender-ref ref="sql_file" />
     </logger>
 

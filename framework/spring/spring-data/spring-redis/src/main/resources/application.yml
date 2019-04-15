@@ -2,7 +2,7 @@
 # redis configuration
 spring:
   redis:
-    host: local-dev
+    host: localhost
     port: 6379
     database: 0
     jedis:

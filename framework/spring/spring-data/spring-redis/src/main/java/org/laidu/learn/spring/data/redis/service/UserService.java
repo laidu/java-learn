@@ -25,4 +25,10 @@ public interface UserService {
      * @return
      */
     UserInfo addUser(String username, String password);
+
+    /**
+     * modify username.
+     *
+     */
+    UserInfo updateUsername(String id, String username);
 }

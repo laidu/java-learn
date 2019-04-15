@@ -1,9 +1,13 @@
 package org.laidu.learn.mybatis.mapper;
 
-import org.apache.ibatis.annotations.*;
-import org.laidu.learn.mybatis.entity.AppUser;
-
 import java.util.List;
+
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+import org.laidu.learn.mybatis.entity.AppUser;
 
 /**
  * @author zangtiancai
@@ -30,4 +34,9 @@ public interface AppUserMapper {
             "</script>")
     void insertBatch(@Param("appUsers") List<AppUser> appUsers);
 
+    @Insert({
+            "insert into app_user (username, id_card) " ,
+            "values (#{appUser.username}, #{appUser.idCard})"
+    })
+    int insert(@Param("appUser") AppUser appUser);
 }

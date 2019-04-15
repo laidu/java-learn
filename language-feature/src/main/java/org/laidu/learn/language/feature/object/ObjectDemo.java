@@ -46,7 +46,6 @@ public class ObjectDemo {
         System.out.println(o1.hashCode());
         System.out.println(o2.hashCode());
 
-
     }
 
 

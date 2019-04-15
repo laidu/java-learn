@@ -1,7 +1,8 @@
 package org.laidu.learn.spring.mvc.controller;
 
-import lombok.extern.slf4j.Slf4j;
-import org.laidu.learn.spring.mvc.model.Result;
+import java.util.Random;
+
+import org.laidu.learn.spring.mvc.model.Response;
 import org.laidu.learn.spring.mvc.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Random;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * home
@@ -22,17 +23,17 @@ import java.util.Random;
 @Slf4j
 @RestController
 @RequestMapping("/")
-public class HomeController {
+public class HomeController extends BaseController{
 
     @Autowired
     HelloService helloService;
 
     @GetMapping("/hello")
-    public Result<String> hello() throws InterruptedException {
+    public Response<String> hello() throws InterruptedException {
 
         log.info("active Thread count: {}", Thread.activeCount());
 
-        return Result.ok(helloService.sayHello());
+        return Response.ok(helloService.sayHello());
     }
 
     @GetMapping("/sleep")

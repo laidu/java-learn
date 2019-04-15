@@ -11,8 +11,15 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class StorageException  extends RuntimeException {
 
+    private int code;
+
     public StorageException(String message) {
         super(message);
+    }
+
+    public StorageException(int code, String message) {
+        super(message);
+        this.code = code;
     }
 
     public StorageException(String message, Throwable cause) {

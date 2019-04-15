@@ -2,8 +2,6 @@ package org.laidu.learn.language.feature.exception;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.List;
-
 /**
  * demo
  *
@@ -16,9 +14,11 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        List<String> list = null;
-
-        list.size();
+        try {
+            throw new NullPointerException();
+        }catch (Exception e){
+            log.info("over");
+        }
 
     }
 

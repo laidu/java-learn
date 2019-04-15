@@ -1,6 +1,5 @@
 package org.laidu.learn.spring.mvc;
 
-import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.spring.mvc.conf.StorageProperties;
 import org.laidu.learn.spring.mvc.service.StorageService;
 import org.laidu.learn.swagger.demo.config.SwaggerConfig;
@@ -11,6 +10,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
+
+import lombok.extern.slf4j.Slf4j;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
