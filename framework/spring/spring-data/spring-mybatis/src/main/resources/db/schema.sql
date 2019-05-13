@@ -1,4 +1,5 @@
-CREATE TABLE druid_demo.app_user (
+DROP TABLE IF EXISTS app_user;
+CREATE TABLE app_user (
 	id BIGINT NOT NULL AUTO_INCREMENT,
 	username varchar(100) NULL,
 	id_card varchar(100) NULL,
