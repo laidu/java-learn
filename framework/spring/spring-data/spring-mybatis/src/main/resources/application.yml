@@ -17,57 +17,20 @@ pagehelper:
 spring:
     datasource:
         data: classpath:db/data.sql
-        driver-class-name: org.h2.Driver
-        druid:
-            connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-            filter:
-                slf4j:
-                    enabled: true
-                    connection-log-enabled: false
-                    statement-log-error-enabled: true
-                    statement-executable-sql-log-enable: true
-                    statement-execute-after-log-enabled: true
-                    statement-execute-batch-after-log-enabled: true
-                    statement-execute-query-after-log-enabled: true
-                    statement-execute-update-after-log-enabled: true
-                    statement-create-after-log-enabled: false
-                    statement-parameter-set-log-enabled: false
-                    statement-prepare-after-log-enabled: false
-                    statement-prepare-call-after-log-enabled: false
-                    statement-sql-pretty-format: false
-                    statement-parameter-clear-log-enable: false
-                    statement-sql-format-option:
-                        parameterized: false
-                        prettyFormat: false
-                        uppCase: true
-
-
-                stat:
-                    db-type: mysql
-                    log-slow-sql: true
-                    merge-sql: true
-                    slow-sql-millis: 2000
-
-            filters: stat,mergeStat,wall,slf4j
-            initialSize: 5
-            log-different-thread: true
-            maxActive: 20
-            maxPoolPreparedStatementPerConnectionSize: 20
-            maxWait: 60000
-            minEvictableIdleTimeMillis: 300000
-            minIdle: 5
-            poolPreparedStatements: true
-            testOnBorrow: false
-            testOnReturn: false
-            testWhileIdle: true
-            timeBetweenEvictionRunsMillis: 60000
-            useGlobalDataSourceStat: true
-            validationQuery: SELECT 1
-        password: ''
         schema: classpath:db/schema.sql
-        type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:h2:mem:default
-        username: sa
+        url: jdbc:mysql://local-dev:3306/druid_demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+        hikari:
+            minimum-idle: 5
+            maximum-pool-size: 15
+            auto-commit: true
+            idle-timeout: 10000
+            pool-name: HikariCP_Demo
+            max-lifetime: 30000
+            connection-test-query: select 1
+            connection-timeout: 1000
     h2:
         console:
             enabled: true
