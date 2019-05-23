@@ -27,9 +27,7 @@ spring:
                     statement-log-error-enabled: true
                     statement-executable-sql-log-enable: true
                     statement-execute-after-log-enabled: true
-                    statement-execute-batch-after-log-enabled: true
-                    statement-execute-query-after-log-enabled: true
-                    statement-execute-update-after-log-enabled: true
+                    statement-close-after-log-enabled: false
                     statement-create-after-log-enabled: false
                     statement-parameter-set-log-enabled: false
                     statement-prepare-after-log-enabled: false
@@ -40,7 +38,6 @@ spring:
                         parameterized: false
                         prettyFormat: false
                         uppCase: true
-
 
                 stat:
                     db-type: mysql
@@ -60,9 +57,9 @@ spring:
             testOnBorrow: false
             testOnReturn: false
             testWhileIdle: true
+            validationQuery: SELECT 1
             timeBetweenEvictionRunsMillis: 60000
             useGlobalDataSourceStat: true
-            validationQuery: SELECT 1
         password: ''
         schema: classpath:db/schema.sql
         type: com.alibaba.druid.pool.DruidDataSource
