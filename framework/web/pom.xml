@@ -16,6 +16,7 @@
     <modules>
         <module>play</module>
         <module>tomcat</module>
+        <module>undertow</module>
     </modules>
 
 
