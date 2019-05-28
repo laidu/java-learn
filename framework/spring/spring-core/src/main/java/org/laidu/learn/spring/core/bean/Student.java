@@ -19,17 +19,9 @@ public class Student {
 
     private String idCard;
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         log.info("===========setName===========: {}",name);
         this.name = name;
-    }
-
-    public String getIdCard() {
-        return idCard;
     }
 
     public void setIdCard(String idCard) {
