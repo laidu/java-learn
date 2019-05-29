@@ -1,8 +1,6 @@
 package org.laidu.learn.spring.core;
 
 import org.laidu.learn.spring.core.bean.Father;
-import org.laidu.learn.spring.core.config.JavaConfig;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +16,13 @@ public class SpringApp {
 
     public static void main(String[] args) {
 
-        ApplicationContext ctx = new AnnotationConfigApplicationContext(JavaConfig.class);
+        AnnotationConfigApplicationContext ctx =
+                new AnnotationConfigApplicationContext();
+        ctx.setBeanNameGenerator((definition, registry) -> "hehe_"+definition.getBeanClassName());
+
+        ctx.scan("org.laidu.learn.spring.core.bean");
+        ctx.refresh();
+
         Father father = ctx.getBean(Father.class);
 
         System.out.println(father.getChild().getName());
