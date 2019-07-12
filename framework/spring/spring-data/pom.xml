@@ -14,6 +14,7 @@
     <modules>
         <module>spring-mybatis</module>
         <module>spring-redis</module>
+        <module>spring-mybatis-plus</module>
     </modules>
 
     <properties>
