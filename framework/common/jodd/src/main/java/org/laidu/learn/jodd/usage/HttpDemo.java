@@ -12,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
  * @author tiancai.zang
  * on 2018-08-28 17:45.
  */
-// TODO: 2018-08-28 17:45  httpdemo
 @Slf4j
 public class HttpDemo {
 
@@ -29,6 +28,8 @@ public class HttpDemo {
                 .host("www.baidu.com")
                 .header("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36")
                 .header("Accept-Language", "zh-CN,zh;q=0.9").send();
+
+        log.info("response's value : {}", response);
 
 
     }

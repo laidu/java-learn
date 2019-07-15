@@ -23,6 +23,7 @@
         <module>bytecode</module>
         <module>jni</module>
         <module>security</module>
+        <module>sql</module>
     </modules>
 
     <properties>

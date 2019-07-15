@@ -11,7 +11,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * org.laidu.learn.amqp.Application
  * <p>
- * Created by tiancai.zang on 2017-11-28 16:35.
+ *
+ * @author tiancai.zang
+ * @date 2017-11-28 16:35
  */
 @MapperScan("org.laidu.learn.mybatis.mapper")
 @SpringBootApplication

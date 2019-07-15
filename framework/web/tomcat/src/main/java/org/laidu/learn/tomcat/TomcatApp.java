@@ -1,21 +1,23 @@
 package org.laidu.learn.tomcat;
 
-import com.alibaba.fastjson.JSONObject;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.Context;
-import org.apache.catalina.LifecycleException;
-import org.apache.catalina.startup.Tomcat;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+
+import org.apache.catalina.Context;
+import org.apache.catalina.LifecycleException;
+import org.apache.catalina.startup.Tomcat;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * tomcat embed app
+ * 嵌入式tomcat 示例
  *
  * @author zangtiancai
  * @date 2019-02-15 14:34.
@@ -57,12 +59,10 @@ public class TomcatApp {
             res.setContentType("application/json;charset=utf-8");
             res.setCharacterEncoding("utf-8");
 
-            JSONObject response = new JSONObject();
-            response.put("code",200);
-            response.put("message","hello world");
-            response.put("timestamp", System.currentTimeMillis());
+            String jsonBody = String.format("{\"code\":200,\"message\":\"hello world\",\"timestamp\":%d}",
+                    System.currentTimeMillis());
 
-            writer.write(response.toJSONString());
+            writer.write(jsonBody);
             writer.flush();
             writer.close();
         }

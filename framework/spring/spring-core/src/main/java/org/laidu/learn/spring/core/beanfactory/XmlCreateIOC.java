@@ -1,9 +1,11 @@
 package org.laidu.learn.spring.core.beanfactory;
 
-import lombok.extern.slf4j.Slf4j;
+import org.laidu.learn.spring.core.bean.Student;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 通过xml 初始化容器
@@ -18,7 +20,7 @@ public class XmlCreateIOC {
 
         BeanFactory factory = new XmlBeanFactory(new ClassPathResource("xml/spring.xml"));
 
-//        Student student = factory.getBean(Student.class);
+        Student student = factory.getBean(Student.class);
 
         System.out.println(factory);
 

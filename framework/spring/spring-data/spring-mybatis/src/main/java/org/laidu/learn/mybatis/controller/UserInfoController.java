@@ -47,8 +47,18 @@ public class UserInfoController {
     }
 
     @PostMapping("/add")
+    @Deprecated
     @Transactional(rollbackFor = Exception.class)
     public AppUser add(@RequestBody AppUser user){
+
+        userMapper.insert(user);
+
+        return user;
+    }
+
+    @PostMapping("/add/v2")
+    @Transactional(rollbackFor = Exception.class)
+    public AppUser add2(@RequestBody AppUser user){
 
         userMapper.insert(user);
 

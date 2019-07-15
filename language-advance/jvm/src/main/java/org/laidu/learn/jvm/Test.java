@@ -1,8 +1,6 @@
 package org.laidu.learn.jvm;
 
 
-import java.io.FileNotFoundException;
-
 /**
  * 测试
  * <p>
@@ -10,9 +8,10 @@ import java.io.FileNotFoundException;
  */
 public class Test {
 
-    public static void main(String[] args) throws FileNotFoundException {
-//        System.out.println("Hello world");
-        new java.io.PrintStream("Hello world").println();
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("Hello world");
+
+        Thread.sleep(10000000L);
     }
 
 }
