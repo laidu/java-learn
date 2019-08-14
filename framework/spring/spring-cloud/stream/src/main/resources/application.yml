@@ -1,0 +1,23 @@
+spring:
+  rabbitmq:
+    host: localhost
+    username: rabbitmq-dev
+    password: rabbitmq-dev
+    port: 5672
+    virtual-host: /
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: mqTestDefault
+        output:
+          destination: mqTestDefault
+          contentType: text/plain
+      rabbit:
+        bindings:
+          inputProductAdd:
+            consumer:
+              bindingRoutingKey: addProduct.*       # 用来绑定消费者的 routing key
+          outputProductAdd:
+            producer:
+              routing-key-expression: '''addProduct.*'''  # 需要用这个来指定 RoutingKey
