@@ -21,6 +21,7 @@
         <module>config-client</module>
         <module>api-gateway</module>
         <module>admin-dashboard</module>
+        <module>stream</module>
     </modules>
 
     <properties>
@@ -66,8 +67,6 @@
     </dependencyManagement>
 
     <dependencies>
-
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
