@@ -29,7 +29,7 @@
         <jodd.version>5.0.4</jodd.version>
 
         <fastjson.version>1.2.47</fastjson.version>
-        <jackson.version>2.9.7</jackson.version>
+        <jackson.version>2.10.0</jackson.version>
 
         <dom4j.version>2.1.1</dom4j.version>
 
