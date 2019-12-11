@@ -38,3 +38,16 @@ management:
     binders:
       jvm:
         enabled: true
+
+# undertow web 容器配置
+server:
+  undertow:
+    io-threads: 1
+    worker-threads: 8
+
+
+# 日志格式配置
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [${spring.application.name:-},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
+
