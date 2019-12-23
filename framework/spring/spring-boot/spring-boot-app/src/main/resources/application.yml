@@ -6,7 +6,7 @@ spring:
 #  jackson:
 #    property-naming-strategy: SNAKE_CASE
   application:
-    name: spring-boot-app-1
+    name: sbApp
     admin:
       enabled: true
 
@@ -42,8 +42,8 @@ management:
 # undertow web 容器配置
 server:
   undertow:
-    io-threads: 1
-    worker-threads: 8
+    io-threads: 16
+    worker-threads: 200
 
 
 # 日志格式配置
@@ -51,3 +51,10 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [${spring.application.name:-},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
 
+sbapp:
+  config:
+    mapConfig:
+      aaa:
+        - aaa
+      bbb:
+        - bbb
