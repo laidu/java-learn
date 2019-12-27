@@ -1,11 +1,18 @@
 package org.laidu.learn.concurrent.synchronizer;
 
 
-import jodd.util.ThreadUtil;
-import lombok.extern.slf4j.Slf4j;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
 import org.laidu.learn.concurrent.common.Worker;
 
-import java.util.concurrent.*;
+import jodd.util.ThreadUtil;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * cyclicBarrier worker
@@ -54,7 +61,7 @@ public class CyclicBarrierDemo {
                         log.info("waiting count: {}", cyclicBarrier.getNumberWaiting());
                         cyclicBarrier.await(500,TimeUnit.MILLISECONDS);
 
-                    }catch (BrokenBarrierException | TimeoutException e){
+                    } catch (BrokenBarrierException | TimeoutException e){
                         log.warn(" 超时 ");
                     } catch (Exception e) {
                         e.printStackTrace();

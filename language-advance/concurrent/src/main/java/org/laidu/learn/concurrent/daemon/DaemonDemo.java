@@ -1,12 +1,17 @@
 package org.laidu.learn.concurrent.daemon;
 
-import jodd.util.ThreadUtil;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.RandomUtils;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.lang3.RandomUtils;
+
+import jodd.util.ThreadUtil;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 守护线程
@@ -36,8 +41,8 @@ public class DaemonDemo {
         int coreSize = 5;
         int maxSize = 10;
 
-        ExecutorService daemonService = new ThreadPoolExecutor(coreSize,maxSize,0L, TimeUnit.MICROSECONDS,new ArrayBlockingQueue<>(1)
-                ,r -> {
+        ExecutorService daemonService = new ThreadPoolExecutor(coreSize, maxSize, 0L, TimeUnit.MICROSECONDS,new ArrayBlockingQueue<>(1)
+                , r -> {
             Thread thread = new Thread(r);
             thread.setDaemon(true);
             System.out.println("创建新的线程 : "+ thread.getName());
