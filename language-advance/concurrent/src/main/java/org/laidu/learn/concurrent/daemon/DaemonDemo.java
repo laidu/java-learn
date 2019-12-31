@@ -38,6 +38,36 @@ public class DaemonDemo {
 
     public static void main(String[] args) throws InterruptedException {
 
+        Thread main = Thread.currentThread();
+        for (int i = 0; i < 100; i++) {
+            log.info("main thread state : {}", main.getState());
+        }
+        log.info("main 线程结束");
+
+    }
+
+    private static void threadState() {
+        log.info("创建线程t1");
+        Thread t1 = new Thread(() -> {
+
+            for (long i = 0; i < 300L; i++) {
+            }
+
+            ThreadUtil.sleep(1);
+        }, "t1");
+
+        new Thread(() -> {
+            for (;t1.getState() != Thread.State.TERMINATED;) {
+                log.info("t1 线程state: {}", t1.getState());
+            }
+            log.info("t1 线程state: {}", t1.getState());
+        }, "t2").start();
+
+        t1.setDaemon(true);
+        t1.start();
+    }
+
+    private static void deamonPool() {
         int coreSize = 5;
         int maxSize = 10;
 
@@ -57,24 +87,5 @@ public class DaemonDemo {
         }
 
         tasks.forEach(daemonService::submit);
-
-//        List<Future<String>> futures = daemonService.invokeAll(tasks);
-//
-//        futures.forEach( future -> {
-//            try {
-//                System.out.println(future.get());
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            } catch (ExecutionException e) {
-//                e.printStackTrace();
-//            }
-//        });
-
-//        ThreadUtil.sleep(2500);
-//        daemonService.invokeAll(tasks);
-//
-//        ThreadUtil.sleep(2500);
-//        daemonService.invokeAll(tasks);
-
     }
 }
