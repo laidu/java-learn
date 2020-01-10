@@ -28,7 +28,7 @@
 
     <properties>
         <aspectj.version>1.9.2</aspectj.version>
-        <cglib.version>3.2.9</cglib.version>
+        <cglib.version>3.3.0</cglib.version>
         <bouncycastle.version>1.60</bouncycastle.version>
         <jdk.version>11</jdk.version>
     </properties>
