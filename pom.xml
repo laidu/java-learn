@@ -83,7 +83,7 @@
         <markdown-page-generator.version>2.1.0</markdown-page-generator.version>
 
         <!--项目基础依赖配置-->
-        <lombok.version>1.18.8</lombok.version>
+        <lombok.version>1.18.10</lombok.version>
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
