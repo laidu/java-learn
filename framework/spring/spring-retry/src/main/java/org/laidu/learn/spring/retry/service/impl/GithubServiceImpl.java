@@ -1,6 +1,8 @@
 package org.laidu.learn.spring.retry.service.impl;
 
-import lombok.extern.slf4j.Slf4j;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+
 import org.laidu.learn.spring.retry.model.GithubUserInfo;
 import org.laidu.learn.spring.retry.service.GithubService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,8 @@ import org.springframework.retry.annotation.Retryable;
 import org.springframework.retry.support.RetryTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Created by tiancai.zang
@@ -54,7 +58,7 @@ public class GithubServiceImpl implements GithubService {
     @Bean(name = "githubRestApi")
     private RestTemplate githubRestApi(){
         return new RestTemplateBuilder()
-                .setReadTimeout(800)
+                .setReadTimeout(Duration.of(800, ChronoUnit.valueOf("Millis")))
                 .build();
     }
 }

@@ -4,7 +4,9 @@ package org.laidu.learn.jvm;
 /**
  * 测试
  * <p>
- * Created by 臧天才 on 2017-09-06 19:55.
+ *
+ * @author 臧天才
+ * @date 2017-09-06 19:55
  */
 public class Test {
 
