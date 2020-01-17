@@ -20,7 +20,7 @@
     </modules>
 
     <properties>
-        <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <shade.version>3.1.1</shade.version>
     </properties>
 </project>
