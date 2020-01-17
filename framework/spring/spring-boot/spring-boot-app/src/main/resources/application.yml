@@ -42,8 +42,8 @@ management:
 # undertow web 容器配置
 server:
   undertow:
-    io-threads: 16
-    worker-threads: 200
+    io-threads: 4
+    worker-threads: 4
 
 
 # 日志格式配置
