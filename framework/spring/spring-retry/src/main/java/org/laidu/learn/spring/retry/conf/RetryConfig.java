@@ -1,10 +1,16 @@
 package org.laidu.learn.spring.retry.conf;
 
-import lombok.extern.slf4j.Slf4j;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.policy.SimpleRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
+import org.springframework.web.client.RestTemplate;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * retry config
@@ -25,5 +31,12 @@ public class RetryConfig {
         template.setRetryPolicy(retryPolicy);
 
         return template;
+    }
+
+    @Bean(name = "githubRestApi")
+    public RestTemplate githubRestApi(){
+        return new RestTemplateBuilder()
+                .setReadTimeout(Duration.of(800, ChronoUnit.MICROS))
+                .build();
     }
 }
