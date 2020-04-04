@@ -21,6 +21,7 @@
         <module>shiro</module>
         <module>rxjava</module>
         <module>jodd</module>
+        <module>akka-java</module>
     </modules>
 
     <properties>
@@ -30,6 +31,7 @@
         <apache-shiro.version>1.3.2</apache-shiro.version>
         <rxjava.version>2.1.17</rxjava.version>
         <jodd.version>5.0.4</jodd.version>
+        <akka-java.version>2.6.4</akka-java.version>
     </properties>
 
     <dependencyManagement>
@@ -91,6 +93,11 @@
             </dependency>
 
 
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor_2.13</artifactId>
+                <version>${akka-java.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
