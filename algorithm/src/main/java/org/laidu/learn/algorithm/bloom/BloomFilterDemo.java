@@ -1,6 +1,5 @@
 package org.laidu.learn.algorithm.bloom;
 
-import java.io.IOException;
 import java.nio.charset.Charset;
 
 import org.laidu.commom.util.encryption.MD5Util;
@@ -16,12 +15,16 @@ import com.google.common.hash.Funnels;
  */
 public class BloomFilterDemo {
 
-    private static final long size = 1000_000_000;
+    private static final long size = 1000;
+
+    BloomFilter<String> filter =
+            BloomFilter.create(Funnels.stringFunnel(Charset.forName("utf-8")), size + size / 5, 0.0000001d);
 
     public static void main(String[] args) {
 
         int[] p = {3, 5, 7, 4, 8, 9};
-        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.forName("utf-8")), size + size / 5, 0.0000001d);
+
+//        filter.put()
 
         for (int var : p) {
             int num = var * 1000_000_000;
