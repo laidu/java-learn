@@ -54,9 +54,9 @@ public class __CLASS_NAME__PageProcessor extends AbstractRegPageProcessor {
     public static void main(String[] args) throws InterruptedException {
 
         for (; ; ) {
-            new __CLASS_NAME__PageProcessor().getSpider().processWithResponse(new StringQueryRequest("17346519143"));
+            new __CLASS_NAME__PageProcessor().getSpider().processWithResponse(new StringQueryRequest(""));
             Thread.sleep(500);
-            new __CLASS_NAME__PageProcessor().getSpider().processWithResponse(new StringQueryRequest("17091003126"));
+            new __CLASS_NAME__PageProcessor().getSpider().processWithResponse(new StringQueryRequest(""));
         }
     }
 }

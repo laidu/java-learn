@@ -15,8 +15,8 @@
 
     <modules>
         <module>common-util</module>
-        <module>crawler-helper</module>
-        <module>crawler</module>
+<!--        <module>crawler-helper</module>-->
+<!--        <module>crawler</module>-->
     </modules>
 
     <properties>
