@@ -20,8 +20,8 @@ public class PoolApp {
     public static void main(String[] args) throws Exception {
         ProxyPooledFactory factory = new ProxyPooledFactory();
         GenericObjectPoolConfig<ProxyInfo> poolConfig = new GenericObjectPoolConfig<>();
-        poolConfig.setMaxIdle(200);
-        poolConfig.setMaxTotal(1000);
+        poolConfig.setMaxIdle(500);
+        poolConfig.setMaxTotal(20);
         poolConfig.setMinIdle(150);
         poolConfig.setMaxWaitMillis(50);
         poolConfig.setTestOnBorrow(true);
@@ -29,14 +29,13 @@ public class PoolApp {
         poolConfig.setTestWhileIdle(true);
         poolConfig.setTestOnCreate(false);
         poolConfig.setMaxWaitMillis(100);
-        poolConfig.setTimeBetweenEvictionRunsMillis(10);
+        poolConfig.setTimeBetweenEvictionRunsMillis(1000);
 
-        ObjectPool<ProxyInfo> pool = new GenericObjectPool<>(factory);
+        ObjectPool<ProxyInfo> pool = new GenericObjectPool<>(factory, poolConfig);
 
         while (true) {
-            ProxyInfo proxyInfo1 = pool.borrowObject();
             ProxyInfo proxyInfo = pool.borrowObject();
-//            Thread.sleep(100);
+            Thread.sleep(1000000);
             pool.returnObject(proxyInfo);
             System.out.println(pool.getNumActive());
             System.out.println(pool.getNumIdle());
