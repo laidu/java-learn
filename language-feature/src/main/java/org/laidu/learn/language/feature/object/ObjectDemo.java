@@ -1,6 +1,12 @@
 package org.laidu.learn.language.feature.object;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -12,7 +18,8 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class ObjectDemo {
 
-    public static void main(String[] args) throws InterruptedException, CloneNotSupportedException, IllegalAccessException, InstantiationException, InvocationTargetException, IOException {
+    public static void main(String[] args) throws InterruptedException, CloneNotSupportedException,
+            IllegalAccessException, InstantiationException, InvocationTargetException, IOException {
 
         // 通过new关键字创建新对象
         RawObject o1 = new RawObject();
@@ -29,12 +36,12 @@ public class ObjectDemo {
         }
 
         // 通过序列化创建新对象
-        String fileName = System.getProperty("user.dir")+"/language-feature/src/main/resources/rawObject.bin";
+        String fileName = System.getProperty("user.dir") + "/language-feature/src/main/resources/rawObject.bin";
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(new File(fileName)))) {
             out.writeObject(o2);
         }
         RawObject o4 = null;
-        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File(fileName)))) {
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File(fileName)))) {
             o4 = (RawObject) in.readObject();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -51,9 +58,8 @@ public class ObjectDemo {
 
     /**
      * 当class未指定任何父类时，默认继承于Object
-     *
      */
-    public static class RawObject implements Cloneable,Serializable{
+    public static class RawObject implements Cloneable, Serializable {
         private static final long serialVersionUID = 1L;
 
         @Override
