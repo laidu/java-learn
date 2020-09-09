@@ -38,7 +38,7 @@
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 
-        <spring-shiro.version>1.4.2</spring-shiro.version>
+        <spring-shiro.version>1.6.0</spring-shiro.version>
 
         <spring-statemacchine.version>2.0.1.RELEASE</spring-statemacchine.version>
 
