@@ -1,16 +1,17 @@
 package org.laidu.learn.swagger.demo.dto;
 
+import java.util.Date;
+
+import org.laidu.learn.swagger.demo.enums.ProductTypeIntEnum;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.laidu.learn.swagger.demo.enums.ProductTypeIntEnum;
-
-import javax.validation.constraints.NotNull;
-import java.util.Date;
 
 /**
  * product
@@ -29,23 +30,23 @@ public class ProductReqDTO {
     /**
      * id
      */
-    @ApiModelProperty(required = true,name = "产品ID")
-    private String  id;
+    @ApiModelProperty(required = true, name = "产品ID")
+    private String id;
 
-    @NotNull
-    @ApiModelProperty(name = "产品类型",dataType = "ProductTypeIntEnum")
+    //    @NotNull
+    @ApiModelProperty(name = "产品类型", dataType = "ProductTypeIntEnum")
     private ProductTypeIntEnum type;
 
     /**
      * product name
      */
-    @ApiModelProperty(required = true,name = "产品ID")
+    @ApiModelProperty(required = true, name = "产品ID")
     private String name;
 
     /**
      * product date
      */
-    @ApiModelProperty(required = true,example = "2016-01-01")
-    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss",timezone = "GMT+8")
+    @ApiModelProperty(required = true, example = "2016-01-01")
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss", timezone = "GMT+8")
     private Date productDate;
 }
