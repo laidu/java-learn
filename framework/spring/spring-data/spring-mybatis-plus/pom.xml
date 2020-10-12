@@ -11,7 +11,7 @@
 
     <artifactId>spring-mybatis-plus</artifactId>
     <properties>
-        <mybatis-plus.version>3.1.2</mybatis-plus.version>
+        <mybatis-plus.version>3.4.0</mybatis-plus.version>
     </properties>
 
     <dependencies>
