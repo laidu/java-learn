@@ -87,7 +87,7 @@
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
-        <junit4.version>4.12</junit4.version>
+        <junit4.version>4.13.1</junit4.version>
         <junit.version>5.0.0</junit.version>
         <junit.vintage.version>${junit4.version}.0</junit.vintage.version>
         <junit.platform.version>1.0.2</junit.platform.version>
