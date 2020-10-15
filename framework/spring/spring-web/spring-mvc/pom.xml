@@ -12,7 +12,7 @@
     <artifactId>spring-mvc</artifactId>
 
     <properties>
-        <logbook.version>1.9.0</logbook.version>
+        <logbook.version>2.0.0</logbook.version>
     </properties>
 
     <dependencies>
