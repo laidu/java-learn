@@ -19,7 +19,7 @@
 
 
     <properties>
-        <wechat-java-tools.version>3.1.0</wechat-java-tools.version>
+        <wechat-java-tools.version>4.0.0</wechat-java-tools.version>
         <wechat-robot.version>1.0.6</wechat-robot.version>
     </properties>
 
