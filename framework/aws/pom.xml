@@ -17,7 +17,7 @@
     </modules>
 
     <properties>
-        <aws.sdk.version>1.11.699</aws.sdk.version>
+        <aws.sdk.version>1.11.930</aws.sdk.version>
     </properties>
 
     <!--<dependencyManagement>-->
