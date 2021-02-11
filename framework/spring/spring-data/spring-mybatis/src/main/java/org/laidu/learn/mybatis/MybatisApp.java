@@ -4,8 +4,12 @@ import org.laidu.learn.swagger.demo.config.SwaggerConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -17,6 +21,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @MapperScan("org.laidu.learn.mybatis.mapper")
 @SpringBootApplication
+@EnableConfigurationProperties
+@EnableScheduling
+@EnableCaching
 @EnableSwagger2
 @Import(SwaggerConfig.class)
 @EnableAspectJAutoProxy(proxyTargetClass = true)

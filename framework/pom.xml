@@ -14,6 +14,7 @@
     <description>java 常用框架学习</description>
 
     <modules>
+        <module>akka</module>
         <module>spring</module>
         <module>webmagic</module>
         <module>common</module>

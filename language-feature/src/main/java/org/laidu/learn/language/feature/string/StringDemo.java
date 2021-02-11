@@ -21,6 +21,9 @@ public class StringDemo {
 
         // aa.hashCode() == bb.hashCode() : true
         log.debug("aa.hashCode() == bb.hashCode() : {}", aa.hashCode() == bb.hashCode());
+
+        System.out.println("AA".getBytes().length);
+        System.out.println("中A".getBytes().length);
     }
 
     public static void createString() {
