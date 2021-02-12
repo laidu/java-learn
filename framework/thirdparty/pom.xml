@@ -16,7 +16,8 @@
     </modules>
 
     <properties>
-        <wechat-java-tools.version>3.1.0</wechat-java-tools.version>
+        <java.version>1.8</java.version>
+        <wechat-java-tools.version>4.0.0</wechat-java-tools.version>
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
     </properties>
 

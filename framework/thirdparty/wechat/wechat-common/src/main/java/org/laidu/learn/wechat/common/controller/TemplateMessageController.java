@@ -1,10 +1,12 @@
 package org.laidu.learn.wechat.common.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.error.WxErrorException;
-import me.chanjar.weixin.mp.api.WxMpConfigStorage;
 import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.template.WxMpTemplateData;
 import me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage;
+import me.chanjar.weixin.mp.config.WxMpConfigStorage;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by FirenzesEagle on 2016/7/11 0011.
  * Email:liumingbo2008@gmail.com
  */
+@Slf4j
 @Controller
 @RequestMapping(value = "templateMessage")
 public class TemplateMessageController extends GenericController {
@@ -48,7 +51,7 @@ public class TemplateMessageController extends GenericController {
             wxMpService.getTemplateMsgService()
                 .sendTemplateMsg(orderPaySuccessTemplate);
         } catch (WxErrorException e) {
-            logger.error(e.getMessage());
+            log.error(e.getMessage());
         }
     }
 
@@ -71,7 +74,7 @@ public class TemplateMessageController extends GenericController {
             wxMpService.getTemplateMsgService()
                 .sendTemplateMsg(orderPaySuccessTemplate);
         } catch (WxErrorException e) {
-            logger.error(e.getMessage());
+            log.error(e.getMessage());
         }
     }
 
