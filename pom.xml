@@ -93,7 +93,7 @@
         <junit.vintage.version>${junit4.version}.0</junit.vintage.version>
         <junit.platform.version>1.0.2</junit.platform.version>
 
-        <logstash-logback.version>6.3</logstash-logback.version>
+        <logstash-logback.version>6.5</logstash-logback.version>
     </properties>
 
     <dependencyManagement>
