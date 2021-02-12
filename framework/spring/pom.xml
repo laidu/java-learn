@@ -34,9 +34,9 @@
 
         <amqp-client.version>5.5.0</amqp-client.version>
 
-        <spring.version>5.2.9.RELEASE</spring.version>
-        <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
-        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <spring.version>5.3.3</spring.version>
+        <spring-boot.version>2.4.2</spring-boot.version>
+        <spring-cloud.version>2020.0.1</spring-cloud.version>
 
         <spring-shiro.version>1.4.2</spring-shiro.version>
         <validation.version>2.0.1.Final</validation.version>
