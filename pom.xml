@@ -87,16 +87,20 @@
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
-        <junit4.version>4.13.1</junit4.version>
-        <junit.version>5.0.0</junit.version>
-        <junit.vintage.version>${junit4.version}.0</junit.vintage.version>
-        <junit.platform.version>1.0.2</junit.platform.version>
+        <junit.version>4.13.2</junit.version>
 
         <logstash-logback.version>6.5</logstash-logback.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+             <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.7.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--logback encoder start-->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
@@ -140,43 +144,27 @@
 
 
         <!-- tag::tests[] -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit4.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-engine</artifactId>
-            <version>${junit.platform.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit.platform.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit.vintage.version}</version>
-            <scope>test</scope>
-        </dependency>
-
+         <dependency>
+                  <groupId>org.junit.jupiter</groupId>
+                  <artifactId>junit-jupiter-api</artifactId>
+                  <scope>test</scope>
+         </dependency>
+         <dependency>
+                  <groupId>junit</groupId>
+                  <artifactId>junit</artifactId>
+                  <version>${junit.version}</version>
+                  <scope>test</scope>
+         </dependency>
+         <dependency>
+                  <groupId>org.junit.jupiter</groupId>
+                  <artifactId>junit-jupiter-engine</artifactId>
+                  <scope>test</scope>
+         </dependency>
+         <dependency>
+                  <groupId>org.junit.vintage</groupId>
+                  <artifactId>junit-vintage-engine</artifactId>
+                  <scope>test</scope>
+         </dependency>
         <!-- end::tests[] -->
 
     </dependencies>
