@@ -19,7 +19,7 @@
     <properties>
 
 
-        <common-io.version>2.5</common-io.version>
+        <common-io.version>2.7</common-io.version>
         <commons-cli.version>1.4</commons-cli.version>
 
         <commons-lang3.version>3.6</commons-lang3.version>
