@@ -19,10 +19,10 @@
     </modules>
 
     <properties>
-        <hadoop.version>2.8.1</hadoop.version>
+        <hadoop.version>3.2.2</hadoop.version>
         <hadoop-mapreduce.version>2.8.1</hadoop-mapreduce.version>
         <hadoop-common.version>2.8.1</hadoop-common.version>
-        <apache-calcite.version>1.17.0</apache-calcite.version>
+        <apache-calcite.version>1.26.0</apache-calcite.version>
     </properties>
 
     <dependencyManagement>

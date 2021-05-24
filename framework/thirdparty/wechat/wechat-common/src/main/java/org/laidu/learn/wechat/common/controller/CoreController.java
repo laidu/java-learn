@@ -2,14 +2,17 @@ package org.laidu.learn.wechat.common.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
+import me.chanjar.weixin.common.bean.oauth2.WxOAuth2AccessToken;
 import me.chanjar.weixin.common.error.WxErrorException;
-import me.chanjar.weixin.mp.AiLangType;
-import me.chanjar.weixin.mp.api.WxMpConfigStorage;
+//import me.chanjar.weixin.mp.AiLangType;
+//import me.chanjar.weixin.mp.api.WxMpConfigStorage;
 import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
-import me.chanjar.weixin.mp.bean.result.WxMpOAuth2AccessToken;
 import me.chanjar.weixin.mp.bean.result.WxMpUser;
+import me.chanjar.weixin.mp.config.WxMpConfigStorage;
+import me.chanjar.weixin.mp.enums.AiLangType;
+
 import org.apache.commons.lang3.StringUtils;
 import org.laidu.learn.wechat.common.service.CoreService;
 import org.laidu.learn.wechat.common.util.ReturnModel;
@@ -164,10 +167,10 @@ public class CoreController extends GenericController {
     @RequestMapping(value = "/getOAuth2UserInfo")
     public void getOAuth2UserInfo(HttpServletResponse response, @RequestParam(value = "code") String code, @RequestParam(value = "lang") String lang) {
         ReturnModel returnModel = new ReturnModel();
-        WxMpOAuth2AccessToken accessToken;
+        WxOAuth2AccessToken accessToken;
         WxMpUser wxMpUser;
         try {
-            accessToken = this.wxMpService.oauth2getAccessToken(code);
+            accessToken = this.wxMpService.getOAuth2Service().getAccessToken(code);
             wxMpUser = this.wxMpService.getUserService()
                 .userInfo(accessToken.getOpenId(), lang);
             returnModel.setResult(true);
@@ -190,9 +193,9 @@ public class CoreController extends GenericController {
     @RequestMapping(value = "/getOpenid")
     public void getOpenid(HttpServletResponse response, @RequestParam(value = "code") String code) {
         ReturnModel returnModel = new ReturnModel();
-        WxMpOAuth2AccessToken accessToken;
+        WxOAuth2AccessToken accessToken;
         try {
-            accessToken = this.wxMpService.oauth2getAccessToken(code);
+            accessToken = this.wxMpService.getOAuth2Service().getAccessToken(code);
             returnModel.setResult(true);
             returnModel.setDatum(accessToken.getOpenId());
             renderString(response, returnModel);

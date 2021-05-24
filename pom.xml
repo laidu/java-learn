@@ -21,7 +21,7 @@
 
     <ciManagement>
         <system>Hudson</system>
-        <url></url>
+        <url/>
     </ciManagement>
 
     <developers>
@@ -65,10 +65,10 @@
 
     <properties>
 
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--mvn site-->
@@ -84,20 +84,24 @@
         <markdown-page-generator.version>2.1.0</markdown-page-generator.version>
 
         <!--项目基础依赖配置-->
-        <lombok.version>1.18.8</lombok.version>
+        <lombok.version>1.18.10</lombok.version>
         <logback.version>1.2.3</logback.version>
 
         <!--test-->
-        <junit4.version>4.12</junit4.version>
-        <junit.version>5.0.0</junit.version>
-        <junit.vintage.version>${junit4.version}.0</junit.vintage.version>
-        <junit.platform.version>1.0.2</junit.platform.version>
+        <junit.version>4.13.2</junit.version>
 
-        <logstash-logback.version>5.2</logstash-logback.version>
+        <logstash-logback.version>6.5</logstash-logback.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+             <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.7.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--logback encoder start-->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
@@ -141,43 +145,27 @@
 
 
         <!-- tag::tests[] -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit4.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-engine</artifactId>
-            <version>${junit.platform.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit.platform.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit.vintage.version}</version>
-            <scope>test</scope>
-        </dependency>
-
+         <dependency>
+                  <groupId>org.junit.jupiter</groupId>
+                  <artifactId>junit-jupiter-api</artifactId>
+                  <scope>test</scope>
+         </dependency>
+         <dependency>
+                  <groupId>junit</groupId>
+                  <artifactId>junit</artifactId>
+                  <version>${junit.version}</version>
+                  <scope>test</scope>
+         </dependency>
+         <dependency>
+                  <groupId>org.junit.jupiter</groupId>
+                  <artifactId>junit-jupiter-engine</artifactId>
+                  <scope>test</scope>
+         </dependency>
+         <dependency>
+                  <groupId>org.junit.vintage</groupId>
+                  <artifactId>junit-vintage-engine</artifactId>
+                  <scope>test</scope>
+         </dependency>
         <!-- end::tests[] -->
 
     </dependencies>
@@ -204,34 +192,13 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-toolchains-plugin</artifactId>-->
-                <!--<version>1.1</version>-->
-                <!--<configuration>-->
-                    <!--<toolchains>-->
-                        <!--<jdk>-->
-                            <!--<version>11</version>-->
-                            <!--<vendor>oracle</vendor>-->
-                        <!--</jdk>-->
-                    <!--</toolchains>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<goals>-->
-                            <!--<goal>toolchain</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
 
                     <annotationProcessorPaths>
                         <path>
@@ -243,6 +210,25 @@
                 </configuration>
 
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-toolchains-plugin</artifactId>-->
+<!--                <version>1.1</version>-->
+<!--                <configuration>-->
+<!--                    <toolchains>-->
+<!--                        <jdk>-->
+<!--                            <version>11</version>-->
+<!--                        </jdk>-->
+<!--                    </toolchains>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>toolchain</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

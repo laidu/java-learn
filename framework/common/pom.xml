@@ -21,14 +21,12 @@
         <module>shiro</module>
         <module>rxjava</module>
         <module>jodd</module>
-        <module>commons-pool</module>
     </modules>
 
     <properties>
         <apache-commons-lang3.version>3.6</apache-commons-lang3.version>
         <apache-commons-text.version>1.1</apache-commons-text.version>
-        <apache-commons-pool.version>2.8.0</apache-commons-pool.version>
-        <apache-poi.version>3.17</apache-poi.version>
+        <apache-poi.version>4.1.2</apache-poi.version>
         <apache-shiro.version>1.4.2</apache-shiro.version>
         <rxjava.version>2.1.17</rxjava.version>
         <jodd.version>5.0.4</jodd.version>
@@ -49,11 +47,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${apache-commons-lang3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-pool2</artifactId>
-                <version>${apache-commons-pool.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>

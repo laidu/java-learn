@@ -48,7 +48,6 @@
     <dependencyManagement>
         <dependencies>
 
-
             <dependency>
                 <groupId>com.typesafe.play</groupId>
                 <artifactId>play_2.11</artifactId>

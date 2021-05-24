@@ -17,7 +17,7 @@
 
     <properties>
         <javax.servlet.version>3.1.0</javax.servlet.version>
-        <jdk.version>11</jdk.version>
+<!--        <jdk.version>11</jdk.version>-->
     </properties>
 
     <dependencies>
@@ -30,53 +30,53 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.4.12.v20180830</version>
+            <version>9.4.38.v20210224</version>
         </dependency>
 
     </dependencies>
 
-    <build>
-        <plugins>
+<!--    <build>-->
+<!--        <plugins>-->
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>${maven-compiler-plugin.version}</version>-->
+<!--                <configuration>-->
+<!--                    <source>${jdk.version}</source>-->
+<!--                    <target>${jdk.version}</target>-->
 
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
+<!--                    <annotationProcessorPaths>-->
+<!--                        <path>-->
+<!--                            <groupId>org.projectlombok</groupId>-->
+<!--                            <artifactId>lombok</artifactId>-->
+<!--                            <version>${lombok.version}</version>-->
+<!--                        </path>-->
+<!--                    </annotationProcessorPaths>-->
+<!--                </configuration>-->
 
-            </plugin>
+<!--            </plugin>-->
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-toolchains-plugin</artifactId>
-                <version>1.1</version>
-                <configuration>
-                    <toolchains>
-                        <jdk>
-                            <version>11</version>
-                        </jdk>
-                    </toolchains>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>toolchain</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-toolchains-plugin</artifactId>-->
+<!--                <version>1.1</version>-->
+<!--                <configuration>-->
+<!--                    <toolchains>-->
+<!--                        <jdk>-->
+<!--                            <version>11</version>-->
+<!--                        </jdk>-->
+<!--                    </toolchains>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>toolchain</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>

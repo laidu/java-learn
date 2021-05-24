@@ -24,11 +24,11 @@
 
     <properties>
         <retrofit.version>2.5.0</retrofit.version>
-        <async-http-client.version>2.1.0-alpha24</async-http-client.version>
+        <async-http-client.version>2.12.2</async-http-client.version>
 
-        <spring-webflux.version>5.1.5.RELEASE</spring-webflux.version>
+        <spring-webflux.version>5.2.4.RELEASE</spring-webflux.version>
         <reactor-netty.version>0.7.14.RELEASE</reactor-netty.version>
-        <okhttp.version>4.2.0</okhttp.version>
+        <okhttp.version>4.2.2</okhttp.version>
 
     </properties>
 
@@ -75,7 +75,7 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-transport-native-epoll</artifactId>
-                <version>4.1.34.Final</version>
+                <version>4.1.44.Final</version>
                 <classifier>linux-x86_64</classifier>
             </dependency>
 
