@@ -51,6 +51,7 @@
         <module>dev-ops</module>
         <module>big-data</module>
         <module>code-practice</module>
+        <module>framework/aviator</module>
     </modules>
 
     <distributionManagement>
