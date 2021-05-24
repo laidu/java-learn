@@ -51,7 +51,6 @@
         <module>dev-ops</module>
         <module>big-data</module>
         <module>code-practice</module>
-        <module>framework/akka</module>
     </modules>
 
     <distributionManagement>
