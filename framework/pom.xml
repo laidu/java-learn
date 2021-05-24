@@ -42,6 +42,7 @@
         <play.version>2.6.6</play.version>
 
         <shade.version>3.1.1</shade.version>
+        <aviator.version>3.1.1</aviator.version>
     </properties>
 
     <dependencyManagement>
