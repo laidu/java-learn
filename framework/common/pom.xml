@@ -27,7 +27,7 @@
         <apache-commons-lang3.version>3.6</apache-commons-lang3.version>
         <apache-commons-text.version>1.1</apache-commons-text.version>
         <apache-poi.version>4.1.2</apache-poi.version>
-        <apache-shiro.version>1.4.2</apache-shiro.version>
+        <apache-shiro.version>1.6.0</apache-shiro.version>
         <rxjava.version>2.1.17</rxjava.version>
         <jodd.version>5.0.4</jodd.version>
     </properties>
