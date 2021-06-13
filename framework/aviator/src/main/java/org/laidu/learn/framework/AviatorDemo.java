@@ -47,12 +47,12 @@ public class AviatorDemo {
             });
         }
 
-        executorService.submit(() -> {
-            while (true) {
-                Thread.sleep(100);
-                System.gc();
-            }
-        });
+//        executorService.submit(() -> {
+//            while (true) {
+//                Thread.sleep(100);
+//                System.gc();
+//            }
+//        });
 
         executorService.shutdown();
 

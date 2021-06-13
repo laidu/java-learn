@@ -12,7 +12,9 @@ import java.security.interfaces.RSAPrivateKey;
 /**
  * java basic encryption util
  * <p>
- * Created by tiancai.zang on 2017-12-05 18:33.
+ *
+ * @author tiancai.zang
+ * @date 2017-12-05 18:33
  */
 @Slf4j
 public final class BasicEncryptionUtil {
@@ -34,8 +36,7 @@ public final class BasicEncryptionUtil {
      * Provides the lazy-loaded Singleton instance.
      */
     private static class HelperHolder {
-        private static final BasicEncryptionUtil INSTANCE =
-                new BasicEncryptionUtil();
+        private static final BasicEncryptionUtil INSTANCE = new BasicEncryptionUtil();
     }
 
     /**
@@ -48,7 +49,7 @@ public final class BasicEncryptionUtil {
      * @return
      * @throws Exception
      */
-    public  byte[] encrypt(String algorithm,String algorithmKey, byte[] key, byte[] ivp, byte[] data){
+    public byte[] encrypt(String algorithm,String algorithmKey, byte[] key, byte[] ivp, byte[] data){
 
         SecretKey secretKey = new SecretKeySpec(key, algorithm);
         byte[] encrypt = null;
