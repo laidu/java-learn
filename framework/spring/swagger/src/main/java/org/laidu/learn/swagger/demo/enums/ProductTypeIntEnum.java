@@ -1,5 +1,7 @@
 package org.laidu.learn.swagger.demo.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -27,6 +29,7 @@ public enum ProductTypeIntEnum implements BasicIntEnum {
     ;
 
 
+    @JsonValue
     private int value;
     private String name;
 

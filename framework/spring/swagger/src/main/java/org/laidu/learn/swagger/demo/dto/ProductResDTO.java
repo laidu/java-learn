@@ -2,10 +2,11 @@ package org.laidu.learn.swagger.demo.dto;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,7 +23,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel
+@Schema
 public class ProductResDTO {
 
     /**
@@ -38,7 +39,8 @@ public class ProductResDTO {
     /**
      * product date
      */
-    @ApiModelProperty(required = true, example = "2016-01-01 18:10:12")
+    @NotNull
+    @Schema( example = "2016-01-01 18:10:12")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss", timezone = "GMT+8")
     private Date productDate;
 }

@@ -2,12 +2,13 @@ package org.laidu.learn.swagger.demo.dto;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+
 import org.laidu.learn.swagger.demo.enums.ProductTypeIntEnum;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,29 +25,29 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel
+@Schema
 public class ProductReqDTO {
 
     /**
      * id
      */
-    @ApiModelProperty(required = true, name = "产品ID")
+    @Schema
     private String id;
 
-    //    @NotNull
-    @ApiModelProperty(name = "产品类型", dataType = "ProductTypeIntEnum")
+    @NotNull
+    @Schema
     private ProductTypeIntEnum type;
 
     /**
      * product name
      */
-    @ApiModelProperty(required = true, name = "产品ID")
+    @Schema
     private String name;
 
     /**
      * product date
      */
-    @ApiModelProperty(required = true, example = "2016-01-01")
+    @Schema(example = "2016-01-01")
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss", timezone = "GMT+8")
     private Date productDate;
 }

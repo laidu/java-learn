@@ -1,6 +1,5 @@
 package org.laidu.learn.spring.mvc.model;
 
-import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,7 +18,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel(description ="响应封装")
 public class Response<T> {
 
     private String code;
@@ -28,7 +26,7 @@ public class Response<T> {
 
     private T data;
 
-    public static <T> Response<T> ok(T data){
+    public static <T> Response<T> ok(T data) {
 
         return Response.<T>builder()
                 .code("E000000")

@@ -1,11 +1,12 @@
 package org.laidu.learn.spring.mvc.dto;
 
-import io.swagger.annotations.ApiModelProperty;
+import org.laidu.learn.spring.mvc.enums.GoodsTypeEnum;
+
+import io.swagger.v3.oas.annotations.Parameter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.laidu.learn.spring.mvc.enums.GoodsTypeEnum;
 
 /**
  * 添加商品DTO
@@ -19,12 +20,12 @@ import org.laidu.learn.spring.mvc.enums.GoodsTypeEnum;
 @NoArgsConstructor
 public class GetGoodsResDTO {
 
-    @ApiModelProperty("商品ID")
+    @Parameter(name = "商品ID")
     private Long goodsId;
 
-    @ApiModelProperty("商品名称")
+    @Parameter(name = "商品名称")
     private String goodsName;
 
-    @ApiModelProperty("商品类型")
+    @Parameter(name = "商品类型")
     private GoodsTypeEnum goodsType;
 }

@@ -10,8 +10,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 /**
  * org.laidu.learn.amqp.Application
  * <p>
@@ -24,7 +22,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableConfigurationProperties
 @EnableScheduling
 @EnableCaching
-@EnableSwagger2
 @Import(SwaggerConfig.class)
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class MybatisApp {
