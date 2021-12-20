@@ -29,7 +29,7 @@
     <properties>
         <aspectj.version>1.9.5</aspectj.version>
         <cglib.version>3.3.0</cglib.version>
-        <bouncycastle.version>1.60</bouncycastle.version>
+        <bouncycastle.version>1.67</bouncycastle.version>
     </properties>
 
     <dependencyManagement>
