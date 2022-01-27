@@ -12,7 +12,7 @@
     <artifactId>undertow</artifactId>
 
     <properties>
-        <undertow.version>2.0.20.Final</undertow.version>
+        <undertow.version>2.1.6.Final</undertow.version>
     </properties>
 
     <dependencies>
