@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
 import lombok.extern.slf4j.Slf4j;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * spring mvc app
@@ -21,7 +20,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * on 2018-05-30 11:29.
  */
 @Slf4j
-@EnableSwagger2
 @Import(SwaggerConfig.class)
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)

@@ -1,0 +1,18 @@
+server:
+    address: 0.0.0.0
+spring:
+    application:
+        admin:
+            enabled: true
+        name: swagger-demo
+    devtools:
+        restart:
+            enabled: true
+
+springdoc:
+    api-docs:
+        path: /v3/api-docs
+    swagger-ui:
+      enabled: true
+      path: /swagger-ui.html
+

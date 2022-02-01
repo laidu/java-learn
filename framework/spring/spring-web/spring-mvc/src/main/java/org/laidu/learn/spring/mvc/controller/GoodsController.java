@@ -1,5 +1,6 @@
 package org.laidu.learn.spring.mvc.controller;
 
+import org.apiguardian.api.API;
 import org.laidu.learn.spring.mvc.dto.AddGoodsReqDTO;
 import org.laidu.learn.spring.mvc.dto.GetGoodsResDTO;
 import org.laidu.learn.spring.mvc.enums.GoodsTypeEnum;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -36,7 +37,7 @@ public class GoodsController {
     }
 
     @PostMapping("/add")
-    @ApiOperation("添加商品")
+    @Operation(method = "添加商品")
     public Response<Long> add(@RequestBody AddGoodsReqDTO reqDTO){
 
         return  Response.ok(goodsService.addGoods(Goods.builder()
@@ -47,7 +48,7 @@ public class GoodsController {
     }
 
     @GetMapping("/query/{goodId}")
-    @ApiOperation("查询商品")
+    @Operation(method = "查询商品")
     public Response<GetGoodsResDTO> query(@PathVariable("goodId") Long goodId){
 
         return  Response.ok(GetGoodsResDTO.builder()

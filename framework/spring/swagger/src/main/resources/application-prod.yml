@@ -1,0 +1,9 @@
+server:
+    address: 0.0.0.0
+spring:
+    application:
+        admin:
+            enabled: true
+        name: swagger-demo
+    jackson:
+        property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES

@@ -1,8 +1,9 @@
 package org.laidu.learn.swagger.demo.controller;
 
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import io.swagger.annotations.ApiResponse;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.laidu.learn.swagger.demo.dto.ProductReqDTO;
 import org.laidu.learn.swagger.demo.dto.ProductResDTO;
@@ -19,6 +20,7 @@ import java.util.Date;
  */
 @Slf4j
 @RestController
+@Tag(name = "")
 @RequestMapping("/")
 public class HomeController {
 
@@ -28,9 +30,6 @@ public class HomeController {
     }
 
     @GetMapping("/query/{id}")
-    @ApiOperation("query product by id")
-    @ApiParam(value = "id")
-    @ApiResponse(code = 100, message = "123321" , response = ProductResDTO.class)
     public ProductResDTO query(@PathVariable String id){
         return ProductResDTO.builder()
                 .id(id)
