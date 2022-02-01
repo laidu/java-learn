@@ -32,6 +32,7 @@
         <bouncycastle.version>1.60</bouncycastle.version>
         <jdk.version>17</jdk.version>
         <java.version>17</java.version>
+        <bouncycastle.version>1.67</bouncycastle.version>
     </properties>
 
     <dependencyManagement>
