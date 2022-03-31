@@ -26,7 +26,7 @@
         <retrofit.version>2.5.0</retrofit.version>
         <async-http-client.version>2.12.2</async-http-client.version>
 
-        <spring-webflux.version>5.2.4.RELEASE</spring-webflux.version>
+        <spring-webflux.version>5.3.18</spring-webflux.version>
         <reactor-netty.version>0.7.14.RELEASE</reactor-netty.version>
         <okhttp.version>4.2.2</okhttp.version>
 
