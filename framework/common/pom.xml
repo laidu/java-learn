@@ -30,7 +30,7 @@
         <apache-poi.version>4.1.2</apache-poi.version>
         <apache-shiro.version>1.8.0</apache-shiro.version>
         <rxjava.version>2.1.17</rxjava.version>
-        <jodd.version>5.0.4</jodd.version>
+        <jodd.version>6.2.1</jodd.version>
     </properties>
 
     <dependencyManagement>
