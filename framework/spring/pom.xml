@@ -34,12 +34,12 @@
 
         <amqp-client.version>5.5.0</amqp-client.version>
 
-        <spring.version>5.2.9.RELEASE</spring.version>
+        <spring.version>5.2.21.RELEASE</spring.version>
         <spring-boot.version>2.5.1</spring-boot.version>
         <spring-cloud.version>2020.0.2</spring-cloud.version>
 
 
-        <spring-shiro.version>1.4.2</spring-shiro.version>
+        <spring-shiro.version>1.7.1</spring-shiro.version>
         <validation.version>2.0.1.Final</validation.version>
 
         <spring-statemacchine.version>2.0.1.RELEASE</spring-statemacchine.version>
