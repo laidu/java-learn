@@ -24,7 +24,7 @@
         <ehcache.version>3.4.0</ehcache.version>
         <javax.cache.version>1.1.0</javax.cache.version>
 
-        <spring.version>5.3.20</spring.version>
+        <spring.version>5.3.26</spring.version>
     </properties>
 
     <dependencyManagement>
