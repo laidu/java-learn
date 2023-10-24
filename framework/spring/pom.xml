@@ -32,7 +32,7 @@
         <!--spring-data-->
         <spring-data-hadoop.version>2.5.0.RELEASE</spring-data-hadoop.version>
 
-        <amqp-client.version>5.5.0</amqp-client.version>
+        <amqp-client.version>5.18.0</amqp-client.version>
 
         <spring.version>5.2.21.RELEASE</spring.version>
         <spring-boot.version>2.5.1</spring-boot.version>
