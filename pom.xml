@@ -86,7 +86,7 @@
 
         <!--项目基础依赖配置-->
         <lombok.version>1.18.20</lombok.version>
-        <logback.version>1.2.9</logback.version>
+        <logback.version>1.2.13</logback.version>
 
         <!--test-->
         <junit.version>4.13.2</junit.version>
