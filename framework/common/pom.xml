@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>framework</artifactId>
@@ -20,7 +20,6 @@
         <module>apache-poi</module>
         <module>shiro</module>
         <module>rxjava</module>
-        <module>jodd</module>
     </modules>
 
     <properties>
@@ -28,7 +27,7 @@
         <apache-commons-text.version>1.1</apache-commons-text.version>
         <apache-commons-pool.version>2.11.1</apache-commons-pool.version>
         <apache-poi.version>4.1.2</apache-poi.version>
-        <apache-shiro.version>1.9.1</apache-shiro.version>
+        <apache-shiro.version>1.10.0</apache-shiro.version>
         <rxjava.version>2.1.17</rxjava.version>
         <jodd.version>6.2.1</jodd.version>
     </properties>
@@ -76,19 +75,19 @@
             <dependency>
                 <groupId>org.jodd</groupId>
                 <artifactId>jodd-core</artifactId>
-                <version>${jodd.version}</version>
+                <version>5.3.0</version>
             </dependency>
 
             <dependency>
                 <groupId>org.jodd</groupId>
                 <artifactId>jodd-bean</artifactId>
-                <version>${jodd.version}</version>
+                <version>5.1.6</version>
             </dependency>
 
             <dependency>
                 <groupId>org.jodd</groupId>
                 <artifactId>jodd-http</artifactId>
-                <version>${jodd.version}</version>
+                <version>6.3.0</version>
             </dependency>
 
             <dependency>

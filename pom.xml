@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -74,7 +74,8 @@
         <!--mvn site-->
         <github.global.server>github</github.global.server>
         <!--suppress UnresolvedMavenProperty -->
-        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
+        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}
+        </github.global.oauth2Token> <!-- 通过获取环境变量设置token 适应travis-ci 自动部署-->
         <site.path>${project.artifactId}</site.path>
         <github.maven-site-plugin.version>0.12</github.maven-site-plugin.version>
         <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
@@ -84,7 +85,7 @@
         <markdown-page-generator.version>2.1.0</markdown-page-generator.version>
 
         <!--项目基础依赖配置-->
-        <lombok.version>1.18.10</lombok.version>
+        <lombok.version>1.18.20</lombok.version>
         <logback.version>1.2.9</logback.version>
 
         <!--test-->
@@ -95,7 +96,7 @@
 
     <dependencyManagement>
         <dependencies>
-             <dependency>
+            <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
                 <version>5.7.1</version>
@@ -145,27 +146,27 @@
 
 
         <!-- tag::tests[] -->
-         <dependency>
-                  <groupId>org.junit.jupiter</groupId>
-                  <artifactId>junit-jupiter-api</artifactId>
-                  <scope>test</scope>
-         </dependency>
-         <dependency>
-                  <groupId>junit</groupId>
-                  <artifactId>junit</artifactId>
-                  <version>${junit.version}</version>
-                  <scope>test</scope>
-         </dependency>
-         <dependency>
-                  <groupId>org.junit.jupiter</groupId>
-                  <artifactId>junit-jupiter-engine</artifactId>
-                  <scope>test</scope>
-         </dependency>
-         <dependency>
-                  <groupId>org.junit.vintage</groupId>
-                  <artifactId>junit-vintage-engine</artifactId>
-                  <scope>test</scope>
-         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
         <!-- end::tests[] -->
 
     </dependencies>
@@ -210,25 +211,25 @@
                 </configuration>
 
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-toolchains-plugin</artifactId>-->
-<!--                <version>1.1</version>-->
-<!--                <configuration>-->
-<!--                    <toolchains>-->
-<!--                        <jdk>-->
-<!--                            <version>11</version>-->
-<!--                        </jdk>-->
-<!--                    </toolchains>-->
-<!--                </configuration>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>toolchain</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-toolchains-plugin</artifactId>-->
+            <!--                <version>1.1</version>-->
+            <!--                <configuration>-->
+            <!--                    <toolchains>-->
+            <!--                        <jdk>-->
+            <!--                            <version>11</version>-->
+            <!--                        </jdk>-->
+            <!--                    </toolchains>-->
+            <!--                </configuration>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <goals>-->
+            <!--                            <goal>toolchain</goal>-->
+            <!--                        </goals>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -316,8 +317,6 @@
             </plugin>
         </plugins>
     </reporting>
-
-
 
 
 </project>
